@@ -7,7 +7,10 @@ HerbVar was founded by the [Wetzel Lab at Michigan State University](https://Wet
 
 ## HerbVar Steering Group
 
-![](photos/people/wetzel.jpg)  
+```{r, echo=FALSE, out.width = "150px"}
+knitr::include_graphics("photos/people/wetzel.jpg")
+```
+
 **Dr. Will Wetzel**  
 Department of Entomology  
 Ecology, Evolutionary Biology, & Behavior Program  
