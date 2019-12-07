@@ -3,54 +3,106 @@ title: "Leadership"
 output: html_document
 ---
 
+
 HerbVar was founded by the [Wetzel Lab at Michigan State University](https://WetzelLab.com) and is led by a Steering Group and multiple Subgroups that focus on specific topics.
 
-## HerbVar Steering Group
+<br>
 
-```{r, echo=FALSE, out.width = "150px"}
+## HerbVar Steering Group
+<br>
+```{r, echo=FALSE, out.width = "100px"}
 knitr::include_graphics("photos/people/wetzel.jpg")
-```
+``` 
 
 **Dr. Will Wetzel**  
 Department of Entomology  
 Ecology, Evolutionary Biology, & Behavior Program  
 Michigan State University  
 wcwetzel (a) msu.edu • [website](https://WetzelLab.com)  
-  
+ <br>
+ 
+```{r, echo=FALSE, out.width = "100px"}
+knitr::include_graphics("photos/people/robinson.jpeg")
+```
 
 **Dr. Moria Robinson**  
 Department of Entomology  
 Ecology, Evolutionary Biology, & Behavior Program  
 Michigan State University  
 robi1169 (a) msu.edu • [website](https://www.moriarobinson.com/)  
-  
+<br>
+
+```{r, echo=FALSE, out.width = "100px"}
+knitr::include_graphics("photos/people/dyer.jpg")
+```
 
 **Dr. Lee Dyer**  
 Department of Biology  
 Ecology, Evolution and Conservation Program  
 Univesity of Nevada, Reno  
 ldyer (a) unr.edu • [website](https://www.unr.edu/biology/people/lee-dyer)  
-  
+<br>
+
+```{r, echo=FALSE, out.width = "100px"}
+knitr::include_graphics("photos/people/hahn.jpg")
+```
 
 **Dr. Phil Hahn**  
 Department of Entomology & Nematology  
 University of Florida  
-phil.hahn (a) mso.umt.edu • [website](https://plant-herbivore-interactions.net/)
+phil.hahn (a) mso.umt.edu • [website](https://plant-herbivore-interactions.net/)  
+<br>
 
+```{r, echo=FALSE, out.width = "100px"}
+knitr::include_graphics("photos/people/inouye.jpeg")
+```
 
 **Dr. Brian Inouye**  
 Department of Biological Science  
 Florida State University  
-bdinouye (a) bio.fsu.edu • [website](https://www.bio.fsu.edu/faculty.php?faculty-id=bdinouye)
+bdinouye (a) bio.fsu.edu • [website](https://www.bio.fsu.edu/faculty.php?faculty-id=bdinouye)  
+<br>
 
+```{r, echo=FALSE, out.width = "100px"}
+knitr::include_graphics("photos/people/underwood.jpg")
+```
 
 **Dr. Nora Underwood**  
 Department of Biological Science  
 Florida State University  
-nunderwood (a) bio.fsu.edu • [website](https://www.bio.fsu.edu/~nunderwood/homepage/)
+nunderwood (a) bio.fsu.edu • [website](https://www.bio.fsu.edu/~nunderwood/homepage/)  
+<br>
+
+```{r, echo=FALSE, out.width = "100px"}
+knitr::include_graphics("photos/people/whitehead.jpg")
+```
 
 **Dr. Susan Whitehead**  
 Department of Biological Sciences  
 Virginia Tech  
-swhitehead (a) vt.edu • [website](http://www.speciesinteractions.com/)
+swhitehead (a) vt.edu • [website](http://www.speciesinteractions.com/)  
+<br>
 
+
+## Damage Estimation Subgroup
+
+Dr. Bastien Castagneyrol  
+BIOGECO, INRA  
+University of Bordeaux  
+
+Julie Davis  
+Department of Entomology  
+Cornell University  
+
+Zoe Getman-Pickering  
+Department of Entomology  
+Cornell University  
+
+Dr. Ian Pearse  
+Fort Conllins Science Center  
+US Geological Survey  
+
+Dr. Will Wetzel
+Department of Entomology  
+Ecology, Evolutionary Biology, & Behavior Program  
+Michigan State University  
