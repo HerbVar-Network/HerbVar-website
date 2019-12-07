@@ -86,23 +86,111 @@ swhitehead (a) vt.edu • [website](http://www.speciesinteractions.com/)
 
 ## Damage Estimation Subgroup
 
-Dr. Bastien Castagneyrol  
+**Dr. Bastien Castagneyrol**  
 BIOGECO, INRA  
 University of Bordeaux  
 
-Julie Davis  
+**Julie Davis**  
 Department of Entomology  
 Cornell University  
 
-Zoe Getman-Pickering  
+**Zoe Getman-Pickering**  
 Department of Entomology  
 Cornell University  
 
-Dr. Ian Pearse  
+**Dr. Ian Pearse**  
 Fort Conllins Science Center  
 US Geological Survey  
 
-Dr. Will Wetzel
+**Dr. Will Wetzel**  
 Department of Entomology  
 Ecology, Evolutionary Biology, & Behavior Program  
 Michigan State University  
+<br>
+
+## Reproductive Damage Subgroup
+
+**Dr. Phil Hahn**  
+Department of Entomology & Nematology  
+University of Florida  
+
+**Dr. Paul Ode**  
+Bioagricultural Sciences & Pest Management  
+Colorado State University  
+
+**Dr. Susan Whitehead**  
+Department of Biological Sciences  
+Virginia Tech  
+<br>
+
+
+## Insect Sampling Subgroup
+
+**Dr. Tania Kim**  
+Department of Entomology  
+Kansas State University  
+
+**Dr. Nick Pardikes**  
+Institute of Entomology  
+Czech Academy of Sciences  
+
+**Dr. Moria Robinson**  
+Department of Entomology  
+Michigan State University  
+
+**Luke Zehr**  
+Department of Entomology  
+Michigan State University  
+<br>
+
+
+## Rare Plants Subgroup
+
+**Dr. Lee Dyer**  
+Department of Biology  
+Ecology, Evolution and Conservation Program  
+Univesity of Nevada, Reno  
+
+**Danielle Salcido**  
+Department of Biology  
+Ecology, Evolution and Conservation Program  
+Univesity of Nevada, Reno  
+<br>
+
+
+## Predictors of Variability Subgroup 
+
+**Dr. Paul Ode**  
+Bioagricultural Sciences & Pest Management  
+Colorado State University  
+
+**Dr. Ian Pearse**  
+Fort Conllins Science Center  
+US Geological Survey  
+<br>
+
+
+## Succulent Subgroup
+
+**Dr. Judie Bronstein**  
+Ecology and Evolutionary Biology  
+University of Arizona  
+
+**Victoria Luizzi**  
+Ecology and Evolutionary Biology  
+University of Arizona  
+<br>
+
+
+## Tree Subgroup
+
+**Dr. Bastien Castagneyrol**  
+BIOGECO, INRA  
+University of Bordeaux  
+
+**Dr. Amy Trowbridge**  
+Department of Entomology  
+University of Wisconsin, Madison  
+<br>
+
+
