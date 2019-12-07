@@ -3,17 +3,19 @@ title: "Home"
 output: html_document
 ---
 
-Welcome to the Herbivory Variability Network ("HerbVar"). We are a global research network that aims to describe and understand how and why patterns in plant--herbivore interactions vary across the tree of life and around the world.
+Welcome to the **Herbivory Variability Network** ("HerbVar"). We are a global research network that aims to describe and understand how and why patterns in plant--herbivore interactions vary across the tree of life and around the world.
 
-```{r, echo=FALSE, out.width = "400px", fig.align='center'}
+```{r, echo=FALSE, out.width = "600px", fig.align='center'}
 knitr::include_graphics("photos/herb_collage.png")
 ```
 
 We currently have 100+ collaborators from more than 60 institutions across 23 countries. Please email if you are interested in joining (Will wetzel: wcwetzel@msu.edu or Moria Robinson: robi1169@msu.edu). We are still looking for additional collaborators, especially in under-sampled regions.
 
+<br>
+
 Our growing dataset currently includes about 150 surveys of more than 125 plant species from more than 50 plant families. These are spread across North America, Central America, South America,  Europe, Africa, and Asia, and we are working to expand our geographic extent.
 
-```{r, echo=FALSE, out.width = "500px", fig.align='center'}
+```{r, echo=FALSE, out.width = "600px", fig.align='center'}
 knitr::include_graphics("photos/Map_2019-12-01.png")
 ```
 

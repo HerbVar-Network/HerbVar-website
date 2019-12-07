@@ -3,25 +3,23 @@ title: "About"
 output: html_document
 ---
 
-We are a global network of scientists working together to understand how plant–-herbivore interactions vary across the planet, across ecosystems, and across the plant phylogeny.
+We are a global network of scientists working together to understand how plant--herbivore interactions vary across the planet, across ecosystems, and across the plant phylogeny.
 
 Many plant-insect biologists have noticed that the distribution of herbivore feeding damage among plants within a population is often highly skewed. It appears that most plants experience low levels of damage, while a small fraction of plants experience disproportionately high levels of damage. 
 
-This pattern may be a fundamental feature of interactions between plants and insects, and theory suggests it could have dramatic consequences for ecology and evolution, as well as important implications for pest management in agricultural ecosystems. Despite the importance of these patterns, very few studies have quantified them, limiting our basic understanding of how plants and insect herbivores interact. The goal of HerbVar is to quantify patterns of plant–herbivore interactions around the world.
+This pattern may be a fundamental feature of interactions between plants and insects, and theory suggests it could have dramatic consequences for ecology and evolution, as well as important implications for pest management in agricultural ecosystems. Despite the importance of these patterns, very few studies have quantified them, limiting our basic understanding of how plants and insect herbivores interact. The goal of HerbVar is to quantify patterns of plant--herbivore interactions around the world.
 
 
+##### Primary HerbVar research questions:
+*Is high heterogeneity a ubiquitous feature of plant--herbivore interactions?
 
-HerbVar primary research questions:
+*What biotic and abiotic factors are correlated with heterogeneity in plant--herbivore interactions?
 
-Is high heterogeneity a ubiquitous feature of plant–-herbivore interactions?
+*What types of plant species (herbs, shrubs, trees) and ecosystems (tropical, temperate, desert) exhibit higher or lower than average heterogeneity?
 
-What biotic and abiotic factors are correlated with heterogeneity in plant–herbivore interactions
+We are answering these questions, and a set of secondary questions, by collecting data on the distribution of plant--herbivore interactions in a standardized way from a broad range of plant species and ecosystems. We hope that by identifying the factors that correlate with variability in herbivory we will be able to provide the field with a new paradigm for describing plant--herbivore interactions and generate novel hypotheses about the ecology and evolution of plant--herbivore interactions.
 
-What types of plant species (herbs, shrubs, trees) and ecosystems (tropical, temperate, arid/desert) exhibit higher or lower than average heterogeneity?
 
-We are answering these questions, and a set of secondary questions, by collecting data on the distribution of plant–-herbivore interactions in a standardized way from a broad range of plant species and ecosystems. We hope that by identifying the factors that correlate with variability in herbivory we will be able to provide the field with a new paradigm for describing plant-–herbivore interactions and generate novel hypotheses about the ecology and evolution of plant-–herbivore interactions.
-
-HerbVar membership:
-
+##### HerbVar membership:
 Herbvar is open to plant-insect biologists who are collaborative, collegial, and willing to collect and contribute standardized data on the distribution of plants and insects for new species and sites.
 

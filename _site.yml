@@ -9,6 +9,8 @@ navbar:
       href: about.html
     - text: "Leadership"
       href: leadership.html
+    - text: "Collaborator directory"
+      href: collaborators.html
 
 output:
   rmarkdown::html_document:
