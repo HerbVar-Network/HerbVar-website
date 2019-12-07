@@ -1,0 +1,11 @@
+name: "HerbVar Website"
+output_dir: "."
+navbar:
+  title: "The Herbivory Variability Network"
+  left:
+    - text: "Home"
+      href: index.html
+
+output:
+  rmarkdown::html_document:
+    theme: flatly
