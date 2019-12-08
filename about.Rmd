@@ -9,6 +9,10 @@ Many plant-insect biologists have noticed that the distribution of herbivore fee
 
 This pattern may be a fundamental feature of interactions between plants and insects, and theory suggests it could have dramatic consequences for ecology and evolution, as well as important implications for pest management in agricultural ecosystems. Despite the importance of these patterns, very few studies have quantified them, limiting our basic understanding of how plants and insect herbivores interact. The goal of HerbVar is to quantify patterns of plant--herbivore interactions around the world.
 
+```{r, echo=FALSE, out.width = "600px", fig.align='center'}
+knitr::include_graphics("photos/HerbVar histograms.png")
+```
+
 <br>
 
 ##### Primary HerbVar research questions:
@@ -25,3 +29,6 @@ We are answering these questions, and a set of secondary questions, by collectin
 ##### HerbVar membership:
 Herbvar is open to plant-insect biologists who are collaborative, collegial, and willing to collect and contribute standardized data on the distribution of plants and insects for new species and sites.
 
+```{r, echo=FALSE, out.width = "600px", fig.align='center'}
+knitr::include_graphics("photos/IMG_2201.jpg")
+```

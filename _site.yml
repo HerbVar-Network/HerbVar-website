@@ -11,6 +11,10 @@ navbar:
       href: leadership.html
     - text: "Collaborator directory"
       href: collaborators.html
+    - text: "Protocols"
+      href: protocols.html
+    - text: "Participation"
+      href: participation.html
 
 output:
   rmarkdown::html_document:

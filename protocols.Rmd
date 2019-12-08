@@ -1,0 +1,20 @@
+---
+title: "Protocols"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Below you can find pdfs of our sampling protocols. Network collaborators, you should have access to our Shared Drive, which has additional information. Please get in touch if you need access.
+
+HerbVar Primary Protocol
+
+Reproductive Damage Protocol
+
+Low-density/Low-abundance Protocol
+
+Cacti and Other Succulents Protocol
+

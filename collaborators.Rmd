@@ -116,3 +116,8 @@ Akira	Yamawo | 		Hirosaki University
 Kim	Valenta	 | 	University of Florida
 Luke	Zehr	 | 	Mich State
 Zhiwei	Zhong	 | 	Northeast Normal University, China
+
+
+```{r, echo=FALSE, out.width = "600px", fig.align='center'}
+knitr::include_graphics("photos/IMG_2382.jpg")
+```
