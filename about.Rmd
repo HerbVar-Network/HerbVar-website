@@ -29,6 +29,8 @@ We are answering these questions, and a set of secondary questions, by collectin
 ##### HerbVar membership:
 Herbvar is open to plant-insect biologists who are collaborative, collegial, and willing to collect and contribute standardized data on the distribution of plants and insects for new species and sites.
 
+<br>
+
 ```{r, echo=FALSE, out.width = "600px", fig.align='center'}
 knitr::include_graphics("photos/IMG_2201.jpg")
 ```
