@@ -9,7 +9,7 @@ Many plant-insect biologists have noticed that the distribution of herbivore fee
 
 This pattern may be a fundamental feature of interactions between plants and insects, and theory suggests it could have dramatic consequences for ecology and evolution, as well as important implications for pest management in agricultural ecosystems. Despite the importance of these patterns, very few studies have quantified them, limiting our basic understanding of how plants and insect herbivores interact. The goal of HerbVar is to quantify patterns of plant--herbivore interactions around the world.
 
-```{r, echo=FALSE, out.width = "600px", fig.align='center'}
+```{r, echo=FALSE, out.width = "600px", fig.align='center', fig.cap="The distribution of herbivory among plants within populations for nine plant species. Each histrogram shows the number of plant individuals with different levels of percent tissue damaged by herbivores."}
 knitr::include_graphics("photos/HerbVar_histograms.png")
 ```
 
