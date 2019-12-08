@@ -33,3 +33,14 @@ Please see the [Participation page](participation.html) if you are interested in
 ```{r, echo=FALSE, out.width = "600px", fig.align='center'}
 knitr::include_graphics("photos/IMG_2201.jpg")
 ```
+
+<br>
+
+##### Taxonomic progress
+
+So far we have completed surveys on more than 125 plant species from more than 50 plant families.
+
+```{r, echo=FALSE, out.width = "600px", fig.align='center', fig.cap="Number of currently completed surveys per plant family. We have five focal plant families—Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae, in yellow—that we are sampling intensively to give us a detailed phylogenetic look at variation in herbivory."}
+knitr::include_graphics("photos/Families.png")
+```
+
