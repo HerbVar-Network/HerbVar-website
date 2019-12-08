@@ -9,9 +9,8 @@ Welcome to the Herbivory Variability Network ("HerbVar"). We are a global resear
 knitr::include_graphics("photos/herb_collage.png")
 ```
 
-We are a new network (founded in mid 2019), and we already have 100+ collaborators from more than 60 institutions across 23 countries. Please email if you are interested in joining (Will wetzel: wcwetzel@msu.edu or Moria Robinson: robi1169@msu.edu). We are still looking for additional collaborators, especially in under-sampled regions.
+We are a new network (founded in mid 2019), and we already have 100+ collaborators from more than 60 institutions across 23 countries. Please email if you are interested in joining (Will Wetzel: wcwetzel@msu.edu or Moria Robinson: robi1169@msu.edu). We are still looking for additional collaborators, especially in under-sampled regions.
 
-<br>
 
 Our growing dataset currently includes about 150 surveys of more than 125 plant species from more than 50 plant families. These are spread across North America, Central America, South America,  Europe, Africa, and Asia, and we are working to expand our geographic extent.
 

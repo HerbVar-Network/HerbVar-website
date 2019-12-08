@@ -27,7 +27,6 @@ We are answering these questions, and a set of secondary questions, by collectin
 
 Please see the [Participation page](participation.html) if you are interested in joining us.
 
-<br>
 
 ```{r, echo=FALSE, out.width = "500px", fig.align='center'}
 knitr::include_graphics("photos/IMG_2201.jpg")
