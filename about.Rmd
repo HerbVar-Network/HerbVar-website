@@ -24,13 +24,12 @@ knitr::include_graphics("photos/HerbVar_histograms.png")
 
 We are answering these questions, and a set of secondary questions, by collecting data on the distribution of plant--herbivore interactions in a standardized way from a broad range of plant species and ecosystems. We hope that by identifying the factors that correlate with variability in herbivory we will be able to provide the field with a new paradigm for describing plant--herbivore interactions and generate novel hypotheses about the ecology and evolution of plant--herbivore interactions.
 
-<br>
 
 Please see the [Participation page](participation.html) if you are interested in joining us.
 
 <br>
 
-```{r, echo=FALSE, out.width = "600px", fig.align='center'}
+```{r, echo=FALSE, out.width = "500px", fig.align='center'}
 knitr::include_graphics("photos/IMG_2201.jpg")
 ```
 
@@ -40,7 +39,7 @@ knitr::include_graphics("photos/IMG_2201.jpg")
 
 So far we have completed surveys on more than 125 plant species from more than 50 plant families.
 
-```{r, echo=FALSE, out.width = "600px", fig.align='center', fig.cap="Number of currently completed surveys per plant family. We have five focal plant families—Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae, in yellow—that we are sampling intensively to give us a detailed phylogenetic look at variation in herbivory."}
+```{r, echo=FALSE, out.width = "500px", fig.align='center', fig.cap="Number of currently completed surveys per plant family. We have five focal plant families—Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae, in yellow—that we are sampling intensively to give us a detailed phylogenetic look at variation in herbivory."}
 knitr::include_graphics("photos/Families.png")
 ```
 
