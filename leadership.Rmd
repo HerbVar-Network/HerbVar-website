@@ -4,11 +4,11 @@ output: html_document
 ---
 
 
-HerbVar was founded by the [Wetzel Lab at Michigan State University](https://WetzelLab.com) and is led by a Steering Group and multiple Subgroups that focus on specific topics.
+HerbVar was founded by the [Wetzel Lab at Michigan State University](https://WetzelLab.com) and is led by a Planning Group and multiple Subgroups that focus on specific topics.
 
 <br>
 
-## HerbVar Steering Group
+## HerbVar Planning Group
 <br>
 ```{r, echo=FALSE, out.width = "100px"}
 knitr::include_graphics("photos/people/wetzel.jpg")

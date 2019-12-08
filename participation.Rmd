@@ -7,4 +7,44 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Info on participation
+We are a collaborative and inclusive group of scientists and educators who are working together to advance our understanding of plant--herbivore interactions. Please contact us if you are interested in joining. You can email Will Wetzel (wcwetzel@msu.edu), Moria Robinson (robi1169@msu.edu), or any other member on the [Planning Group](leadership.html).
+
+Herbvar is open to professional biologists [or educators](#edu) who are collaborative, collegial, and willing to collect and contribute standardized data on the distribution of herbivory for new species and sites. The main way most collaborators participate and contribute is by using our protocols to survey herbivory. Collaborators are also welcome to join leadership Subgroups if they are motivated and willing to invest significant time into the development of HerbVar.
+
+Collaborators should
+
+* Be professional researchers with expertise in plant-herbivore interactions
+
+* Be inclusive, collegial, and collaborative in their interactions with other members of HerbVar
+
+* Fund research at their own sites
+
+* Contribute data gathered using the HerbVar protocol or a modified protocol approved by the Planning Group (see [HerbVar protocols](protocols.html))
+
+* Include species and site data for each survey
+
+Collaborators will be included as authors on HerbVar manuscripts if they
+
+* Contribute data from ideally 5 or more surveys, 3 at the very least
+
+* Contribute intellectually to at least one of the following:
+
+  + Development of questions and overall study design
+  
+  + Data analysis
+  
+  + Writing
+  
+  + Editing
+
+<br>
+
+### Participating as an educator {#edu}
+Some of our collaborators use **HerbVar as an experiential teaching tool**. They take students into the field; teach them about ecology, plant--animal interactions, scientific study-design, and other topics; train them in the relevant sampling methods; collect real data with the students; and contribute the data to the network. If you are an educator and are intersted in using HerbVar in your teaching, please [email us](leadership.html).
+
+```{r, echo=FALSE, out.width = "600px", fig.align='center'}
+knitr::include_graphics("photos/180.jpg")
+```
+
+
+
