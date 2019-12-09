@@ -3,6 +3,22 @@ title: "About"
 output: html_document
 ---
 
+```{r, echo=FALSE, include=FALSE}
+
+# Load packages for this page
+library(googlesheets4)
+library(shiny)
+library(ggplot2)
+library(viridis)
+library(knitr)
+
+# Load metadata on completed surveys
+sheets_deauth()
+d = read_sheet("https://docs.google.com/spreadsheets/d/1mNYnSTCs9WYy5SN2HF4VYep550Sccz9xU5o8JuYut-A/edit?usp=sharing",
+           sheet='Completed surveys')
+d = as.data.frame(d)
+```
+
 We are a global network of scientists working together to understand how plant--herbivore interactions vary across the planet, across ecosystems, and across the plant phylogeny.
 
 Many plant-insect biologists have noticed that the distribution of herbivore feeding damage among plants within a population is often highly skewed. It appears that most plants experience low levels of damage, while a small fraction of plants experience disproportionately high levels of damage. 
@@ -36,9 +52,26 @@ knitr::include_graphics("photos/IMG_2201.jpg")
 
 ##### Taxonomic progress
 
-So far we have completed surveys on more than 125 plant species from more than 50 plant families.
+So far we have completed surveys on more than 125 plant species from more than 50 plant families. These figures and tables update automatically as new data is entered into our database, so check back often!
 
-```{r, echo=FALSE, out.width = "500px", fig.align='center', fig.cap="Number of currently completed surveys per plant family. We have five focal plant families—Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae, in yellow—that we are sampling intensively to give us a detailed phylogenetic look at variation in herbivory."}
-knitr::include_graphics("photos/Families.png")
+```{r, echo=FALSE, fig.align='center', fig.width=5, fig.asp=1.5, fig.cap="Number of currently completed surveys per plant family. We have five focal plant families—Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae, in yellow—that we are sampling intensively to give us a detailed phylogenetic look at variation in herbivory."}
+focalFam = function(z) # define function to ID focal families in data frame
+	ifelse(z == 'Apocynaceae' | z == 'Asteraceae' | z == 'Fabaceae' | z == 'Solanaceae' |
+		z == 'Rubiaceae', TRUE, FALSE)
+d$focalFamily = focalFam(d$plantFamily)
+
+d.complete = d[!is.na(d$plantFamily),] # data.frame for complete entries
+
+ggplot(d.complete, aes(x=plantFamily, fill=focalFamily)) + geom_bar() + coord_flip() + 
+	ylab('No. surveys') + xlab('Plant family') + theme_classic() +
+	scale_fill_viridis(discrete=TRUE, alpha=0.8) + theme(legend.position = "none")
 ```
 
+
+<br>
+
+
+```{r, echo=FALSE}
+num.spp = table(d.complete$Genus_sp)
+kable(num.spp, col.names=c('Plant species', 'No. surveys'), caption = "Our current species list with the number of surveys completed for each species.", align=c('l','l'))
+```
