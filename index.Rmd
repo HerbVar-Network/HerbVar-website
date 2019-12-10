@@ -25,4 +25,4 @@ knitr::include_graphics("photos/Map_2019-12-01.png")
 
 ***
 
-_This website was written in R Markdown and is hosted via GitHub. The source code is available in a public [GitHub repository](https://github.com/wcwetzel/HerbVar.github.io)._
+<center> _This website was written in R and R Markdown and is hosted via GitHub. The source code is available in a public [GitHub repository](https://github.com/wcwetzel/HerbVar.github.io)._ </center>

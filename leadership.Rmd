@@ -4,7 +4,7 @@ output: html_document
 ---
 
 
-HerbVar was founded by the [Wetzel Lab at Michigan State University](https://WetzelLab.com) and is led by a Planning Group and multiple Subgroups that focus on specific topics.
+HerbVar was founded by the [Wetzel Lab at Michigan State University](https://WetzelLab.com) and is led by a Planning Group and multiple Subgroups that focus on specific topics. Please feel free to get in touch with members of the planning if you are interested in the project.
 
 <br>
 
@@ -83,6 +83,25 @@ Virginia Tech
 swhitehead (a) vt.edu • [website](http://www.speciesinteractions.com/)  
 <br>
 
+## HerbVar Coordination Staff
+
+**Dr. Will Wetzel**, lead PI  
+Department of Entomology  
+Ecology, Evolutionary Biology, & Behavior Program  
+Michigan State University  
+wcwetzel (a) msu.edu  
+
+**Dr. Moria Robinson**, Postdoc coordinator  
+Department of Entomology  
+Ecology, Evolutionary Biology, & Behavior Program  
+Michigan State University  
+robi1169 (a) msu.edu  
+
+**Luke Zehr**, Research scientist  
+Department of Entomology  
+Michigan State University  
+zehrluke (a) msu.edu  
+<br>
 
 ## Damage Estimation Subgroup
 
