@@ -3,7 +3,7 @@ title: "Leadership"
 output: html_document
 ---
 
-HerbVar was founded by the [Wetzel Lab at Michigan State University](https://WetzelLab.com) and is led by a Planning Group and multiple Subgroups that focus on specific topics. Please feel free to email members of the Planning Group or Coordination Staff if you are interested in the project.
+HerbVar was founded by the [Wetzel Lab at Michigan State University](https://WetzelLab.com), It is led by a Planning Group and multiple Subgroups that focus on specific topics. Please feel free to email members of the Planning Group or Coordination Staff if you are interested in the project.
 
 <br>
 
@@ -38,7 +38,7 @@ knitr::include_graphics("photos/people/dyer.jpg")
 **Dr. Lee Dyer**  
 Department of Biology  
 Ecology, Evolution and Conservation Program  
-Univesity of Nevada, Reno  
+University of Nevada, Reno  
 ldyer (a) unr.edu • [website](https://www.unr.edu/biology/people/lee-dyer)  
 <br>
 
@@ -168,12 +168,12 @@ Michigan State University
 **Dr. Lee Dyer**  
 Department of Biology  
 Ecology, Evolution and Conservation Program  
-Univesity of Nevada, Reno  
+University of Nevada, Reno  
 
 **Danielle Salcido**  
 Department of Biology  
 Ecology, Evolution and Conservation Program  
-Univesity of Nevada, Reno  
+University of Nevada, Reno  
 <br>
 
 
@@ -184,7 +184,7 @@ Bioagricultural Sciences & Pest Management
 Colorado State University  
 
 **Dr. Ian Pearse**  
-Fort Conllins Science Center  
+Fort Collins Science Center  
 US Geological Survey  
 <br>
 
