@@ -18,7 +18,7 @@ d = read_sheet("https://docs.google.com/spreadsheets/d/1mNYnSTCs9WYy5SN2HF4VYep5
 d = data.frame(d)
 ```
 
-We are a global network of scientists working together to understand how plant--herbivore interactions vary across the planet, across ecosystems, and across the plant phylogeny. A major focus of our project is the variability itself. **We aim to understand what leads to some plant species to have high interaction variability and others to have lower variability.**
+We are a global network of scientists working together to understand how plant--herbivore interactions vary across the planet, across ecosystems, and across the plant phylogeny. A major focus of our project is the variability itself. **We aim to understand what leads some plant species to have high interaction variability and others to have lower variability.**
 
 ```{r, echo=FALSE, out.width = "500px", fig.align='center'}
 knitr::include_graphics("photos/IMG_2201.jpg")
