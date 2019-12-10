@@ -3,6 +3,11 @@ title: "Collaborator directory"
 output: html_document
 ---
 
+
+```{r, echo=FALSE, out.width = "500px", fig.align='center'}
+knitr::include_graphics("photos/IMG_2382.jpg")
+```
+
 Name                     | Institution
 -------------------------|-----------------
 Luis	Abdala Roberts | 	Universidad Autonoma de Yucatan
@@ -117,7 +122,3 @@ Kim	Valenta	 | 	University of Florida
 Luke	Zehr	 | 	Mich State
 Zhiwei	Zhong	 | 	Northeast Normal University, China
 
-
-```{r, echo=FALSE, out.width = "600px", fig.align='center'}
-knitr::include_graphics("photos/IMG_2382.jpg")
-```

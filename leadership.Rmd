@@ -3,13 +3,12 @@ title: "Leadership"
 output: html_document
 ---
 
-
-HerbVar was founded by the [Wetzel Lab at Michigan State University](https://WetzelLab.com) and is led by a Planning Group and multiple Subgroups that focus on specific topics. Please feel free to get in touch with members of the Planning Group or Coordination Staff if you are interested in the project.
+HerbVar was founded by the [Wetzel Lab at Michigan State University](https://WetzelLab.com) and is led by a Planning Group and multiple Subgroups that focus on specific topics. Please feel free to email members of the Planning Group or Coordination Staff if you are interested in the project.
 
 <br>
 
 ## HerbVar Planning Group
-<br>
+
 ```{r, echo=FALSE, out.width = "100px"}
 knitr::include_graphics("photos/people/wetzel.jpg")
 ``` 
@@ -19,8 +18,8 @@ Department of Entomology
 Ecology, Evolutionary Biology, & Behavior Program  
 Michigan State University  
 wcwetzel (a) msu.edu • [website](https://WetzelLab.com)  
- <br>
- 
+<br>
+
 ```{r, echo=FALSE, out.width = "100px"}
 knitr::include_graphics("photos/people/robinson.jpeg")
 ```
@@ -82,6 +81,7 @@ Department of Biological Sciences
 Virginia Tech  
 swhitehead (a) vt.edu • [website](http://www.speciesinteractions.com/)  
 <br>
+
 
 ## HerbVar Coordination Staff
 
@@ -211,5 +211,4 @@ University of Bordeaux
 Department of Entomology  
 University of Wisconsin, Madison  
 <br>
-
 

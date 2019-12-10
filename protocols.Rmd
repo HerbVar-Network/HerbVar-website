@@ -18,9 +18,8 @@ Below are pdfs of our main sampling protocols. Collaborators should have access 
 
 [Cacti and Other Succulents Protocol](protocols/HerbVar Cactus and Succulent Protocol.pdf). This document discusses issues related to quantifying herbivory on cacti and other succulents and outlines a protocol. 
 
-[Insect Sampling Protocol](protocols/HerbVar Herbivore sampling_ protocol.pdf). This document discusses *if and how* to sample insects.
+[Insect Sampling Protocol](protocols/HerbVar Herbivore sampling_ protocol.pdf). This document discusses *if and how* to sample insects. All surveys should note internal-feeding herbivores (e.g., gallers and miners), but only some should take the extra time to sample external herbivores.
 
-<br>
 
 ```{r, echo=FALSE, out.width = "600px", fig.align='center'}
 knitr::include_graphics("photos/monarch.jpg")
