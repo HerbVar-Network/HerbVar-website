@@ -7,9 +7,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-We are a collaborative and inclusive group of scientists and educators who are working together to advance our understanding of plant--herbivore interactions. Please contact us if you are interested in joining. You can email Will Wetzel (wcwetzel@msu.edu), Moria Robinson (robi1169@msu.edu), or any other member on the [Planning Group](leadership.html).
+We are a collaborative and inclusive group of scientists and educators who are working together to advance our understanding of plant--herbivore interactions. Please contact us if you are interested in joining. You can email Will Wetzel (wcwetzel@msu.edu), Moria Robinson (robi1169@msu.edu), or any other member of the [Planning Group](leadership.html).
 
-Herbvar is open to professional biologists [or educators](#edu) who are collaborative, collegial, and willing to collect and contribute standardized data on the distribution of herbivory for new species and sites. The main way most collaborators participate and contribute is by using our protocols to survey herbivory. Collaborators are also welcome to join leadership Subgroups if they are motivated and willing to invest significant time into the development of HerbVar.
+Herbvar is open to professional biologists [or educators](#edu) who are collaborative, collegial, and willing to collect and contribute standardized data on the distribution of herbivory. We are especially interested in gaining data for new species and sites, as well as for focal plant families and species (see the [HerbVar Species Selection Plan](protocols/HerbVar Species Selection Plan.pdf)). Collaborators can participate by using our protocols to survey herbivory. Collaborators are also welcome to join leadership Subgroups if they are motivated and willing to invest significant time into the development of HerbVar.
 
 Collaborators should
 
@@ -17,11 +17,10 @@ Collaborators should
 * Be inclusive, collegial, and collaborative in their interactions with other members of HerbVar
 * Fund research at their own sites
 * Contribute data gathered using the HerbVar protocol or a modified protocol approved by the Planning Group (see [HerbVar protocols](protocols.html))
-* Include species and site data for each survey
 
 Collaborators will be included as authors on HerbVar manuscripts if they
 
-* Contribute data from ideally 5 or more surveys, 3 at the very least
+* Contribute data from 5 or more surveys (ideally); 3 at the very least
 * Contribute intellectually to at least one of the following:
   + Development of questions and overall study design
   + Data analysis
@@ -35,7 +34,7 @@ knitr::include_graphics("photos/180.jpg")
 
 
 ## Participating as an educator {#edu}
-Some of our collaborators use **HerbVar as an experiential learning tool**. They take students into the field; teach them about ecology, plant--animal interactions, scientific study-design, and other topics; train them in the relevant sampling methods; collect real data with the students; and contribute the data to the network. If you are an educator and are intersted in using HerbVar in your teaching and becoming a collaborator, please [email us](leadership.html).
+Some of our collaborators use **HerbVar as an experiential learning tool**. They take students into the field; teach them about ecology, plant--animal interactions, scientific study-design, and other topics; train them in the relevant sampling methods; collect real data with the students; and contribute the data to the network. If you are an educator and are intersted in using HerbVar in your teaching and/or becoming a collaborator, please [email us](leadership.html).
 
 
 

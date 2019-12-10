@@ -12,6 +12,8 @@ Below are pdfs of our main sampling protocols. Collaborators should have access 
 
 [HerbVar Primary Protocol](protocols/Primary protocol for herbivory variability network.pdf). This is the primary protocol for HerbVar surveys. We designed this to work for most plant species and sites. If it will not work for your species or site, then please consider one of our alternative protocols or get in touch with someone on the Planning Group.  
 
+[HerbVar Species Selection Plan](protocols/HerbVar Species Selection Plan.pdf). This describes our approach to select plant species and/or sites to survey.
+
 [Damage Estimation Guidelines](protocols/HerbVar Damage Estimation Guidelines.pdf). This is a detailed walk through the process of estimating herbivore damage on leaves and whole plants, including tips for different types of leaves and damage.
 
 [Reproductive Damage Protocol](protocols/HerbVar Reproductive Damage Protocol.pdf). If your plants have reproductive tissues (flowers, fruits, seeds), please follow this protocol to quantify damage to these tissues.
@@ -20,7 +22,7 @@ Below are pdfs of our main sampling protocols. Collaborators should have access 
 
 [Cacti and Other Succulents Protocol](protocols/HerbVar Cactus and Succulent Protocol.pdf). This document discusses issues related to quantifying herbivory on cacti and other succulents and outlines a protocol. 
 
-[Insect Sampling Protocol](protocols/HerbVar Herbivore sampling_ protocol.pdf). This document discusses *if and how* to sample insects. All surveys should note internal-feeding herbivores (e.g., gallers and miners), but only some should take the extra time to sample external herbivores.
+[Insect Sampling Protocol](protocols/HerbVar Herbivore sampling_ protocol.pdf). This document discusses *if and how* to sample insects. All surveys should note internally-feeding herbivores (e.g., gallers and miners), but only some should take the extra time to sample external herbivores.
 
 
 ```{r, echo=FALSE, out.width = "600px", fig.align='center'}
