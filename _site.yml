@@ -9,10 +9,12 @@ navbar:
       href: about.html
     - text: "Leadership"
       href: leadership.html
-    - text: "Collaborator directory"
+    - text: "Collaborators"
       href: collaborators.html
     - text: "Protocols"
       href: protocols.html
+    - text: "Sampling status"
+      href: status.html
     - text: "Participation"
       href: participation.html
 
