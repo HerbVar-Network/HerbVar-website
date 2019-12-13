@@ -3,7 +3,7 @@ title: "Leadership"
 output: html_document
 ---
 
-HerbVar was founded by the [Wetzel Lab at Michigan State University](https://WetzelLab.com), It is led by a Planning Group and multiple Subgroups that focus on specific topics. Please feel free to email members of the Planning Group or Coordination Staff if you are interested in the project.
+HerbVar was founded by the [Wetzel Lab at Michigan State University](https://WetzelLab.com). It is led by a Planning Group and multiple Subgroups that focus on specific topics. Please feel free to email members of the Planning Group or Coordination Staff if you are interested in the project.
 
 <br>
 

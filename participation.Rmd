@@ -18,9 +18,12 @@ Collaborators should
 * Fund research at their own sites
 * Contribute data gathered using the HerbVar protocol or a modified protocol approved by the Planning Group (see [HerbVar protocols](protocols.html))
 
-Collaborators will be included as authors on HerbVar manuscripts if they
+Collaborators will be included as co-authors on HerbVar manuscripts if they
 
-* Contribute data from 5 or more surveys (ideally); 3 at the very least
+* Contribute data from 5 or more surveys (ideally); 3 at the very least. We suggest these include:
+  + 1 new plant family or ecosystem
+  + 1 new species from one of our focal families (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae)
+  + 1 survey from a focal species
 * Contribute intellectually to at least one of the following:
   + Development of questions and overall study design
   + Data analysis
