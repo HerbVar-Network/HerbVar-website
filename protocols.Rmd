@@ -16,7 +16,7 @@ Below are pdfs of our main sampling protocols. Collaborators should have access 
 
 [Damage Estimation Guidelines](protocols/HerbVar Damage Estimation Guidelines.pdf). This is a detailed walk through the process of estimating herbivore damage on leaves and whole plants, including tips for different types of leaves and damage.  
 
-[Illustrated guide to percent leaf damage](/protocols/Quercus robur digital leaves.pdf). This is a visual guide to what different levels of percent damage look like on a leaf. Currently just for one leaf shape, but more are on the way.
+[Illustrated guide to percent leaf damage](/protocols/Quercus robur digital leaves.pdf). This is a visual guide to what different levels of percent damage look like on a leaf. We suggest printing this out and taking it to the field with you to aid in estimation of percent herbivory. Currently, it has just one leaf shape but more are on the way.
 
 [Reproductive Damage Protocol](protocols/HerbVar Reproductive Damage Protocol.pdf). If your plants have reproductive tissues (flowers, fruits, seeds), please follow this protocol to quantify damage to these tissues.
 
@@ -26,6 +26,7 @@ Below are pdfs of our main sampling protocols. Collaborators should have access 
 
 [Insect Sampling Protocol](protocols/HerbVar Herbivore sampling_ protocol.pdf). This document discusses *if and how* to sample insects. All surveys should note internally-feeding herbivores (e.g., gallers and miners), but only some should take the extra time to sample external herbivores.
 
+[Cheatsheet to Insect Mines and Galls](protocols/Cheatsheet_ mines and galls.pdf). This is a brief guide to what insect mines and galls can look like.
 
 ```{r, echo=FALSE, out.width = "600px", fig.align='center'}
 knitr::include_graphics("photos/monarch.jpg")
