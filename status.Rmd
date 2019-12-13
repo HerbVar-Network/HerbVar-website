@@ -32,7 +32,7 @@ dfs = data.frame(dfs)
 
 ```
 
-As of November 2019, the Herbivory Variability Network has completed surveys on > 130 plant species from > 50 plant families. These figures and tables update as new data are entered into our database, so check back often! 
+As of November 2019, the Herbivory Variability Network has completed >150 surveys on > 130 plant species from > 50 plant families. These figures and tables update as new data are entered into our database, so check back often! 
 
 We have a three-scaled sampling approach:
 
