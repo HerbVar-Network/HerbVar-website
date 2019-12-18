@@ -30,6 +30,7 @@ Collaborators will be included as co-authors on HerbVar manuscripts if they
   + Writing
   + Editing
 
+For more information on participation and how our network runs, please see the [HerbVar Document of Collaboration](/protocols/HerbVar Document of Collaboration.pdf).
 
 ```{r, echo=FALSE, out.width = "500px", fig.align='center'}
 knitr::include_graphics("photos/180.jpg")
