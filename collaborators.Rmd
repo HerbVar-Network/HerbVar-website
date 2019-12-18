@@ -14,7 +14,7 @@ coll = data.frame(coll)
 
 
 ```{r, echo=FALSE, out.width = "500px", fig.align='center'}
-knitr::include_graphics("photos/IMG_2382.jpg")
+knitr::include_graphics("photos/HerbVar_Hahn_MT_PhotoMChiuffo.jpg")
 ```
 
 
@@ -29,3 +29,7 @@ ctab$ap[is.na(ctab$ap)] = ''
 kable(ctab, col.names=c('Site PI', 'Institution', 'Additional Participants'), align=c('l','l','l'))
 ```
 
+
+```{r, echo=FALSE, out.width = "500px", fig.align='center'}
+knitr::include_graphics("photos/IMG_2382.jpg")
+```
