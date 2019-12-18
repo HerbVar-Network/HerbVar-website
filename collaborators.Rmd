@@ -26,6 +26,6 @@ ctab = data.frame(
 )
 ctab$ap = as.character(ctab$ap)
 ctab$ap[is.na(ctab$ap)] = ''
-kable(ctab, col.names=c('Name', 'Institution', 'Additional Participants'), align=c('l','l','l'))
+kable(ctab, col.names=c('Site PI', 'Institution', 'Additional Participants'), align=c('l','l','l'))
 ```
 
