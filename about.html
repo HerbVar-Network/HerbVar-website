@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -69,7 +69,9 @@ h6 {
 </style>
 
 
+</head>
 
+<body>
 
 <style type = "text/css">
 .main-container {
@@ -83,6 +85,7 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -92,9 +95,6 @@ img {
 }
 button.code-folding-btn:focus {
   outline: none;
-}
-summary {
-  display: list-item;
 }
 </style>
 
@@ -110,6 +110,7 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
+
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -129,43 +130,6 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -187,74 +151,19 @@ $(document).ready(function () {
 });
 </script>
 
+
+<div class="container-fluid main-container">
+
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
 
 <!-- code folding -->
 
 
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
 
 
 
@@ -281,10 +190,13 @@ $(document).ready(function () {
   <a href="leadership.html">Leadership</a>
 </li>
 <li>
-  <a href="collaborators.html">Collaborator directory</a>
+  <a href="collaborators.html">Collaborators</a>
 </li>
 <li>
   <a href="protocols.html">Protocols</a>
+</li>
+<li>
+  <a href="status.html">Sampling status</a>
 </li>
 <li>
   <a href="participation.html">Participation</a>
@@ -306,38 +218,27 @@ $(document).ready(function () {
 </div>
 
 
-<p>We are a global network of scientists working together to understand how plant–herbivore interactions vary across the planet, across ecosystems, and across the plant phylogeny.</p>
-<p>Many plant-insect biologists have noticed that the distribution of herbivore feeding damage among plants within a population is often highly skewed. It appears that most plants experience low levels of damage, while a small fraction of plants experience disproportionately high levels of damage.</p>
-<p>This pattern may be a fundamental feature of interactions between plants and insects, and theory suggests it could have dramatic consequences for ecology and evolution, as well as important implications for pest management in agricultural ecosystems. Despite the importance of these patterns, very few studies have quantified them, limiting our basic understanding of how plants and insect herbivores interact. The goal of HerbVar is to quantify patterns of plant–herbivore interactions around the world.</p>
+<p>We are a global network of scientists working together to understand how plant–herbivore interactions vary across the planet, across ecosystems, and across the plant phylogeny. A major focus of our project is the variability itself. <strong>We aim to understand what leads some plant species to have high variability and others to have lower variability in their interactions with herbivores.</strong></p>
+<p><img src="photos/IMG_2201.jpg" width="500px" style="display: block; margin: auto;" /></p>
+<p>A hallmark of plant-herbivore interactions is that they are tremendously variable across time and space, and at all levels of biological organization (among species, among populations, among individuals, within individuals). Ecologists and evolutionary biologists have long sought to understand this variation, developing a multitude of hypotheses to explain and predict this common feature in nature; however, a unifying consensus has yet to emerge. There are numerous reasons for this lack of generality: approaches to quantify plant-herbivore interactions often vary, making results difficult to compare; data are collected for single plant or insect species, hindering generality across plant groups; and the context-dependence of interactions further obscures any common trends at broader scales. In addition, most studies distill the herbivory they observe into a single mean value, which ignores how the damage is distributed. The shape of this distribution is an important aspect plant-herbivore interactions, hinting at mechanisms shaping herbivory as well as the consequences of this herbivory for both plants and insects.</p>
+<p>When the full distribution of herbivore feeding damage is reported, most published studies and personal observations describe a highly skewed shape, such that most plants experience low levels of damage, and a small fraction of plants experience disproportionately high levels of damage.</p>
 <div class="figure" style="text-align: center">
 <img src="photos/HerbVar_histograms.png" alt="The distribution of herbivory among plants within populations for nine plant species. Each histrogram shows the number of plant individuals with different levels of percent tissue damaged by herbivores." width="600px" />
 <p class="caption">
 The distribution of herbivory among plants within populations for nine plant species. Each histrogram shows the number of plant individuals with different levels of percent tissue damaged by herbivores.
 </p>
 </div>
-<p><br></p>
-<div id="primary-herbvar-research-questions" class="section level5">
-<h5>Primary HerbVar research questions:</h5>
+<p>Theory suggests that variability and skew in species interactions can have dramatic ecological and evolutionary consequences. For example, variability among plants can lead overall herbivore population size to be greater or less than expected based on average plant quality, and asymmetric fitness surfaces can lead to over-investment in defensive traits. Surprisingly, despite the theoretical importance and potential generality of variability in herbivory, it has received little empirical attention, limiting our fundamental understanding of how plants and herbivores interact.</p>
+<p><strong>We have three initial research questions:</strong></p>
 <ul>
-<li><p>Is high heterogeneity a ubiquitous feature of plant–herbivore interactions?</p></li>
-<li><p>What biotic and abiotic factors are correlated with heterogeneity in plant–herbivore interactions?</p></li>
-<li><p>What types of plant species (herbs, shrubs, trees) and ecosystems (tropical, temperate, desert) exhibit higher or lower than average heterogeneity?</p></li>
+<li>Is high variability (or skewness) a ubiquitous feature of plant–herbivore interactions?</li>
+<li>What types of plants and ecosystems exhibit higher or lower variability?</li>
+<li>What biotic and abiotic factors correlate with the distribution of herbivore damage?</li>
 </ul>
-<p>We are answering these questions, and a set of secondary questions, by collecting data on the distribution of plant–herbivore interactions in a standardized way from a broad range of plant species and ecosystems. We hope that by identifying the factors that correlate with variability in herbivory we will be able to provide the field with a new paradigm for describing plant–herbivore interactions and generate novel hypotheses about the ecology and evolution of plant–herbivore interactions.</p>
+<p>We are answering these questions by collecting data on the distribution of herbivory on plants. Our work addresses prior limitations by collecting data via standardized protocols, and incorporating a broad range of plant species and ecosystems. By documenting broad patterns in variability (or skewness) in herbivory, and identifying the factors that correlate with the shape of this distribution, we hope to provide the field with a new paradigm for describing plant–herbivore interactions and generate novel hypotheses about their ecology and evolution.</p>
 <p>Please see the <a href="participation.html">Participation page</a> if you are interested in joining us.</p>
-<p><img src="photos/IMG_2201.jpg" width="500px" style="display: block; margin: auto;" /></p>
 <p><br></p>
-</div>
-<div id="taxonomic-progress" class="section level5">
-<h5>Taxonomic progress</h5>
-<p>So far we have completed surveys on more than 125 plant species from more than 50 plant families.</p>
-<div class="figure" style="text-align: center">
-<img src="photos/Families.png" alt="Number of currently completed surveys per plant family. We have five focal plant families—Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae, in yellow—that we are sampling intensively to give us a detailed phylogenetic look at variation in herbivory." width="500px" />
-<p class="caption">
-Number of currently completed surveys per plant family. We have five focal plant families—Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae, in yellow—that we are sampling intensively to give us a detailed phylogenetic look at variation in herbivory.
-</p>
-</div>
-</div>
+<p><img src="photos/IMG_0019.jpg" width="500px" style="display: block; margin: auto;" /></p>
 
 
 
@@ -356,23 +257,6 @@ $(document).ready(function () {
 
 
 </script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

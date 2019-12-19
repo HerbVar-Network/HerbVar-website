@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -69,7 +69,9 @@ h6 {
 </style>
 
 
+</head>
 
+<body>
 
 <style type = "text/css">
 .main-container {
@@ -83,6 +85,7 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -92,9 +95,6 @@ img {
 }
 button.code-folding-btn:focus {
   outline: none;
-}
-summary {
-  display: list-item;
 }
 </style>
 
@@ -110,6 +110,7 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
+
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -129,43 +130,6 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -187,74 +151,19 @@ $(document).ready(function () {
 });
 </script>
 
+
+<div class="container-fluid main-container">
+
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
 
 <!-- code folding -->
 
 
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
 
 
 
@@ -281,10 +190,13 @@ $(document).ready(function () {
   <a href="leadership.html">Leadership</a>
 </li>
 <li>
-  <a href="collaborators.html">Collaborator directory</a>
+  <a href="collaborators.html">Collaborators</a>
 </li>
 <li>
   <a href="protocols.html">Protocols</a>
+</li>
+<li>
+  <a href="status.html">Sampling status</a>
 </li>
 <li>
   <a href="participation.html">Participation</a>
@@ -306,16 +218,17 @@ $(document).ready(function () {
 </div>
 
 
-<p>HerbVar was founded by the <a href="https://WetzelLab.com">Wetzel Lab at Michigan State University</a> and is led by a Planning Group and multiple Subgroups that focus on specific topics.</p>
+<p>HerbVar was founded by the <a href="https://WetzelLab.com">Wetzel Lab at Michigan State University</a>. It is led by a Planning Group and multiple Subgroups that focus on specific topics. Please feel free to email members of the Planning Group or Coordination Staff if you are interested in the project. For information on how our network runs, please see the <a href="/protocols/HerbVar%20Document%20of%20Collaboration.pdf">HerbVar Document of Collaboration</a>.</p>
 <p><br></p>
 <div id="herbvar-planning-group" class="section level2">
 <h2>HerbVar Planning Group</h2>
-<p><br> <img src="photos/people/wetzel.jpg" width="100px" /></p>
+<p><img src="photos/people/wetzel.jpg" width="100px" /></p>
 <p><strong>Dr. Will Wetzel</strong><br />
 Department of Entomology<br />
 Ecology, Evolutionary Biology, &amp; Behavior Program<br />
 Michigan State University<br />
 wcwetzel (a) msu.edu • <a href="https://WetzelLab.com">website</a><br />
+<em>(Lead PI, Asteraceae Coordinator)</em><br />
 <br></p>
 <p><img src="photos/people/robinson.jpeg" width="100px" /></p>
 <p><strong>Dr. Moria Robinson</strong><br />
@@ -323,19 +236,22 @@ Department of Entomology<br />
 Ecology, Evolutionary Biology, &amp; Behavior Program<br />
 Michigan State University<br />
 robi1169 (a) msu.edu • <a href="https://www.moriarobinson.com/">website</a><br />
+<em>(Postdoc Coordinator, Rubiaceae and Fabaceae Coordinator)</em><br />
 <br></p>
 <p><img src="photos/people/dyer.jpg" width="100px" /></p>
 <p><strong>Dr. Lee Dyer</strong><br />
 Department of Biology<br />
 Ecology, Evolution and Conservation Program<br />
-Univesity of Nevada, Reno<br />
+University of Nevada, Reno<br />
 ldyer (a) unr.edu • <a href="https://www.unr.edu/biology/people/lee-dyer">website</a><br />
+<em>(Ecosystems and Biomes Coordinator)</em><br />
 <br></p>
 <p><img src="photos/people/hahn.jpg" width="100px" /></p>
 <p><strong>Dr. Phil Hahn</strong><br />
 Department of Entomology &amp; Nematology<br />
 University of Florida<br />
 phil.hahn (a) mso.umt.edu • <a href="https://plant-herbivore-interactions.net/">website</a><br />
+<em>(Apocynaceae and Solanaceae Coordinator)</em><br />
 <br></p>
 <p><img src="photos/people/inouye.jpeg" width="100px" /></p>
 <p><strong>Dr. Brian Inouye</strong><br />
@@ -348,12 +264,32 @@ bdinouye (a) bio.fsu.edu • <a href="https://www.bio.fsu.edu/faculty.php?facult
 Department of Biological Science<br />
 Florida State University<br />
 nunderwood (a) bio.fsu.edu • <a href="https://www.bio.fsu.edu/~nunderwood/homepage/">website</a><br />
+<em>(Solanaceae Coordinator)</em><br />
 <br></p>
 <p><img src="photos/people/whitehead.jpg" width="100px" /></p>
 <p><strong>Dr. Susan Whitehead</strong><br />
 Department of Biological Sciences<br />
 Virginia Tech<br />
 swhitehead (a) vt.edu • <a href="http://www.speciesinteractions.com/">website</a><br />
+<em>(Focal Species Coordinator)</em><br />
+<br></p>
+</div>
+<div id="herbvar-coordination-staff" class="section level2">
+<h2>HerbVar Coordination Staff</h2>
+<p><strong>Dr. Will Wetzel</strong>, Lead PI<br />
+Department of Entomology<br />
+Ecology, Evolutionary Biology, &amp; Behavior Program<br />
+Michigan State University<br />
+wcwetzel (a) msu.edu</p>
+<p><strong>Dr. Moria Robinson</strong>, Postdoc Coordinator<br />
+Department of Entomology<br />
+Ecology, Evolutionary Biology, &amp; Behavior Program<br />
+Michigan State University<br />
+robi1169 (a) msu.edu</p>
+<p><strong>Luke Zehr</strong>, Research Scientist<br />
+Department of Entomology<br />
+Michigan State University<br />
+zehrluke (a) msu.edu<br />
 <br></p>
 </div>
 <div id="damage-estimation-subgroup" class="section level2">
@@ -410,11 +346,11 @@ Michigan State University<br />
 <p><strong>Dr. Lee Dyer</strong><br />
 Department of Biology<br />
 Ecology, Evolution and Conservation Program<br />
-Univesity of Nevada, Reno</p>
+University of Nevada, Reno</p>
 <p><strong>Danielle Salcido</strong><br />
 Department of Biology<br />
 Ecology, Evolution and Conservation Program<br />
-Univesity of Nevada, Reno<br />
+University of Nevada, Reno<br />
 <br></p>
 </div>
 <div id="predictors-of-variability-subgroup" class="section level2">
@@ -423,7 +359,7 @@ Univesity of Nevada, Reno<br />
 Bioagricultural Sciences &amp; Pest Management<br />
 Colorado State University</p>
 <p><strong>Dr. Ian Pearse</strong><br />
-Fort Conllins Science Center<br />
+Fort Collins Science Center<br />
 US Geological Survey<br />
 <br></p>
 </div>
@@ -465,23 +401,6 @@ $(document).ready(function () {
 
 
 </script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

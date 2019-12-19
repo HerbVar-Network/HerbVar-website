@@ -3,42 +3,35 @@ title: "About"
 output: html_document
 ---
 
-We are a global network of scientists working together to understand how plant--herbivore interactions vary across the planet, across ecosystems, and across the plant phylogeny.
-
-Many plant-insect biologists have noticed that the distribution of herbivore feeding damage among plants within a population is often highly skewed. It appears that most plants experience low levels of damage, while a small fraction of plants experience disproportionately high levels of damage. 
-
-This pattern may be a fundamental feature of interactions between plants and insects, and theory suggests it could have dramatic consequences for ecology and evolution, as well as important implications for pest management in agricultural ecosystems. Despite the importance of these patterns, very few studies have quantified them, limiting our basic understanding of how plants and insect herbivores interact. The goal of HerbVar is to quantify patterns of plant--herbivore interactions around the world.
-
-```{r, echo=FALSE, out.width = "600px", fig.align='center', fig.cap="The distribution of herbivory among plants within populations for nine plant species. Each histrogram shows the number of plant individuals with different levels of percent tissue damaged by herbivores."}
-knitr::include_graphics("photos/HerbVar_histograms.png")
-```
-
-<br>
-
-##### Primary HerbVar research questions:
-* Is high heterogeneity a ubiquitous feature of plant--herbivore interactions?
-
-* What biotic and abiotic factors are correlated with heterogeneity in plant--herbivore interactions?
-
-* What types of plant species (herbs, shrubs, trees) and ecosystems (tropical, temperate, desert) exhibit higher or lower than average heterogeneity?
-
-We are answering these questions, and a set of secondary questions, by collecting data on the distribution of plant--herbivore interactions in a standardized way from a broad range of plant species and ecosystems. We hope that by identifying the factors that correlate with variability in herbivory we will be able to provide the field with a new paradigm for describing plant--herbivore interactions and generate novel hypotheses about the ecology and evolution of plant--herbivore interactions.
-
-
-Please see the [Participation page](participation.html) if you are interested in joining us.
-
+We are a global network of scientists working together to understand how plant--herbivore interactions vary across the planet, across ecosystems, and across the plant phylogeny. A major focus of our project is the variability itself. **We aim to understand what leads some plant species to have high variability and others to have lower variability in their interactions with herbivores.**
 
 ```{r, echo=FALSE, out.width = "500px", fig.align='center'}
 knitr::include_graphics("photos/IMG_2201.jpg")
 ```
 
-<br>
+A hallmark of plant-herbivore interactions is that they are tremendously variable across time and space, and at all levels of biological organization (among species, among populations, among individuals, within individuals). Ecologists and evolutionary biologists have long sought to understand this variation, developing a multitude of hypotheses to explain and predict this common feature in nature; however, a unifying consensus has yet to emerge. There are numerous reasons for this lack of generality: approaches to quantify plant-herbivore interactions often vary, making results difficult to compare; data are collected for single plant or insect species, hindering generality across plant groups; and the context-dependence of interactions further obscures any common trends at broader scales. In addition, most studies distill the herbivory they observe into a single mean value, which ignores how the damage is distributed. The shape of this distribution is an important aspect plant-herbivore interactions, hinting at mechanisms shaping herbivory as well as the consequences of this herbivory for both plants and insects. 
 
-##### Taxonomic progress
+When the full distribution of herbivore feeding damage is reported, most published studies and personal observations describe a highly skewed shape, such that most plants experience low levels of damage, and a small fraction of plants experience disproportionately high levels of damage.
 
-So far we have completed surveys on more than 125 plant species from more than 50 plant families.
-
-```{r, echo=FALSE, out.width = "500px", fig.align='center', fig.cap="Number of currently completed surveys per plant family. We have five focal plant families—Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae, in yellow—that we are sampling intensively to give us a detailed phylogenetic look at variation in herbivory."}
-knitr::include_graphics("photos/Families.png")
+```{r, echo=FALSE, out.width = "600px", fig.align='center', fig.cap="The distribution of herbivory among plants within populations for nine plant species. Each histrogram shows the number of plant individuals with different levels of percent tissue damaged by herbivores."}
+knitr::include_graphics("photos/HerbVar_histograms.png")
 ```
 
+Theory suggests that variability and skew in species interactions can have dramatic ecological and evolutionary consequences. For example, variability among plants can lead overall herbivore population size to be greater or less than expected based on average plant quality, and asymmetric fitness surfaces can lead to over-investment in defensive traits. Surprisingly, despite the theoretical importance and potential generality of variability in herbivory, it has received little empirical attention, limiting our fundamental understanding of how plants and herbivores interact.
+
+**We have three initial research questions:**
+
+* Is high variability (or skewness) a ubiquitous feature of plant--herbivore interactions?
+* What types of plants and ecosystems exhibit higher or lower variability?
+* What biotic and abiotic factors correlate with the distribution of herbivore damage?
+
+We are answering these questions by collecting data on the distribution of herbivory on plants. Our work addresses prior limitations by collecting data via standardized protocols, and incorporating a broad range of plant species and ecosystems. By documenting broad patterns in variability (or skewness) in herbivory, and identifying the factors that correlate with the shape of this distribution, we hope to provide the field with a new paradigm for describing plant--herbivore interactions and generate novel hypotheses about their ecology and evolution.
+
+
+Please see the [Participation page](participation.html) if you are interested in joining us.
+
+<br>
+
+```{r, echo=FALSE, out.width = "500px", fig.align='center'}
+knitr::include_graphics("photos/IMG_0019.jpg")
+```

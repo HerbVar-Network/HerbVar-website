@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Sampling status</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">The Herbivory Variability Network</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="about.html">About</a>
+</li>
+<li>
+  <a href="leadership.html">Leadership</a>
+</li>
+<li>
+  <a href="collaborators.html">Collaborators</a>
+</li>
+<li>
+  <a href="protocols.html">Protocols</a>
+</li>
+<li>
+  <a href="status.html">Sampling status</a>
+</li>
+<li>
+  <a href="participation.html">Participation</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Sampling status</h1>
+
+</div>
+
+
+<p>As of November 2019, the Herbivory Variability Network has completed &gt;150 surveys on &gt; 130 plant species from &gt; 50 plant families. These figures and tables update as new data are entered into our database, so check back often!</p>
+<p>We have a three-scaled sampling approach:</p>
+<ol style="list-style-type: decimal">
+<li>Sampling one plant species from as many plant families as possible</li>
+<li>Sampling as many species (and tribes and genera) as possible from five focal families (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae)</li>
+<li>Sampling as many sites as possible for two focal species (<em>Taraxacum officinale</em> and <em>Plantago major</em>).</li>
+</ol>
+<p>The goal of this stratified sampling plan is to avoid potential biases in geographic and/or taxonomic coverage, as well as to permit robust exploration of factors that shape patterns in herbivory.</p>
+<p>Below we show the current status of our sampling for each of the three scales of sampling, our overall geographic extent, and finally our current plant species list. This information is here to share our progress and help collaborators pick sites and species to survey.</p>
+<p><br></p>
+<div id="sampling-across-plant-families-and-within-focal-plant-families" class="section level2">
+<h2>Sampling across plant families and within focal plant families</h2>
+<div class="figure" style="text-align: center">
+<img src="status_files/figure-html/unnamed-chunk-1-1.png" alt="Number of completed surveys per plant family. Our five focal families are in yellow (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae). " width="480" />
+<p class="caption">
+Number of completed surveys per plant family. Our five focal families are in yellow (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae).
+</p>
+</div>
+<p><br></p>
+</div>
+<div id="sampling-within-focal-species" class="section level2">
+<h2>Sampling within focal species</h2>
+<p>We have two focal species that we are aiming to sampling across the broadest possible geographic extent and across broad environmental gradients. This is the newest part of our sampling effort, so we are just starting to collect these data.</p>
+<p><img src="status_files/figure-html/unnamed-chunk-3-1.png" width="600px" style="display: block; margin: auto;" /></p>
+<p><img src="status_files/figure-html/unnamed-chunk-4-1.png" width="600px" style="display: block; margin: auto;" /></p>
+<p><br></p>
+</div>
+<div id="geographic-extent" class="section level2">
+<h2>Geographic extent</h2>
+<p>A map of our sampling progress.</p>
+<div class="figure" style="text-align: center">
+<img src="status_files/figure-html/unnamed-chunk-5-1.png" alt="Sampling areas with at least one completed survey (yellow) and planned sampling areas (purple). We’re continually adding new planned sites." width="600px" />
+<p class="caption">
+Sampling areas with at least one completed survey (yellow) and planned sampling areas (purple). We’re continually adding new planned sites.
+</p>
+</div>
+<p><br></p>
+</div>
+<div id="species-list" class="section level2">
+<h2>Species list</h2>
+<p>Our current species list with the number of surveys completed for each species.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Plant species</th>
+<th align="left">No. surveys</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Abronia_latifolia</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Abutilon_theophrasti</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Acer_campestre</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Acer_saccharum</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Aesculus_parviflora</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Ageratina_altissima</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Agrimonia_eupatoria</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Alliaria_petiolata</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Arctium_</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Arctium_minus</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Arisaema_triphyllum</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Asarum_canadense</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Asclepias_cryptoceras</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Asclepias_syriaca</td>
+<td align="left">3</td>
+</tr>
+<tr class="odd">
+<td align="left">Asclepias_tuberosa</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Balsamorhiza_sagittata</td>
+<td align="left">3</td>
+</tr>
+<tr class="odd">
+<td align="left">Brasenia_schreberi</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Brassica_oleracea</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Bridelia_crenulata</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Campanula_persicifolia</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Capparis_erythrocarpos</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Carpinus_caroliniana</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Castanea_sativa</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Catalpa_speciosa</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Cephalanthus_occidentalis</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Cercis_canadensis</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Chamaenerion_angustifolium</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Chenopodium_album</td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
+<td align="left">Chimaphila_umbellata</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Circaea_lutetiana</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Cirsium_arvense</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Cissus_vitiginea</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Clidemia_heterophylla</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Coccoloba_cereifera</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Coccoloba_uvifera</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Conoclinium_coelestinum</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Croton_capitatus</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Cryptantha_cinerea</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Cyperus_esculentus</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Desmodium_gangeticum</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Desmodium_glutinosum</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Dioscorea_racemosa</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Dudleya_farinosa</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Echinacea_purpurea</td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
+<td align="left">Enemion_biternatum</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Erigeron_glaucus</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Erigeron_strigosus</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Fouquieria_splendens</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Fraxinus_nigra</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Glycine_max</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Gomphocarpus_fructicosus</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Gossypium_hirsutum</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Grindelia_squarrosa</td>
+<td align="left">3</td>
+</tr>
+<tr class="even">
+<td align="left">Helianthella quinquenervis</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Heliotropium_indicum</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Hypochaeris_radicata</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Ipomoea nil</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Lantana_camara</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Liriodendron_tulipifera</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Lupinus_arboreus</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Lupinus_perennis</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Lupinus_polyphyllus</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Lupinus_sericeus</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">Melhania_ovata</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Melilotus_albus</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Mimulus_guttatus</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Mimulus_verbanaceus</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Monarda_fistulosa</td>
+<td align="left">3</td>
+</tr>
+<tr class="odd">
+<td align="left">Morinda_pubescens</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Munnozia_pinnatipartita</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Nectandra_lineata</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Nicotiana_attenuata</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Onoclea_sensibilis</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Opuntia_cespitosa</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Opuntia_engelmanii</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Pastinaca_sativa</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Phaseolus lunatus</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Physalis_heterophylla</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Physalis_longifolia</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Phytolacca_americana</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Pilea_pumila</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Piper sp 1</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Piper sp 2</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Piper_kelleyi</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Piper_umbellatum</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Plantago_lanceolata</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Plantago_major</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Podophyllum_peltatum</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Polygonatum_biflorum</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Potentilla_gracilis</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Potentilla_recta</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Potentilla_simplex</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Prosopis_velutina</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Psychotria_aubletiana</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Ptelea_trifoliata</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Quercus_alba</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Quercus_insignis</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Quercus_robur</td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
+<td align="left">Ratibida_pinnata</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Rhus_copallinum</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Ricinus_communis</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Ruellia_nudiflora</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Rumex_crispus</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Sanicula_liberta</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Sassafras_albidum</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">Smilax_hispida</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Smilax_sp</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Solanum carolinense</td>
+<td align="left">3</td>
+</tr>
+<tr class="odd">
+<td align="left">Solanum_carolinense</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Solanum_donianum</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Solanum_incanum</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Solanum_nigrum</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Solanum_sp</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Solanum_tridynamum</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Solidago_altissima</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">Solidago_canadensis/altissima</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Solidago_missouriensis</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Solidago_speciosa</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Taraxacum_officinale</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">Tilia_americana</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Tradescantia_ohiensis</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Tradescantia_zanonia</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Trembleya_laniflora</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Verbascum_lychnitis</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Verbascum_thapsus</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Verbena-hastata</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Vernonia_baldwinii</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Vincetoxicum_hirundinaria</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Waltheria_indica</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Wyethia_mollis</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Zea_mays</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Zizia_aurea</td>
+<td align="left">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

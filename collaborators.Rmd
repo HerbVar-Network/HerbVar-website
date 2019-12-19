@@ -3,121 +3,33 @@ title: "Collaborator directory"
 output: html_document
 ---
 
-Name                     | Institution
--------------------------|-----------------
-Luis	Abdala Roberts | 	Universidad Autonoma de Yucatan
-Warwick	Allen	 | 	Univ of Canterbury
-Diego	Angulo | 		Universidad Autonoma de Yucatan
-Robi	Bagchi | 		Univ of Connecticut
-Sumanta	Bagchi	 | 	Indian Institute of Science
-Matt	Barbour	 | 	Univ of Zurich
-Kasey	Barton | 		University of Hawaiʻi at Mānoa
-Carina	Baskett	 | 	IST Austria
-Karina	Boege	 | 	Univ Nacional Autónoma de México
-Judie	Bronstein	 | 	Univ of Arizona
-Carlos	Bustos | 		Univ of Neuchâtel
-Ciro	Cabal	 | 	Princeton Univ
-Bastien	Castagneyrol | 		INRA, Univ of Bordeaux
-Mariana	Chiuffo	 | 	Universidad Nacional del Comahue, CONICET
-Elizeth	Cinto Mejia	 | 	Mich State
-Marina	Cock	 | 	INCITAP
-Tatiana	Cornelissen	 | 	UFMG; UFSJ, Brasil
-Tyler	Coverdale	 | 	Cornell Univ
-Julie	Davis | 		Cornell Univ
-Lee	Dyer	 | 	Univ of Nevada, Reno
-Will	Edwards	 | 	James Cook University
-Mike	Eisenring	 | 	Univ of Wisconsin
-Micky	Eubanks	 | 	Texas A&M
-Michael	Foisy | 		Mich State
-Matt	Forister	 | 	Univ of Nevada, Reno
-Dale	Forrister	 | 	Univ of Utah
-Zoe	Getman-Pickering | 		Cornell Univ
-David	Giron	 | 	CNRS/Université François-Rabelais de Tours
-Martin	Gossner | 		Swiss Federal Research Institute WSL
-Patrick	Grof-Tisza | 		Univ of Eastern Finland
-Phil	Hahn | 		Univ of Florida
-Peter	Hambäck	 | 	Stockholm University
-Anjel	Helms | 		Texas A&M
-Sara	Hermann	 | 	Penn State
-Liza	Holeski	 | 	Northern Arizona Univ
-Matt	Hutchinson | 		Princeton Univ
-Brian	Inouye | 		Florida State Univ
-Niklas	Janz	 | 	Stockholm University
-Aino	Kalske	 | 	Cornell Univ
-Richard	Karban | 		Univ of California, Davis
-Tamar	Keasar | 		Univ of Haifa
-Anne	Kempel | 		Univ of Bern
-Monica	Kersch-Becker | 		Univ of Alabama
-Andre	Kessler | 		Cornell Univ
-Heather	Kharouba | 		University of Ottawa
-Tania	Kim	 | 	Kansas State Univ
-Duncan	Kimuyu	 | 	Karatina Univ
-Ezekeil	Kwembeya | 		Univ of Namibia
-Michael	Lascaleia	 | 	Univ of Connecticut
-Xiaofei	Li | 		Jilin Argriculture University
-Eric	LoPresti | 		Mich State
-Victoria	Luizzi | 		Univ of Arizona
-Tosca	Mannall	 | 	Univ of Bern
-John	Maron	 | 	Univ of Montana
-Tara	Massad | 		Gorongosa National Park, Mozambique
-David	McNutt	 | 	Florida State Univ
-Andrew	Merwin	 | 	Univ of Nebraska
-Angela	Moles	 | 	Univ New South Wales
-Kailen	Mooney | 		Univ of California, Irvine
-Xoaquín	Moreira	 | 	Biological Mission of Galicia (CSIC)
-Daniel Munyao	Mutyambai | 		Cornell Univ; South Eastern Kenya Univ
-Jessie	Mutz | 		Florida State Univ
-Tobin	Northfield	 | 	Washington State Univ
-Paul	Ode	 | 	Colorado State Univ
-Todd	Palmer | 		University of Florida
-Nick	Pardikes | 		Czech Academy
-N.	Parthasarathy	 | 	Pondicherry University
-Ian	Pearse | 		US Geological Survey
-Adam	Pepi | 		Univ of California, Davis
-Katja	Poveda	 | 	Cornell Univ
-Beth	Pringle	 | 	Univ of Nevada, Reno
-Tere	Quijano | 		Universidad Autonoma de Yucatan
-Carolina	Quintero | 		INIBIOMA (CONICET-Universidad Nacional del Comahue)
-Sergio	Rasmann	 | 	Univ of Neuchâtel
-Lora	Richards | 		Univ of Nevada, Reno
-Moria	Robinson | 		Mich State
-Haldre	Rogers | 		Iowa State
-Jay	Rosenheim	 | 	Univ of California, Davis
-Justin	Runyon | 		Rocky Mountain Research Station, USFS
-Asaf	Sadeh	 | 	Volcani Center, Israel
-Yuzu	Sakata | 		Akita Prefectural University
-Diego	Salazar	 | 	Florida International Univ
-Danielle	Salcido | 		Univ Nevada, Reno
-Yasuhiro	Sato | 		Ryukoku University
-Hayley	Schroder | 		Cornell Univ
-Meredith	Schuman	 | 	Univ of Zurich
-Kaori	Shiojiri	 | 	Ryukoku University
-Mike	Singer	 | 	Wesleyan
-Palatty Allesh	Sinu | 		Central University of Kerala
-V.B.	Sreekumar	 | 	Kerala Forest Research Institute
-Ayco	Tack	 | 	Stockholm University
-John	Terblanche | 		Stellenbosch University
-Jennifer	Thaler | 		Cornell Univ
-Muvari	Tjiurutue	 | 	Univ of Namibia
-John	Tooker | 		Penn State
-Amy	Trowbridge | 		Univ of Wisconsin
-Nash	Turley	 | 	Univ of Central Florida
-Daniel	Turner	 | 	Mich State
-Akane	Uesugi | 		Monash Univ
-Nora	Underwood	 | 	Florida State Univ
-Sybille	Unsicker | 		Max Planck Institute for Chemical Ecology
-Shunsuke	Utsumi | 		Hokkaido University
-Bo	Wang | 		Xishuangbanna Tropical Botanical Garden, Chinese Academy of Science
-Marjorie	Weber	 | 	Michigan State
-Will	Wetzel	 | 	Mich State
-Susan	Whitehead	 | 	Virginia Tech
-Zhishu	Xiao | 		Institute of Zoology, Chinese Academy of Science
-Akira	Yamawo | 		Hirosaki University
-Kim	Valenta	 | 	University of Florida
-Luke	Zehr	 | 	Mich State
-Zhiwei	Zhong	 | 	Northeast Normal University, China
+```{r, include=FALSE}
+library(googlesheets4)
+library(knitr)
+sheets_deauth()
+coll = read_sheet("https://docs.google.com/spreadsheets/d/1UwM5VR_msyIEyCpIGllfaLD4K4mqKyU5LfsCTwYEvwo/edit?usp=sharing",
+           sheet='collaborator list')
+coll = data.frame(coll)
+```
 
 
-```{r, echo=FALSE, out.width = "600px", fig.align='center'}
+```{r, echo=FALSE, out.width = "500px", fig.align='center'}
+knitr::include_graphics("photos/HerbVar_Hahn_MT_PhotoMChiuffo.jpg")
+```
+
+
+```{r, echo=FALSE}
+ctab = data.frame(
+  name = paste(coll$first.name, coll$last.name, sep=' '),
+  ins = coll$institution,
+  ap = coll$additional.participants
+)
+ctab$ap = as.character(ctab$ap)
+ctab$ap[is.na(ctab$ap)] = ''
+kable(ctab, col.names=c('Site PI', 'Institution', 'Additional Participants'), align=c('l','l','l'))
+```
+
+
+```{r, echo=FALSE, out.width = "500px", fig.align='center'}
 knitr::include_graphics("photos/IMG_2382.jpg")
 ```

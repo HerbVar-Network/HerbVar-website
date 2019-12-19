@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -69,7 +69,9 @@ h6 {
 </style>
 
 
+</head>
 
+<body>
 
 <style type = "text/css">
 .main-container {
@@ -83,6 +85,7 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -92,9 +95,6 @@ img {
 }
 button.code-folding-btn:focus {
   outline: none;
-}
-summary {
-  display: list-item;
 }
 </style>
 
@@ -110,6 +110,7 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
+
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -129,43 +130,6 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -187,74 +151,19 @@ $(document).ready(function () {
 });
 </script>
 
+
+<div class="container-fluid main-container">
+
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
 
 <!-- code folding -->
 
 
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
 
 
 
@@ -281,10 +190,13 @@ $(document).ready(function () {
   <a href="leadership.html">Leadership</a>
 </li>
 <li>
-  <a href="collaborators.html">Collaborator directory</a>
+  <a href="collaborators.html">Collaborators</a>
 </li>
 <li>
   <a href="protocols.html">Protocols</a>
+</li>
+<li>
+  <a href="status.html">Sampling status</a>
 </li>
 <li>
   <a href="participation.html">Participation</a>
@@ -308,11 +220,14 @@ $(document).ready(function () {
 
 <p>Below are pdfs of our main sampling protocols. Collaborators should have access to our Shared Drive, which has the most up-to-date versions and additional information. Please get in touch if you need access to the Shared Drive.</p>
 <p><a href="protocols/Primary%20protocol%20for%20herbivory%20variability%20network.pdf">HerbVar Primary Protocol</a>. This is the primary protocol for HerbVar surveys. We designed this to work for most plant species and sites. If it will not work for your species or site, then please consider one of our alternative protocols or get in touch with someone on the Planning Group.</p>
+<p><a href="protocols/HerbVar%20Species%20Selection%20Plan.pdf">HerbVar Species Selection Plan</a>. This describes our approach to select plant species and/or sites to survey. In brief, we suggest collaborators strive to survey at least 1 new plant family or ecosystem, 1 new species from one of our focal families (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae), and 1 survey of one of our focal species (<em>Taraxacum officinale</em> and <em>Plantago major</em>). However, we also encourage you to survey any species you know well and are excited about, and our requirements are flexible because we know not all researchers have access to new families, new ecosystems, focal families, etc.</p>
+<p><a href="protocols/HerbVar%20Damage%20Estimation%20Guidelines.pdf">Damage Estimation Guidelines</a>. This is a detailed walk through the process of estimating herbivore damage on leaves and whole plants, including tips for different types of leaves and damage.</p>
+<p><a href="/protocols/Quercus%20robur%20digital%20leaves.pdf">Illustrated guide to percent leaf damage</a>. This is a visual guide to what different levels of percent damage look like on a leaf. We suggest printing this out and taking it to the field with you to aid in estimation of percent herbivory. Currently, it has just one leaf shape but more are on the way.</p>
 <p><a href="protocols/HerbVar%20Reproductive%20Damage%20Protocol.pdf">Reproductive Damage Protocol</a>. If your plants have reproductive tissues (flowers, fruits, seeds), please follow this protocol to quantify damage to these tissues.</p>
 <p><a href="protocols/HerbVar%20Surveying%20low-density_low-abundance%20sites.pdf">Rare Plants Protocol</a>. If your plants are rare at your site—such that they occur at low densities or abundances—then please refer to this protocol.</p>
 <p><a href="protocols/HerbVar%20Cactus%20and%20Succulent%20Protocol.pdf">Cacti and Other Succulents Protocol</a>. This document discusses issues related to quantifying herbivory on cacti and other succulents and outlines a protocol.</p>
-<p><a href="protocols/HerbVar%20Herbivore%20sampling_%20protocol.pdf">Insect Sampling Protocol</a>. This document discusses <em>if and how</em> to sample insects.</p>
-<p><br></p>
+<p><a href="protocols/HerbVar%20Herbivore%20sampling_%20protocol.pdf">Insect Sampling Protocol</a>. This document discusses <em>if and how</em> to sample insects. All surveys should note internally-feeding herbivores (e.g., gallers and miners), but only some should take the extra time to sample external herbivores.</p>
+<p><a href="protocols/Cheatsheet_%20mines%20and%20galls.pdf">Cheatsheet to Insect Mines and Galls</a>. This is a brief guide to what insect mines and galls can look like.</p>
 <p><img src="photos/monarch.jpg" width="600px" style="display: block; margin: auto;" /></p>
 
 
@@ -332,23 +247,6 @@ $(document).ready(function () {
 
 
 </script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

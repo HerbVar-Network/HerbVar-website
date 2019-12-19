@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -69,7 +69,9 @@ h6 {
 </style>
 
 
+</head>
 
+<body>
 
 <style type = "text/css">
 .main-container {
@@ -83,6 +85,7 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -92,9 +95,6 @@ img {
 }
 button.code-folding-btn:focus {
   outline: none;
-}
-summary {
-  display: list-item;
 }
 </style>
 
@@ -110,6 +110,7 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
+
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -129,43 +130,6 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -187,74 +151,19 @@ $(document).ready(function () {
 });
 </script>
 
+
+<div class="container-fluid main-container">
+
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
 
 <!-- code folding -->
 
 
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
 
 
 
@@ -281,10 +190,13 @@ $(document).ready(function () {
   <a href="leadership.html">Leadership</a>
 </li>
 <li>
-  <a href="collaborators.html">Collaborator directory</a>
+  <a href="collaborators.html">Collaborators</a>
 </li>
 <li>
   <a href="protocols.html">Protocols</a>
+</li>
+<li>
+  <a href="status.html">Sampling status</a>
 </li>
 <li>
   <a href="participation.html">Participation</a>
@@ -306,32 +218,36 @@ $(document).ready(function () {
 </div>
 
 
-<p>We are a collaborative and inclusive group of scientists and educators who are working together to advance our understanding of plant–herbivore interactions. Please contact us if you are interested in joining. You can email Will Wetzel (<a href="mailto:wcwetzel@msu.edu" class="email">wcwetzel@msu.edu</a>), Moria Robinson (<a href="mailto:robi1169@msu.edu" class="email">robi1169@msu.edu</a>), or any other member on the <a href="leadership.html">Planning Group</a>.</p>
-<p>Herbvar is open to professional biologists <a href="#edu">or educators</a> who are collaborative, collegial, and willing to collect and contribute standardized data on the distribution of herbivory for new species and sites. The main way most collaborators participate and contribute is by using our protocols to survey herbivory. Collaborators are also welcome to join leadership Subgroups if they are motivated and willing to invest significant time into the development of HerbVar.</p>
+<p>We are a collaborative and inclusive group of scientists and educators who are working together to advance our understanding of plant–herbivore interactions. Please contact us if you are interested in joining. You can email Will Wetzel (<a href="mailto:wcwetzel@msu.edu" class="email">wcwetzel@msu.edu</a>), Moria Robinson (<a href="mailto:robi1169@msu.edu" class="email">robi1169@msu.edu</a>), or any other member of the <a href="leadership.html">Planning Group</a>.</p>
+<p>Herbvar is open to professional biologists <a href="#edu">or educators</a> who are collaborative, collegial, and willing to collect and contribute standardized data on the distribution of herbivory. We are especially interested in gaining data for new species and sites, as well as for focal plant families and species (see the <a href="protocols/HerbVar%20Species%20Selection%20Plan.pdf">HerbVar Species Selection Plan</a>). Collaborators can participate by using our protocols to survey herbivory. Collaborators are also welcome to join leadership Subgroups if they are motivated and willing to invest significant time into the development of HerbVar.</p>
 <p>Collaborators should</p>
 <ul>
-<li><p>Be professional researchers with expertise in plant-herbivore interactions</p></li>
-<li><p>Be inclusive, collegial, and collaborative in their interactions with other members of HerbVar</p></li>
-<li><p>Fund research at their own sites</p></li>
-<li><p>Contribute data gathered using the HerbVar protocol or a modified protocol approved by the Planning Group (see <a href="protocols.html">HerbVar protocols</a>)</p></li>
-<li><p>Include species and site data for each survey</p></li>
+<li>Be professional researchers with expertise in plant-herbivore interactions</li>
+<li>Be inclusive, collegial, and collaborative in their interactions with other members of HerbVar</li>
+<li>Fund research at their own sites</li>
+<li>Contribute data gathered using the HerbVar protocol or a modified protocol approved by the Planning Group (see <a href="protocols.html">HerbVar protocols</a>)</li>
 </ul>
-<p>Collaborators will be included as authors on HerbVar manuscripts if they</p>
+<p>Collaborators will be included as co-authors on HerbVar manuscripts if they</p>
 <ul>
-<li><p>Contribute data from ideally 5 or more surveys, 3 at the very least</p></li>
-<li><p>Contribute intellectually to at least one of the following:</p>
+<li>Contribute data from 5 or more surveys (ideally); 3 at the very least. We suggest these include:
 <ul>
-<li><p>Development of questions and overall study design</p></li>
-<li><p>Data analysis</p></li>
-<li><p>Writing</p></li>
-<li><p>Editing</p></li>
+<li>1 new plant family or ecosystem</li>
+<li>1 new species from one of our focal families (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae)</li>
+<li>1 survey from a focal species (<em>Taraxacum officinale</em> and <em>Plantago major</em>)</li>
+</ul></li>
+<li>Contribute intellectually to at least one of the following:
+<ul>
+<li>Development of questions and overall study design</li>
+<li>Data analysis</li>
+<li>Writing</li>
+<li>Editing</li>
 </ul></li>
 </ul>
-<p><br></p>
+<p>For more information on participation and how our network runs, please see the <a href="/protocols/HerbVar%20Document%20of%20Collaboration.pdf">HerbVar Document of Collaboration</a>.</p>
 <p><img src="photos/180.jpg" width="500px" style="display: block; margin: auto;" /></p>
-<div id="edu" class="section level3">
-<h3>Participating as an educator</h3>
-<p>Some of our collaborators use <strong>HerbVar as an experiential learning tool</strong>. They take students into the field; teach them about ecology, plant–animal interactions, scientific study-design, and other topics; train them in the relevant sampling methods; collect real data with the students; and contribute the data to the network. If you are an educator and are intersted in using HerbVar in your teaching and becoming a collaborator, please <a href="leadership.html">email us</a>.</p>
+<div id="edu" class="section level2">
+<h2>Participating as an educator</h2>
+<p>Some of our collaborators use <strong>HerbVar as an experiential learning tool</strong>. They take students into the field; teach them about ecology, plant–animal interactions, scientific study-design, and other topics; train them in the relevant sampling methods; collect real data with the students; and contribute the data to the network. If you are an educator and are intersted in using HerbVar in your teaching and/or becoming a collaborator, please <a href="leadership.html">email us</a>.</p>
 </div>
 
 
@@ -351,23 +267,6 @@ $(document).ready(function () {
 
 
 </script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
