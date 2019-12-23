@@ -10,7 +10,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Below are pdfs of our main sampling protocols. Collaborators should have access to our Shared Drive, which has the most up-to-date versions and additional information. Please get in touch if you need access to the Shared Drive.
 
-[HerbVar Primary Protocol](protocols/Primary protocol for Herbivory Variability Network.pdf). This is the primary protocol for HerbVar surveys. We designed this to work for most plant species and sites. If it will not work for your species or site for whatever reason, then please consider one of our alternative protocols or get in touch with the HerbVar Planning Group. [Here is a Datasheet Template for the HerbVar Primary Protocol](protocols/Datasheet template for HerbVar.xlsx)
+[HerbVar Primary Protocol](protocols/Primary protocol for Herbivory Variability Network.pdf). This is the primary protocol for HerbVar surveys. We designed this to work for most plant species and sites. If it will not work for your species or site for whatever reason, then please consider one of our alternative protocols or get in touch with the HerbVar Planning Group.  
+
+[Datasheet Template for HerbVar](protocols/Datasheet template for HerbVar.xlsx). This template datasheet is designed to work for the HerbVar Primary Protocol. It can be easily modified for use with our alternative protocols (see below).  
 
 [HerbVar Species Selection Plan](protocols/HerbVar Species Selection Plan.pdf). This describes our approach to select plant species and/or sites to survey. In brief, we suggest collaborators strive to survey at least 1 new plant family or ecosystem, 1 new species from one of our focal families (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae), and 1 survey of one of our focal species (_Taraxacum officinale_ and _Plantago major_). However, we also encourage you to survey any species you know well and are excited about, and our requirements are flexible because we know not all researchers have access to new families, new ecosystems, focal families, etc.
 
