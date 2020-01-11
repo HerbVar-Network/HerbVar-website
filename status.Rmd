@@ -26,7 +26,7 @@ planned = read_sheet("https://docs.google.com/spreadsheets/d/1avm6eedbaLt3V1E3q2
 planned = data.frame(planned)
 
 # Load meta data on focal species
-dfs = read_sheet("https://docs.google.com/spreadsheets/d/1avm6eedbaLt3V1E3q2lg6IuUs7mPPEKWcsvlhWsfqk4/edit?usp=sharing",
+dfs = read_sheet("https://docs.google.com/spreadsheets/d/1mNYnSTCs9WYy5SN2HF4VYep550Sccz9xU5o8JuYut-A/edit?usp=sharing",
            sheet='Focal species')
 dfs = data.frame(dfs)
 
@@ -73,7 +73,6 @@ We have two focal species that we are aiming to sampling across the broadest pos
 map.world = map_data('world')
 
 
-
 dfs$Taraxacum.count = as.integer(dfs$Taraxacum.count)
 dfs$Plantago.count = as.integer(dfs$Plantago.count)
 
@@ -84,7 +83,7 @@ map.world$region[map.world$region == 'Democratic Republic of the Congo'] = 'The 
 map.world$region[map.world$region == 'Republic of Congo'] = 'Congo'
 
 
-#anti_join(dfs, map.world, by=c('Country' = 'region'))
+anti_join(dfs, map.world, by=c('Country' = 'region'))
 
 focal.sp.map.data = left_join(map.world, dfs, by = c('region' = 'Country'))
 
