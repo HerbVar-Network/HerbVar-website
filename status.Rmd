@@ -55,7 +55,7 @@ Below we show the current status of our sampling for each of the three scales of
 
 ## Sampling across plant families
 
-```{r, echo=FALSE, out.width = "600px", fig.align='center', fig.cap="The distribution of currently sampled plant families across the phylogeny of all extant vascular plant families. Our five focal families are in yellow (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae), and other sampled families are in purple. Figure made by [Marjorie Weber](http://www.theweberlab.com) using the mega-tree from Jin et al. 2019." }
+```{r, echo=FALSE, out.width = "600px", fig.align='center', fig.cap="The distribution of currently sampled plant families across the phylogeny of all extant vascular plant families. Our five focal families are in yellow (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae), and other sampled families are in purple. Figure made by HerbVar collaborator [Marjorie Weber](http://www.theweberlab.com) with mega-tree from Jin et al. 2019." }
 knitr::include_graphics("photos/HerbVar-phylogeny-2020-02-23.png")
 ```
 
