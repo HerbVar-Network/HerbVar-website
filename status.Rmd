@@ -59,6 +59,9 @@ Below we show the current status of our sampling for each of the three scales of
 knitr::include_graphics("photos/HerbVar-phylogeny-2020-02-23.png")
 ```
 
+<br>
+
+## Sampling within plant families
 
 ```{r, echo=FALSE, fig.align='center', fig.width=5, fig.asp=1.5, fig.cap="Number of completed surveys per plant family. Our five focal families are in yellow (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae)."}
 
@@ -68,7 +71,6 @@ ggplot(d.complete, aes(x=plantFamily, fill=focalFamily)) + geom_bar() + coord_fl
 ```
 
 <br>
-
 
 ## Sampling within focal species
 
