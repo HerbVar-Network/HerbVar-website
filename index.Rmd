@@ -21,7 +21,7 @@ knitr::include_graphics("photos/herb_collage.png")
 Although we are a new network (founded in mid 2019), we already have 100+ collaborators from more than 60 institutions across 23 countries. Please email [Will Wetzel, Moria Robinson, or a member of the HerbVar Planning Group](leadership.html) if you are interested in joining us. We are always looking for additional collaborators, especially those who can contribute data from under-sampled regions or from new plant families or focal plant families and species.
 
 
-Our growing dataset currently has >190 surveys, including >160 plant species from >60 plant families. These are spread across North America, Central America, South America, Europe, Africa, Asia, and Australia, and we are working to expand our geographic extent.
+Our growing dataset currently has >200 surveys, including >175 plant species from >65 plant families. These are spread across North America, Central America, South America, Europe, Africa, Asia, and Australia, and we are working to expand our geographic extent.
 
 ```{r, include=FALSE}
 
