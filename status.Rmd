@@ -106,7 +106,7 @@ focal.sp.map.data$Plantago.count[is.na(focal.sp.map.data$Plantago.count)] = 0
 # Plot it
 ggplot(focal.sp.map.data, aes( x= long, y = lat, group = group)) +
   geom_polygon(aes(fill = Taraxacum.count)) +
-  scale_fill_gradient(low='grey80', high=viridis(2)[2], breaks=0:max(focal.sp.map.data$Taraxacum.count)) +
+  scale_fill_gradient(low='grey90', high=viridis(2)[1], breaks=0:max(focal.sp.map.data$Taraxacum.count)) +
   guides(fill = guide_legend(reverse = T)) +
   labs(fill = 'No. surveys'
        ,title = expression(~italic('Taraxacum officinale')~'surveys by country')
@@ -122,7 +122,7 @@ ggplot(focal.sp.map.data, aes( x= long, y = lat, group = group)) +
 ```{r, echo=FALSE, out.width="600px", fig.asp=0.5, fig.align='center'}
 ggplot(focal.sp.map.data, aes( x= long, y = lat, group = group)) +
   geom_polygon(aes(fill = Plantago.count)) +
-  scale_fill_gradient(low='grey80', high=viridis(2)[2], breaks=0:max(focal.sp.map.data$Plantago.count)) +
+  scale_fill_gradient(low='grey90', high=viridis(2)[1], breaks=0:max(focal.sp.map.data$Plantago.count)) +
   guides(fill = guide_legend(reverse = T)) +
   labs(fill = 'No. surveys'
        ,title = expression(~italic('Plantago major')~'surveys by country')
