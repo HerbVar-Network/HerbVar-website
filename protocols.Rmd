@@ -37,6 +37,8 @@ Below are pdfs of our main sampling protocols. Collaborators should have access 
 
 [Tree Protocol](protocols/HerbVar Tree Protocol.pdf). This is a protocol for surveying mature trees for HerbVar. It also discusses how to handle seedlings and saplings of tree species.  
 
+[Rhizomatous Geophyte Protocol](protocols/HerbVar Rhizomatous Geophyte Protocol.pdf). This is a protocol for rhizomatous species for which it is feasible to determine what constitutes a genet by identifying rhizomatous connections and for which genets are small enough that herbivory could feasibly be estimated on 30 genets and their nearest neighbors within a site.
+
 
 #### Insects
 [Insect Sampling Protocol](protocols/HerbVar Herbivore sampling_ protocol.pdf). This document discusses *if and how* to sample insects. All surveys should note internally-feeding herbivores (e.g., gallers and miners), but only some should take the extra time to sample external herbivores.  
