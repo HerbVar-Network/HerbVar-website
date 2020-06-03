@@ -45,7 +45,7 @@ We have a three-scaled sampling approach:
 
 1. Sampling one plant species from as many plant families as possible
 2. Sampling as many species (and tribes and genera) as possible from five focal families (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae)
-3. Sampling as many sites as possible for two focal species (_Taraxacum officinale_ and _Plantago major_). 
+3. Sampling as many sites as possible for three focal species (_Taraxacum officinale_, _Plantago lanceolata_, and _Plantago major_). 
 
 The goal of this stratified sampling plan is to avoid potential biases in geographic and/or taxonomic coverage, as well as to permit robust exploration of factors that shape patterns in herbivory.
 
@@ -74,7 +74,7 @@ ggplot(d.complete, aes(x=plantFamily, fill=focalFamily)) + geom_bar() + coord_fl
 
 ## Sampling within focal species
 
-We have two focal species that we are aiming to sampling across the broadest possible geographic extent and across broad environmental gradients. This is the newest part of our sampling effort, so we are just starting to collect these data.
+We have three focal species that we are aiming to sampling across the broadest possible geographic extent and across broad environmental gradients. These are _Taraxacum officinale_, _Plantago lanceolata_, and _Plantago major_. This is the newest part of our sampling effort, so we are just starting to collect these data.
 
 ```{r, include=FALSE}
 map.world = map_data('world')

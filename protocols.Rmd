@@ -13,7 +13,7 @@ Below are pdfs of our main sampling protocols. Collaborators should have access 
 <br>
 
 #### Selecting species and sites to survey
-[HerbVar Species Selection Plan](protocols/HerbVar Species Selection Plan.pdf). This describes our approach to select plant species and/or sites to survey. In brief, we suggest collaborators strive to survey at least 1 new plant family or ecosystem, 1 new species from one of our focal families (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae), and 1 survey of one of our focal species (_Taraxacum officinale_ and _Plantago major_). However, we also encourage you to survey any species you know well and are excited about, and our requirements are flexible because we know not all researchers have access to new families, new ecosystems, focal families, etc.  
+[HerbVar Species Selection Plan](protocols/HerbVar Species Selection Plan.pdf). This describes our approach to select plant species and/or sites to survey. In brief, we suggest collaborators strive to survey at least 1 new plant family or ecosystem, 1 new species from one of our focal families (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae), and 1 survey of one of our three focal species (_Taraxacum officinale_, _Plantago lanceolata_, and _Plantago major_). However, we also encourage you to survey any species you know well and are excited about, and our requirements are flexible because we know not all researchers have access to new families, new ecosystems, focal families, etc.  
 
 
 #### The Primary Protocol for most species and sites

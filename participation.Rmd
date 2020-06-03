@@ -23,7 +23,7 @@ Collaborators will be included as co-authors on HerbVar manuscripts if they
 * Contribute data from 5 or more surveys (ideally); 3 at the very least. We suggest these include:
   + 1 new plant family or ecosystem
   + 1 new species from one of our focal families (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae)
-  + 1 survey from a focal species (_Taraxacum officinale_ and _Plantago major_)
+  + 1 survey from a focal species (_Taraxacum officinale_, _Plantago lanceolata_, and _Plantago major_)
 * Contribute intellectually to at least one of the following:
   + Development of questions and overall study design
   + Data analysis
