@@ -19,7 +19,9 @@ Below are pdfs of our main sampling protocols. Collaborators should have access 
 #### The Primary Protocol for most species and sites
 [HerbVar Primary Protocol](protocols/Primary protocol for Herbivory Variability Network.pdf). This is the primary protocol for HerbVar surveys. We designed this to work for most plant species and sites. If it will not work for your species or site for whatever reason, then please consider one of our alternative protocols or get in touch with the HerbVar Planning Group.  
 
-[Datasheet Template for HerbVar](protocols/Datasheet template for HerbVar.xlsx). This Excel file is a template datasheet designed to work for the HerbVar Primary Protocol. It can be easily modified for use with our alternative protocols (see below).  
+[Datasheet - Excel file](protocols/Datasheet template for HerbVar.xlsx). This Excel file is a template datasheet designed to work for the HerbVar Primary Protocol. It can be easily modified for use with our alternative protocols (see below).  
+
+[Datasheet - printable PDF](protocols/HerbVar_datasheet_printable.pdf). This is a printable datasheet designed to work for the HerbVar Primary Protocol. It prints well for paper data entry in the field, but because it is a static PDF it is not easily edited.  
 
 [Reproductive Damage Protocol](protocols/HerbVar Reproductive Damage Protocol.pdf). If your plants have reproductive tissues (flowers, fruits, seeds), please follow this protocol to quantify damage to these tissues.  
 
