@@ -10,7 +10,11 @@ navbar:
     - text: "Leadership"
       href: leadership.html
     - text: "Collaborators"
-      href: collaborators.html
+      menu:
+        - text: "Collaborator directory"
+          href: CollaboratorDirectory.html
+        - text: "Collaborator photos"
+          href: CollaboratorPhotos.html
     - text: "Protocols"
       href: protocols.html
     - text: "Sampling status"

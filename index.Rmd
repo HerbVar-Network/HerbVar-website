@@ -21,7 +21,7 @@ knitr::include_graphics("photos/herb_collage.png")
 Although we are a new network (founded in mid 2019), we already have nearly 200 collaborators from more than 100 institutions across 30+ countries. Please email [Will Wetzel, Moria Robinson, or a member of the HerbVar Planning Group](leadership.html) if you are interested in joining us. We are always looking for additional collaborators, especially those who can contribute data from under-sampled regions or from new plant families or focal plant families and species.
 
 
-Our growing dataset currently has >250 surveys, including >200 plant species from >75 plant families. These are spread across North America, Central America, South America, Europe, Africa, Asia, and Australia, and we are working to expand our geographic extent.
+Our growing dataset currently has nearly 300 surveys, including >200 plant species from >80 plant families. These are spread across North America, Central America, South America, Europe, Africa, Asia, and Australia, and we are working to expand our geographic extent.
 
 ```{r, include=FALSE}
 
@@ -41,14 +41,14 @@ mapWorld = borders("world", colour="gray80", fill="gray80") # create a layer of 
 ```
 
 
-```{r, echo=FALSE, warning=FALSE, out.width = "600px", fig.asp=0.5, fig.align='center', fig.cap="Sampling areas with at least one completed survey (yellow) and planned sampling areas (purple). We’re continually adding new planned sites."}
+```{r, echo=FALSE, warning=FALSE, out.width = "600px", fig.asp=0.5, fig.align='center', fig.cap="Sampling areas with at least one completed survey. We’re continually adding new sites."}
 ggplot() + 
 	mapWorld + 
 	theme_bw() + 
 	theme(axis.title=element_blank(), axis.text=element_blank(),
 		axis.ticks=element_blank()) + 
-	geom_point(aes(x=planned$longitude.location, y=planned$latitude.location), fill=viridis(2,)[1], size=1.25,
-		shape=21, alpha=0.5) +
+#	geom_point(aes(x=planned$longitude.location, y=planned$latitude.location), fill=viridis(2,)[1], size=1.25,
+#		shape=21, alpha=0.5) +
 	geom_point(aes(x=d$longitude.location, y=d$latitude.location), fill=viridis(2)[2], size=1.75, shape=21) +
 	coord_fixed()
 ```
