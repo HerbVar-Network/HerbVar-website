@@ -3,13 +3,102 @@ title: "Meet the HerbVar team"
 output: html_document
 ---
 
-Below is a selection of photos of HerbVar team members in action studying plant-herbivore interactions around the world. 
-You can find [a list of all our collaborators here](CollaboratorDirectory.html).
+We are a global team of scientists working together understand the plant-herbivore interactions all around the world! Below is a selection of photos of us and the plants and herbivores we study. You can find [a list of all our collaborators and their institutions here](CollaboratorDirectory.html).
 
-This page is under construction (14 July 2020). Photos will be uploaded this week!
+<center>
 
-```{r, echo=FALSE, out.width = "500px", fig.align='center'}
-knitr::include_graphics("photos/HerbVar_Hahn_MT_PhotoMChiuffo.jpg")
-```
+![Shyam Phartyal and colleagues surveying _Calotropis procera_, _Ruellia tuberosa_, and _Argemone maxicana_ in Bihar, India ](photos/collaborator_photos/1Phartyal.jpg){width=70%}  
+  
+$~$
+
+![Elizeth Cinto Mejia and Jose Cinto Perez surveying _Thymus vulgaris_ and _Viscum album_ in north central Spain](photos/collaborator_photos/2Cinto Mejia.jpg){width=70%}  
+  
+$~$
+
+![Hila Segre and Asaf Sadeh surveying _Raphanus raphanistrum_ and other species in Israel](photos/collaborator_photos/3Segre_Sadeh.jpg){width=70%}  
+
+$~$
+
+![Judie Bronstein and Victoria Luizzi surveying _Opuntia engelmanii_ in Arizona, USA](photos/collaborator_photos/4Bronstein.jpg){width=70%}  
+
+$~$
+
+![Anjel Helms, Micky Eubanks, and colleagues doing surveys in Texas, USA](photos/collaborator_photos/5Helms and Eubanks.jpg){width=70%}  
+
+$~$
+
+![Will Wetzel and Mariah Meek surveying _Apocynum androsaemifolium_ in a scree field in Wyoming, USA](photos/collaborator_photos/6Wetzel.jpg){width=70%}  
+
+$~$
+
+![Frida Piper Busico and Caroline Dallstream surveying _Gunnera tinctoria_ in Queulat National Park, Chile](photos/collaborator_photos/7Piper.jpg){width=70%}  
+
+$~$
+
+![Marco Ferrante, Nora Haack, and Lucas Lamelas-Lopez surveying multiple species in Azores](photos/collaborator_photos/8Ferrante_Haack_Lamelas-Lopez.jpg){width=70%}  
+
+$~$
+
+![Carina Baskett and colleagues surveying in the Pyrenees in northeast Spain](photos/collaborator_photos/9Baskett.jpg){width=70%}  
+
+$~$
+
+![Luis Abdala-Roberts and colleagues surveying in Yucatan, Mexico](photos/collaborator_photos/10Abdala Roberts.jpg){width=70%}  
+
+$~$
+
+![Sarah Barret, Susie Cramp, and Darcy Martin surveying in Western Australia](photos/collaborator_photos/11Barrett.jpg){width=70%}  
+
+$~$
+
+![Warwick Allen surveying _Taraxacum officinale_ in Christchurch, New Zealand](photos/collaborator_photos/12Allen.jpg){width=70%}  
+
+$~$
+
+![Yuval Sapir, Bella Sapir, and Tamar Keasar surveying irises in Israel](photos/collaborator_photos/13Sapir.jpg){width=70%}  
+
+$~$
+
+![Angela Moles and Suz Everingham surveying an _Acacia_ in Sydney, Australia](photos/collaborator_photos/14Moles_Everingham.jpg){width=70%}  
+
+$~$
+
+![Jessica Lorena Vaca-Uribe and Katja Poveda surveying in Bogota, Colombia](photos/collaborator_photos/15Poveda_Lorena Vaca.jpg){width=70%}  
+
+$~$
+
+![Haley Dole, Wissam Jawad, and Luke Zehr surveying _Solidago canadensis_ in Michigan, USA](photos/collaborator_photos/16Zehr_Dole_Jawad.jpg){width=70%}  
+
+$~$
+
+![Carolina Quintero surveying in Northern Patagonia, Argentina](photos/collaborator_photos/17Quintero.jpg){width=70%}  
+
+$~$
+
+![Chris Moore surveying _Sanguinaria canadensis_ in Maine, USA](photos/collaborator_photos/18Moore.jpg){width=70%}  
+
+$~$
+
+![Rachit Singh surveying _Geranium pratense_ in Jena, Germany](photos/collaborator_photos/19Singh.jpg){width=70%}  
+
+$~$
+
+![Mariana Chiuffo, Phil Hahn, and colleagues surveying in Montana, USA](photos/collaborator_photos/20Hahn_Chiuffo.jpg){width=70%}  
+
+$~$
+
+![Ben Gooden found herbivore damage on the fruits of _Solanum cinereum_ in Australia](photos/collaborator_photos/21Gooden.jpg){width=70%}  
+
+$~$
+
+
+
+
+</center>
+
+
+
+
+
 
 
