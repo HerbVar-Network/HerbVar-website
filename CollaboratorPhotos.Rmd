@@ -3,7 +3,7 @@ title: "Meet the HerbVar team"
 output: html_document
 ---
 
-We are a global team of scientists working together to understand how plant-herbivore interactions vary around the world! Below is a selection of photos of us and the plants and herbivores we study. You can find [a list of all our collaborators and their institutions here](CollaboratorDirectory.html).
+We are a global team of scientists working together to understand how plant-herbivore interactions vary around the world! Below is a selection of photos of us and the plants and herbivores we study. You can find [a list of all our collaborators and their institutions here](CollaboratorDirectory.html). Our [leadership team is here](leadership.html).
 
 <center>
 
