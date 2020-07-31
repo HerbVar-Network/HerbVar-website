@@ -15,7 +15,7 @@
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -102,34 +102,34 @@ button.code-folding-btn:focus {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 51px;
+  padding-top: 60px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 
 .section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 </style>
 
@@ -230,7 +230,7 @@ $(document).ready(function () {
 </div>
 
 
-<p>The Herbivory Variability Network has completed 314 surveys on 247 plant species from 89 plant families. These figures and tables update as new data are entered into our database, so check back often!</p>
+<p>The Herbivory Variability Network has completed 319 surveys on 251 plant species from 89 plant families. These figures and tables update as new data are entered into our database, so check back often!</p>
 <p>We have a three-scaled sampling approach:</p>
 <ol style="list-style-type: decimal">
 <li>Sampling one plant species from as many plant families as possible</li>
@@ -242,6 +242,11 @@ $(document).ready(function () {
 <p><br></p>
 <div id="sampling-across-plant-families" class="section level2">
 <h2>Sampling across plant families</h2>
+<pre><code>## Loading required package: V.PhyloMaker</code></pre>
+<pre><code>## Loading required package: ape</code></pre>
+<pre><code>## Loading required package: taxonlookup</code></pre>
+<pre><code>## Loading required package: phytools</code></pre>
+<pre><code>## Loading required package: taxize</code></pre>
 <div class="figure" style="text-align: center">
 <img src="status_files/figure-html/unnamed-chunk-1-1.png" alt="The distribution of currently sampled plant families across the phylogeny of all extant vascular plant families. Our five focal families are in yellow (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae), and other sampled families are in purple. Figure made by HerbVar collaborator [Marjorie Weber](http://www.theweberlab.com) with mega-tree from Jin et al. 2019." width="800px" />
 <p class="caption">
@@ -630,19 +635,19 @@ Sampling areas with at least one completed survey. We’re continually adding ne
 <td align="left">1</td>
 </tr>
 <tr class="even">
-<td align="left"><em>Erigeron glaucus</em></td>
-<td align="left">1</td>
-</tr>
-<tr class="odd">
 <td align="left"><em>Erigeron strigosus</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Erodium crassifolium</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Erythrochiton brasiliensis</em></td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left"><em>Eschscholzia californica</em></td>
 <td align="left">1</td>
 </tr>
 <tr class="even">
@@ -706,347 +711,363 @@ Sampling areas with at least one completed survey. We’re continually adding ne
 <td align="left">1</td>
 </tr>
 <tr class="odd">
+<td align="left"><em>Heracleum mantegazzianum</em></td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left"><em>Heracleum nepalense</em></td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left"><em>Heracleum sphondylium</em></td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
 <td align="left"><em>Hypochaeris radicata</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Ilex aquifolium</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Impatiens capensis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Ipomoea lindenii</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Ipomoea nil</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Iris atrofusca</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Iris atropurpurea</em></td>
 <td align="left">2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Iris haynei</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Iris petrana</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Ixeridium dentatum</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Jessea multivenia</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Juglans nigra</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Jungia ferruginea</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Kalimeris integrifolia</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Lantana camara</em></td>
 <td align="left">2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Lathyrus quinquenervius</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Latrobea pinnacula</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Liquidambar styraciflua</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Liriodendron tulipifera</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Lomelosia prolifera</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Lupinus arboreus</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Lupinus perennis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Lupinus pilosus</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Lupinus polyphyllus</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Lupinus sericeus</em></td>
 <td align="left">2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Lysimachia borealis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Madhuca longifolia</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Maianthemum canadense</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Maianthemum gigas</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Maianthemum racemosum</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Medicago polymorpha</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Melampyrum pratsense</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Melhania ovata</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Melilotus albus</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Mimulus guttatus</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Mimulus verbanaceus</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Monarda fistulosa</em></td>
 <td align="left">3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Monarda punctata</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Montigena novae-zelandiae</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Morinda pubescens</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Munnozia pinnatipartita</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Myrica faya</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Myrrhidendron donnellsmithii</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Nectandra lineata</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Nicotiana attenuata</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Onoclea sensibilis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Opuntia cespitosa</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Opuntia engelmanii</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Panax trifolius</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Passiflora apetala</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
-<td align="left"><em>Pastinaca sativa</em></td>
-<td align="left">1</td>
-</tr>
 <tr class="even">
+<td align="left"><em>Pastinaca sativa</em></td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
 <td align="left"><em>Persoonia micranthera</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Phaseolus lunatus</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Physalis heterophylla</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Physalis longifolia</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Phytolacca americana</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Phytolacca rivinoides</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Pilea pumila</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Pilea vulcanica</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Piper kelleyi</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Piper sp1</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Piper sp2</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Piper umbellatum</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Plantago asiatica</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Plantago depressa</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Plantago lanceolata</em></td>
 <td align="left">3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Plantago major</em></td>
 <td align="left">6</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Podophyllum peltatum</em></td>
 <td align="left">2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Polygonatum biflorum</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Potentilla gracilis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Potentilla recta</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Potentilla simplex</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Prosopis velutina</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Psychotria aubletiana</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Ptelea trifoliata</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Quercus alba</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Quercus garryana</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Quercus insignis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Quercus robur</em></td>
 <td align="left">2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Ranunculus haastii</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Ranunculus paucifolius</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Raoulia eximia</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Raphanus raphanistrum</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Ratibida pinnata</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><em>Rhus copallinum</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><em>Ricinus communis</em></td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left"><em>Roystonea regia</em></td>
 <td align="left">1</td>
 </tr>
 <tr class="odd">
