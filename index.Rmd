@@ -49,7 +49,7 @@ ggplot() +
 		axis.ticks=element_blank()) + 
 #	geom_point(aes(x=planned$longitude.location, y=planned$latitude.location), fill=viridis(2,)[1], size=1.25,
 #		shape=21, alpha=0.5) +
-	geom_point(aes(x=d$longitude.location, y=d$latitude.location), fill=viridis(2)[2], size=1.75, shape=21) +
+	geom_point(aes(x=d$longitude.location, y=d$latitude.location), fill=viridis(2)[2], size=1.75, shape=21, alpha=0.7) +
 	coord_fixed()
 ```
 

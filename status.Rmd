@@ -227,15 +227,15 @@ A map of our sampling progress.
 
 ```{r, echo=FALSE, warning=FALSE, out.width = "800px", fig.asp=0.5, fig.align='center', fig.cap="Sampling areas with at least one completed survey. We’re continually adding new sites."}
 mapWorld = borders("world", colour="gray80", fill="gray80") # create a layer of borders
-ggplot() + 
+ggplot(data=d, aes(x=longitude.location, y=latitude.location)) + 
 	mapWorld + 
 	theme_bw() + 
 	theme(axis.title=element_blank(), axis.text=element_blank(),
 		axis.ticks=element_blank()) + 
-#	geom_point(aes(x=planned$longitude.location, y=planned$latitude.location), fill=viridis(2,)[1], size=1.25,
-#		shape=21, alpha=0.5) +
-	geom_point(aes(x=d$longitude.location, y=d$latitude.location), fill=viridis(2)[2], size=1.75, shape=21) +
-	coord_fixed()
+  #geom_hex(bins=c(60,80)*1.5) +
+	geom_point(fill=viridis(2)[2], size=1.75, shape=21, alpha=0.7) +
+	coord_fixed() #+
+  #scale_fill_viridis(alpha=1, direction=1)
 ```
 
 <br>
