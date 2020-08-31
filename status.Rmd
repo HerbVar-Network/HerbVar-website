@@ -245,9 +245,11 @@ ggplot(data=d, aes(x=longitude.location, y=latitude.location)) +
 Our current species list with the number of surveys completed for each species.
 
 ```{r, echo=FALSE}
-Genus_sp.form = paste('*', d.complete$Genus_sp, '*', sep='')
+Genus_sp.form = paste(d.complete$plantFamily, ":", '*', d.complete$Genus_sp, '*', sep='')
 Genus_sp.form = sub('_', ' ', Genus_sp.form)
 num.spp = table(Genus_sp.form)
-kable(num.spp, col.names=c('Plant species', 'No. surveys'), align=c('l','l'))
+num.spp = data.frame(num.spp)
+num.spp = separate(num.spp, 1, into=c("Plant family", "Plant species"), sep=':')
+kable(num.spp, col.names=c('Plant family', 'Plant species', 'No. surveys'), align=c('l','l', 'l'))
 ```
 
