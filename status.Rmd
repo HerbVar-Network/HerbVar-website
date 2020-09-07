@@ -162,7 +162,7 @@ The geographic distribution of our surveys. Each point is a one survey.
 
 ## Sampling within plant families
 
-```{r, echo=FALSE, fig.align='center', fig.width=5, fig.asp=1.85, fig.cap="Number of completed surveys per plant family. Our five focal families are in yellow (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae)."}
+```{r, echo=FALSE, fig.align='center', fig.width=5, fig.asp=2, fig.cap="Number of completed surveys per plant family. Our five focal families are in yellow (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae)."}
 
 ggplot(d.complete, aes(x=plantFamily, fill=focalFamily)) + geom_bar() + coord_flip() + 
 	ylab('No. surveys') + xlab('Plant family') + theme_classic() +
