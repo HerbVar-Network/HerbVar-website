@@ -157,65 +157,88 @@ ggplot(d.complete, aes(x=plantFamily, fill=focalFamily)) + geom_bar() + coord_fl
 
 ## Sampling within focal species
 
-We have three focal species that we are aiming to sampling across the broadest possible geographic extent and across broad environmental gradients. These are _Taraxacum officinale_, _Plantago lanceolata_, and _Plantago major_. This is the newest part of our sampling effort, so we are just starting to collect these data.
+We have three focal species that we are aiming to sampling across the broadest possible geographic extent and across broad environmental gradients. These are _Taraxacum officinale_, _Plantago major_, and _Plantago lanceolata_. This is the newest part of our sampling effort, so we are just starting to collect these data.
 
 ```{r, include=FALSE}
-map.world = map_data('world')
+# map.world = map_data('world')
+# 
+# 
+# dfs$Taraxacum.count = as.integer(dfs$Taraxacum.count)
+# dfs$Plantago_major.count = as.integer(dfs$Plantago_major.count)
+# 
+# map.world$region[map.world$region == 'USA'] = 'United States'
+# map.world$region[map.world$region == 'UK'] = 'United Kingdom'
+# map.world$region[map.world$region == 'Russia'] = 'Russian Federation'
+# map.world$region[map.world$region == 'Democratic Republic of the Congo'] = 'The Democratic Republic of The Congo'
+# map.world$region[map.world$region == 'Republic of Congo'] = 'Congo'
+# 
+# 
+# anti_join(dfs, map.world, by=c('Country' = 'region'))
+# 
+# focal.sp.map.data = left_join(map.world, dfs, by = c('region' = 'Country'))
+# 
+# # For countries not in the list (because of match problems), set count to zero
+# # Check on this and fix matches as we add countries!
+# focal.sp.map.data$Taraxacum.count[is.na(focal.sp.map.data$Taraxacum.count)] = 0
+# focal.sp.map.data$Plantago_major.count[is.na(focal.sp.map.data$Plantago_major.count)] = 0
 
+Taof = subset(d.complete, Genus_sp == 'Taraxacum_officinale')
+Plma = subset(d.complete, Genus_sp == 'Plantago_major')
+Plla = subset(d.complete, Genus_sp == 'Plantago_lanceolata')
 
-dfs$Taraxacum.count = as.integer(dfs$Taraxacum.count)
-dfs$Plantago_major.count = as.integer(dfs$Plantago_major.count)
+mapWorld = borders("world", colour="gray80", fill="gray80") # create a layer of borders
 
-map.world$region[map.world$region == 'USA'] = 'United States'
-map.world$region[map.world$region == 'UK'] = 'United Kingdom'
-map.world$region[map.world$region == 'Russia'] = 'Russian Federation'
-map.world$region[map.world$region == 'Democratic Republic of the Congo'] = 'The Democratic Republic of The Congo'
-map.world$region[map.world$region == 'Republic of Congo'] = 'Congo'
-
-
-anti_join(dfs, map.world, by=c('Country' = 'region'))
-
-focal.sp.map.data = left_join(map.world, dfs, by = c('region' = 'Country'))
-
-# For countries not in the list (because of match problems), set count to zero
-# Check on this and fix matches as we add countries!
-focal.sp.map.data$Taraxacum.count[is.na(focal.sp.map.data$Taraxacum.count)] = 0
-focal.sp.map.data$Plantago_major.count[is.na(focal.sp.map.data$Plantago_major.count)] = 0
 ```
 
 
-```{r, echo=FALSE, out.width="600px", fig.asp=0.5, fig.align='center'}
+```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.asp=0.5, fig.align='center'}
 
 # Plot it
-ggplot(focal.sp.map.data, aes( x= long, y = lat, group = group)) +
-  geom_polygon(aes(fill = Taraxacum.count)) +
-  scale_fill_gradient(low='grey90', high=viridis(2)[1], breaks=0:max(focal.sp.map.data$Taraxacum.count)) +
-  guides(fill = guide_legend(reverse = T)) +
-  labs(fill = 'No. surveys'
-       ,title = expression(~italic('Taraxacum officinale')~'surveys by country')
+ggplot(Taof, aes( x= longitude.location, y = latitude.location)) +
+	mapWorld + 
+	theme_bw() + 
+	theme(axis.title=element_blank(), axis.text=element_blank(),
+		axis.ticks=element_blank()) + 
+	geom_point(fill=viridis(1)[1], size=1.75, shape=21, alpha=0.7) +
+	coord_fixed() +
+   labs(fill = NULL
+       ,title = expression(~italic('Taraxacum officinale')~'surveys')
        ,subtitle = NULL
        ,x = NULL
-       ,y = NULL) +
-  theme_bw() +
-	theme(axis.title=element_blank(), axis.text=element_blank(),
-		axis.ticks=element_blank()) +
-	coord_fixed()
+       ,y = NULL)
 ```
 
-```{r, echo=FALSE, out.width="600px", fig.asp=0.5, fig.align='center'}
-ggplot(focal.sp.map.data, aes( x= long, y = lat, group = group)) +
-  geom_polygon(aes(fill = Plantago_major.count)) +
-  scale_fill_gradient(low='grey90', high=viridis(2)[1], breaks=0:max(focal.sp.map.data$Plantago_major.count, na.rm = TRUE)) +
-  guides(fill = guide_legend(reverse = T)) +
-  labs(fill = 'No. surveys'
-       ,title = expression(~italic('Plantago major')~'surveys by country')
+```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.asp=0.5, fig.align='center'}
+# Plot it
+ggplot(Plma, aes( x= longitude.location, y = latitude.location)) +
+	mapWorld + 
+	theme_bw() + 
+	theme(axis.title=element_blank(), axis.text=element_blank(),
+		axis.ticks=element_blank()) + 
+	geom_point(fill=viridis(1)[1], size=1.75, shape=21, alpha=0.7) +
+	coord_fixed() +
+   labs(fill = NULL
+       ,title = expression(~italic('Plantago major')~'surveys')
        ,subtitle = NULL
        ,x = NULL
-       ,y = NULL) +
-  theme_bw() +
+       ,y = NULL)
+
+```
+
+```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.asp=0.5, fig.align='center'}
+# Plot it
+ggplot(Plla, aes( x= longitude.location, y = latitude.location)) +
+	mapWorld + 
+	theme_bw() + 
 	theme(axis.title=element_blank(), axis.text=element_blank(),
-		axis.ticks=element_blank()) +
-	coord_fixed()
+		axis.ticks=element_blank()) + 
+	geom_point(fill=viridis(1)[1], size=1.75, shape=21, alpha=0.7) +
+	coord_fixed() +
+   labs(fill = NULL
+       ,title = expression(~italic('Plantago lanceolata')~'surveys')
+       ,subtitle = NULL
+       ,x = NULL
+       ,y = NULL)
 
 ```
 
