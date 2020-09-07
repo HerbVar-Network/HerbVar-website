@@ -144,9 +144,25 @@ plot(family_tree, show.tip.label=TRUE, edge.col=col.vector, edge.width=2,type = 
 
 <br>
 
+```{r, echo=FALSE, warning=FALSE, out.width = "800px", fig.asp=0.5, fig.align='center', fig.cap="Sampling areas with at least one completed survey. We’re continually adding new sites."}
+mapWorld = borders("world", colour="gray80", fill="gray80") # create a layer of borders
+ggplot(data=d, aes(x=longitude.location, y=latitude.location)) + 
+	mapWorld + 
+	theme_bw() + 
+	theme(axis.title=element_blank(), axis.text=element_blank(),
+		axis.ticks=element_blank()) + 
+  #geom_hex(bins=c(60,80)*1.5) +
+	geom_point(fill=viridis(2)[2], size=1.75, shape=21, alpha=0.7) +
+	coord_fixed() #+
+  #scale_fill_viridis(alpha=1, direction=1)
+```
+The geographic distribution of our surveys. Each point is a one survey.
+
+<br>
+
 ## Sampling within plant families
 
-```{r, echo=FALSE, fig.align='center', fig.width=5, fig.asp=1.75, fig.cap="Number of completed surveys per plant family. Our five focal families are in yellow (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae)."}
+```{r, echo=FALSE, fig.align='center', fig.width=5, fig.asp=1.85, fig.cap="Number of completed surveys per plant family. Our five focal families are in yellow (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae)."}
 
 ggplot(d.complete, aes(x=plantFamily, fill=focalFamily)) + geom_bar() + coord_flip() + 
 	ylab('No. surveys') + xlab('Plant family') + theme_classic() +
@@ -242,24 +258,6 @@ ggplot(Plla, aes( x= longitude.location, y = latitude.location)) +
 
 ```
 
-<br>
-
-## Geographic extent
-
-A map of our sampling progress.
-
-```{r, echo=FALSE, warning=FALSE, out.width = "800px", fig.asp=0.5, fig.align='center', fig.cap="Sampling areas with at least one completed survey. We’re continually adding new sites."}
-mapWorld = borders("world", colour="gray80", fill="gray80") # create a layer of borders
-ggplot(data=d, aes(x=longitude.location, y=latitude.location)) + 
-	mapWorld + 
-	theme_bw() + 
-	theme(axis.title=element_blank(), axis.text=element_blank(),
-		axis.ticks=element_blank()) + 
-  #geom_hex(bins=c(60,80)*1.5) +
-	geom_point(fill=viridis(2)[2], size=1.75, shape=21, alpha=0.7) +
-	coord_fixed() #+
-  #scale_fill_viridis(alpha=1, direction=1)
-```
 
 <br>
 
