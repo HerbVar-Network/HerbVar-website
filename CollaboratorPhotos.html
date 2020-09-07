@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -69,7 +69,9 @@ h6 {
 </style>
 
 
+</head>
 
+<body>
 
 <style type = "text/css">
 .main-container {
@@ -83,6 +85,7 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -92,9 +95,6 @@ img {
 }
 button.code-folding-btn:focus {
   outline: none;
-}
-summary {
-  display: list-item;
 }
 </style>
 
@@ -110,6 +110,7 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
+
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -129,43 +130,6 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -187,74 +151,19 @@ $(document).ready(function () {
 });
 </script>
 
+
+<div class="container-fluid main-container">
+
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
 
 <!-- code folding -->
 
 
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
 
 
 
@@ -321,7 +230,7 @@ $(document).ready(function () {
 </div>
 
 
-<p>We are a global team of scientists working together to understand how plant-herbivore interactions vary around the world! Below is a selection of photos of us and the plants and herbivores we study. You can find <a href="CollaboratorDirectory.html">a list of all our collaborators and their institutions here</a>. Our <a href="leadership.html">leadership team is here</a>.</p>
+<p>We are a global team of scientists working together to understand how plant-herbivore interactions vary around the world. Below is a selection of photos of us and the plants and herbivores we study. You can find <a href="CollaboratorDirectory.html">a list of all our collaborators and their institutions in our directory here</a>. Our <a href="leadership.html">leadership team is here</a>.</p>
 <center>
 <div class="figure">
 <img src="photos/collaborator_photos/1Phartyal.jpg" alt="Shyam Phartyal and colleagues surveying Calotropis procera, Ruellia tuberosa, and Argemone maxicana in Bihar, India" style="width:70.0%" />
@@ -336,6 +245,11 @@ $(document).ready(function () {
 <div class="figure">
 <img src="photos/collaborator_photos/3Segre_Sadeh.jpg" alt="Hila Segre and Asaf Sadeh surveying Raphanus raphanistrum and other species in Israel" style="width:70.0%" />
 <p class="caption">Hila Segre and Asaf Sadeh surveying <em>Raphanus raphanistrum</em> and other species in Israel</p>
+</div>
+<p> </p>
+<div class="figure">
+<img src="photos/collaborator_photos/4Egbon.jpg" alt="Ikponmwosa Egbon, Festus Omono, Cynthia Udeogwu, Eghosa Joseph Omoragbon, Afure Joan Ejomah, Charles Ogbebor, Osatae Egbon, Orhue Osasumwen Omoigui, Kelvin Ogbiede, and colleagues surveying Landolphia dulcis, gilletii Triclisia, and other species outside of Benin City, Nigeria" style="width:70.0%" />
+<p class="caption">Ikponmwosa Egbon, Festus Omono, Cynthia Udeogwu, Eghosa Joseph Omoragbon, Afure Joan Ejomah, Charles Ogbebor, Osatae Egbon, Orhue Osasumwen Omoigui, Kelvin Ogbiede, and colleagues surveying <em>Landolphia dulcis</em>, <em>gilletii Triclisia</em>, and other species outside of Benin City, Nigeria</p>
 </div>
 <p> </p>
 <div class="figure">
@@ -452,23 +366,6 @@ $(document).ready(function () {
 
 
 </script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

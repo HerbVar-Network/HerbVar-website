@@ -3,7 +3,7 @@ title: "Meet the HerbVar team"
 output: html_document
 ---
 
-We are a global team of scientists working together to understand how plant-herbivore interactions vary around the world! Below is a selection of photos of us and the plants and herbivores we study. You can find [a list of all our collaborators and their institutions here](CollaboratorDirectory.html). Our [leadership team is here](leadership.html).
+We are a global team of scientists working together to understand how plant-herbivore interactions vary around the world. Below is a selection of photos of us and the plants and herbivores we study. You can find [a list of all our collaborators and their institutions in our directory here](CollaboratorDirectory.html). Our [leadership team is here](leadership.html).
 
 <center>
 
@@ -16,6 +16,10 @@ We are a global team of scientists working together to understand how plant-herb
 &nbsp;
 
 ![Hila Segre and Asaf Sadeh surveying _Raphanus raphanistrum_ and other species in Israel](photos/collaborator_photos/3Segre_Sadeh.jpg){width=70%}  
+
+&nbsp;
+
+![Ikponmwosa Egbon, Festus Omono, Cynthia Udeogwu, Eghosa Joseph Omoragbon, Afure Joan Ejomah, Charles Ogbebor, Osatae Egbon, Orhue Osasumwen Omoigui, Kelvin Ogbiede, and colleagues surveying _Landolphia dulcis_, _gilletii Triclisia_, and other species outside of Benin City, Nigeria](photos/collaborator_photos/4Egbon.jpg){width=70%}  
 
 &nbsp;
 
