@@ -53,7 +53,7 @@ knitr::include_graphics("photos/people/hahn.jpg")
 **Dr. Phil Hahn**  
 Department of Entomology & Nematology  
 University of Florida  
-phil.hahn (a) mso.umt.edu • [website](https://plant-herbivore-interactions.net/)  
+hahnp (a) ufl.edu • [website](https://plant-herbivore-interactions.net/)  
 *(Apocynaceae and Solanaceae Coordinator)*  
 <br>
 
