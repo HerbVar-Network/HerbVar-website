@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -69,7 +69,9 @@ h6 {
 </style>
 
 
+</head>
 
+<body>
 
 <style type = "text/css">
 .main-container {
@@ -83,6 +85,7 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -92,9 +95,6 @@ img {
 }
 button.code-folding-btn:focus {
   outline: none;
-}
-summary {
-  display: list-item;
 }
 </style>
 
@@ -110,6 +110,7 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
+
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -129,43 +130,6 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -187,74 +151,19 @@ $(document).ready(function () {
 });
 </script>
 
+
+<div class="container-fluid main-container">
+
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
 
 <!-- code folding -->
 
 
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
 
 
 
@@ -1042,148 +951,158 @@ $(document).ready(function () {
 <td align="left">Jibin Joseph, T. Harini, Manish Kuntal Buragohain, H.R. Raksha, Rahul Gour (M.Sc. Students in Ecology &amp; Environmental Sciences)</td>
 </tr>
 <tr class="odd">
+<td align="left">Rohit Pawar</td>
+<td align="left">Savitribai Phule Pune Univ</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
 <td align="left">Quentin Paynter</td>
 <td align="left">Manaaki Whenua – Landcare Research</td>
 <td align="left">Ronny Groenteman, Aoife Neill</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Ian Pearse</td>
 <td align="left">US Geological Survey</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Adam Pepi</td>
 <td align="left">Univ of California, Davis</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Shyam Phartyal</td>
 <td align="left">Nalanda University</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Frida Piper</td>
 <td align="left">Centro de Investigación en Ecosistemas de la Patagonia</td>
 <td align="left">Caroline Dallstream</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Katja Poveda</td>
 <td align="left">Cornell Univ</td>
 <td align="left">Jessica Lorena Vaca</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Beth Pringle</td>
 <td align="left">Univ of Nevada, Reno</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Serban Proches</td>
 <td align="left">University of Kwazulu-Natal</td>
 <td align="left">Aalia Motala</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Javier Puy</td>
 <td align="left">Trinity College Dublin</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Tere Quijano</td>
 <td align="left">Universidad Autónoma de Yucatán</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Carolina Quintero</td>
 <td align="left">INIBIOMA (CONICET-Universidad Nacional del Comahue)</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Sergio Rasmann</td>
 <td align="left">Univ of Neuchâtel</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Lora Richards</td>
 <td align="left">Univ of Nevada, Reno</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Moria Robinson</td>
 <td align="left">Michigan State Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Haldre Rogers</td>
 <td align="left">Iowa State Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Jay Rosenheim</td>
 <td align="left">Univ of California, Davis</td>
 <td align="left">Leah Rosenheim</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Clarissa Rosa</td>
 <td align="left">Instituto Nacional de Pesquisas da Amazônia</td>
 <td align="left">Filipe França</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">María Rosa Rossetti</td>
 <td align="left">Univ Nacional de Córdoba</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Betsabé Ruiz-Guerra</td>
 <td align="left">INECOL</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Justin Runyon</td>
 <td align="left">Rocky Mountain Research Station, USFS</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Asaf Sadeh</td>
 <td align="left">Volcani Center, Israel</td>
 <td align="left">Hila Segre</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Yuzu Sakata</td>
 <td align="left">Akita Prefectural Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Diego Salazar</td>
 <td align="left">Florida International Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Danielle Salcido</td>
 <td align="left">Univ of Nevada, Reno</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Cristian Salgado-Luarte</td>
 <td align="left">Univ de La Serena</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Bráulio Santos</td>
 <td align="left">Federal Univ of Paraíba</td>
 <td align="left">Janete Ferreira Andrade</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Yuval Sapir</td>
 <td align="left">Yehuda Naftali Botanic Garden, Tel-Aviv Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Yamila Sasal</td>
 <td align="left">INIBIOMA (CONICET-Universidad Nacional del Comahue)</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Yasuhiro Sato</td>
 <td align="left">Ryukoku Univ</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Manasi Sawant</td>
+<td align="left">Savitribai Phule Pune Univ</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
@@ -1432,23 +1351,6 @@ $(document).ready(function () {
 
 
 </script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

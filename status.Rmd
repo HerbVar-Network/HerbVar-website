@@ -19,11 +19,14 @@ d = read_sheet("https://docs.google.com/spreadsheets/d/1mNYnSTCs9WYy5SN2HF4VYep5
            sheet='Completed surveys')
 d = data.frame(d)
 
+# Drop rows without an entry for Genus_sp
+d = subset(d, !is.na(d$Genus_sp))
+
 
 # Load planned site locations
-planned = read_sheet("https://docs.google.com/spreadsheets/d/1avm6eedbaLt3V1E3q2lg6IuUs7mPPEKWcsvlhWsfqk4/edit?usp=sharing",
-           sheet='planned surveys')
-planned = data.frame(planned)
+# planned = read_sheet("https://docs.google.com/spreadsheets/d/1avm6eedbaLt3V1E3q2lg6IuUs7mPPEKWcsvlhWsfqk4/edit?usp=sharing",
+#            sheet='planned surveys')
+# planned = data.frame(planned)
 
 # Load meta data on focal species
 dfs = read_sheet("https://docs.google.com/spreadsheets/d/1mNYnSTCs9WYy5SN2HF4VYep550Sccz9xU5o8JuYut-A/edit?usp=sharing",
