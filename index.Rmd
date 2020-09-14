@@ -18,10 +18,10 @@ Welcome to the Herbivory Variability Network ("HerbVar"). We are a global resear
 knitr::include_graphics("photos/herb_collage.png")
 ```
 
-Although we are a new network (founded in mid 2019), we already have nearly 200 collaborators from more than 100 institutions across 30+ countries. Please email [Will Wetzel, Moria Robinson, or a member of the HerbVar Planning Group](leadership.html) if you are interested in joining us. We are always looking for additional collaborators, especially those who can contribute data from under-sampled regions or from new plant families or focal plant families and species.
+Although we are a new network (founded in mid 2019), we already have more than 200 collaborators from more than 100 institutions across 30+ countries. Please email [Will Wetzel, Moria Robinson, or a member of the HerbVar Planning Group](leadership.html) if you are interested in joining us. We are always looking for additional collaborators, especially those who can contribute data from under-sampled regions or from new plant families or focal plant families and species.
 
 
-Our growing dataset currently has >300 surveys of >200 plant species from >80 plant families. These are spread across North America, Central America, South America, Europe, Africa, Asia, and Australia, and we are working to expand our geographic extent.
+Our growing dataset currently has around 400 surveys of >300 plant species from >110 plant families. These are spread across North America, Central America, South America, Europe, Africa, Asia, and Australia, and we are working to expand our geographic extent.
 
 ```{r, include=FALSE}
 
@@ -59,7 +59,7 @@ ggplot() +
 The Herbivory Variability Network is run out of [Michigan State University](https://msu.edu/). Support and seed funding for coordination was provided by [MSU AgBioResearch](https://www.canr.msu.edu/research/), [MSU Department of Entomology](https://www.canr.msu.edu/ent/), and [MSU CANR International Programs](https://www.canr.msu.edu/global/).
 
 
-```{r, echo=FALSE, out.width = "200px", fig.align='center', dpi=72}
+```{r, echo=FALSE, out.width = "250px", fig.align='center', dpi=72}
 knitr::include_graphics("photos/wordmark_green_RGB.png")
 ```
 
