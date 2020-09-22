@@ -57,7 +57,7 @@ Below we show the current status of our sampling for each of the three scales of
 <br>
 
 ## Sampling across plant families
-```{r echo=FALSE, out.width="800px", fig.align="center", fig.cap="The distribution of currently sampled plant families across the phylogeny of all extant vascular plant families. Our five focal families are in yellow (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae), and other sampled families are in purple. Figure made by HerbVar collaborator [Marjorie Weber](http://www.theweberlab.com) with mega-tree from Jin et al. 2019."}
+```{r echo=FALSE, out.width="800px", fig.align="center", fig.cap="The distribution of currently sampled plant families (purple) across the phylogeny of all extant vascular plant families. Figure made by HerbVar collaborator [Marjorie Weber](http://www.theweberlab.com) with mega-tree from Jin et al. 2019."}
 
 # Load phylogeny packages
 require(V.PhyloMaker)
@@ -100,11 +100,11 @@ family.names<-family_tree$tip.label
 herbvar.presabs<-rep(0,length(family.names))
 herbvar.presabs[tolower(family.names) %in% tolower(herbvar_tax_names_clean$family)]<-1
 names(herbvar.presabs)<-family.names
-herbvar.presabs[names(herbvar.presabs) == 'Asteraceae'] = 2
-herbvar.presabs[names(herbvar.presabs) == 'Apocynaceae'] = 2
-herbvar.presabs[names(herbvar.presabs) == 'Fabaceae'] = 2
-herbvar.presabs[names(herbvar.presabs) == 'Rubiaceae'] = 2
-herbvar.presabs[names(herbvar.presabs) == 'Solanaceae'] = 2
+#herbvar.presabs[names(herbvar.presabs) == 'Asteraceae'] = 2
+#herbvar.presabs[names(herbvar.presabs) == 'Apocynaceae'] = 2
+#herbvar.presabs[names(herbvar.presabs) == 'Fabaceae'] = 2
+#herbvar.presabs[names(herbvar.presabs) == 'Rubiaceae'] = 2
+#herbvar.presabs[names(herbvar.presabs) == 'Solanaceae'] = 2
 
 herbvar.colors = rep('transparent', length=length(herbvar.presabs))
 herbvar.colors[herbvar.presabs == 1] = 'purple'
@@ -154,10 +154,12 @@ ggplot(data=d, aes(x=longitude.location, y=latitude.location)) +
 	theme_bw() + 
 	theme(axis.title=element_blank(), axis.text=element_blank(),
 		axis.ticks=element_blank()) + 
-	geom_point(fill=viridis(2)[2], size=1.75, shape=21, alpha=0.7) +
-	coord_fixed() #+
-  #stat_binhex(aes(fill=sqrt(..count..)), bins=c(60,80)*1.5) +
-  #scale_fill_viridis(alpha=0.8, direction=1)
+	#geom_point(fill=viridis(2)[2], size=1.75, shape=21, alpha=0.7) +
+	coord_fixed() +#+
+  #stat_binhex(bins=c(60,80)*1.75) +
+  stat_binhex(aes(fill=cut(..count.., breaks=c(1,2,5,10,20,1000), 
+        labels=c('1','2-5','6-9','10-19','>=20'), right=FALSE)), bins=c(60,80)*1.25) +
+  scale_fill_viridis_d(alpha=0.9, name='No. surveys')
 ```
 
 <br>
