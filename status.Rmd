@@ -42,7 +42,7 @@ d.complete = d[!is.na(d$plantFamily),] # data.frame for complete entries
 
 ```
 
-The Herbivory Variability Network has completed **`r nrow(d)` surveys on `r length(unique(d.complete$Genus_sp))` plant species from `r length(unique(d.complete$plantFamily))` plant families**. These figures and tables update as new data are entered into our database, so check back often! 
+The Herbivory Variability Network has completed **`r nrow(d)` surveys on `r length(unique(d.complete$Genus_sp))` plant species from `r length(unique(d.complete$plantFamily))` plant families**, which is about `r round( (length(unique(d.complete$plantFamily))/465) * 100, 0)`% of all extant vascular plant families. These figures and tables update as new data are entered into our database, so check back often! 
 
 We have a three-scaled sampling approach:
 
