@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -69,7 +69,9 @@ h6 {
 </style>
 
 
+</head>
 
+<body>
 
 <style type = "text/css">
 .main-container {
@@ -83,6 +85,7 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -92,9 +95,6 @@ img {
 }
 button.code-folding-btn:focus {
   outline: none;
-}
-summary {
-  display: list-item;
 }
 </style>
 
@@ -110,6 +110,7 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
+
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -129,43 +130,6 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -187,74 +151,19 @@ $(document).ready(function () {
 });
 </script>
 
+
+<div class="container-fluid main-container">
+
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
 
 <!-- code folding -->
 
 
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
 
 
 
@@ -321,7 +230,7 @@ $(document).ready(function () {
 </div>
 
 
-<p>The Herbivory Variability Network has completed <strong>446 surveys on 342 plant species from 118 plant families</strong>, which is about 25% of all extant vascular plant families. These figures and tables update as new data are entered into our database, so check back often!</p>
+<p>The Herbivory Variability Network has completed <strong>455 surveys on 351 plant species from 119 plant families</strong>, which is about 26% of all extant vascular plant families. These figures and tables update as new data are entered into our database, so check back often!</p>
 <p>We have a three-scaled sampling approach:</p>
 <ol style="list-style-type: decimal">
 <li>Sampling one plant species from as many plant families as possible</li>
@@ -560,122 +469,132 @@ Number of completed surveys per plant family. Our five focal families are in yel
 </tr>
 <tr class="odd">
 <td align="left">Aristolochiaceae</td>
-<td align="left"><em>Asarum canadense</em></td>
+<td align="left"><em>Aristolochia chilensis</em></td>
 <td align="left">1</td>
 </tr>
 <tr class="even">
+<td align="left">Aristolochiaceae</td>
+<td align="left"><em>Asarum canadense</em></td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
 <td align="left">Asparagaceae</td>
 <td align="left"><em>Hesperoyucca whipplei</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Asparagaceae</td>
 <td align="left"><em>Maianthemum canadense</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Asparagaceae</td>
 <td align="left"><em>Maianthemum gigas</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Asparagaceae</td>
 <td align="left"><em>Polygonatum biflorum</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Aspleniaceae</td>
 <td align="left"><em>Asplenium claussenii</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Aspleniaceae</td>
 <td align="left"><em>Asplenium platyneuron</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Achillea ptarmica</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Ageratina altissima</em></td>
 <td align="left">2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Anthemis galiale</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Arctium minus</em></td>
 <td align="left">2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Artemisia mongolica</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Artemisia sp</em></td>
 <td align="left">2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Artemisia tridentata</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Balsamorhiza sagittata</em></td>
 <td align="left">3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Bidens frondosa</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Bidens triplinerva</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Celmisia discolor</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Celmisia spectabilis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Chromolaena odorata</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Cirsium arvense</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Conoclinium coelestinum</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Echinacea purpurea</em></td>
 <td align="left">2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Emilia praetermissa</em></td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Asteraceae</td>
+<td align="left"><em>Encelia canescens</em></td>
 <td align="left">1</td>
 </tr>
 <tr class="odd">
@@ -690,67 +609,77 @@ Number of completed surveys per plant family. Our five focal families are in yel
 </tr>
 <tr class="odd">
 <td align="left">Asteraceae</td>
+<td align="left"><em>Flourensia thurifera</em></td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Asteraceae</td>
 <td align="left"><em>Grindelia squarrosa</em></td>
 <td align="left">3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Helianthella quinquenervis</em></td>
 <td align="left">2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Helianthus annuus</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Hypochaeris chillensis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Hypochaeris radicata</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Ixeridium dentatum</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Jessea multivenia</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Jungia ferruginea</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Kalimeris integrifolia</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Lactuca sibirica</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Maianthemum racemosum</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Melanthera scandens</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Munnozia pinnatipartita</em></td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Asteraceae</td>
+<td align="left"><em>Proustia cuneifolia</em></td>
 <td align="left">1</td>
 </tr>
 <tr class="even">
@@ -780,172 +709,182 @@ Number of completed surveys per plant family. Our five focal families are in yel
 </tr>
 <tr class="odd">
 <td align="left">Asteraceae</td>
-<td align="left"><em>Senecio madagascariensis</em></td>
+<td align="left"><em>Senecio brunonianus</em></td>
 <td align="left">1</td>
 </tr>
 <tr class="even">
+<td align="left">Asteraceae</td>
+<td align="left"><em>Senecio madagascariensis</em></td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Solidago altissima</em></td>
 <td align="left">5</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Solidago canadensis/altissima</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Solidago missouriensis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Solidago speciosa</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Symphyotrichum novae-angliae</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Taraxacum officinale</em></td>
 <td align="left">17</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Tragopogon dubius</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Tussilago farfara</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Vernonia baldwinii</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Vernonia gigantea</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Asteraceae</td>
 <td align="left"><em>Wyethia mollis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Balsaminaceae</td>
 <td align="left"><em>Impatiens capensis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Balsaminaceae</td>
 <td align="left"><em>Impatiens parviflora</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Berberidaceae</td>
 <td align="left"><em>Podophyllum peltatum</em></td>
 <td align="left">2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Betulaceae</td>
 <td align="left"><em>Alnus acuminata</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Betulaceae</td>
 <td align="left"><em>Carpinus caroliniana</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Bignoniaceae</td>
 <td align="left"><em>Catalpa speciosa</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Blechnaceae</td>
 <td align="left"><em>Lomaridium plumieri</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Boraginaceae</td>
 <td align="left"><em>Amsinckia menziesii</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Boraginaceae</td>
 <td align="left"><em>Cryptantha cinerea</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Boraginaceae</td>
 <td align="left"><em>Eriodictyon californica</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Boraginaceae</td>
 <td align="left"><em>Heliotropium indicum</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Brassicaceae</td>
 <td align="left"><em>Alliaria petiolata</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Brassicaceae</td>
 <td align="left"><em>Arabidopsis halleri</em></td>
 <td align="left">4</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Brassicaceae</td>
 <td align="left"><em>Brassica oleracea</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Brassicaceae</td>
 <td align="left"><em>Diplotaxis erucoides</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Brassicaceae</td>
 <td align="left"><em>Draba asterophora</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Brassicaceae</td>
 <td align="left"><em>Raphanus raphanistrum</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Bromeliaceae</td>
 <td align="left"><em>Vriesea platynema</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Buxaceae</td>
 <td align="left"><em>Buxus sempervirens</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Cactaceae</td>
 <td align="left"><em>Opuntia cespitosa</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Cactaceae</td>
 <td align="left"><em>Opuntia engelmanii</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Campanulaceae</td>
 <td align="left"><em>Campanula persicifolia</em></td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Campanulaceae</td>
+<td align="left"><em>Lobelia polyphylla</em></td>
 <td align="left">1</td>
 </tr>
 <tr class="odd">
@@ -1230,262 +1169,272 @@ Number of completed surveys per plant family. Our five focal families are in yel
 </tr>
 <tr class="odd">
 <td align="left">Fabaceae</td>
-<td align="left"><em>Senna occidentalis</em></td>
+<td align="left"><em>Senna cumingii</em></td>
 <td align="left">1</td>
 </tr>
 <tr class="even">
+<td align="left">Fabaceae</td>
+<td align="left"><em>Senna occidentalis</em></td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
 <td align="left">Fabaceae</td>
 <td align="left"><em>Trifolium repens</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Fabaceae</td>
 <td align="left"><em>Vicia sativa</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Fabaceae</td>
 <td align="left"><em>Wisteria floribunda</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Fagaceae</td>
 <td align="left"><em>Castanea sativa</em></td>
 <td align="left">5</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Fagaceae</td>
 <td align="left"><em>Fagus grandifolia</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Fagaceae</td>
 <td align="left"><em>Fagus sylvatica</em></td>
 <td align="left">2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Fagaceae</td>
 <td align="left"><em>Quercus alba</em></td>
 <td align="left">2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Fagaceae</td>
 <td align="left"><em>Quercus garryana</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Fagaceae</td>
 <td align="left"><em>Quercus insignis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Fagaceae</td>
 <td align="left"><em>Quercus robur</em></td>
 <td align="left">2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Fouquieriaceae</td>
 <td align="left"><em>Fouquieria splendens</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Gentianaceae</td>
 <td align="left"><em>Frasera speciosa</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Gentianaceae</td>
 <td align="left"><em>Gentianella bellidifolia</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Geraniaceae</td>
 <td align="left"><em>Erodium crassifolium</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Geraniaceae</td>
 <td align="left"><em>Geranium pratense</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Ginkgoaceae</td>
 <td align="left"><em>Ginkgo biloba</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Gunneraceae</td>
 <td align="left"><em>Gunnera tinctoria</em></td>
 <td align="left">2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Heliconiaceae</td>
 <td align="left"><em>Heliconia schiedeana</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Iridaceae</td>
 <td align="left"><em>Iris atrofusca</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Iridaceae</td>
 <td align="left"><em>Iris atropurpurea</em></td>
 <td align="left">2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Iridaceae</td>
 <td align="left"><em>Iris haynei</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Iridaceae</td>
 <td align="left"><em>Iris petrana</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Iridaceae</td>
 <td align="left"><em>Sisyrinchium tinctorium</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Juglandaceae</td>
 <td align="left"><em>Juglans nigra</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Lamiaceae</td>
 <td align="left"><em>Lycopus uniflorus</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Lamiaceae</td>
 <td align="left"><em>Monarda fistulosa</em></td>
 <td align="left">3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Lamiaceae</td>
 <td align="left"><em>Monarda punctata</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Lamiaceae</td>
 <td align="left"><em>Salvia pratensis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Lamiaceae</td>
 <td align="left"><em>Thymus vulgaris</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Lauraceae</td>
 <td align="left"><em>Nectandra lineata</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Lauraceae</td>
 <td align="left"><em>Sassafras albidum</em></td>
 <td align="left">2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Liliaceae</td>
 <td align="left"><em>Clintonia borealis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Loasaceae</td>
 <td align="left"><em>Mentzelia laevicaulis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Lythraceae</td>
 <td align="left"><em>Lythrum salicaria</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Magnoliaceae</td>
 <td align="left"><em>Liriodendron tulipifera</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Malvaceae</td>
 <td align="left"><em>Abutilon theophrasti</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Malvaceae</td>
 <td align="left"><em>Alcea rosea</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Malvaceae</td>
 <td align="left"><em>Brachychiton populneus</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Malvaceae</td>
 <td align="left"><em>Gossypium hirsutum</em></td>
 <td align="left">3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Malvaceae</td>
 <td align="left"><em>Melhania ovata</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Malvaceae</td>
 <td align="left"><em>Sphaeralcea coccinea</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Malvaceae</td>
 <td align="left"><em>Tilia americana</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Malvaceae</td>
 <td align="left"><em>Waltheria indica</em></td>
 <td align="left">3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Marsileaceae</td>
 <td align="left"><em>Marsilea minuta</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Melastomataceae</td>
 <td align="left"><em>Clidemia heterophylla</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Melastomataceae</td>
 <td align="left"><em>Heterotis rotundifolia</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Melastomataceae</td>
 <td align="left"><em>Trembleya laniflora</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Meliaceae</td>
 <td align="left"><em>Azadirachta indica</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Meliaceae</td>
 <td align="left"><em>Swietenia macrothylla</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Menispermaceae</td>
 <td align="left"><em>Triclisia gilletii</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Menyanthaceae</td>
 <td align="left"><em>Nephrophyllidium crista-galli</em></td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">Montiaceae</td>
+<td align="left"><em>Cistanthe sp</em></td>
 <td align="left">1</td>
 </tr>
 <tr class="odd">
@@ -1685,405 +1634,410 @@ Number of completed surveys per plant family. Our five focal families are in yel
 </tr>
 <tr class="even">
 <td align="left">Plantaginaceae</td>
+<td align="left"><em>Plantago hispidula</em></td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Plantaginaceae</td>
 <td align="left"><em>Plantago lanceolata</em></td>
 <td align="left">18</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Plantaginaceae</td>
 <td align="left"><em>Plantago major</em></td>
 <td align="left">10</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Poaceae</td>
 <td align="left"><em>Ammophila breviligulata</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Poaceae</td>
 <td align="left"><em>Bouteloua gracilis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Poaceae</td>
 <td align="left"><em>Elymus hystrix</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Poaceae</td>
 <td align="left"><em>Pascopyrum smithii</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Poaceae</td>
 <td align="left"><em>Zea mays</em></td>
 <td align="left">2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Polygonaceae</td>
 <td align="left"><em>Coccoloba cereifera</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Polygonaceae</td>
 <td align="left"><em>Coccoloba uvifera</em></td>
 <td align="left">2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Polygonaceae</td>
 <td align="left"><em>Persicaria virginiana</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Polygonaceae</td>
 <td align="left"><em>Rumex acetosa</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Polygonaceae</td>
 <td align="left"><em>Rumex crispus</em></td>
 <td align="left">2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Polygonaceae</td>
 <td align="left"><em>Rumex japonicus</em></td>
 <td align="left">4</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Polygonaceae</td>
 <td align="left"><em>Rumex obtusifolius</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Polypodiaceae</td>
 <td align="left"><em>Campyloneurum nitidum</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Portulacaceae</td>
 <td align="left"><em>Claytonia virginica</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Primulaceae</td>
 <td align="left"><em>Lysimachia borealis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Proteaceae</td>
 <td align="left"><em>Persoonia micranthera</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Pteridaceae</td>
 <td align="left"><em>Adiantum pedatum</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Ranunculaceae</td>
 <td align="left"><em>Anemone coronaria</em></td>
 <td align="left">3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Ranunculaceae</td>
 <td align="left"><em>Enemion biternatum</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Ranunculaceae</td>
 <td align="left"><em>Hepatica nobilis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Ranunculaceae</td>
 <td align="left"><em>Ranunculus haastii</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Ranunculaceae</td>
 <td align="left"><em>Ranunculus paucifolius</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Rosaceae</td>
 <td align="left"><em>Agrimonia eupatoria</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Rosaceae</td>
 <td align="left"><em>Potentilla gracilis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Rosaceae</td>
 <td align="left"><em>Potentilla recta</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Rosaceae</td>
 <td align="left"><em>Potentilla simplex</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Rosaceae</td>
 <td align="left"><em>Rubus chamaemorus</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Rosaceae</td>
 <td align="left"><em>Rubus fruticosus</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Rubiaceae</td>
 <td align="left"><em>Cephalanthus occidentalis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Rubiaceae</td>
 <td align="left"><em>Coffea arabica</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Rubiaceae</td>
 <td align="left"><em>Galium album</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Rubiaceae</td>
 <td align="left"><em>Morinda pubescens</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Rubiaceae</td>
 <td align="left"><em>Palicourea padifolia</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Rubiaceae</td>
 <td align="left"><em>Palicourea rigida</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Rubiaceae</td>
 <td align="left"><em>Psychotria aubletiana</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Rutaceae</td>
 <td align="left"><em>Erythrochiton brasiliensis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Rutaceae</td>
 <td align="left"><em>Ptelea trifoliata</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Rutaceae</td>
 <td align="left"><em>Zanthoxylum melanosticum</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Salicaceae</td>
 <td align="left"><em>Salix herbacea</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Santalaceae</td>
 <td align="left"><em>Viscum album</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Sapindaceae</td>
 <td align="left"><em>Acer campestre</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Sapindaceae</td>
 <td align="left"><em>Acer platanoides</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Sapindaceae</td>
 <td align="left"><em>Acer saccharum</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Sapindaceae</td>
 <td align="left"><em>Aesculus parviflora</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Sapotaceae</td>
 <td align="left"><em>Madhuca longifolia</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Sarraceniaceae</td>
 <td align="left"><em>Sarracenia purpurea</em></td>
 <td align="left">2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Saxifragaceae</td>
 <td align="left"><em>Mitella diphylla</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Scrophulariaceae</td>
 <td align="left"><em>Verbascum lychnitis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Scrophulariaceae</td>
 <td align="left"><em>Verbascum thapsus</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Simaroubaceae</td>
 <td align="left"><em>Ailanthus altissima</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Smilacaceae</td>
 <td align="left"><em>Smilax hispida</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Smilacaceae</td>
 <td align="left"><em>Smilax sp</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Solanaceae</td>
 <td align="left"><em>Datura wrightii</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Solanaceae</td>
 <td align="left"><em>Nicotiana attenuata</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Solanaceae</td>
 <td align="left"><em>Physalis heterophylla</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Solanaceae</td>
 <td align="left"><em>Physalis longifolia</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Solanaceae</td>
 <td align="left"><em>Salpichroa origanifolia</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Solanaceae</td>
 <td align="left"><em>Solanum carolinense</em></td>
 <td align="left">4</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Solanaceae</td>
 <td align="left"><em>Solanum cinereum</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Solanaceae</td>
 <td align="left"><em>Solanum donianum</em></td>
 <td align="left">3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Solanaceae</td>
 <td align="left"><em>Solanum elaeagnifolium</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Solanaceae</td>
 <td align="left"><em>Solanum incanum</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Solanaceae</td>
 <td align="left"><em>Solanum lycocarpum</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Solanaceae</td>
 <td align="left"><em>Solanum nigrum</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Solanaceae</td>
 <td align="left"><em>Solanum ptychanthum</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Solanaceae</td>
 <td align="left"><em>Solanum sp</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Solanaceae</td>
 <td align="left"><em>Solanum tridynamum</em></td>
 <td align="left">3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Typhaceae</td>
 <td align="left"><em>Typha latifolia</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Urticaceae</td>
 <td align="left"><em>Cecropia pachystachya</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Urticaceae</td>
 <td align="left"><em>Pilea pumila</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Urticaceae</td>
 <td align="left"><em>Pilea vulcanica</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Urticaceae</td>
 <td align="left"><em>Pouzolzia guineensis</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Urticaceae</td>
 <td align="left"><em>Urera baccifera</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Urticaceae</td>
 <td align="left"><em>Urtica dioica</em></td>
 <td align="left">2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Verbenaceae</td>
 <td align="left"><em>Lantana camara</em></td>
 <td align="left">3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Verbenaceae</td>
 <td align="left"><em>Verbena hastata</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Violaceae</td>
 <td align="left"><em>Viola pubescens</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Vitaceae</td>
 <td align="left"><em>Cissus vitiginea</em></td>
 <td align="left">1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Zygophyllaceae</td>
 <td align="left"><em>Zygophyllum dumosum</em></td>
 <td align="left">1</td>
@@ -2109,23 +2063,6 @@ $(document).ready(function () {
 
 
 </script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
