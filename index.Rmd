@@ -56,7 +56,7 @@ ggplot() +
 <br>
 <br>
 
-The Herbivory Variability Network is run out of [Michigan State University](https://msu.edu/). Support and seed funding for coordination was provided by [MSU AgBioResearch](https://www.canr.msu.edu/research/), [MSU Department of Entomology](https://www.canr.msu.edu/ent/), and [MSU CANR International Programs](https://www.canr.msu.edu/global/).
+The Herbivory Variability Network is run out of [Michigan State University](https://msu.edu/). Support and seed funding for coordination was provided by [MSU AgBioResearch](https://www.canr.msu.edu/research/), [MSU Department of Entomology](https://www.canr.msu.edu/ent/), [MSU CANR International Programs](https://www.canr.msu.edu/global/), and the [MSU Ecology, Evolution, and Behavior Program](https://eeb.msu.edu/).
 
 
 ```{r, echo=FALSE, out.width = "250px", fig.align='center', dpi=72}
