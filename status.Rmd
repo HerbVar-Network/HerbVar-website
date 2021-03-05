@@ -149,7 +149,7 @@ plot(family_tree, show.tip.label=TRUE, edge.col=col.vector, edge.width=2,type = 
 
 ```{r, echo=FALSE, warning=FALSE, out.width = "800px", fig.asp=0.5, fig.align='center', fig.cap="The geographic distribution of our completed surveys. Each hexagon shows the number of herbivory surveys that we have completed in that area."}
 mapWorld = borders("world", colour="gray80", fill="gray80") # create a layer of borders
-ggplot(data=d, aes(x=longitude.location, y=latitude.location)) + 
+ggplot(data=d, aes(x=transectOriginLong, y=transectOriginLat)) + 
 	mapWorld + 
 	theme_bw() + 
 	theme(axis.title=element_blank(), axis.text=element_blank(),
@@ -214,7 +214,7 @@ mapWorld = borders("world", colour="gray80", fill="gray80") # create a layer of 
 ```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.asp=0.5, fig.align='center'}
 
 # Plot it
-ggplot(Taof, aes( x= longitude.location, y = latitude.location)) +
+ggplot(Taof, aes(x=transectOriginLong, y=transectOriginLat)) +
 	mapWorld + 
 	theme_bw() + 
 	theme(axis.title=element_blank(), axis.text=element_blank(),
@@ -230,7 +230,7 @@ ggplot(Taof, aes( x= longitude.location, y = latitude.location)) +
 
 ```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.asp=0.5, fig.align='center'}
 # Plot it
-ggplot(Plma, aes( x= longitude.location, y = latitude.location)) +
+ggplot(Plma, aes(x=transectOriginLong, y=transectOriginLat)) +
 	mapWorld + 
 	theme_bw() + 
 	theme(axis.title=element_blank(), axis.text=element_blank(),
@@ -247,7 +247,7 @@ ggplot(Plma, aes( x= longitude.location, y = latitude.location)) +
 
 ```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.asp=0.5, fig.align='center'}
 # Plot it
-ggplot(Plla, aes( x= longitude.location, y = latitude.location)) +
+ggplot(Plla, aes(x=transectOriginLong, y=transectOriginLat)) +
 	mapWorld + 
 	theme_bw() + 
 	theme(axis.title=element_blank(), axis.text=element_blank(),

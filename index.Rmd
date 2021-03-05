@@ -41,7 +41,7 @@ ggplot() +
 	theme_bw() + 
 	theme(axis.title=element_blank(), axis.text=element_blank(),
 		axis.ticks=element_blank()) + 
-	geom_point(aes(x=d$longitude.location, y=d$latitude.location), fill=viridis(2)[2], size=1.75, shape=21, alpha=0.7) +
+	geom_point(aes(x=d$transectOriginLong, y=d$transectOriginLat), fill=viridis(2)[2], size=1.75, shape=21, alpha=0.7) +
 	coord_fixed()
 ```
 
