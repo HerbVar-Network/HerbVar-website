@@ -21,6 +21,8 @@ navbar:
       href: status.html
     - text: "Participation"
       href: participation.html
+    - text: "Hiring"
+      href: hiring.html
 
 output:
   rmarkdown::html_document:
