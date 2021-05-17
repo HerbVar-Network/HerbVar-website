@@ -1,6 +1,9 @@
 ---
 title: "Sampling status"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_float: true
 ---
 
 ```{r setup, include=FALSE}
@@ -16,7 +19,7 @@ library(tidyverse)
 # Load metadata on completed surveys
 sheets_deauth()
 d = read_sheet("https://docs.google.com/spreadsheets/d/1mNYnSTCs9WYy5SN2HF4VYep550Sccz9xU5o8JuYut-A/edit?usp=sharing",
-           sheet='WEBSITE - Completed surveys')
+           sheet='Completed surveys')
 d = data.frame(d)
 
 # Drop rows without an entry for Genus_sp

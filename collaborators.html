@@ -207,8 +207,20 @@ $(document).ready(function () {
 <li>
   <a href="protocols.html">Protocols</a>
 </li>
-<li>
-  <a href="status.html">Sampling status</a>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Sampling status
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="status.html">Completed surveys</a>
+    </li>
+    <li>
+      <a href="phase2coordination.html">Sampling coordination</a>
+    </li>
+  </ul>
 </li>
 <li>
   <a href="participation.html">Participation</a>
@@ -235,6 +247,11 @@ $(document).ready(function () {
 
 <p><img src="photos/HerbVar_Hahn_MT_PhotoMChiuffo.jpg" width="500px" style="display: block; margin: auto;" /></p>
 <table>
+<colgroup>
+<col width="5%" />
+<col width="14%" />
+<col width="79%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Site PI</th>

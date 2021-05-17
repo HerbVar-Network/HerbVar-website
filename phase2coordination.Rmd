@@ -1,0 +1,435 @@
+---
+title: "Sampling coordination"
+output: 
+  html_document:
+    toc: true
+    toc_float: TRUE
+---
+
+```{r setup, include=FALSE}
+
+# Load packages for this page
+library(googlesheets4)
+library(ggplot2)
+library(viridis)
+library(knitr)
+library(ggmap)
+library(tidyverse)
+
+# Load metadata on completed surveys
+sheets_deauth()
+d = read_sheet("https://docs.google.com/spreadsheets/d/1mNYnSTCs9WYy5SN2HF4VYep550Sccz9xU5o8JuYut-A/edit?usp=sharing",
+           sheet='Completed surveys')
+d = data.frame(d)
+
+# Drop rows without an entry for Genus_sp
+d = subset(d, !is.na(d$Genus_sp))
+
+# Load meta data on focal species
+dfs = read_sheet("https://docs.google.com/spreadsheets/d/1mNYnSTCs9WYy5SN2HF4VYep550Sccz9xU5o8JuYut-A/edit?usp=sharing",
+           sheet='Focal_species')
+dfs = data.frame(dfs)
+
+#focalFam = function(z) # define function to ID focal families in data frame
+#	ifelse(z == 'Apocynaceae' | z == 'Asteraceae' | z == 'Fabaceae' | z == 'Solanaceae' |
+#		z == 'Rubiaceae', TRUE, FALSE)
+#d$focalFamily = focalFam(d$plantFamily)
+
+d.complete = d[!is.na(d$plantFamily),] # data.frame for complete entries
+
+d.complete$status = 'completed'
+
+# Load planned phase 2 surveys
+pApocynaceae = read_sheet("https://docs.google.com/spreadsheets/d/1vL3r45atUP58gGfSC3aYgnCL0WMzVOfKQu7vEYZ4rVA/edit?usp=sharing",
+                          sheet='Apocynaceae', skip=2)
+
+pAsteraceae = read_sheet("https://docs.google.com/spreadsheets/d/1vL3r45atUP58gGfSC3aYgnCL0WMzVOfKQu7vEYZ4rVA/edit?usp=sharing",
+                          sheet='Asteraceae', skip=2)
+
+pFabaceae = read_sheet("https://docs.google.com/spreadsheets/d/1vL3r45atUP58gGfSC3aYgnCL0WMzVOfKQu7vEYZ4rVA/edit?usp=sharing",
+                          sheet='Fabaceae', skip=2)
+
+pRubiaceae = read_sheet("https://docs.google.com/spreadsheets/d/1vL3r45atUP58gGfSC3aYgnCL0WMzVOfKQu7vEYZ4rVA/edit?usp=sharing",
+                          sheet='Rubiaceae', skip=2)
+
+pSolanaceae = read_sheet("https://docs.google.com/spreadsheets/d/1vL3r45atUP58gGfSC3aYgnCL0WMzVOfKQu7vEYZ4rVA/edit?usp=sharing",
+                          sheet='Apocynaceae', skip=2)
+
+pPlla = read_sheet("https://docs.google.com/spreadsheets/d/1vL3r45atUP58gGfSC3aYgnCL0WMzVOfKQu7vEYZ4rVA/edit?usp=sharing",
+                          sheet='Plantago lanceolata', skip=2)
+
+pPlma = read_sheet("https://docs.google.com/spreadsheets/d/1vL3r45atUP58gGfSC3aYgnCL0WMzVOfKQu7vEYZ4rVA/edit?usp=sharing",
+                          sheet='Plantago major', skip=2)
+
+pTaof = read_sheet("https://docs.google.com/spreadsheets/d/1vL3r45atUP58gGfSC3aYgnCL0WMzVOfKQu7vEYZ4rVA/edit?usp=sharing",
+                          sheet='Taraxacum officinale', skip=2)
+
+pRepro = read_sheet("https://docs.google.com/spreadsheets/d/1vL3r45atUP58gGfSC3aYgnCL0WMzVOfKQu7vEYZ4rVA/edit?usp=sharing",
+                          sheet='Reproductive damage', skip=2)
+
+# Remove rows from planned without a genus or species
+#pApocynaceae = subset(pApocynaceae, !is.na(plantGenus) | !is.na(plantSpecies))
+#pAsteraceae = subset(pAsteraceae, !is.na(plantGenus) | !is.na(plantSpecies))
+#pFabaceae = subset(pFabaceae, !is.na(plantGenus) | !is.na(plantSpecies))
+#pRubiaceae = subset(pRubiaceae, !is.na(plantGenus) | !is.na(plantSpecies))
+#pSolanaceae = subset(pSolanaceae, !is.na(plantGenus) | !is.na(plantSpecies))
+pPlla = subset(pPlla, !is.na(plantGenus) | !is.na(plantSpecies))
+pPlma = subset(pPlma, !is.na(plantGenus) | !is.na(plantSpecies))
+pTaof = subset(pTaof, !is.na(plantGenus) | !is.na(plantSpecies))
+pRepro = subset(pRepro, !is.na(plantGenus) | !is.na(plantSpecies))
+
+
+# Add status 'planned' to planned surveys (completed will get completed)
+pApocynaceae$status = 'planned'
+pAsteraceae$status = 'planned'
+pFabaceae$status = 'planned'
+pRubiaceae$status = 'planned'
+pSolanaceae$status = 'planned'
+pPlla$status = 'planned'
+pPlma$status = 'planned'
+pTaof$status = 'planned'
+pRepro$status = 'planned'
+
+# Add a Genus_sp to each
+pApocynaceae$Genus_sp = with(pApocynaceae, paste(plantGenus, plantSpecies, sep="_"))
+pAsteraceae$Genus_sp = with(pAsteraceae, paste(plantGenus, plantSpecies, sep="_"))
+pFabaceae$Genus_sp = with(pFabaceae, paste(plantGenus, plantSpecies, sep="_"))
+pRubiaceae$Genus_sp = with(pRubiaceae, paste(plantGenus, plantSpecies, sep="_"))
+pSolanaceae$Genus_sp = with(pSolanaceae, paste(plantGenus, plantSpecies, sep="_"))
+pPlla$Genus_sp = with(pPlla, paste(plantGenus, plantSpecies, sep="_"))
+pPlma$Genus_sp = with(pPlma, paste(plantGenus, plantSpecies, sep="_"))
+pTaof$Genus_sp = with(pTaof, paste(plantGenus, plantSpecies, sep="_"))
+pRepro$Genus_sp = with(pRepro, paste(plantGenus, plantSpecies, sep="_"))
+
+# Update names to match d.complete
+names(pApocynaceae)[8] = 'genus'
+names(pAsteraceae)[8] = 'genus'
+names(pFabaceae)[8] = 'genus'
+names(pRubiaceae)[8] = 'genus'
+names(pSolanaceae)[8] = 'genus'
+names(pPlla)[8] = 'genus'
+names(pPlma)[8] = 'genus'
+names(pTaof)[8] = 'genus'
+names(pRepro)[8] = 'genus'
+
+names(pApocynaceae)[15] = 'transectOriginLat'
+names(pAsteraceae)[15] = 'transectOriginLat'
+names(pFabaceae)[15] = 'transectOriginLat'
+names(pRubiaceae)[15] = 'transectOriginLat'
+names(pSolanaceae)[15] = 'transectOriginLat'
+names(pPlla)[13] = 'transectOriginLat'
+names(pPlma)[13] = 'transectOriginLat'
+names(pTaof)[13] = 'transectOriginLat'
+names(pRepro)[15] = 'transectOriginLat'
+
+names(pApocynaceae)[16] = 'transectOriginLong'
+names(pAsteraceae)[16] = 'transectOriginLong'
+names(pFabaceae)[16] = 'transectOriginLong'
+names(pRubiaceae)[16] = 'transectOriginLong'
+names(pSolanaceae)[16] = 'transectOriginLong'
+names(pPlla)[14] = 'transectOriginLong'
+names(pPlma)[14] = 'transectOriginLong'
+names(pTaof)[14] = 'transectOriginLong'
+names(pRepro)[16] = 'transectOriginLong'
+
+# Add complete data to each planned
+Apoc = bind_rows(pApocynaceae, subset(d.complete, d.complete$plantFamily == 'Apocynaceae'))
+Aste =  bind_rows(pAsteraceae, subset(d.complete, d.complete$plantFamily == 'Asteraceae'))
+Faba = bind_rows(pFabaceae, subset(d.complete, d.complete$plantFamily == 'Fabaceae'))
+Rubi = bind_rows(pRubiaceae, subset(d.complete, d.complete$plantFamily == 'Rubiaceae'))
+Sola = bind_rows(pSolanaceae, subset(d.complete, d.complete$plantFamily == 'Solanaceae'))
+Plla = bind_rows(pPlla, subset(d.complete, d.complete$Genus_sp == 'Plantago_lanceolata'))
+Plma = bind_rows(pPlma, subset(d.complete, d.complete$Genus_sp == 'Plantago_major'))
+Taof = bind_rows(pTaof, subset(d.complete, d.complete$Genus_sp == 'Taraxacum_officinale'))
+Repr = subset(d.complete, d.complete$reproductiveData == 1) #bind_rows(pRepro, subset(d.complete, d.complete$reproductiveData == 1))
+
+# Add growth form data to focal fams
+md = read_sheet("https://docs.google.com/spreadsheets/d/1mNYnSTCs9WYy5SN2HF4VYep550Sccz9xU5o8JuYut-A/edit?usp=sharing",
+                sheet = 'Species metadata', skip=2)
+Apoc$growthForm[is.na(Apoc$growthForm)] = md$growthForm[match(Apoc$Genus_sp[is.na(Apoc$growthForm)], md$Genus_sp)]
+Aste$growthForm[is.na(Aste$growthForm)] = md$growthForm[match(Aste$Genus_sp[is.na(Aste$growthForm)], md$Genus_sp)]
+Faba$growthForm[is.na(Faba$growthForm)] = md$growthForm[match(Faba$Genus_sp[is.na(Faba$growthForm)], md$Genus_sp)]
+Rubi$growthForm[is.na(Rubi$growthForm)] = md$growthForm[match(Rubi$Genus_sp[is.na(Rubi$growthForm)], md$Genus_sp)]
+Sola$growthForm[is.na(Sola$growthForm)] = md$growthForm[match(Sola$Genus_sp[is.na(Sola$growthForm)], md$Genus_sp)]
+
+
+Apoc = subset(Apoc, !is.na(genus) )
+Aste = subset(Aste, !is.na(genus) )
+Faba = subset(Faba, !is.na(genus) )
+Rubi = subset(Rubi, !is.na(genus) )
+Sola = subset(Sola, !is.na(genus) )
+Repr = subset(Repr, !is.na(genus) )
+
+```
+
+We are coordinating a global effort to survey herbivory on three focal plant species and on a diversity of species in five focal plant families: Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae. This page summarizes the surveys we have completed as well as surveys our members have plans to survey. This page represents a work in progress, and this information is primarily to help network members pick species and sites to survey. 
+
+
+<br>
+
+## Sampling within focal species
+
+We have three focal species that we are aiming to sampling across the broadest possible geographic extent and across broad environmental gradients. These are _Taraxacum officinale_, _Plantago major_, and _Plantago lanceolata_. Below are maps of the locations of completed and planned surveys for each focal species. Any survey of one of these focal species will be useful to the project, but surveys in new locations, ecosystems, elevations, etc. will be especially useful.
+
+```{r, include=FALSE}
+
+mapWorld = borders("world", colour="gray80", fill="gray80") # create a layer of borders
+
+```
+
+
+```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.asp=0.5, fig.align='center'}
+
+# Plot it
+ggplot(Taof, aes(x=transectOriginLong, y=transectOriginLat, fill = status)) +
+	mapWorld + 
+	theme_bw() + 
+	theme(axis.title=element_blank(), axis.text=element_blank(),
+		axis.ticks=element_blank()) + 
+	geom_point(size=1.75, shape=21, alpha=0.7) +
+  scale_fill_viridis_d() +
+	coord_fixed() +
+   labs(fill = NULL
+       ,title = expression(~italic('Taraxacum officinale')~'surveys')
+       ,subtitle = NULL
+       ,x = NULL
+       ,y = NULL)
+```
+
+```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.asp=0.5, fig.align='center'}
+# Plot it
+ggplot(Plma, aes(x=transectOriginLong, y=transectOriginLat, fill=status)) +
+	mapWorld + 
+	theme_bw() + 
+	theme(axis.title=element_blank(), axis.text=element_blank(),
+		axis.ticks=element_blank()) + 
+	geom_point(size=1.75, shape=21, alpha=0.7) +
+  scale_fill_viridis_d() +
+	coord_fixed() +
+   labs(fill = NULL
+       ,title = expression(~italic('Plantago major')~'surveys')
+       ,subtitle = NULL
+       ,x = NULL
+       ,y = NULL)
+
+```
+
+```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.asp=0.5, fig.align='center'}
+# Plot it
+ggplot(Plla, aes(x=transectOriginLong, y=transectOriginLat, fill=status)) +
+	mapWorld + 
+	theme_bw() + 
+	theme(axis.title=element_blank(), axis.text=element_blank(),
+		axis.ticks=element_blank()) + 
+	geom_point(size=1.75, shape=21, alpha=0.7) +
+  scale_fill_viridis_d() +
+	coord_fixed() +
+   labs(fill = NULL
+       ,title = expression(~italic('Plantago lanceolata')~'surveys')
+       ,subtitle = NULL
+       ,x = NULL
+       ,y = NULL)
+
+```
+
+
+<br>
+
+## Sampling within plant families
+
+Below you will find maps, figures, and tables summarizing completed and planned surveys of species within each of our five focal families.
+
+<br>
+
+### Apocynaceae
+```{r, echo=FALSE, warning=FALSE, out.width = "600px", fig.asp=0.5, fig.align='center', fig.cap="Sites with completed and planned surveys of species in the Apocynaceae"}
+ggplot(Apoc, aes(x=transectOriginLong, y=transectOriginLat, fill=status)) + 
+	mapWorld + 
+	theme_bw() + 
+	theme(axis.title=element_blank(), axis.text=element_blank(),
+		axis.ticks=element_blank()) + 
+	geom_point(size=1.75, shape=21, alpha=0.7) +
+  scale_fill_viridis_d() +
+	coord_fixed()
+```
+```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.align='center', fig.cap='Number of species with completed or planned surveys in this focal family '}
+
+ApocG = data.frame(count = t( rbind( with(Apoc, by(Genus_sp, growthForm, function(x) length(unique(x)))) ) ))
+ApocG = cbind(growthForm = rownames(ApocG), ApocG)
+
+ggplot(ApocG, aes(y=count, x=growthForm)) +
+  geom_bar(stat='identity', fill=viridis(2)[1], alpha=0.7) +
+  labs(y='Number of species', x='Growth form') +
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 90))
+
+```
+
+```{r, echo=FALSE}
+Genus_sp.form.Apoc = paste(Apoc$plantFamily, ":", '*', Apoc$Genus_sp, '*', sep='')
+Genus_sp.form.Apoc = sub('_', ' ', Genus_sp.form.Apoc)
+num.spp.Apoc = table(Genus_sp.form.Apoc)
+num.spp.Apoc = data.frame(num.spp.Apoc)
+num.spp.Apoc = separate(num.spp.Apoc, 1, into=c("Plant family", "Plant species"), sep=':')
+kable(num.spp.Apoc, col.names=c('Plant family', 'Plant species', 'No. surveys'), align=c('l','l', 'l'))
+```
+
+<br>
+
+### Asteraceae
+```{r, echo=FALSE, warning=FALSE, out.width = "600px", fig.asp=0.5, fig.align='center', fig.cap="Sites with completed and planned surveys of species in the Asteraceae"}
+ggplot(Aste, aes(x=transectOriginLong, y=transectOriginLat, fill=status)) + 
+	mapWorld + 
+	theme_bw() + 
+	theme(axis.title=element_blank(), axis.text=element_blank(),
+		axis.ticks=element_blank()) + 
+	geom_point(size=1.75, shape=21, alpha=0.7) +
+  scale_fill_viridis_d() +
+	coord_fixed()
+```
+
+```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.align='center', fig.cap='Number of species with completed or planned surveys in this focal family '}
+
+AsteG = data.frame(count = t( rbind( with(Aste, by(Genus_sp, growthForm, function(x) length(unique(x)))) ) ))
+AsteG = cbind(growthForm = rownames(AsteG), AsteG)
+
+ggplot(AsteG, aes(y=count, x=growthForm)) +
+  geom_bar(stat='identity', fill=viridis(2)[1], alpha=0.7) +
+  labs(y='Number of species', x='Growth form') +
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 90))
+
+```
+
+```{r, echo=FALSE}
+Genus_sp.form.Aste = paste(Aste$plantFamily, ":", '*', Aste$Genus_sp, '*', sep='')
+Genus_sp.form.Aste = sub('_', ' ', Genus_sp.form.Aste)
+num.spp.Aste = table(Genus_sp.form.Aste)
+num.spp.Aste = data.frame(num.spp.Aste)
+num.spp.Aste = separate(num.spp.Aste, 1, into=c("Plant family", "Plant species"), sep=':')
+kable(num.spp.Aste, col.names=c('Plant family', 'Plant species', 'No. surveys'), align=c('l','l', 'l'))
+```
+
+<br>
+
+### Fabaceae
+```{r, echo=FALSE, warning=FALSE, out.width = "600px", fig.asp=0.5, fig.align='center', fig.cap="Sites with completed and planned surveys of species in the Fabaceae"}
+ggplot(Faba, aes(x=transectOriginLong, y=transectOriginLat, fill=status)) + 
+	mapWorld + 
+	theme_bw() + 
+	theme(axis.title=element_blank(), axis.text=element_blank(),
+		axis.ticks=element_blank()) + 
+	geom_point(size=1.75, shape=21, alpha=0.7) +
+  scale_fill_viridis_d() +
+	coord_fixed()
+```
+
+```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.align='center', fig.cap='Number of species with completed or planned surveys in this focal family '}
+
+FabaG = data.frame(count = t( rbind( with(Faba, by(Genus_sp, growthForm, function(x) length(unique(x)))) ) ))
+FabaG = cbind(growthForm = rownames(FabaG), FabaG)
+
+ggplot(FabaG, aes(y=count, x=growthForm)) +
+  geom_bar(stat='identity', fill=viridis(2)[1], alpha=0.7) +
+  labs(y='Number of species', x='Growth form') +
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 90))
+
+```
+
+```{r, echo=FALSE}
+Genus_sp.form.Faba = paste(Faba$plantFamily, ":", '*', Faba$Genus_sp, '*', sep='')
+Genus_sp.form.Faba = sub('_', ' ', Genus_sp.form.Faba)
+num.spp.Faba = table(Genus_sp.form.Faba)
+num.spp.Faba = data.frame(num.spp.Faba)
+num.spp.Faba = separate(num.spp.Faba, 1, into=c("Plant family", "Plant species"), sep=':')
+kable(num.spp.Faba, col.names=c('Plant family', 'Plant species', 'No. surveys'), align=c('l','l', 'l'))
+```
+
+<br>
+
+### Rubiaceae
+```{r, echo=FALSE, warning=FALSE, out.width = "600px", fig.asp=0.5, fig.align='center', fig.cap="Sites with completed and planned surveys of species in the Rubiaceae"}
+ggplot(Rubi, aes(x=transectOriginLong, y=transectOriginLat, fill=status)) + 
+	mapWorld + 
+	theme_bw() + 
+	theme(axis.title=element_blank(), axis.text=element_blank(),
+		axis.ticks=element_blank()) + 
+	geom_point(size=1.75, shape=21, alpha=0.7) +
+  scale_fill_viridis_d() +
+	coord_fixed()
+```
+
+```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.align='center', fig.cap='Number of species with completed or planned surveys in this focal family '}
+
+RubiG = data.frame(count = t( rbind( with(Rubi, by(Genus_sp, growthForm, function(x) length(unique(x)))) ) ))
+RubiG = cbind(growthForm = rownames(RubiG), RubiG)
+
+ggplot(RubiG, aes(y=count, x=growthForm)) +
+  geom_bar(stat='identity', fill=viridis(2)[1], alpha=0.7) +
+  labs(y='Number of species', x='Growth form') +
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 90))
+
+```
+
+```{r, echo=FALSE}
+Genus_sp.form.Rubi = paste(Rubi$plantFamily, ":", '*', Rubi$Genus_sp, '*', sep='')
+Genus_sp.form.Rubi = sub('_', ' ', Genus_sp.form.Rubi)
+num.spp.Rubi = table(Genus_sp.form.Rubi)
+num.spp.Rubi = data.frame(num.spp.Rubi)
+num.spp.Rubi = separate(num.spp.Rubi, 1, into=c("Plant family", "Plant species"), sep=':')
+kable(num.spp.Rubi, col.names=c('Plant family', 'Plant species', 'No. surveys'), align=c('l','l', 'l'))
+```
+
+<br>
+
+### Solanaceae
+```{r, echo=FALSE, warning=FALSE, out.width = "600px", fig.asp=0.5, fig.align='center', fig.cap="Sites with completed and planned surveys of species in the Solanaceae"}
+ggplot(Sola, aes(x=transectOriginLong, y=transectOriginLat, fill=status)) + 
+	mapWorld + 
+	theme_bw() + 
+	theme(axis.title=element_blank(), axis.text=element_blank(),
+		axis.ticks=element_blank()) + 
+	geom_point(size=1.75, shape=21, alpha=0.7) +
+  scale_fill_viridis_d() +
+	coord_fixed()
+```
+
+```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.align='center', fig.cap='Number of species with completed or planned surveys in this focal family '}
+
+SolaG = data.frame(count = t( rbind( with(Sola, by(Genus_sp, growthForm, function(x) length(unique(x)))) ) ))
+SolaG = cbind(growthForm = rownames(SolaG), SolaG)
+
+ggplot(SolaG, aes(y=count, x=growthForm)) +
+  geom_bar(stat='identity', fill=viridis(2)[1], alpha=0.7) +
+  labs(y='Number of species', x='Growth form') +
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 90))
+
+```
+
+```{r, echo=FALSE}
+Genus_sp.form.Sola = paste(Sola$plantFamily, ":", '*', Sola$Genus_sp, '*', sep='')
+Genus_sp.form.Sola = sub('_', ' ', Genus_sp.form.Sola)
+num.spp.Sola = table(Genus_sp.form.Sola)
+num.spp.Sola = data.frame(num.spp.Sola)
+num.spp.Sola = separate(num.spp.Sola, 1, into=c("Plant family", "Plant species"), sep=':')
+kable(num.spp.Sola, col.names=c('Plant family', 'Plant species', 'No. surveys'), align=c('l','l', 'l'))
+```
+
+<br>
+
+## Surveys of reproductive damage 
+
+This table lists species for which we currently have a completed or planned survey of reproductive damage (damage to flowers, fruits, or seeds).
+
+```{r, echo=FALSE}
+Genus_sp.form = paste(Repr$plantFamily, ":", '*', Repr$Genus_sp, '*', sep='')
+Genus_sp.form = sub('_', ' ', Genus_sp.form)
+num.spp = table(Genus_sp.form)
+num.spp = data.frame(num.spp)
+num.spp = separate(num.spp, 1, into=c("Plant family", "Plant species"), sep=':')
+kable(num.spp, col.names=c('Plant family', 'Plant species', 'No. surveys'), align=c('l','l', 'l'))
+```
+

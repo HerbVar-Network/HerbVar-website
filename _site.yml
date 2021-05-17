@@ -18,7 +18,11 @@ navbar:
     - text: "Protocols"
       href: protocols.html
     - text: "Sampling status"
-      href: status.html
+      menu:
+        - text: "Completed surveys"
+          href: status.html
+        - text: "Sampling coordination"
+          href: phase2coordination.html
     - text: "Participation"
       href: participation.html
     - text: "Hiring"
