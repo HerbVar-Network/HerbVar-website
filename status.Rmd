@@ -276,3 +276,4 @@ kable(num.spp, col.names=c('Plant family', 'Plant species', 'No. surveys'), alig
   kable_styling(full_width = FALSE)
 ```
 
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
