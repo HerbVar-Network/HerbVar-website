@@ -272,6 +272,7 @@ Genus_sp.form = sub('_', ' ', Genus_sp.form)
 num.spp = table(Genus_sp.form)
 num.spp = data.frame(num.spp)
 num.spp = separate(num.spp, 1, into=c("Plant family", "Plant species"), sep=':')
-kable(num.spp, col.names=c('Plant family', 'Plant species', 'No. surveys'), align=c('l','l', 'l'))
+kable(num.spp, col.names=c('Plant family', 'Plant species', 'No. surveys'), align=c('l','l', 'l')) %>%
+  kable_styling(full_width = FALSE)
 ```
 

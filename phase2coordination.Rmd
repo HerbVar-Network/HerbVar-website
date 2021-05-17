@@ -16,6 +16,7 @@ library(viridis)
 library(knitr)
 library(ggmap)
 library(tidyverse)
+library(kableExtra)
 
 # Load metadata on completed surveys
 sheets_deauth()
@@ -272,7 +273,8 @@ Genus_sp.form.Apoc = sub('_', ' ', Genus_sp.form.Apoc)
 num.spp.Apoc = table(Genus_sp.form.Apoc)
 num.spp.Apoc = data.frame(num.spp.Apoc)
 num.spp.Apoc = separate(num.spp.Apoc, 1, into=c("Plant family", "Plant species"), sep=':')
-kable(num.spp.Apoc, col.names=c('Plant family', 'Plant species', 'No. surveys'), align=c('l','l', 'l'))
+kable(num.spp.Apoc, col.names=c('Plant family', 'Plant species', 'No. surveys'), align=c('l','l', 'l')) %>%
+  kable_styling(full_width = FALSE)
 ```
 
 <br>
@@ -308,7 +310,8 @@ Genus_sp.form.Aste = sub('_', ' ', Genus_sp.form.Aste)
 num.spp.Aste = table(Genus_sp.form.Aste)
 num.spp.Aste = data.frame(num.spp.Aste)
 num.spp.Aste = separate(num.spp.Aste, 1, into=c("Plant family", "Plant species"), sep=':')
-kable(num.spp.Aste, col.names=c('Plant family', 'Plant species', 'No. surveys'), align=c('l','l', 'l'))
+kable(num.spp.Aste, col.names=c('Plant family', 'Plant species', 'No. surveys'), align=c('l','l', 'l')) %>%
+  kable_styling(full_width = FALSE)
 ```
 
 <br>
@@ -344,7 +347,8 @@ Genus_sp.form.Faba = sub('_', ' ', Genus_sp.form.Faba)
 num.spp.Faba = table(Genus_sp.form.Faba)
 num.spp.Faba = data.frame(num.spp.Faba)
 num.spp.Faba = separate(num.spp.Faba, 1, into=c("Plant family", "Plant species"), sep=':')
-kable(num.spp.Faba, col.names=c('Plant family', 'Plant species', 'No. surveys'), align=c('l','l', 'l'))
+kable(num.spp.Faba, col.names=c('Plant family', 'Plant species', 'No. surveys'), align=c('l','l', 'l')) %>%
+  kable_styling(full_width = FALSE)
 ```
 
 <br>
@@ -380,7 +384,8 @@ Genus_sp.form.Rubi = sub('_', ' ', Genus_sp.form.Rubi)
 num.spp.Rubi = table(Genus_sp.form.Rubi)
 num.spp.Rubi = data.frame(num.spp.Rubi)
 num.spp.Rubi = separate(num.spp.Rubi, 1, into=c("Plant family", "Plant species"), sep=':')
-kable(num.spp.Rubi, col.names=c('Plant family', 'Plant species', 'No. surveys'), align=c('l','l', 'l'))
+kable(num.spp.Rubi, col.names=c('Plant family', 'Plant species', 'No. surveys'), align=c('l','l', 'l')) %>%
+  kable_styling(full_width = FALSE)
 ```
 
 <br>
@@ -416,7 +421,8 @@ Genus_sp.form.Sola = sub('_', ' ', Genus_sp.form.Sola)
 num.spp.Sola = table(Genus_sp.form.Sola)
 num.spp.Sola = data.frame(num.spp.Sola)
 num.spp.Sola = separate(num.spp.Sola, 1, into=c("Plant family", "Plant species"), sep=':')
-kable(num.spp.Sola, col.names=c('Plant family', 'Plant species', 'No. surveys'), align=c('l','l', 'l'))
+kable(num.spp.Sola, col.names=c('Plant family', 'Plant species', 'No. surveys'), align=c('l','l', 'l')) %>%
+  kable_styling(full_width = FALSE)
 ```
 
 <br>
@@ -431,6 +437,7 @@ Genus_sp.form = sub('_', ' ', Genus_sp.form)
 num.spp = table(Genus_sp.form)
 num.spp = data.frame(num.spp)
 num.spp = separate(num.spp, 1, into=c("Plant family", "Plant species"), sep=':')
-kable(num.spp, col.names=c('Plant family', 'Plant species', 'No. surveys'), align=c('l','l', 'l'))
+kable(num.spp, col.names=c('Plant family', 'Plant species', 'No. surveys'), align=c('l','l', 'l')) %>%
+  kable_styling(full_width = FALSE)
 ```
 
