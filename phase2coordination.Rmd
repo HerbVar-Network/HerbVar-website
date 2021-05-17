@@ -168,7 +168,7 @@ We are coordinating a global effort to survey herbivory on three focal plant spe
 
 <br>
 
-## Sampling within focal species
+## Focal species
 
 We have three focal species that we are aiming to sampling across the broadest possible geographic extent and across broad environmental gradients. These are _Taraxacum officinale_, _Plantago major_, and _Plantago lanceolata_. Below are maps of the locations of completed and planned surveys for each focal species. Any survey of one of these focal species will be useful to the project, but surveys in new locations, ecosystems, elevations, etc. will be especially useful.
 
@@ -236,7 +236,7 @@ ggplot(Plla, aes(x=transectOriginLong, y=transectOriginLat, fill=status)) +
 
 <br>
 
-## Sampling within plant families
+## Focal families
 
 Below you will find maps, figures, and tables summarizing completed and planned surveys of species within each of our five focal families.
 
