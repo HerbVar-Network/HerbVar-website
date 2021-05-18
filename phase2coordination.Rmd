@@ -19,7 +19,7 @@ library(tidyverse)
 library(kableExtra)
 
 # Load metadata on completed surveys
-sheets_deauth()
+gs4_deauth()
 d = read_sheet("https://docs.google.com/spreadsheets/d/1mNYnSTCs9WYy5SN2HF4VYep550Sccz9xU5o8JuYut-A/edit?usp=sharing",
            sheet='Completed surveys')
 d = data.frame(d)
@@ -254,7 +254,8 @@ ggplot(Apoc, aes(x=transectOriginLong, y=transectOriginLat, fill=status)) +
   scale_fill_viridis_d() +
 	coord_fixed()
 ```
-```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.align='center', fig.cap='Number of species with completed or planned surveys in this focal family '}
+
+```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.align='center', fig.cap='Number of species with completed or planned surveys in this focal family by growth form'}
 
 ApocG = data.frame(count = t( rbind( with(Apoc, by(Genus_sp, growthForm, function(x) length(unique(x)))) ) ))
 ApocG = cbind(growthForm = rownames(ApocG), ApocG)
@@ -291,7 +292,7 @@ ggplot(Aste, aes(x=transectOriginLong, y=transectOriginLat, fill=status)) +
 	coord_fixed()
 ```
 
-```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.align='center', fig.cap='Number of species with completed or planned surveys in this focal family '}
+```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.align='center', fig.cap='Number of species with completed or planned surveys in this focal family by growth form'}
 
 AsteG = data.frame(count = t( rbind( with(Aste, by(Genus_sp, growthForm, function(x) length(unique(x)))) ) ))
 AsteG = cbind(growthForm = rownames(AsteG), AsteG)
@@ -328,7 +329,7 @@ ggplot(Faba, aes(x=transectOriginLong, y=transectOriginLat, fill=status)) +
 	coord_fixed()
 ```
 
-```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.align='center', fig.cap='Number of species with completed or planned surveys in this focal family '}
+```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.align='center', fig.cap='Number of species with completed or planned surveys in this focal family by growth form'}
 
 FabaG = data.frame(count = t( rbind( with(Faba, by(Genus_sp, growthForm, function(x) length(unique(x)))) ) ))
 FabaG = cbind(growthForm = rownames(FabaG), FabaG)
@@ -365,7 +366,7 @@ ggplot(Rubi, aes(x=transectOriginLong, y=transectOriginLat, fill=status)) +
 	coord_fixed()
 ```
 
-```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.align='center', fig.cap='Number of species with completed or planned surveys in this focal family '}
+```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.align='center', fig.cap='Number of species with completed or planned surveys in this focal family by growth form'}
 
 RubiG = data.frame(count = t( rbind( with(Rubi, by(Genus_sp, growthForm, function(x) length(unique(x)))) ) ))
 RubiG = cbind(growthForm = rownames(RubiG), RubiG)
@@ -402,7 +403,7 @@ ggplot(Sola, aes(x=transectOriginLong, y=transectOriginLat, fill=status)) +
 	coord_fixed()
 ```
 
-```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.align='center', fig.cap='Number of species with completed or planned surveys in this focal family '}
+```{r, echo=FALSE, warning=FALSE, out.width="600px", fig.align='center', fig.cap='Number of species with completed or planned surveys in this focal family by growth form'}
 
 SolaG = data.frame(count = t( rbind( with(Sola, by(Genus_sp, growthForm, function(x) length(unique(x)))) ) ))
 SolaG = cbind(growthForm = rownames(SolaG), SolaG)
