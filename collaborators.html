@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
 <title>Collaborator directory</title>
 
+<script src="site_libs/header-attrs-2.8/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -41,37 +55,10 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
 
 
-</head>
 
-<body>
+
 
 <style type = "text/css">
 .main-container {
@@ -79,13 +66,8 @@ h6 {
   margin-left: auto;
   margin-right: auto;
 }
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -96,44 +78,56 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
+.dropdown-submenu {
+  position: relative;
 }
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
 }
-
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
 }
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
 }
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
 }
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
+.dropdown-submenu.pull-left {
+  float: none;
 }
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -144,26 +138,93 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
-
-
-<div class="container-fluid main-container">
 
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -236,7 +297,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -261,648 +322,658 @@ $(document).ready(function () {
 </thead>
 <tbody>
 <tr class="odd">
+<td align="left">Karen Abbott</td>
+<td align="left">Case Western Reserve Univ</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
 <td align="left">Luis Abdala-Roberts</td>
 <td align="left">Univ Autónoma de Yucatán</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Ramiro Aguilar</td>
 <td align="left">National University of Córdoba, Argentina</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Armando Aguirre Jaimes</td>
 <td align="left">INECOL</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Warwick Allen</td>
 <td align="left">Univ of Canterbury</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Janete Andrade</td>
 <td align="left">Univ Federal da Paraíba</td>
 <td align="left">Bráulio Almeida Santos</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Diego Angulo</td>
 <td align="left">Univ Autónoma de Yucatán</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Diego Anjos</td>
 <td align="left">Federal University of Uberlândia, Brazil</td>
 <td align="left">Raquel Carvalho</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Daniel Anstett</td>
 <td align="left">Univ British Columbia</td>
 <td align="left">Julia Anstett</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Mohammed Armani</td>
 <td align="left">Xishuangbanna Tropical Botanical Garden, Chinese Academy of Sciences</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Robert Bagchi</td>
 <td align="left">Univ of Connecticut</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Sumanta Bagchi</td>
 <td align="left">Indian Institute of Science</td>
 <td align="left">Rohit Pawar, Manasi Sawant</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Milton Barbosa</td>
 <td align="left">Federal Univ of Minas Gerais</td>
 <td align="left">Geraldo Wilson Fernandes; Renata Maia; Samuel Novais</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Matt Barbour</td>
 <td align="left">Univ of Zurich</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Sarah Barrett</td>
 <td align="left">Threatened Flora, DBCA, Western Australia</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Kasey Barton</td>
 <td align="left">Univ of Hawaiʻi at Mānoa</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Carina Baskett</td>
 <td align="left">IST Austria</td>
 <td align="left">Nóra Mucsuga, Nisha Dwivedi, Damien Vanderhoeven, Juan Manuel Gorospe</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Ethan Bass</td>
 <td align="left">Cornell Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Kilian Blaise</td>
 <td align="left">Univ of Neuchâtel</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Kathryn Bloodworth</td>
 <td align="left">Univ of North Carolina at Greensboro</td>
 <td align="left">Morgan Frost, Sally Koerner</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Karina Boege</td>
 <td align="left">Univ Nacional Autónoma de México</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Judie Bronstein</td>
 <td align="left">Univ of Arizona</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Emilio Bruna</td>
 <td align="left">Univ of Florida</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Hans Henrik Bruun</td>
 <td align="left">Univ Copenhagen</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Yvonne Buckley</td>
 <td align="left">Trinity College, Dublin</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Karin Burghardt</td>
 <td align="left">Univ of Maryland</td>
 <td align="left">Kelsey McGurrin</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Carlos Bustos-Segura</td>
 <td align="left">Univ of Neuchâtel</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Ciro Cabal</td>
 <td align="left">Princeton Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
-<td align="left">Ivaluwww Cacho</td>
+<tr class="odd">
+<td align="left">Ivalu Cacho</td>
 <td align="left">Univ Nacional Autónoma de México</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Lucas Carbone</td>
 <td align="left">National University of Córdoba, Argentina</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Raquel Carvalho</td>
 <td align="left">Lancaster University</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Raquel Carvalho</td>
 <td align="left">Embrapa/Lancaster University</td>
 <td align="left">Diego Anjos</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Andrea Casadesús Cabral</td>
 <td align="left">Univ Barcelona</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Bastien Castagneyrol</td>
 <td align="left">INRA, Univ of Bordeaux</td>
 <td align="left">Yasmine Kadiri</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Mariana Chiuffo</td>
 <td align="left">INIBIOMA, CONICET-Universidad Nacional del Comahue</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Elizeth Cinto Mejia</td>
 <td align="left">Michigan State Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Marina Cock</td>
 <td align="left">INCITAP</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Rodrigo Cogni</td>
 <td align="left">Univ de São Paulo</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Tatiana Cornelissen</td>
 <td align="left">UFMG; UFSJ, Brasil</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Fernanda Costa</td>
 <td align="left">Universidade Federal de Ouro Preto, Brazil</td>
 <td align="left">Victor Diniz Pinto</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Tyler Coverdale</td>
 <td align="left">Cornell Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">David Crowder</td>
 <td align="left">Washington State Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Pablo Cuevas Reyes</td>
 <td align="left">Universidad Michoacana de San Nicolás de Hidalgo</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Wesley Dáttilo</td>
 <td align="left">Red de Ecoetología, Instituto de Ecología AC, Xalapa, Veracuz, Mexico</td>
 <td align="left">Pedro Luna</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Crowder David</td>
 <td align="left">Washington State Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Julie Davis</td>
 <td align="left">Cornell Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Kleber Del-Claro</td>
 <td align="left">Universidade Federal de Uberlandia</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Romina Dimarco</td>
 <td align="left">IFAB (INTA - CONICET)</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Rodolfo Dirzo</td>
 <td align="left">Stanford University</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Haley Dole</td>
 <td align="left">Michigan State Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Nontembeko (Ntemsie) Dube</td>
 <td align="left">University of the Free State Entomology and Zoology department</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Virginia Duboscq</td>
 <td align="left">Centro Científico Tecnológico Conicet Comahue</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Lee Dyer</td>
 <td align="left">Univ of Nevada, Reno</td>
 <td align="left">Samantha Yim</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Will Edwards</td>
 <td align="left">James Cook Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Ikponmwosa Egbon</td>
 <td align="left">Univ of Benin</td>
 <td align="left">Osatae EGBON, Eghosa J. OMORAGBON, Kelvin OGBIEDE, Orhue Osasumwen OMOIGUI</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Johan Ehrlén</td>
 <td align="left">Stockholm Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Michael Eisenring</td>
 <td align="left">Univ of Wisconsin</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Afure J. Ejomah</td>
 <td align="left">Nigerian Institute of Oil Palm Research (NIFOR)</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Bret Elderd</td>
 <td align="left">Louisiana State Univ</td>
 <td align="left">Jennifer Kluse, Blythe Elderd</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Allan Ellis</td>
 <td align="left">Stellenbosch Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">María-José Endara</td>
 <td align="left">Univ Indoamérica</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Micky Eubanks</td>
 <td align="left">Texas A&amp;M</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Suz Everingham</td>
 <td align="left">Univ New South Wales</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Rafael Farias</td>
 <td align="left">Universidade Federal do Acre</td>
 <td align="left">None</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Tom Fayle</td>
 <td align="left">Czech Academy of Sciences; Univ Malaysia Sabah</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Akshatra Pracy Fernandes</td>
 <td align="left">Goa Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Geraldo Wilson Fernandes</td>
 <td align="left">Federal University of Minas Gerais</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Marco Ferrante</td>
 <td align="left">Univ of the Azores</td>
 <td align="left">Lucas Lamelas-Lopez; Nora Haack</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Grace Florjancic</td>
 <td align="left">Virginia Tech Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Michael Foisy</td>
 <td align="left">Michigan State Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Matt Forister</td>
 <td align="left">Univ of Nevada, Reno</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Dale Forrister</td>
 <td align="left">Univ of Utah</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Enric Frago</td>
 <td align="left">CIRAD</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Filipe França</td>
 <td align="left">Lancaster Univ (LEC)</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">José García-Franco</td>
 <td align="left">INECOL, Xalapa</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Abigail Getman-Pickering</td>
 <td align="left">NA</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Zoe Getman-Pickering</td>
 <td align="left">Cornell Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Ernesto Gianoli</td>
 <td align="left">Univ de La Serena</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">David Giron</td>
 <td align="left">CNRS/Univ François-Rabelais de Tours</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Ben Gooden</td>
 <td align="left">CSIRO</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Martin Gossner</td>
 <td align="left">Swiss Federal Research Institute WSL</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Keri Greig</td>
 <td align="left">Univ Texas, Austin</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Sofia Gripenberg</td>
 <td align="left">Univ of Reading</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Ronny Groenteman</td>
 <td align="left">Manaaki Whenua – Landcare Research</td>
 <td align="left">Quentin Paynter, Aoife Neill</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Patrick Grof-Tisza</td>
 <td align="left">Univ of Eastern Finland</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Nora Haack</td>
 <td align="left">Univ Leipzig</td>
 <td align="left">Lisa Hahn, Isabelle Schumann, Justus Hennecke</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Lisa Hahn</td>
 <td align="left">Univ of Leipzig</td>
 <td align="left">Nora Haack, Isabelle Schumann, Justus Hennecke</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Phil Hahn</td>
 <td align="left">Univ of Florida</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Peter Hambäck</td>
 <td align="left">Stockholm Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Anjel Helms</td>
 <td align="left">Texas A&amp;M Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Justus Hennecke</td>
 <td align="left">Univ Leipzig</td>
 <td align="left">Nora Haack, Isabelle Schumann, Lisa Hahn</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Sara Hermann</td>
 <td align="left">Penn State Univ</td>
 <td align="left">John Tooker</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Liza Holeski</td>
 <td align="left">Northern Arizona Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Sille Holm</td>
 <td align="left">University of Eastern Finland; University of Tartu</td>
 <td align="left">Anu Valtonen, Miro Mykrä, Ronja Kettunen, Anniina Lumia, Laura Oinas, Reetta Santaniemi, Emmi Sipura, Riina Sorsa</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Matt Hutchinson</td>
 <td align="left">Princeton Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Brian Inouye</td>
 <td align="left">Florida State Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Eleanor Jackson</td>
 <td align="left">Univ of Reading</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Mary Jamieson</td>
 <td align="left">Oakland Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Niklas Janz</td>
 <td align="left">Stockholm Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Tiberius Jimbo</td>
 <td align="left">Papua New Guinea Forest Research Institute; LAE National Herbarium</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Jasmine Kadiri</td>
 <td align="left">INRA, Univ of Bordeaux</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Aino Kalske</td>
 <td align="left">Univ of Turku</td>
 <td align="left">Suvi Hakulinen (student)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Rick Karban</td>
 <td align="left">Univ of California, Davis</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Rupesh Kariyat</td>
 <td align="left">University of Texas-Rio Grande Valley</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Tamar Keasar</td>
 <td align="left">Univ of Haifa</td>
 <td align="left">Nitsan Nachtom</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Anne Kempel</td>
 <td align="left">Univ of Bern</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Monica Kersch-Becker</td>
 <td align="left">Univ of Alabama</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Andre Kessler</td>
 <td align="left">Cornell Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Heather Kharouba</td>
 <td align="left">Univ of Ottawa</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Tania Kim</td>
 <td align="left">Kansas State Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Duncan Kimuyu</td>
 <td align="left">Karatina Univ</td>
 <td align="left">Adam Sneath</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Sally Koerner</td>
 <td align="left">Univ of North Carolina at Greensboro</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Kimberly Komatsu</td>
 <td align="left">Smithsonian Environmental Research Center</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Suzanne Koptur</td>
 <td align="left">Florida International University</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Shivani Krishna</td>
 <td align="left">Ashoka University</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Sushmita Krishnan</td>
 <td align="left">Bharathidasan University</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Ezekeil Kwembeya</td>
 <td align="left">Univ of Namibia</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Miika Laihonen</td>
 <td align="left">Univ of Turku</td>
 <td align="left">Anne Muola</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Michael Lascaleia</td>
 <td align="left">Univ of Connecticut</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Inara Leal</td>
 <td align="left">Universidade Federal de Pernambuco</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Nicolas Lecomte</td>
 <td align="left">Université de Moncton</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Carlos Rodrigo Lehn</td>
 <td align="left">Instituto Federal Farroupilha - campus PANAMBI</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Natalia Lescano</td>
 <td align="left">INIBIOMA/CONICET</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Xiaofei Li</td>
 <td align="left">Jilin Argriculture Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">John Lill</td>
 <td align="left">The George Washington Univ</td>
 <td align="left">Martha Weiss</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Wenwen Liu</td>
 <td align="left">Xiamen Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Eric LoPresti</td>
 <td align="left">Michigan State Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Allison Louthan</td>
 <td align="left">Kansas State University</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Victoria Luizzi</td>
 <td align="left">Univ of Arizona</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Pedro Luna</td>
 <td align="left">INECOL</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Shannon Lynch</td>
+<td align="left">Kansas State Univ</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
@@ -1066,104 +1137,114 @@ $(document).ready(function () {
 <td align="left"></td>
 </tr>
 <tr class="even">
+<td align="left">Vincent Pan</td>
+<td align="left">Mich State Univ</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
 <td align="left">Nicholas Pardikes</td>
 <td align="left">Czech Academy of Sciences</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Martin Pareja</td>
 <td align="left">Univ Estadual de Campinas</td>
 <td align="left">Giovanna Garcia Fagundes, Luiz Henrique Rezende</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">N. Parthasarathy</td>
 <td align="left">Pondicherry Univ</td>
 <td align="left">Jibin Joseph, T. Harini, Manish Kuntal Buragohain, H.R. Raksha, Rahul Gour (M.Sc. Students in Ecology &amp; Environmental Sciences)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Rohit Pawar</td>
 <td align="left">Savitribai Phule Pune Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Quentin Paynter</td>
 <td align="left">Manaaki Whenua – Landcare Research</td>
 <td align="left">Ronny Groenteman, Aoife Neill</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Ian Pearse</td>
 <td align="left">US Geological Survey</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Adam Pepi</td>
 <td align="left">Univ of California, Davis</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Shyam Phartyal</td>
 <td align="left">Nalanda University</td>
 <td align="left">Harsh Yadav, Rahul Dav, Bipul Kumar, Kouame Romeo, Pranav Vinod , Mohamed Azaam, Hem Prasad Rai, Md. Asif Hashmi, S. Vaishaly, Kushagra Phartyal, Anita Sharma, Vijay Ojha</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Frida Piper</td>
 <td align="left">Centro de Investigación en Ecosistemas de la Patagonia</td>
 <td align="left">Caroline Dallstream</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Katja Poveda</td>
 <td align="left">Cornell Univ</td>
 <td align="left">Jessica Lorena Vaca</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Beth Pringle</td>
 <td align="left">Univ of Nevada, Reno</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Serban Proches</td>
 <td align="left">University of Kwazulu-Natal</td>
 <td align="left">Aalia Motala</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Javier Puy</td>
 <td align="left">Trinity College Dublin</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Tere Quijano</td>
 <td align="left">Universidad Autónoma de Yucatán</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Carolina Quintero</td>
 <td align="left">INIBIOMA (CONICET-Universidad Nacional del Comahue)</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Sergio Rasmann</td>
 <td align="left">Univ of Neuchâtel</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Lora Richards</td>
 <td align="left">Univ of Nevada, Reno</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Moria Robinson</td>
 <td align="left">Michigan State Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Haldre Rogers</td>
 <td align="left">Iowa State Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Clarissa Rosa</td>
 <td align="left">Instituto Nacional de Pesquisas da Amazônia</td>
 <td align="left">Filipe França</td>
+</tr>
+<tr class="odd">
+<td align="left">Christoph Rosche</td>
+<td align="left">Martin-Luther-University Halle</td>
+<td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left">Jay Rosenheim</td>
@@ -1498,7 +1579,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -1506,6 +1587,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

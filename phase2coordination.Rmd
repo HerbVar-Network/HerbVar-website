@@ -70,10 +70,10 @@ pRepro = read_sheet("https://docs.google.com/spreadsheets/d/1vL3r45atUP58gGfSC3a
                           sheet='Reproductive damage', skip=2)
 
 # Remove rows from planned without a genus or species
-#pApocynaceae = subset(pApocynaceae, !is.na(plantGenus) | !is.na(plantSpecies))
-#pAsteraceae = subset(pAsteraceae, !is.na(plantGenus) | !is.na(plantSpecies))
-#pFabaceae = subset(pFabaceae, !is.na(plantGenus) | !is.na(plantSpecies))
-#pRubiaceae = subset(pRubiaceae, !is.na(plantGenus) | !is.na(plantSpecies))
+pApocynaceae = subset(pApocynaceae, !is.na(plantGenus) | !is.na(plantSpecies))
+pAsteraceae = subset(pAsteraceae, !is.na(plantGenus) | !is.na(plantSpecies))
+pFabaceae = subset(pFabaceae, !is.na(plantGenus) | !is.na(plantSpecies))
+pRubiaceae = subset(pRubiaceae, !is.na(plantGenus) | !is.na(plantSpecies))
 #pSolanaceae = subset(pSolanaceae, !is.na(plantGenus) | !is.na(plantSpecies))
 pPlla = subset(pPlla, !is.na(plantGenus) | !is.na(plantSpecies))
 pPlma = subset(pPlma, !is.na(plantGenus) | !is.na(plantSpecies))
@@ -104,31 +104,31 @@ pTaof$Genus_sp = with(pTaof, paste(plantGenus, plantSpecies, sep="_"))
 pRepro$Genus_sp = with(pRepro, paste(plantGenus, plantSpecies, sep="_"))
 
 # Update names to match d.complete
-names(pApocynaceae)[8] = 'genus'
-names(pAsteraceae)[8] = 'genus'
-names(pFabaceae)[8] = 'genus'
-names(pRubiaceae)[8] = 'genus'
-names(pSolanaceae)[8] = 'genus'
+names(pApocynaceae)[9] = 'genus'
+names(pAsteraceae)[9] = 'genus'
+names(pFabaceae)[9] = 'genus'
+names(pRubiaceae)[9] = 'genus'
+names(pSolanaceae)[9] = 'genus'
 names(pPlla)[8] = 'genus'
 names(pPlma)[8] = 'genus'
 names(pTaof)[8] = 'genus'
 names(pRepro)[8] = 'genus'
 
-names(pApocynaceae)[15] = 'transectOriginLat'
-names(pAsteraceae)[15] = 'transectOriginLat'
-names(pFabaceae)[15] = 'transectOriginLat'
-names(pRubiaceae)[15] = 'transectOriginLat'
-names(pSolanaceae)[15] = 'transectOriginLat'
+names(pApocynaceae)[16] = 'transectOriginLat'
+names(pAsteraceae)[16] = 'transectOriginLat'
+names(pFabaceae)[16] = 'transectOriginLat'
+names(pRubiaceae)[16] = 'transectOriginLat'
+names(pSolanaceae)[16] = 'transectOriginLat'
 names(pPlla)[13] = 'transectOriginLat'
 names(pPlma)[13] = 'transectOriginLat'
 names(pTaof)[13] = 'transectOriginLat'
 names(pRepro)[15] = 'transectOriginLat'
 
-names(pApocynaceae)[16] = 'transectOriginLong'
-names(pAsteraceae)[16] = 'transectOriginLong'
-names(pFabaceae)[16] = 'transectOriginLong'
-names(pRubiaceae)[16] = 'transectOriginLong'
-names(pSolanaceae)[16] = 'transectOriginLong'
+names(pApocynaceae)[17] = 'transectOriginLong'
+names(pAsteraceae)[17] = 'transectOriginLong'
+names(pFabaceae)[17] = 'transectOriginLong'
+names(pRubiaceae)[17] = 'transectOriginLong'
+names(pSolanaceae)[17] = 'transectOriginLong'
 names(pPlla)[14] = 'transectOriginLong'
 names(pPlma)[14] = 'transectOriginLong'
 names(pTaof)[14] = 'transectOriginLong'
@@ -147,7 +147,7 @@ Repr = subset(d.complete, d.complete$reproductiveData == 1) #bind_rows(pRepro, s
 
 # Add growth form data to focal fams
 md = read_sheet("https://docs.google.com/spreadsheets/d/1mNYnSTCs9WYy5SN2HF4VYep550Sccz9xU5o8JuYut-A/edit?usp=sharing",
-                sheet = 'Species metadata', skip=2)
+                sheet = 'Species metadata')
 Apoc$growthForm[is.na(Apoc$growthForm)] = md$growthForm[match(Apoc$Genus_sp[is.na(Apoc$growthForm)], md$Genus_sp)]
 Aste$growthForm[is.na(Aste$growthForm)] = md$growthForm[match(Aste$Genus_sp[is.na(Aste$growthForm)], md$Genus_sp)]
 Faba$growthForm[is.na(Faba$growthForm)] = md$growthForm[match(Faba$Genus_sp[is.na(Faba$growthForm)], md$Genus_sp)]
