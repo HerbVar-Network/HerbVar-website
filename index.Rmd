@@ -18,7 +18,7 @@ Welcome to the Herbivory Variability Network ("HerbVar"). We are a global resear
 knitr::include_graphics("photos/herb_collage.png")
 ```
 
-Although we are a new network (founded in mid 2019), we already have more than 200 collaborators from more than 100 institutions across 30+ countries. Please email [Will Wetzel, Moria Robinson, or a member of the HerbVar Planning Group](leadership.html) if you are interested in joining us. We are always looking for additional collaborators, especially those who can contribute data from under-sampled regions or from new plant families or focal plant families and species.
+Although we are a new network (founded in mid 2019), we already have more than 200 collaborators from more than 100 institutions across 30+ countries. Please email [Will Wetzel or a member of the Planning Group](leadership.html) if you are interested in joining us. We are always looking for additional collaborators, especially those who can contribute data from under-sampled regions or from new plant families or focal plant families and species.
 
 
 Our growing dataset currently has **>700 surveys of >450 plant species from >130 plant families**. These are spread across North America, Central America, South America, Europe, Africa, Asia, and Australia, and we are working to expand our geographic extent.
@@ -27,7 +27,7 @@ Our growing dataset currently has **>700 surveys of >450 plant species from >130
 
 gs4_deauth()
 d = read_sheet("https://docs.google.com/spreadsheets/d/1mNYnSTCs9WYy5SN2HF4VYep550Sccz9xU5o8JuYut-A/edit?usp=sharing",
-           sheet='WEBSITE - Completed surveys')
+           sheet='Completed surveys')
 d = data.frame(d)
 
 mapWorld = borders("world", colour="gray80", fill="gray80") # create a layer of borders

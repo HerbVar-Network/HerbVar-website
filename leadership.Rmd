@@ -30,7 +30,7 @@ knitr::include_graphics("photos/people/robinson.jpeg")
 Department of Entomology  
 Ecology, Evolutionary Biology, & Behavior Program  
 Michigan State University  
-robi1169 (a) msu.edu • [website](https://www.moriarobinson.com/)  
+[website](https://www.moriarobinson.com/)  
 *(Postdoc Coordinator, Rubiaceae and Fabaceae Coordinator)*  
 <br>
 
@@ -102,12 +102,10 @@ wcwetzel (a) msu.edu
 Department of Entomology  
 Ecology, Evolutionary Biology, & Behavior Program  
 Michigan State University  
-robi1169 (a) msu.edu  
 
 **Luke Zehr**, Research Scientist  
 Department of Entomology  
 Michigan State University  
-zehrluke (a) msu.edu  
 <br>
 
 ## Damage Estimation Subgroup

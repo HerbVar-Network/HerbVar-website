@@ -26,9 +26,9 @@ d = data.frame(d)
 d = subset(d, !is.na(d$Genus_sp))
 
 # Load meta data on focal species
-dfs = read_sheet("https://docs.google.com/spreadsheets/d/1mNYnSTCs9WYy5SN2HF4VYep550Sccz9xU5o8JuYut-A/edit?usp=sharing",
-           sheet='Focal_species')
-dfs = data.frame(dfs)
+# dfs = read_sheet("https://docs.google.com/spreadsheets/d/1mNYnSTCs9WYy5SN2HF4VYep550Sccz9xU5o8JuYut-A/edit?usp=sharing",
+#           sheet='Focal_species')
+# dfs = data.frame(dfs)
 
 focalFam = function(z) # define function to ID focal families in data frame
 	ifelse(z == 'Apocynaceae' | z == 'Asteraceae' | z == 'Fabaceae' | z == 'Solanaceae' |
