@@ -11,7 +11,7 @@ knitr::include_graphics("photos/Pic band.png")
 
 While we are not currently hiring, we are an expanding network and more positions may become available as our objectives grow and additional funding is secured.
 
-You can learn more about [the Wetzel Lab here](https://www.wetzellab.com).
+You can learn more about the Wetzel Lab [here](https://www.wetzellab.com).
 
 ```{r, echo=FALSE, out.width = "600px", fig.align='center', dpi=72}
 knitr::include_graphics("photos/herb_collage.png")
