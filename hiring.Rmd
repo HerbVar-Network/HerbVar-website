@@ -7,42 +7,11 @@ output: html_document
 knitr::include_graphics("photos/Pic band.png")
 ```
 
-## Network administrator and data manager
+## Check Back Later!
 
-The Wetzel Lab at Michigan State University is looking for a summer research technician to serve as a network administrator and data manager for The Herbivory Variability Network. Our ecological research network aims to describe how and why patterns in plant-herbivore interactions vary across the tree of life and around the world. We have more than 200 network members from more than 30 countries. The network administrator and data manager will help coordinate the management of the network, including development and dissemination of field protocols, network communication, and database management. This is an exciting opportunity to work with a dynamic and growing research group. The position is initially for June/July-Aug/Sep 2021 (3 months) but could go longer depending on funding. The work will most likely be entirely remote. 
+While we are not currently hiring, we are an expanding network and more positions may become available as our objectives grow and additional funding is secured.
 
-**Ideal qualifications and skills**
-
-Some combination of the following:
-
-* Strong communication abilities and organization skills
-* Experience programming in R or SQL
-* Familiarity with the ecology of plants and/or insects and field sampling methods
-* Familiarity working with databases
-* Experience working on websites and/or developing outreach materials
-
-**Duties**
-
-Exact duties will depend on the strengths of the candidate, but they could include:
-
-* Preparing field sampling protocols in collaboration with other network members
-* Disseminating protocols to network members
-* Responding to emailed questions from network members
-* Receiving and checking new data from network members
-* Managing and tidying the network database
-* Developing an improved version of the network database in R or SQL
-* Improving the network website
-* Developing outreach materials
-
-**How to apply**
-
-Position open until filled, but please submit an application by May 15th for full consideration. Feel free to email Will Wetzel (wcwetzel@msu.edu) to start a conversation about the position. In your email, please include your CV and an explanation of why you are interested and what you would bring to the job. Please submit an application here: https://careers.msu.edu/cw/en-us/job/506231/technical-aide. Note that this is an umbrella job posting that covers several positions in the same department. In your application, please indicate you are interested in the HerbVar position. Salary is expected to be $14 per hour but is negotiable depending on experience and skills.
-
-Please peruse this website for more information about the network and project.
-You can learn more about [the Wetzel Lab here](https://www.wetzellab.com).
-
-Michigan State University is an Equal Opportunity/Affirmative Action employer, and actively encourages applications and/or nominations of women, persons of color, veterans, and persons with disabilities. International candidates are eligible. We strive to be safe spaces for diversity in STEM. We welcome applications from candidates from groups traditionally excluded from academia. E-mail questions to Will Wetzel (wcwetzel@msu.edu).
-
+You can learn more about the Wetzel Lab [here](https://www.wetzellab.com).
 
 ```{r, echo=FALSE, out.width = "600px", fig.align='center', dpi=72}
 knitr::include_graphics("photos/herb_collage.png")
