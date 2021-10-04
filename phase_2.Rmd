@@ -1,0 +1,53 @@
+---
+title: "Phase 2"
+output: html_document
+---
+
+## Phase 2 of Global Data Collection is Now Open!
+
+```{r setup, include=FALSE}
+
+# Load packages for this page
+library(googlesheets4)
+library(ggplot2)
+library(viridis)
+library(knitr)
+library(ggmap)
+library(tidyverse)
+
+# Load metadata on completed surveys
+gs4_deauth()
+d = read_sheet("https://docs.google.com/spreadsheets/d/1mNYnSTCs9WYy5SN2HF4VYep550Sccz9xU5o8JuYut-A/edit?usp=sharing",
+           sheet='Completed surveys')
+d = data.frame(d)
+
+# Drop rows without an entry for Genus_sp
+d = subset(d, !is.na(d$Genus_sp))
+
+```
+
+Phase 1 of data collection for the Herbivory Variability Network was a dramatic success with **`r nrow(d)` surveys on `r length(unique(d.complete$Genus_sp))` plant species from `r length(unique(d.complete$plantFamily))` plant families**.
+
+We are excited to announce that our second phase of data collection is now open! We are in the final stages of revising our primary and alternate protocols following feedback from collaborators on phase 1 so **check back later for updated protocols**.
+
+<br>
+
+## New Objectives
+
+From the preliminary patterns found in the first phase of data collection we have developed the following objectives going forward to help you select species to survey:
+
+* Surveys of the three focal species (_Taraxacum officinale_, _Plantago lanceolata_, and _Plantago major_), especially across broad environmental and/or geographic ranges
+
+* Surveys of species in the five focal families (**Apocynaceae**, **Asteraceae**, **Fabaceae**, **Rubiaceae**, and **Solanaceae**). We want surveys of new species within these families, especially species from new clades or with unusual growth forms. For repeat surveys of species within these families, we are prioritizing surveys from new regions, habitats, elevations, etc.
+
+* Surveys of damage to any species’ reproductive tissues (e.g., flowers, fruits, etc.)
+
+## Spread the Word!
+
+Please feel free to share our announcement flyer with colleagues you think might be interested in joining the Network or on social media!
+
+```{r, echo=FALSE, out.width = "700px", fig.align='center', dpi=72}
+knitr::include_graphics("photos/HV-phase2-announcement-flyer.png")
+```
+
+If you have questions please also feel free to email herbvar (a) gmail.com and we will do our best to respond promptly.

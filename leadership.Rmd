@@ -29,8 +29,7 @@ knitr::include_graphics("photos/people/robinson.jpeg")
 **Dr. Moria Robinson**  
 Department of Entomology  
 Ecology, Evolutionary Biology, & Behavior Program  
-Michigan State University  
-[website](https://www.moriarobinson.com/)  
+Michigan State University • [website](https://www.moriarobinson.com/)  
 *(Postdoc Coordinator, Rubiaceae and Fabaceae Coordinator)*  
 <br>
 
