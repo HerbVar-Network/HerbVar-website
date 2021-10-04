@@ -3,19 +3,19 @@ title: "Leadership"
 output: html_document
 ---
 
-HerbVar was founded by the [Wetzel Lab at Michigan State University](https://WetzelLab.com). It is led by a Planning Group and multiple Subgroups that focus on specific topics. Please feel free to email members of the Planning Group or Coordination Staff if you are interested in the project. For information on how our network runs, please see the [HerbVar Document of Collaboration](/protocols/HerbVar Document of Collaboration.pdf).
+HerbVar was founded by the [Wetzel Lab at Michigan State University](https://WetzelLab.com). It is led by a Steering Committee and multiple Subgroups that focus on specific topics. Please feel free to email **herbvar(a)gmail.com** or members of the Steering Committee or Coordination Staff if you are interested in the project. For information on how our network runs, please see the [HerbVar Document of Collaboration](/protocols/HerbVar Document of Collaboration.pdf).
 
 
 <br>
 
-## HerbVar Planning Group
+## HerbVar Steering Committee
 
 ```{r, echo=FALSE, out.width = "100px"}
 knitr::include_graphics("photos/people/wetzel.jpg")
 ``` 
 
 **Dr. Will Wetzel**  
-Department of Entomology  
+Department of Entomology; Department of Integrative Biology  
 Ecology, Evolutionary Biology, & Behavior Program  
 Michigan State University  
 wcwetzel (a) msu.edu • [website](https://WetzelLab.com)  
@@ -23,14 +23,33 @@ wcwetzel (a) msu.edu • [website](https://WetzelLab.com)
 <br>
 
 ```{r, echo=FALSE, out.width = "100px"}
-knitr::include_graphics("photos/people/robinson.jpeg")
+knitr::include_graphics("photos/people/abbott.jpg")
+``` 
+
+**Dr. Karen Abbott**  
+Department of Biology  
+Case Western Reserve University  
+kcabbott (a) case.edu • [website](https://abbottlab480702554.wordpress.com)  
+<br>
+
+```{r, echo=FALSE, out.width = "100px"}
+knitr::include_graphics("photos/people/bruna.png")
+``` 
+
+**Dr. Emilio Bruna**  
+Dept of Wildlife Ecology & Conservation; Center for Latin American Studies  
+University of Florida  
+embruna (a) ufl.edu • [website](http://brunalab.org/)  
+<br>
+
+```{r, echo=FALSE, out.width = "100px"}
+knitr::include_graphics("photos/people/cacho.jpg")
 ```
 
-**Dr. Moria Robinson**  
-Department of Entomology  
-Ecology, Evolutionary Biology, & Behavior Program  
-Michigan State University • [website](https://www.moriarobinson.com/)  
-*(Postdoc Coordinator, Rubiaceae and Fabaceae Coordinator)*  
+**Dr. N. Ivalú Cacho**  
+Departamento de Botánica  
+Instituto de Biología, UNAM  
+ivalu.cacho (a) ib.unam.mx • [website](https://ivalucacho.weebly.com/)  
 <br>
 
 ```{r, echo=FALSE, out.width = "100px"}
@@ -97,11 +116,6 @@ Ecology, Evolutionary Biology, & Behavior Program
 Michigan State University  
 wcwetzel (a) msu.edu  
 
-**Dr. Moria Robinson**, Postdoc Coordinator  
-Department of Entomology  
-Ecology, Evolutionary Biology, & Behavior Program  
-Michigan State University  
-
 **Luke Zehr**, Research Scientist  
 Department of Entomology  
 Michigan State University  
@@ -109,6 +123,7 @@ Michigan State University
 **Nick Lyon**, Data Scientist  
 Department of Entomology  
 Michigan State University
+herbvar (a) gmail.com
 
 <br>
 

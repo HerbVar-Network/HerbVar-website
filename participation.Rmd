@@ -7,9 +7,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-We are a collaborative and inclusive group of scientists and educators who are working together to advance our understanding of plant--herbivore interactions. Please contact us if you are interested in joining. You can email Will Wetzel (wcwetzel@msu.edu) or any other member of the [Planning Group](leadership.html).
+We are a collaborative and inclusive group of scientists and educators who are working together to advance our understanding of plant--herbivore interactions. Please contact us if you are interested in joining. You can email Will Wetzel (wcwetzel@msu.edu) or any other member of the [Steering Committee](leadership.html).
 
-Herbvar is open to professional biologists [or educators](#edu) who are collaborative, collegial, and willing to collect and contribute standardized data on the distribution of herbivory. We are especially interested in gaining data for new species and sites, as well as for focal plant families and species (see the [HerbVar Species Selection Plan](protocols/HerbVar Species Selection Plan.pdf)). Collaborators can participate by using our protocols to survey herbivory. Collaborators are also welcome to join leadership Subgroups if they are motivated and willing to invest significant time into the development of HerbVar.
+Herbvar is open to professional biologists [or educators](#edu) who are collaborative, collegial, and willing to collect and contribute standardized data on the distribution of herbivory. We are especially interested in gaining data for our focal species, our focal families, and surveys of reproductive damage for any species (see our [Phase 2 page](phase_2.html) for more details). Collaborators can participate by using our protocols to survey herbivory. Collaborators are also welcome to join leadership Subgroups if they are motivated and willing to invest significant time into the development of HerbVar.
 
 Collaborators should
 
@@ -18,12 +18,9 @@ Collaborators should
 * Fund research at their own sites
 * Contribute data gathered using the HerbVar protocol or a modified protocol approved by the Planning Group (see [HerbVar protocols](protocols.html))
 
-Collaborators will be included as co-authors on HerbVar manuscripts if they
+Collaborators will be included as co-authors on the first HerbVar manuscript from each objective if they
 
-* Contribute data from 5 or more surveys (ideally); 3 at the very least. We suggest these include:
-  + 1 new plant family or ecosystem
-  + 1 new species from one of our focal families (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae)
-  + 1 survey from a focal species (_Taraxacum officinale_, _Plantago lanceolata_, and _Plantago major_)
+* Contribute data from 5 or more surveys (ideally) for one sampling objective; 3 at the very least. Please see our [Phase 2 page](phase_2.html) for our current sampling objectives.
 * Contribute intellectually to at least one of the following:
   + Development of questions and overall study design
   + Data analysis
@@ -38,7 +35,7 @@ knitr::include_graphics("photos/180.jpg")
 
 
 ## Participating as an educator {#edu}
-Some of our collaborators use **HerbVar as an experiential learning tool**. They take students into the field; teach them about ecology, plant--animal interactions, scientific study-design, and other topics; train them in the relevant sampling methods; collect real data with the students; and contribute the data to the network. If you are an educator and are intersted in using HerbVar in your teaching and/or becoming a collaborator, please [email us](leadership.html).
+Some of our collaborators use **HerbVar as an experiential learning tool**. They take students into the field; teach them about ecology, plant--animal interactions, scientific study-design, and other topics; train them in the relevant sampling methods; collect real data with the students; and contribute the data to the network. If you are an educator and are intersted in using HerbVar in your teaching and/or becoming a collaborator, please email herbvar (a) gmail.com.
 
 
 
