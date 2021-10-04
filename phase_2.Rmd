@@ -46,7 +46,7 @@ From the preliminary patterns found in the first phase of data collection we hav
 
 Please feel free to share our announcement flyer with colleagues you think might be interested in joining the Network or on social media!
 
-```{r, echo=FALSE, out.width = "600px", fig.align='center', dpi=72}
+```{r, echo=FALSE, out.width = "700px", fig.align='center', dpi=72}
 knitr::include_graphics("photos/HV-phase2-announcement-flyer.png")
 ```
 
