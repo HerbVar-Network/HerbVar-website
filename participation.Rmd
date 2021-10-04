@@ -18,16 +18,16 @@ Collaborators should
 * Fund research at their own sites
 * Contribute data gathered using the HerbVar protocol or a modified protocol approved by the Planning Group (see [HerbVar protocols](protocols.html))
 
-Collaborators will be included as co-authors on the first HerbVar manuscript from each objective if they
+Collaborators will be included as co-authors on the primary HerbVar manuscript arising from a sampling objective if they
 
-* Contribute data from 5 or more surveys (ideally) for one sampling objective; 3 at the very least. Please see our [Phase 2 page](phase_2.html) for our current sampling objectives.
+* Contribute data from 5 or more surveys (ideally) to the sampling objective; 3 at the very least. Please see our [Phase 2 page](phase_2.html) for our current sampling objectives.
 * Contribute intellectually to at least one of the following:
   + Development of questions and overall study design
   + Data analysis
   + Writing
   + Editing
 
-For more information on participation and how our network runs, please see the [HerbVar Document of Collaboration](/protocols/HerbVar Document of Collaboration.pdf).
+Future manuscripts will follow an opt-in authorship system with the opportunity to join and contribute to each manuscript. For more information on participation and how our network runs, please see the [HerbVar Document of Collaboration](/protocols/HerbVar Document of Collaboration.pdf).
 
 ```{r, echo=FALSE, out.width = "500px", fig.align='center'}
 knitr::include_graphics("photos/180.jpg")
