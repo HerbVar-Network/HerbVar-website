@@ -27,8 +27,7 @@ navbar:
           href: phase2coordination.html
     - text: "Participation"
       href: participation.html
-    - text: "Hiring"
-      href: hiring.html
+
 
 output:
   rmarkdown::html_document:
