@@ -15,6 +15,8 @@ navbar:
           href: CollaboratorDirectory.html
         - text: "Collaborator photos"
           href: CollaboratorPhotos.html
+    - text: "Phase 2"
+      href: phase_2.html
     - text: "Protocols"
       href: protocols.html
     - text: "Sampling status"
