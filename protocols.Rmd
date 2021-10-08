@@ -8,44 +8,44 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-Below are pdfs of our main sampling protocols. Collaborators should have access to our shared Drive folder which has the most up-to-date versions and additional information. Please get in touch if you need access to our shared Drive folder.  
+Below are links to our main sampling protocols. Collaborators should have access to our shared Drive folder which has the most up-to-date versions and additional information. Please get in touch if you need access to our shared Drive folder.  
 
 <br>
 
 #### Selecting species and sites to survey
-[HerbVar Species Selection Plan](protocols/HerbVar Species Selection Plan.pdf). This describes our approach to select plant species and/or sites to survey. In brief, we suggest collaborators strive to survey at least 1 new plant family or ecosystem, 1 new species from one of our focal families (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae), and 1 survey of one of our three focal species (_Taraxacum officinale_, _Plantago lanceolata_, and _Plantago major_). However, we also encourage you to survey any species you know well and are excited about, and our requirements are flexible because we know not all researchers have access to new families, new ecosystems, focal families, etc.  
+[HerbVar Species & Site Selection Plan](https://docs.google.com/document/d/1-p8oQkrgqM_E3uzMf2Ihqs_c5PE54PVVhHHjRru8_qA/edit?usp=sharing). This describes our approach to select plant species and/or sites to survey. In brief, we suggest collaborators strive to survey either (1) one of our three focal species (_Taraxacum officinale_, _Plantago lanceolata_, and _Plantago major_) in a novel geographic/environmental context, (2) new clades or growth forms of species in our five focal families (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae), or (3) reproductive tissue damage of any species.
 
+[HerbVar Motivation and Project Goals](https://docs.google.com/document/d/1Vj00Sks7XG4s0ar3HzcJBPoOkFfl3HR0/edit?usp=sharing&ouid=107899855781798259282&rtpof=true&sd=true). This document describes the larger strategic vision and project goals of the HerbVar Network.
 
 #### The Primary Protocol for most species and sites
-[HerbVar Primary Protocol](protocols/Primary protocol for Herbivory Variability Network.pdf). This is the primary protocol for HerbVar surveys. We designed this to work for most plant species and sites. If it will not work for your species or site for whatever reason, then please consider one of our alternative protocols or get in touch with the HerbVar Planning Group.  
+[HerbVar Primary Protocol](https://docs.google.com/document/d/1XKK78S-2hX9kVZq6OwF7-UBfnAV4UCrR/edit?usp=sharing&ouid=116537863331430920281&rtpof=true&sd=true). This is the primary protocol for HerbVar surveys. We designed this to work for most plant species and sites. If it will not work for your species or site for whatever reason, then please consider one of our alternative protocols or get in touch with the HerbVar Planning Group.  
+
+[Reproductive Damage Protocol](https://docs.google.com/document/d/1Rz6wPDXpfEnv1M16gJ1a2D3DHeImqlv-/edit?usp=sharing&ouid=107899855781798259282&rtpof=true&sd=true). If your plants have reproductive tissues (flowers, fruits, seeds), please follow this protocol to quantify damage to these tissues.  
+
+**Note that our datasheets (both Excel and printable) are still being revised** These changes are likely to be relatively minor though so feel free to use these versions if you are conducting a survey before updated versions are posted.
 
 [Datasheet - Excel file](protocols/Datasheet template for HerbVar.xlsx). This Excel file is a template datasheet designed to work for the HerbVar Primary Protocol. It can be easily modified for use with our alternative protocols (see below).  
 
 [Datasheet - printable PDF](protocols/HerbVar_datasheet_printable.pdf). This is a printable datasheet designed to work for the HerbVar Primary Protocol. It prints well for paper data entry in the field, but because it is a static PDF it is not easily edited.  
 
-[Reproductive Damage Protocol](protocols/HerbVar Reproductive Damage Protocol.pdf). If your plants have reproductive tissues (flowers, fruits, seeds), please follow this protocol to quantify damage to these tissues.  
-
-
 #### Documents to help with herbivory estimation
-[Damage Estimation Guidelines](protocols/HerbVar Damage Estimation Guidelines.pdf). This is a detailed walk through the process of estimating herbivore damage on leaves and whole plants, including tips for different types of leaves and damage.  
+[Damage Estimation Guidelines](https://docs.google.com/document/d/1Y90zfQBkluuhelDdb5WksW_8VRXkBMaGQIO9myRME2I/edit?usp=sharing). This is a detailed walk through the process of estimating herbivore damage on leaves and whole plants, including tips for different types of leaves and damage.  
 
 [Illustrated Guide to Percent Leaf Damage](/protocols/Illustrated Guide to Percent Leaf Damage.pdf). This is a visual guide to what different levels of percent damage look like on a leaf. We suggest printing this out and taking it to the field with you to aid in estimation of percent herbivory. Currently, it has leaves of two species, but more are on the way.  
 
 
 #### Alternative survey protocols, for other plant types
-[Rare Plants Protocol](protocols/HerbVar Surveying low-density_low-abundance sites.pdf). If your plants are rare at your site---such that they occur at low densities or abundances---then please refer to this protocol.  
+[Low Density/Abundance Protocol](https://docs.google.com/document/d/1MDg1heY8F0v3XZrtMM2iVpt_Y6AhvFQR/edit?usp=sharing&ouid=116537863331430920281&rtpof=true&sd=true). If your plants are rare at your site---such that they occur at low densities or abundances---then please refer to this protocol.  
 
-[Cacti and Other Succulents Protocol](protocols/HerbVar Cactus and Succulent Protocol.pdf). This document discusses issues related to quantifying herbivory on cacti and other succulents and outlines a protocol.  
+[Cacti and Other Succulents Protocol](https://docs.google.com/document/d/179zCBbGkXLZ1ceNBafG654tbo0wgme5r/edit?usp=sharing&ouid=116537863331430920281&rtpof=true&sd=true). This document discusses issues related to quantifying herbivory on cacti and other succulents and outlines a protocol.  
 
-[Tree Protocol](protocols/HerbVar Tree Protocol.pdf). This is a protocol for surveying mature trees for HerbVar. It also discusses how to handle seedlings and saplings of tree species.  
+[Mature Tree Protocol](https://docs.google.com/document/d/1R1xVqIUBdF_Y_QkoSxnXs3p2BtCGCTJm/edit?usp=sharing&ouid=116537863331430920281&rtpof=true&sd=true). This is a protocol for surveying mature trees for HerbVar. It also discusses how to handle seedlings and saplings of tree species. If you are sampling tree species in their seedling or sapling stage (i.e., <2m tall) please refer to the [Primary Protocol](https://docs.google.com/document/d/1XKK78S-2hX9kVZq6OwF7-UBfnAV4UCrR/edit?usp=sharing&ouid=116537863331430920281&rtpof=true&sd=true)
 
-[Rhizomatous Geophyte Protocol](protocols/HerbVar Rhizomatous Geophyte Protocol.pdf). This is a protocol for rhizomatous species for which it is feasible to determine what constitutes a genet by identifying rhizomatous connections and for which genets are small enough that herbivory could feasibly be estimated on 30 genets and their nearest neighbors within a site.
+[Rhizomatous Geophyte Protocol](https://docs.google.com/document/d/1-UikT_60gnfl0vcUJm1jS7RUC8mX8UR9/edit?usp=sharing&ouid=116537863331430920281&rtpof=true&sd=true). This is a protocol for rhizomatous species for which it is feasible to determine what constitutes a genet by identifying rhizomatous connections and for which genets are small enough that herbivory could feasibly be estimated on 30 genets and their nearest neighbors within a site.
 
 
 #### Insects
-[Insect Sampling Protocol](protocols/HerbVar Herbivore sampling_ protocol.pdf). This document discusses *if and how* to sample insects. All surveys should note internally-feeding herbivores (e.g., gallers and miners), but only some should take the extra time to sample external herbivores.  
-
-[Cheatsheet to Insect Mines and Galls](protocols/Cheatsheet_ mines and galls.pdf). This is a brief guide to what insect mines and galls can look like.  
+[Insect Sampling Protocol](https://docs.google.com/document/d/1l6ucJc6JpohcgPXBhg9e3hLPWImjTZM-/edit?usp=sharing&ouid=116537863331430920281&rtpof=true&sd=true). This document discusses *whether and how* to sample insects. All surveys should note internally-feeding herbivores (e.g., gallers and miners), but only some should take the extra time to sample external herbivores. The document also includes visual cheatsheets for pre-selected groups of insects and gall/mine counting.
 
 <br>
 
