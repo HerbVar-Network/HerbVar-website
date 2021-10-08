@@ -68,7 +68,7 @@ require(taxize)
 ###########################################
 
 # herbvar_genera<-sapply(strsplit(d$Genus_sp, "_"), function(x) x[1])
-herbvar_tax_names_clean<-lookup_table(unique(d$Genus_sp),by_species=TRUE,missing_action="NA")
+herbvar_tax_names_clean <- taxonlookup::lookup_table(unique(d$Genus_sp),by_species=TRUE,missing_action="NA")
 #head(herbvar_tax_names_clean)
 
 # figure out if any queries didn't work.  Can edit them in later in the dataset and re-run to fix, or just omit for now.

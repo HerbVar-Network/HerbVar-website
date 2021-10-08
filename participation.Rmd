@@ -27,7 +27,7 @@ Collaborators will be included as co-authors on the primary HerbVar manuscript a
   + Writing
   + Editing
 
-Future manuscripts will follow an opt-in authorship system with the opportunity to join and contribute to each manuscript. For more information on participation and how our network runs, please see the [HerbVar Document of Collaboration](/protocols/HerbVar Document of Collaboration.pdf).
+Future manuscripts will follow an opt-in authorship system with the opportunity to join and contribute to each manuscript. For more information on participation and how our network runs, please see the [HerbVar Document of Collaboration](https://docs.google.com/document/d/1nBNIkY6ICaRr-zE3DRg357-FZoB2X-mM/edit?usp=sharing&ouid=107899855781798259282&rtpof=true&sd=true).
 
 ```{r, echo=FALSE, out.width = "500px", fig.align='center'}
 knitr::include_graphics("photos/180.jpg")
