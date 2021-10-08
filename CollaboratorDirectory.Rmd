@@ -6,7 +6,7 @@ output: html_document
 ```{r, include=FALSE}
 library(googlesheets4)
 library(knitr)
-sheets_deauth()
+gs4_deauth()
 coll = read_sheet("https://docs.google.com/spreadsheets/d/1UwM5VR_msyIEyCpIGllfaLD4K4mqKyU5LfsCTwYEvwo/edit?usp=sharing",
            sheet='collaborator list')
 coll = data.frame(coll)
