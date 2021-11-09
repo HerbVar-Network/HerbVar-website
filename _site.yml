@@ -19,6 +19,8 @@ navbar:
       href: phase_2.html
     - text: "Protocols"
       href: protocols.html
+    - text: "Submit data"
+      href: submit_data.html
     - text: "Sampling status"
       menu:
         - text: "Completed surveys"

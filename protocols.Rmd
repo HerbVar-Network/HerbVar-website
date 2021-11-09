@@ -22,7 +22,7 @@ Below are links to our main sampling protocols. Collaborators should have access
 
 [Reproductive Damage Protocol](https://docs.google.com/document/d/1Rz6wPDXpfEnv1M16gJ1a2D3DHeImqlv-/edit?usp=sharing&ouid=107899855781798259282&rtpof=true&sd=true). If your plants have reproductive tissues (flowers, fruits, seeds), please follow this protocol to quantify damage to these tissues.  
 
-[Datasheet - Excel File](protocols/Datasheet template for HerbVar.xlsx). This Excel file is a template datasheet designed to work for the HerbVar Primary Protocol. It contains a "data dictionary" sheet that defines all columns if any abbreviations are unclear.
+[Datasheet - Excel File](protocols/HerbVar Datasheet Template.xlsx). This Excel file is a template datasheet designed to work for the HerbVar Primary Protocol. It contains a "data dictionary" sheet that defines all columns if any abbreviations are unclear.
 
 [Datasheet - Printable PDFs](https://drive.google.com/drive/folders/10-9xPm9yOAvGCtL3dmVaoz7ODI1fghYG?usp=sharing). We have split the printable datasheets into three parts, one each for the Primary, Reproductive, and Herbivore Protocols. The herbivore datasheet is built for you to print as many copies of the second page as you have identified herbivore groups.
 

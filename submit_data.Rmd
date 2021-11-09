@@ -1,0 +1,39 @@
+---
+title: "Submit Data"
+output: html_document
+---
+
+### New Data Submission Portal Active!
+
+```{r setup, include=FALSE}
+
+# Load packages for this page
+library(googlesheets4)
+library(ggplot2)
+library(viridis)
+library(knitr)
+library(ggmap)
+library(tidyverse)
+
+# Load metadata on completed surveys
+gs4_deauth()
+d = read_sheet("https://docs.google.com/spreadsheets/d/1mNYnSTCs9WYy5SN2HF4VYep550Sccz9xU5o8JuYut-A/edit?usp=sharing",
+           sheet='Completed surveys')
+d = data.frame(d)
+
+# Drop rows without an entry for Genus_sp
+d = subset(d, !is.na(d$Genus_sp))
+
+```
+
+We have created a new [data submission portal](https://herbvar.shinyapps.io/data_portal_actual/) to handle all data uploads for this phase of data collection! This app was built in R Shiny and performs some initial error checking as well as harvesting some metadata at upload.
+
+The app is (hopefully) user-friendly, and in service of that goal each step is numbered. To upload your data, (1) enter your field-collected data into the [template Excel file](protocols/HerbVar Datasheet Template.xlsx) and (2) follow the numbered steps in the Shiny app.
+
+This method of data submission is new to us and we would welcome feedback on how to improve for subsequent versions of the app. We will ask about this in our general feedback questionnaire at the end of phase 2 but comments sent to herbvar(a)gmail.com are also welcome!
+
+If you have questions please also feel free to email herbvar(a)gmail.com and we will do our best to respond promptly.
+
+```{r, echo=FALSE, out.width = "500px", fig.align='center'}
+knitr::include_graphics("photos/IMG_2222.jpg")
+```

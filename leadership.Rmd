@@ -3,12 +3,12 @@ title: "Leadership"
 output: html_document
 ---
 
-HerbVar was founded by the [Wetzel Lab at Michigan State University](https://WetzelLab.com). It is led by a Steering Committee and multiple Subgroups that focus on specific topics. Please feel free to email **herbvar(a)gmail.com** or members of the Steering Committee or Coordination Staff if you are interested in the project. For information on how our network runs, please see the [HerbVar Document of Collaboration](https://docs.google.com/document/d/1nBNIkY6ICaRr-zE3DRg357-FZoB2X-mM/edit?usp=sharing&ouid=107899855781798259282&rtpof=true&sd=true).
+HerbVar was founded by the [Wetzel Lab at Michigan State University](https://WetzelLab.com). It is led by a Planning Group and multiple Subgroups that focus on specific topics. Please feel free to email **herbvar(a)gmail.com** or members of the Planning Group or Coordination Staff if you are interested in the project. For information on how our network runs, please see the [HerbVar Document of Collaboration](https://docs.google.com/document/d/1nBNIkY6ICaRr-zE3DRg357-FZoB2X-mM/edit?usp=sharing&ouid=107899855781798259282&rtpof=true&sd=true).
 
 
 <br>
 
-## HerbVar Steering Committee
+## HerbVar Planning Group
 
 ```{r, echo=FALSE, out.width = "100px"}
 knitr::include_graphics("photos/people/wetzel.jpg")
