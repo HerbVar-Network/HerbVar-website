@@ -44,6 +44,10 @@ Based on phase 1 of data collection, we have developed the following sampling ob
 
 We envision at least one publication per sampling objective. Collecting at least three surveys for an objective will earn you authorship on the primary paper for that objective (and please see our [Participation page](participation.html) for other authorship requirements).
 
+## New Data Submission Portal
+
+For this phase of data collection we have created a [data submission portal](https://herbvar.shinyapps.io/data_portal_actual/) with R Shiny! All data submission for this phase will go through it but it does require you use the updated [template Excel file](protocols/HerbVar Datasheet Template.xlsx).
+
 ## Spread the Word!
 
 Please feel free to share our announcement flyer with colleagues you think might be interested in joining the Network or on social media!

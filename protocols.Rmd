@@ -22,11 +22,12 @@ Below are links to our main sampling protocols. Collaborators should have access
 
 [Reproductive Damage Protocol](https://docs.google.com/document/d/1Rz6wPDXpfEnv1M16gJ1a2D3DHeImqlv-/edit?usp=sharing&ouid=107899855781798259282&rtpof=true&sd=true). If your plants have reproductive tissues (flowers, fruits, seeds), please follow this protocol to quantify damage to these tissues.  
 
-**Note that our datasheets (both Excel and printable) are still being revised** These changes are likely to be relatively minor though so feel free to use these versions if you are conducting a survey before updated versions are posted.
+[Datasheet - Excel File](protocols/Datasheet template for HerbVar.xlsx). This Excel file is a template datasheet designed to work for the HerbVar Primary Protocol. It contains a "data dictionary" sheet that defines all columns if any abbreviations are unclear.
 
-[Datasheet - Excel file](protocols/Datasheet template for HerbVar.xlsx). This Excel file is a template datasheet designed to work for the HerbVar Primary Protocol. It can be easily modified for use with our alternative protocols (see below).  
+[Datasheet - Printable PDFs](https://drive.google.com/drive/folders/10-9xPm9yOAvGCtL3dmVaoz7ODI1fghYG?usp=sharing). We have split the printable datasheets into three parts, one each for the Primary, Reproductive, and Herbivore Protocols. The herbivore datasheet is built for you to print as many copies of the second page as you have identified herbivore groups.
 
-[Datasheet - printable PDF](protocols/HerbVar_datasheet_printable.pdf). This is a printable datasheet designed to work for the HerbVar Primary Protocol. It prints well for paper data entry in the field, but because it is a static PDF it is not easily edited.  
+#### Uploading Data
+To upload data, please visit our [data submission portal](https://herbvar.shinyapps.io/data_portal_actual/) and be sure to use the template Excel file linked above.
 
 #### Documents to help with herbivory estimation
 [Damage Estimation Guidelines](https://docs.google.com/document/d/1Y90zfQBkluuhelDdb5WksW_8VRXkBMaGQIO9myRME2I/edit?usp=sharing). This is a detailed walk through the process of estimating herbivore damage on leaves and whole plants, including tips for different types of leaves and damage.  
