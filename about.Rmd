@@ -28,7 +28,7 @@ Theory suggests that variability and skew in species interactions can have drama
 We are answering these questions by collecting data on the distribution of herbivory on plants. Our work addresses prior limitations by collecting data via standardized protocols, and incorporating a broad range of plant species and ecosystems. By documenting broad patterns in variability (or skewness) in herbivory, and identifying the factors that correlate with the shape of this distribution, we hope to provide the field with a new paradigm for describing plant--herbivore interactions and generate novel hypotheses about their ecology and evolution.
 
 
-Please see the [Participation page](participation.html) if you are interested in joining us.
+Please see the [Participation page](participation.html) for guidelines on how to join the Network and feel free to check out our [Twitter](https://twitter.com/herbvar_network) for recent news.
 
 <br>
 
