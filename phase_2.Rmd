@@ -50,7 +50,7 @@ For this phase of data collection we have created a [data submission portal](htt
 
 ## Spread the Word!
 
-Please feel free to share our announcement flyer with colleagues you think might be interested in joining the Network or on social media!
+Please feel free to share our announcement flyer with colleagues you think might be interested in joining the Network or on social media! We are also now on [Twitter](https://twitter.com/herbvar_network) so please feel free to tweet at us or use the hashtag "#HerbVar" for your Network-related posts.
 
 ```{r, echo=FALSE, out.width = "700px", fig.align='center', dpi=72}
 knitr::include_graphics("photos/HV-phase2-announcement-flyer.png")
