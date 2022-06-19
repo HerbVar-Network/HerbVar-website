@@ -18,7 +18,7 @@ Welcome to the Herbivory Variability Network ("HerbVar"). We are a global resear
 knitr::include_graphics("photos/herb_collage.png")
 ```
 
-Although we are a new network (founded in mid 2019), we already have more than 200 collaborators from more than 100 institutions across 30+ countries. Please email **herbvar (a) gmail.com** or [Will Wetzel or a member of the Steering Committee](leadership.html) if you are interested in joining us. We are always looking for additional collaborators, especially those who can contribute data from under-sampled regions or new species in our focal families. We are in our second phase of data collection; please see our [Phase 2 page](phase_2.html) for more information on our current sampling objectives.
+Since our founding in 2019, we have grown to more than 200 collaborators from more than 100 institutions across 30+ countries. Please email **herbvar (a) gmail.com** or [Will Wetzel or a member of the Steering Committee](leadership.html) if you are interested in joining us. We are always looking for additional collaborators, especially those who can contribute data from under-sampled regions or new species in our focal families. We are in our second phase of data collection; please see our [Phase 2 page](phase_2.html) for more information on our current sampling objectives.
 
 
 Our growing dataset currently has **>750 surveys of >480 plant species from >135 plant families**. These are spread across North America, Central America, South America, Europe, Africa, Asia, and Australia.
@@ -46,16 +46,16 @@ ggplot() +
 ```
 
 <br>
-<br>
 
-The Herbivory Variability Network is run out of [Michigan State University](https://msu.edu/). Support and seed funding for coordination was provided by [MSU AgBioResearch](https://www.canr.msu.edu/research/), [MSU Department of Entomology](https://www.canr.msu.edu/ent/), [MSU CANR International Programs](https://www.canr.msu.edu/global/), and the [MSU Ecology, Evolution, and Behavior Program](https://eeb.msu.edu/).
+The Herbivory Variability Network is funded for 2022-2026 by the US National Science Foundation as a Research Coordination Network. Seed funding was provided by [MSU AgBioResearch](https://www.canr.msu.edu/research/), [MSU Department of Entomology](https://www.canr.msu.edu/ent/), [MSU CANR International Programs](https://www.canr.msu.edu/global/), and the [MSU Ecology, Evolution, and Behavior Program](https://eeb.msu.edu/).
+
+<center>
+
+![](photos/NSF_4-Color_bitmap_Logo.png){width=150px} ![](photos/wordmark_green_RGB.png){width=250px}
+
+</center>
 
 
-```{r, echo=FALSE, out.width = "250px", fig.align='center', dpi=72}
-knitr::include_graphics("photos/wordmark_green_RGB.png")
-```
-
-<br>
 <br>
 <br>
 
