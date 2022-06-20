@@ -33,6 +33,7 @@ navbar:
       href: products.html
     - text: "Hiring"
       href: hiring.html
+  position: sticky
 
 
 output:
