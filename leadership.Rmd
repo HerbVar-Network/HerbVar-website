@@ -109,24 +109,6 @@ swhitehead (a) vt.edu • [website](http://www.speciesinteractions.com/)
 *(Focal Species Coordinator)*  
 <br>
 
-
-## HerbVar Coordination Staff
-
-**Dr. Will Wetzel**, Lead PI  
-Department of Entomology  
-Ecology, Evolutionary Biology, & Behavior Program  
-Michigan State University  
-wcwetzel (a) msu.edu  
-
-**Luke Zehr**, Research Scientist  
-Department of Entomology  
-Michigan State University  
-
-**Nick Lyon**, Data Scientist  
-Department of Entomology  
-Michigan State University
-herbvar (a) gmail.com
-
 <br>
 
 ## Damage Estimation Subgroup
