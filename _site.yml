@@ -7,10 +7,10 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
-    - text: "Leadership"
-      href: leadership.html
-    - text: "Collaborators"
+    - text: "People"
       menu:
+        - text: "Leadership"
+          href: leadership.html
         - text: "Collaborator directory"
           href: CollaboratorDirectory.html
         - text: "Collaborator photos"
@@ -29,6 +29,8 @@ navbar:
           href: phase2coordination.html
     - text: "Participation"
       href: participation.html
+    - text: "Products"
+      href: products.html
     - text: "Hiring"
       href: hiring.html
 

@@ -1,0 +1,32 @@
+---
+title: "Products"
+output: html_document
+---
+
+```{r, echo=FALSE, out.width = "650px", fig.align='center', dpi=72}
+knitr::include_graphics("photos/Pic band.png")
+```
+
+## Presentations
+
+Wetzel, W.C., K. Abbott, E. Bruna, N.I. Cacho, L.A. Dyer, P.G. Hahn, B. Inouye, M.L. Robinson, N. Underwood, S. Whitehead, L.N. Zehr, and **the members of the Herbivory Variability Network**. 2021. Macroevolutionary and global patterns of intraspecific variability in herbivory: Data from the HerbVar Network. Invited in Symposium: “Herbivory Through the Ages: Understanding Patterns of Insect Damage Through Space and Time.” Annual Meeting of the Entomological Society of America, Denver, CO.
+
+Robinson, M. L., K. Abbott, E. Bruna, N.I. Cacho, L.A. Dyer, P.G. Hahn, B. Inouye, N. Underwood, S. Whitehead, L.N. Zehr, **the members of the Herbivory Variability Network**, and W.C. Wetzel. 2021. Plant apparency shapes the distribution of herbivory within and among plant individuals: Data from the HerbVar Network. Invited in Symposium: “Herbivory Through the Ages: Understanding Patterns of Insect Damage Through Space and Time.” Annual Meeting of the Entomological Society of America, Denver, CO.
+
+Whitehead, S., K. Abbott, E. Bruna, N.I. Cacho, L.A. Dyer, P.G. Hahn, B. Inouye, M.L. Robinson, N. Underwood, L.N. Zehr, **the members of the Herbivory Variability Network**, and W.C. Wetzel. 2021. Multi-scale spatial variation in herbivore damage to plant reproductive organs: Data from the HerbVar Network. Invited in Symposium: “Herbivory Through the Ages: Understanding Patterns of Insect Damage Through Space and Time.” Annual Meeting of the Entomological Society of America, Denver, CO.
+
+Wetzel, W.C., Moria L. Robinson, Lee A. Dyer, Philip G. Hahn, Brian D. Inouye, Nora Underwood, Susan R. Whitehead, Luke Zehr, and **the members of The Herbivory Variability Network**. 2021. Macroevolutionary and Global Patterns of Intraspecific Variability in Herbivory: Data from the Herbivory Variability Network. Annual Meeting of the American Society of Naturalists, virtual meeting.
+
+Wetzel, W.C., M.L. Robinson, L.A. Dyer, P.G. Hahn, B.D. Inouye, N. Underwood, S.R. Whitehead, L.N. Zehr, and **the members of the Herbivory Variability Network**. 2020. Variability is a pervasive feature of plant–herbivore interactions: Data from The Herbivory Variability Network. Invited in Organized Oral Session: “Plants as Mosaics: How Trait Variability Within Plant Individuals Shapes the Ecology and Evolution of Plant–Animal Interactions.” Annual Meeting of the Ecological Society of America, virtual meeting.
+
+
+## Publications
+
+Our first publication is in preparation. Please stay tuned.
+
+<br>
+<br>
+
+```{r, echo=FALSE, out.width = "600px", fig.align='center', dpi=72}
+knitr::include_graphics("photos/herb_collage.png")
+```
