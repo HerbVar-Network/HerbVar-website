@@ -30,6 +30,12 @@ d = read_sheet("https://docs.google.com/spreadsheets/d/1mNYnSTCs9WYy5SN2HF4VYep5
            sheet='Completed surveys')
 d = data.frame(d)
 
+d2 = read_sheet("https://docs.google.com/spreadsheets/d/1XFNI7KXeuo5NuHL-0miKhWYkt3MeWUFYu2LugHRHE6Q/edit?usp=sharing", sheet='completedSurveys')
+d2$surveyDate = as.character(d2$surveyDate)
+d2 = data.frame(d2)
+
+dAll = bind_rows(d,d2)
+
 mapWorld = borders("world", colour="gray80", fill="gray80") # create a layer of borders
 
 ```
@@ -41,7 +47,7 @@ ggplot() +
 	theme_bw() + 
 	theme(axis.title=element_blank(), axis.text=element_blank(),
 		axis.ticks=element_blank()) + 
-	geom_point(aes(x=d$transectOriginLong, y=d$transectOriginLat), fill=viridis(2)[2], size=1.75, shape=21, alpha=0.7) +
+	geom_point(aes(x=dAll$transectOriginLong, y=dAll$transectOriginLat), fill=viridis(2)[2], size=1.75, shape=21, alpha=0.7) +
 	coord_fixed()
 ```
 

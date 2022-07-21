@@ -16,7 +16,7 @@
 <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -29,9 +29,6 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -223,69 +220,6 @@ $(document).ready(function () {
 
 
 
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-
 
 </head>
 
@@ -293,16 +227,6 @@ div.tocify {
 
 
 <div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -393,7 +317,7 @@ div.tocify {
 </div>
 
 
-<p>The Herbivory Variability Network has completed <strong>768 surveys on 492 plant species from 136 plant families</strong>, which is about 29% of all extant vascular plant families. These figures and tables update as new data are entered into our database, so check back often!</p>
+<p>The Herbivory Variability Network has completed <strong>830 surveys on 524 plant species from 137 plant families</strong>, which is about 29% of all extant vascular plant families. These figures and tables update as new data are entered into our database, so check back often!</p>
 <p>Our Phase 1 of data collection had a three-scaled sampling approach:</p>
 <ol style="list-style-type: decimal">
 <li>Sampling one plant species from as many plant families as possible</li>
@@ -405,6 +329,23 @@ div.tocify {
 <p><br></p>
 <div id="sampling-across-plant-families" class="section level2">
 <h2>Sampling across plant families</h2>
+<pre><code>## Loading required package: V.PhyloMaker</code></pre>
+<pre><code>## Loading required package: ape</code></pre>
+<pre><code>## Loading required package: taxonlookup</code></pre>
+<pre><code>## Loading required package: phytools</code></pre>
+<pre><code>## Warning: package &#39;phytools&#39; was built under R version 4.1.1</code></pre>
+<pre><code>## Loading required package: maps</code></pre>
+<pre><code>## Warning: package &#39;maps&#39; was built under R version 4.1.1</code></pre>
+<pre><code>## 
+## Attaching package: &#39;maps&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:purrr&#39;:
+## 
+##     map</code></pre>
+<pre><code>## The following object is masked from &#39;package:viridis&#39;:
+## 
+##     unemp</code></pre>
+<pre><code>## Loading required package: taxize</code></pre>
+<pre><code>## Warning: package &#39;taxize&#39; was built under R version 4.1.1</code></pre>
 <div class="figure" style="text-align: center">
 <img src="status_files/figure-html/unnamed-chunk-1-1.png" alt="The distribution of currently sampled plant families (purple) across the phylogeny of all extant vascular plant families. Figure made by HerbVar collaborator [Marjorie Weber](http://www.theweberlab.com) with mega-tree from Jin et al. 2019." width="800px" />
 <p class="caption">
@@ -681,6 +622,17 @@ Annonaceae
 Apiaceae
 </td>
 <td style="text-align:left;">
+<em>Heracleum Heracleum_sphondylium</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Apiaceae
+</td>
+<td style="text-align:left;">
 <em>Heracleum maximum</em>
 </td>
 <td style="text-align:left;">
@@ -736,10 +688,32 @@ Apiaceae
 Apocynaceae
 </td>
 <td style="text-align:left;">
+<em>Apocynum androsaemifolium</em>
+</td>
+<td style="text-align:left;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Apocynaceae
+</td>
+<td style="text-align:left;">
 <em>Apocynum cannabinum</em>
 </td>
 <td style="text-align:left;">
 2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Apocynaceae
+</td>
+<td style="text-align:left;">
+<em>Asclepias Asclepias_asperula</em>
+</td>
+<td style="text-align:left;">
+1
 </td>
 </tr>
 <tr>
@@ -1165,6 +1139,28 @@ Asteraceae
 Asteraceae
 </td>
 <td style="text-align:left;">
+<em>Arnica Arnica_cordifolia</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asteraceae
+</td>
+<td style="text-align:left;">
+<em>Arnica cordifolia</em>
+</td>
+<td style="text-align:left;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asteraceae
+</td>
+<td style="text-align:left;">
 <em>Artemisia ludoviciana</em>
 </td>
 <td style="text-align:left;">
@@ -1177,6 +1173,17 @@ Asteraceae
 </td>
 <td style="text-align:left;">
 <em>Artemisia mongolica</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asteraceae
+</td>
+<td style="text-align:left;">
+<em>Aster Aster_oblongifolius</em>
 </td>
 <td style="text-align:left;">
 1
@@ -1212,7 +1219,7 @@ Asteraceae
 <em>Balsamorhiza sagittata</em>
 </td>
 <td style="text-align:left;">
-3
+6
 </td>
 </tr>
 <tr>
@@ -1275,6 +1282,17 @@ Asteraceae
 Asteraceae
 </td>
 <td style="text-align:left;">
+<em>Chaptalia Chaptalia_integerrima</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asteraceae
+</td>
+<td style="text-align:left;">
 <em>Chromolaena odorata</em>
 </td>
 <td style="text-align:left;">
@@ -1308,6 +1326,17 @@ Asteraceae
 Asteraceae
 </td>
 <td style="text-align:left;">
+*Echinacea Echinacea _angustifolia*
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asteraceae
+</td>
+<td style="text-align:left;">
 <em>Echinacea purpurea</em>
 </td>
 <td style="text-align:left;">
@@ -1331,6 +1360,17 @@ Asteraceae
 </td>
 <td style="text-align:left;">
 <em>Encelia canescens</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asteraceae
+</td>
+<td style="text-align:left;">
+<em>Erigeron Erigeron_canadensis</em>
 </td>
 <td style="text-align:left;">
 1
@@ -1451,6 +1491,17 @@ Asteraceae
 Asteraceae
 </td>
 <td style="text-align:left;">
+<em>Hulteniella integrifolia</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asteraceae
+</td>
+<td style="text-align:left;">
 <em>Hypochaeris chillensis</em>
 </td>
 <td style="text-align:left;">
@@ -1518,6 +1569,17 @@ Asteraceae
 </td>
 <td style="text-align:left;">
 <em>Kalimeris integrifolia</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asteraceae
+</td>
+<td style="text-align:left;">
+<em>Kuhnia Kuhnia_eupatorioides</em>
 </td>
 <td style="text-align:left;">
 1
@@ -1726,6 +1788,17 @@ Asteraceae
 Asteraceae
 </td>
 <td style="text-align:left;">
+<em>Senecio Senecio_viscosus</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asteraceae
+</td>
+<td style="text-align:left;">
 <em>Solidago altissima</em>
 </td>
 <td style="text-align:left;">
@@ -1847,6 +1920,17 @@ Asteraceae
 Asteraceae
 </td>
 <td style="text-align:left;">
+<em>Taraxacum ceratophorum</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asteraceae
+</td>
+<td style="text-align:left;">
 <em>Taraxacum mongolicum</em>
 </td>
 <td style="text-align:left;">
@@ -1861,7 +1945,7 @@ Asteraceae
 <em>Taraxacum officinale</em>
 </td>
 <td style="text-align:left;">
-37
+39
 </td>
 </tr>
 <tr>
@@ -1870,6 +1954,17 @@ Asteraceae
 </td>
 <td style="text-align:left;">
 <em>Tragopogon dubius</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asteraceae
+</td>
+<td style="text-align:left;">
+<em>Tridax Tridax_procumbens</em>
 </td>
 <td style="text-align:left;">
 1
@@ -2174,6 +2269,17 @@ Boraginaceae
 </tr>
 <tr>
 <td style="text-align:left;">
+Boraginaceae
+</td>
+<td style="text-align:left;">
+<em>Phacelia sericea</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 Brassicaceae
 </td>
 <td style="text-align:left;">
@@ -2255,6 +2361,17 @@ Brassicaceae
 </td>
 <td style="text-align:left;">
 <em>Raphanus raphanistrum</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Brassicaceae
+</td>
+<td style="text-align:left;">
+<em>Thlaspi Thlaspi_arvense</em>
 </td>
 <td style="text-align:left;">
 1
@@ -2870,6 +2987,17 @@ Fabaceae
 Fabaceae
 </td>
 <td style="text-align:left;">
+<em>Amorpha Amorpha_canescens</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
 <em>Aotus genistoides</em>
 </td>
 <td style="text-align:left;">
@@ -2885,6 +3013,17 @@ Fabaceae
 </td>
 <td style="text-align:left;">
 2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
+<em>Astragalus australis</em>
+</td>
+<td style="text-align:left;">
+1
 </td>
 </tr>
 <tr>
@@ -2948,6 +3087,17 @@ Fabaceae
 </td>
 <td style="text-align:left;">
 <em>Crotalaria vitellina</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
+<em>Cullen Cullen_corylifolium</em>
 </td>
 <td style="text-align:left;">
 1
@@ -3024,7 +3174,29 @@ Fabaceae
 Fabaceae
 </td>
 <td style="text-align:left;">
+*Gleditsia Gleditsia _triacanthos*
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
 <em>Glycine max</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
+<em>Hedysarum boreale</em>
 </td>
 <td style="text-align:left;">
 1
@@ -3091,6 +3263,17 @@ Fabaceae
 </td>
 <td style="text-align:left;">
 <em>Lupinus argenteus</em>
+</td>
+<td style="text-align:left;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
+<em>Lupinus Lupinus_texensis</em>
 </td>
 <td style="text-align:left;">
 1
@@ -3200,6 +3383,17 @@ Fabaceae
 Fabaceae
 </td>
 <td style="text-align:left;">
+<em>Oxytropis nigrescens</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
 <em>Pediomelum tenuiflorum</em>
 </td>
 <td style="text-align:left;">
@@ -3289,6 +3483,17 @@ Fabaceae
 </td>
 <td style="text-align:left;">
 <em>Vachellia aroma</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
+<em>Vachellia Vachellia_astringens</em>
 </td>
 <td style="text-align:left;">
 1
@@ -4289,6 +4494,17 @@ Onagraceae
 Onagraceae
 </td>
 <td style="text-align:left;">
+<em>Chamerion latifolium</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Onagraceae
+</td>
+<td style="text-align:left;">
 <em>Circaea lutetiana</em>
 </td>
 <td style="text-align:left;">
@@ -4729,6 +4945,28 @@ Plantaginaceae
 Plantaginaceae
 </td>
 <td style="text-align:left;">
+<em>Plantago Plantago_lanceolata</em>
+</td>
+<td style="text-align:left;">
+13
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Plantaginaceae
+</td>
+<td style="text-align:left;">
+<em>Plantago Plantago_rugelii</em>
+</td>
+<td style="text-align:left;">
+9
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Plantaginaceae
+</td>
+<td style="text-align:left;">
 <em>Veronica officinalis</em>
 </td>
 <td style="text-align:left;">
@@ -4832,6 +5070,17 @@ Poaceae
 </td>
 <td style="text-align:left;">
 1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Polemoniaceae
+</td>
+<td style="text-align:left;">
+<em>Collomia linearis</em>
+</td>
+<td style="text-align:left;">
+2
 </td>
 </tr>
 <tr>
@@ -5188,6 +5437,17 @@ Rosaceae
 </tr>
 <tr>
 <td style="text-align:left;">
+Rosaceae
+</td>
+<td style="text-align:left;">
+<em>Sorbus Sorbus_aucuparia</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 Rubiaceae
 </td>
 <td style="text-align:left;">
@@ -5236,6 +5496,17 @@ Rubiaceae
 </td>
 <td style="text-align:left;">
 <em>Galium album</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Rubiaceae
+</td>
+<td style="text-align:left;">
+<em>Galium boreale</em>
 </td>
 <td style="text-align:left;">
 1
@@ -5378,7 +5649,29 @@ Salicaceae
 Salicaceae
 </td>
 <td style="text-align:left;">
+<em>Salix arctica</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salicaceae
+</td>
+<td style="text-align:left;">
 <em>Salix herbacea</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Salicaceae
+</td>
+<td style="text-align:left;">
+<em>Salix reticulata</em>
 </td>
 <td style="text-align:left;">
 1
@@ -5877,8 +6170,6 @@ Zygophyllaceae
 
 
 
-</div>
-</div>
 
 </div>
 
@@ -5911,35 +6202,6 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
-<script>
-$(document).ready(function ()  {
-
-    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
-    $('.unlisted.unnumbered').addClass('toc-ignore')
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

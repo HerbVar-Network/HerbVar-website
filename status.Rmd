@@ -15,6 +15,7 @@ library(viridis)
 library(knitr)
 library(ggmap)
 library(tidyverse)
+library(kableExtra)
 
 # Load metadata on completed surveys
 gs4_deauth()
@@ -22,8 +23,15 @@ d = read_sheet("https://docs.google.com/spreadsheets/d/1mNYnSTCs9WYy5SN2HF4VYep5
            sheet='Completed surveys')
 d = data.frame(d)
 
+d2 = read_sheet("https://docs.google.com/spreadsheets/d/1XFNI7KXeuo5NuHL-0miKhWYkt3MeWUFYu2LugHRHE6Q/edit?usp=sharing", sheet='completedSurveys')
+d2$surveyDate = as.character(d2$surveyDate)
+d2 = data.frame(d2)
+d2$Genus_sp = with(d2, paste(plantGenus, plantSpecies, sep='_'))
+
+dAll = bind_rows(d,d2)
+
 # Drop rows without an entry for Genus_sp
-d = subset(d, !is.na(d$Genus_sp))
+dAll = subset(dAll, !is.na(dAll$Genus_sp))
 
 # Load meta data on focal species
 # dfs = read_sheet("https://docs.google.com/spreadsheets/d/1mNYnSTCs9WYy5SN2HF4VYep550Sccz9xU5o8JuYut-A/edit?usp=sharing",
@@ -33,13 +41,13 @@ d = subset(d, !is.na(d$Genus_sp))
 focalFam = function(z) # define function to ID focal families in data frame
 	ifelse(z == 'Apocynaceae' | z == 'Asteraceae' | z == 'Fabaceae' | z == 'Solanaceae' |
 		z == 'Rubiaceae', TRUE, FALSE)
-d$focalFamily = focalFam(d$plantFamily)
+dAll$focalFamily = focalFam(dAll$plantFamily)
 
-d.complete = d[!is.na(d$plantFamily),] # data.frame for complete entries
+d.complete = dAll[!is.na(dAll$plantFamily),] # data.frame for complete entries
 
 ```
 
-The Herbivory Variability Network has completed **`r nrow(d)` surveys on `r length(unique(d.complete$Genus_sp))` plant species from `r length(unique(d.complete$plantFamily))` plant families**, which is about `r round( (length(unique(d.complete$plantFamily))/465) * 100, 0)`% of all extant vascular plant families. These figures and tables update as new data are entered into our database, so check back often! 
+The Herbivory Variability Network has completed **`r nrow(dAll)` surveys on `r length(unique(d.complete$Genus_sp))` plant species from `r length(unique(d.complete$plantFamily))` plant families**, which is about `r round( (length(unique(d.complete$plantFamily))/465) * 100, 0)`% of all extant vascular plant families. These figures and tables update as new data are entered into our database, so check back often! 
 
 Our Phase 1 of data collection had a three-scaled sampling approach:
 
@@ -67,8 +75,8 @@ require(taxize)
 # Match genus names to most up to date higher family and order assignments using the Taxonomic Name Resolution Servicet (information here: https://github.com/traitecoevo/taxonlookup) ####
 ###########################################
 
-# herbvar_genera<-sapply(strsplit(d$Genus_sp, "_"), function(x) x[1])
-herbvar_tax_names_clean <- taxonlookup::lookup_table(unique(d$Genus_sp),by_species=TRUE,missing_action="NA")
+# herbvar_genera<-sapply(strsplit(dAll$Genus_sp, "_"), function(x) x[1])
+herbvar_tax_names_clean <- taxonlookup::lookup_table(unique(dAll$Genus_sp),by_species=TRUE,missing_action="NA")
 #head(herbvar_tax_names_clean)
 
 # figure out if any queries didn't work.  Can edit them in later in the dataset and re-run to fix, or just omit for now.
@@ -77,7 +85,7 @@ omitted<-herbvar_tax_names_clean[is.na(herbvar_tax_names_clean$family),]
 #omitted
 
 #genus species, original family, new family
-family.naming.table<-data.frame(genus_species=d$Genus_sp[!duplicated(d$Genus_sp)],orig_family=d$plantFamily[!duplicated(d$Genus_sp)],new_family=herbvar_tax_names_clean$family)
+family.naming.table<-data.frame(genus_species=dAll$Genus_sp[!duplicated(dAll$Genus_sp)],orig_family=dAll$plantFamily[!duplicated(dAll$Genus_sp)],new_family=herbvar_tax_names_clean$family)
 
 
 #######################################
@@ -146,7 +154,7 @@ plot(family_tree, show.tip.label=TRUE, edge.col=col.vector, edge.width=2,type = 
 
 ```{r, echo=FALSE, warning=FALSE, out.width = "800px", fig.asp=0.5, fig.align='center', fig.cap="The geographic distribution of our completed surveys. Each hexagon shows the number of herbivory surveys that we have completed in that area."}
 mapWorld = borders("world", colour="gray80", fill="gray80") # create a layer of borders
-ggplot(data=d, aes(x=transectOriginLong, y=transectOriginLat)) + 
+ggplot(data=dAll, aes(x=transectOriginLong, y=transectOriginLat)) + 
 	mapWorld + 
 	theme_bw() + 
 	theme(axis.title=element_blank(), axis.text=element_blank(),
