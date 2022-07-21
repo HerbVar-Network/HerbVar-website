@@ -154,7 +154,7 @@ plot(family_tree, show.tip.label=TRUE, edge.col=col.vector, edge.width=2,type = 
 
 ```{r, echo=FALSE, warning=FALSE, out.width = "800px", fig.asp=0.5, fig.align='center', fig.cap="The geographic distribution of our completed surveys. Each hexagon shows the number of herbivory surveys that we have completed in that area."}
 mapWorld = borders("world", colour="gray80", fill="gray80") # create a layer of borders
-ggplot(data=dAll, aes(x=transectOriginLong, y=transectOriginLat)) + 
+ggplot(data=subset(dAll, !is.na(dAll$transectOriginLat)), aes(x=transectOriginLong, y=transectOriginLat)) + 
 	mapWorld + 
 	theme_bw() + 
 	theme(axis.title=element_blank(), axis.text=element_blank(),
