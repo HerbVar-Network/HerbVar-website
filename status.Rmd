@@ -10,6 +10,7 @@ output:
 
 # Load packages for this page
 library(googlesheets4)
+library(hexbin)
 library(ggplot2)
 library(viridis)
 library(knitr)
@@ -47,7 +48,7 @@ d.complete = dAll[!is.na(dAll$plantFamily),] # data.frame for complete entries
 
 ```
 
-The Herbivory Variability Network has completed **`r nrow(dAll)` surveys on `r length(unique(d.complete$Genus_sp))` plant species from `r length(unique(d.complete$plantFamily))` plant families**, which is about `r round( (length(unique(d.complete$plantFamily))/465) * 100, 0)`% of all extant vascular plant families. These figures and tables update as new data are entered into our database, so check back often! 
+The Herbivory Variability Network has completed **`r nrow(dAll)` surveys on `r length(unique(d.complete$Genus_sp))` plant species from `r length(unique(d.complete$plantFamily))` plant families**, which is about `r round( (length(unique(d.complete$plantFamily))/465) * 100, 0)`% of all extant vascular plant families. These figures and tables update as new data are entered into our database.
 
 Our Phase 1 of data collection had a three-scaled sampling approach:
 
@@ -145,7 +146,7 @@ for(i in 1:length(family_tree$tip.label)){
 tips.in_herbvar <-family_tree$tip.label[herbvar.presabs==1]
 
 par(xpd = NA, mar=c(1,1,1,1))
-plot(family_tree, show.tip.label=TRUE, edge.col=col.vector, edge.width=2,type = 'fan',cex=0.6,tip.color=herbvar.colors)
+plot(family_tree, show.tip.label=TRUE, edge.col=col.vector, edge.width=2,type = 'fan',cex=0.5,tip.color=herbvar.colors)
 
 
 ```
@@ -154,17 +155,18 @@ plot(family_tree, show.tip.label=TRUE, edge.col=col.vector, edge.width=2,type = 
 
 ```{r, echo=FALSE, warning=FALSE, out.width = "800px", fig.asp=0.5, fig.align='center', fig.cap="The geographic distribution of our completed surveys. Each hexagon shows the number of herbivory surveys that we have completed in that area."}
 mapWorld = borders("world", colour="gray80", fill="gray80") # create a layer of borders
-ggplot(data=subset(dAll, !is.na(dAll$transectOriginLat)), aes(x=transectOriginLong, y=transectOriginLat)) + 
+ggplot(data=dAll, aes(x=transectOriginLong, y=transectOriginLat)) + 
 	mapWorld + 
 	theme_bw() + 
 	theme(axis.title=element_blank(), axis.text=element_blank(),
 		axis.ticks=element_blank()) + 
 	#geom_point(fill=viridis(2)[2], size=1.75, shape=21, alpha=0.7) +
-	coord_fixed() +#+
+	coord_fixed() +
   #stat_binhex(bins=c(60,80)*1.75) +
   stat_binhex(aes(fill=cut(..count.., breaks=c(1,2,5,10,20,1000), 
         labels=c('1','2-5','6-9','10-19','>=20'), right=FALSE)), bins=c(60,80)*1.25) +
   scale_fill_viridis_d(alpha=0.9, name='No. surveys')
+
 ```
 
 <br>
