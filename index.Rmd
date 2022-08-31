@@ -28,7 +28,9 @@ Our growing dataset currently has **>800 surveys of >500 plant species from 137 
 gs4_deauth()
 d = read_sheet("https://docs.google.com/spreadsheets/d/1mNYnSTCs9WYy5SN2HF4VYep550Sccz9xU5o8JuYut-A/edit?usp=sharing",
            sheet='Completed surveys')
+d$surveyDate = as.character(d$surveyDate)
 d = data.frame(d)
+
 
 d2 = read_sheet("https://docs.google.com/spreadsheets/d/1XFNI7KXeuo5NuHL-0miKhWYkt3MeWUFYu2LugHRHE6Q/edit?usp=sharing", sheet='completedSurveys')
 d2$surveyDate = as.character(d2$surveyDate)

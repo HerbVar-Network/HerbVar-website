@@ -13,7 +13,7 @@
 
 <title>Products</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -60,6 +60,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -80,6 +81,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -232,7 +236,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -248,7 +252,7 @@ $(document).ready(function () {
   <a href="about.html">About</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     People
      
     <span class="caret"></span>
@@ -275,7 +279,7 @@ $(document).ready(function () {
   <a href="submit_data.html">Submit data</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Sampling status
      
     <span class="caret"></span>
@@ -318,11 +322,44 @@ $(document).ready(function () {
 <p><img src="photos/Pic%20band.png" width="650px" style="display: block; margin: auto;" /></p>
 <div id="presentations" class="section level2">
 <h2>Presentations</h2>
-<p>Wetzel, W.C., K. Abbott, E. Bruna, N.I. Cacho, L.A. Dyer, P.G. Hahn, B. Inouye, M.L. Robinson, N. Underwood, S. Whitehead, L.N. Zehr, and <strong>the members of the Herbivory Variability Network</strong>. 2021. Macroevolutionary and global patterns of intraspecific variability in herbivory: Data from the HerbVar Network. Invited in Symposium: “Herbivory Through the Ages: Understanding Patterns of Insect Damage Through Space and Time.” Annual Meeting of the Entomological Society of America, Denver, CO.</p>
-<p>Robinson, M. L., K. Abbott, E. Bruna, N.I. Cacho, L.A. Dyer, P.G. Hahn, B. Inouye, N. Underwood, S. Whitehead, L.N. Zehr, <strong>the members of the Herbivory Variability Network</strong>, and W.C. Wetzel. 2021. Plant apparency shapes the distribution of herbivory within and among plant individuals: Data from the HerbVar Network. Invited in Symposium: “Herbivory Through the Ages: Understanding Patterns of Insect Damage Through Space and Time.” Annual Meeting of the Entomological Society of America, Denver, CO.</p>
-<p>Whitehead, S., K. Abbott, E. Bruna, N.I. Cacho, L.A. Dyer, P.G. Hahn, B. Inouye, M.L. Robinson, N. Underwood, L.N. Zehr, <strong>the members of the Herbivory Variability Network</strong>, and W.C. Wetzel. 2021. Multi-scale spatial variation in herbivore damage to plant reproductive organs: Data from the HerbVar Network. Invited in Symposium: “Herbivory Through the Ages: Understanding Patterns of Insect Damage Through Space and Time.” Annual Meeting of the Entomological Society of America, Denver, CO.</p>
-<p>Wetzel, W.C., Moria L. Robinson, Lee A. Dyer, Philip G. Hahn, Brian D. Inouye, Nora Underwood, Susan R. Whitehead, Luke Zehr, and <strong>the members of The Herbivory Variability Network</strong>. 2021. Macroevolutionary and Global Patterns of Intraspecific Variability in Herbivory: Data from the Herbivory Variability Network. Annual Meeting of the American Society of Naturalists, virtual meeting.</p>
-<p>Wetzel, W.C., M.L. Robinson, L.A. Dyer, P.G. Hahn, B.D. Inouye, N. Underwood, S.R. Whitehead, L.N. Zehr, and <strong>the members of the Herbivory Variability Network</strong>. 2020. Variability is a pervasive feature of plant–herbivore interactions: Data from The Herbivory Variability Network. Invited in Organized Oral Session: “Plants as Mosaics: How Trait Variability Within Plant Individuals Shapes the Ecology and Evolution of Plant–Animal Interactions.” Annual Meeting of the Ecological Society of America, virtual meeting.</p>
+<p>Wetzel, W.C., K. Abbott, E. Bruna, N.I. Cacho, L.A. Dyer, P.G. Hahn,
+B. Inouye, M.L. Robinson, N. Underwood, S. Whitehead, L.N. Zehr, and
+<strong>the members of the Herbivory Variability Network</strong>. 2021.
+Macroevolutionary and global patterns of intraspecific variability in
+herbivory: Data from the HerbVar Network. Invited in Symposium:
+“Herbivory Through the Ages: Understanding Patterns of Insect Damage
+Through Space and Time.” Annual Meeting of the Entomological Society of
+America, Denver, CO.</p>
+<p>Robinson, M. L., K. Abbott, E. Bruna, N.I. Cacho, L.A. Dyer, P.G.
+Hahn, B. Inouye, N. Underwood, S. Whitehead, L.N. Zehr, <strong>the
+members of the Herbivory Variability Network</strong>, and W.C. Wetzel.
+2021. Plant apparency shapes the distribution of herbivory within and
+among plant individuals: Data from the HerbVar Network. Invited in
+Symposium: “Herbivory Through the Ages: Understanding Patterns of Insect
+Damage Through Space and Time.” Annual Meeting of the Entomological
+Society of America, Denver, CO.</p>
+<p>Whitehead, S., K. Abbott, E. Bruna, N.I. Cacho, L.A. Dyer, P.G. Hahn,
+B. Inouye, M.L. Robinson, N. Underwood, L.N. Zehr, <strong>the members
+of the Herbivory Variability Network</strong>, and W.C. Wetzel. 2021.
+Multi-scale spatial variation in herbivore damage to plant reproductive
+organs: Data from the HerbVar Network. Invited in Symposium: “Herbivory
+Through the Ages: Understanding Patterns of Insect Damage Through Space
+and Time.” Annual Meeting of the Entomological Society of America,
+Denver, CO.</p>
+<p>Wetzel, W.C., Moria L. Robinson, Lee A. Dyer, Philip G. Hahn, Brian
+D. Inouye, Nora Underwood, Susan R. Whitehead, Luke Zehr, and
+<strong>the members of The Herbivory Variability Network</strong>. 2021.
+Macroevolutionary and Global Patterns of Intraspecific Variability in
+Herbivory: Data from the Herbivory Variability Network. Annual Meeting
+of the American Society of Naturalists, virtual meeting.</p>
+<p>Wetzel, W.C., M.L. Robinson, L.A. Dyer, P.G. Hahn, B.D. Inouye, N.
+Underwood, S.R. Whitehead, L.N. Zehr, and <strong>the members of the
+Herbivory Variability Network</strong>. 2020. Variability is a pervasive
+feature of plant–herbivore interactions: Data from The Herbivory
+Variability Network. Invited in Organized Oral Session: “Plants as
+Mosaics: How Trait Variability Within Plant Individuals Shapes the
+Ecology and Evolution of Plant–Animal Interactions.” Annual Meeting of
+the Ecological Society of America, virtual meeting.</p>
 </div>
 <div id="publications" class="section level2">
 <h2>Publications</h2>

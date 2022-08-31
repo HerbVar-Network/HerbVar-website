@@ -13,7 +13,7 @@
 
 <title>Leadership</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -60,6 +60,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -80,6 +81,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -232,7 +236,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -248,7 +252,7 @@ $(document).ready(function () {
   <a href="about.html">About</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     People
      
     <span class="caret"></span>
@@ -275,7 +279,7 @@ $(document).ready(function () {
   <a href="submit_data.html">Submit data</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Sampling status
      
     <span class="caret"></span>
@@ -315,8 +319,18 @@ $(document).ready(function () {
 </div>
 
 
-<p>HerbVar was founded by the <a href="https://WetzelLab.com">Wetzel Lab at Michigan State University</a>. It is led by a Steering Committee and multiple Subgroups that focus on specific topics. Please feel free to email <strong>herbvar(a)gmail.com</strong> or members of the Planning Group or Coordination Staff if you are interested in the project. For information on how our network runs, please see the <a href="https://docs.google.com/document/d/1nBNIkY6ICaRr-zE3DRg357-FZoB2X-mM/edit?usp=sharing&amp;ouid=107899855781798259282&amp;rtpof=true&amp;sd=true">HerbVar Document of Collaboration</a>.</p>
-<p>HerbVar is funded for 2022-2026 as a US National Science Foundation Research Coordination Network. As part of this, we are currently recruiting new members and organizing new committees and working groups.</p>
+<p>HerbVar was founded by the <a href="https://WetzelLab.com">Wetzel Lab
+at Michigan State University</a>. It is led by a Steering Committee and
+multiple Subgroups that focus on specific topics. Please feel free to
+email <strong>herbvar(a)gmail.com</strong> or members of the Planning
+Group or Coordination Staff if you are interested in the project. For
+information on how our network runs, please see the <a
+href="https://docs.google.com/document/d/1nBNIkY6ICaRr-zE3DRg357-FZoB2X-mM/edit?usp=sharing&amp;ouid=107899855781798259282&amp;rtpof=true&amp;sd=true">HerbVar
+Document of Collaboration</a>.</p>
+<p>HerbVar is funded for 2022-2026 as a US National Science Foundation
+Research Coordination Network. As part of this, we are currently
+recruiting new members and organizing new committees and working
+groups.</p>
 <p><br></p>
 <div id="herbvar-steering-committee" class="section level2">
 <h2>HerbVar Steering Committee</h2>
@@ -332,11 +346,13 @@ wcwetzel (a) msu.edu • <a href="https://WetzelLab.com">website</a><br />
 <p><strong>Dr. Karen Abbott</strong><br />
 Department of Biology<br />
 Case Western Reserve University<br />
-kcabbott (a) case.edu • <a href="https://abbottlab480702554.wordpress.com">website</a><br />
+kcabbott (a) case.edu • <a
+href="https://abbottlab480702554.wordpress.com">website</a><br />
 <br></p>
 <p><img src="photos/people/bruna.png" width="100px" /></p>
 <p><strong>Dr. Emilio Bruna</strong><br />
-Dept of Wildlife Ecology &amp; Conservation; Center for Latin American Studies<br />
+Dept of Wildlife Ecology &amp; Conservation; Center for Latin American
+Studies<br />
 University of Florida<br />
 embruna (a) ufl.edu • <a href="http://brunalab.org/">website</a><br />
 <br></p>
@@ -344,41 +360,47 @@ embruna (a) ufl.edu • <a href="http://brunalab.org/">website</a><br />
 <p><strong>Dr. N. Ivalú Cacho</strong><br />
 Departamento de Botánica<br />
 Instituto de Biología, UNAM<br />
-ivalu.cacho (a) ib.unam.mx • <a href="https://ivalucacho.weebly.com/">website</a><br />
+ivalu.cacho (a) ib.unam.mx • <a
+href="https://ivalucacho.weebly.com/">website</a><br />
 <br></p>
 <p><img src="photos/people/dyer.jpg" width="100px" /></p>
 <p><strong>Dr. Lee Dyer</strong><br />
 Department of Biology<br />
 Ecology, Evolution and Conservation Program<br />
 University of Nevada, Reno<br />
-ldyer (a) unr.edu • <a href="https://www.unr.edu/biology/people/lee-dyer">website</a><br />
+ldyer (a) unr.edu • <a
+href="https://www.unr.edu/biology/people/lee-dyer">website</a><br />
 <em>(Ecosystems and Biomes Coordinator)</em><br />
 <br></p>
 <p><img src="photos/people/hahn.jpg" width="100px" /></p>
 <p><strong>Dr. Phil Hahn</strong><br />
 Department of Entomology &amp; Nematology<br />
 University of Florida<br />
-hahnp (a) ufl.edu • <a href="https://plant-herbivore-interactions.net/">website</a><br />
+hahnp (a) ufl.edu • <a
+href="https://plant-herbivore-interactions.net/">website</a><br />
 <em>(Apocynaceae and Solanaceae Coordinator)</em><br />
 <br></p>
 <p><img src="photos/people/inouye.jpeg" width="100px" /></p>
 <p><strong>Dr. Brian Inouye</strong><br />
 Department of Biological Science<br />
 Florida State University<br />
-bdinouye (a) bio.fsu.edu • <a href="https://www.bio.fsu.edu/faculty.php?faculty-id=bdinouye">website</a><br />
+bdinouye (a) bio.fsu.edu • <a
+href="https://www.bio.fsu.edu/faculty.php?faculty-id=bdinouye">website</a><br />
 <br></p>
 <p><img src="photos/people/underwood.jpg" width="100px" /></p>
 <p><strong>Dr. Nora Underwood</strong><br />
 Department of Biological Science<br />
 Florida State University<br />
-nunderwood (a) bio.fsu.edu • <a href="https://www.bio.fsu.edu/~nunderwood/homepage/">website</a><br />
+nunderwood (a) bio.fsu.edu • <a
+href="https://www.bio.fsu.edu/~nunderwood/homepage/">website</a><br />
 <em>(Solanaceae Coordinator)</em><br />
 <br></p>
 <p><img src="photos/people/whitehead.jpg" width="100px" /></p>
 <p><strong>Dr. Susan Whitehead</strong><br />
 Department of Biological Sciences<br />
 Virginia Tech<br />
-swhitehead (a) vt.edu • <a href="http://www.speciesinteractions.com/">website</a><br />
+swhitehead (a) vt.edu • <a
+href="http://www.speciesinteractions.com/">website</a><br />
 <em>(Focal Species Coordinator)</em><br />
 <br></p>
 <p><br></p>

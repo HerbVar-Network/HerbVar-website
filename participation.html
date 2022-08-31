@@ -13,7 +13,7 @@
 
 <title>Participation</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -60,6 +60,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -80,6 +81,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -232,7 +236,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -248,7 +252,7 @@ $(document).ready(function () {
   <a href="about.html">About</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     People
      
     <span class="caret"></span>
@@ -275,7 +279,7 @@ $(document).ready(function () {
   <a href="submit_data.html">Submit data</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Sampling status
      
     <span class="caret"></span>
@@ -315,18 +319,40 @@ $(document).ready(function () {
 </div>
 
 
-<p>We are a collaborative and inclusive group of scientists and educators who are working together to advance our understanding of plant–herbivore interactions. Please contact us if you are interested in joining. You can email Will Wetzel (<a href="mailto:wcwetzel@msu.edu" class="email">wcwetzel@msu.edu</a>) or any other member of the <a href="leadership.html">Steering Committee</a>.</p>
-<p>Herbvar is open to professional biologists <a href="#edu">or educators</a> who are collaborative, collegial, and willing to collect and contribute standardized data on the distribution of herbivory. We are especially interested in gaining data for our focal species, our focal families, and surveys of reproductive damage for any species (see our <a href="phase_2.html">Phase 2 page</a> for more details). Collaborators can participate by using our protocols to survey herbivory. Collaborators are also welcome to join leadership Subgroups if they are motivated and willing to invest significant time into the development of HerbVar.</p>
+<p>We are a collaborative and inclusive group of scientists and
+educators who are working together to advance our understanding of
+plant–herbivore interactions. Please contact us if you are interested in
+joining. You can email Will Wetzel (<a href="mailto:wcwetzel@msu.edu"
+class="email">wcwetzel@msu.edu</a>) or any other member of the <a
+href="leadership.html">Steering Committee</a>.</p>
+<p>Herbvar is open to professional biologists <a href="#edu">or
+educators</a> who are collaborative, collegial, and willing to collect
+and contribute standardized data on the distribution of herbivory. We
+are especially interested in gaining data for our focal species, our
+focal families, and surveys of reproductive damage for any species (see
+our <a href="phase_2.html">Phase 2 page</a> for more details).
+Collaborators can participate by using our protocols to survey
+herbivory. Collaborators are also welcome to join leadership Subgroups
+if they are motivated and willing to invest significant time into the
+development of HerbVar.</p>
 <p>Collaborators should</p>
 <ul>
-<li>Be professional researchers with expertise in plant-herbivore interactions</li>
-<li>Be inclusive, collegial, and collaborative in their interactions with other members of HerbVar</li>
+<li>Be professional researchers with expertise in plant-herbivore
+interactions</li>
+<li>Be inclusive, collegial, and collaborative in their interactions
+with other members of HerbVar</li>
 <li>Fund research at their own sites</li>
-<li>Contribute data gathered using the HerbVar protocol or a modified protocol approved by the Planning Group (see <a href="protocols.html">HerbVar protocols</a>)</li>
+<li>Contribute data gathered using the HerbVar protocol or a modified
+protocol approved by the Planning Group (see <a
+href="protocols.html">HerbVar protocols</a>)</li>
 </ul>
-<p>Collaborators will be included as co-authors on the primary HerbVar manuscript arising from a sampling objective if they</p>
+<p>Collaborators will be included as co-authors on the primary HerbVar
+manuscript arising from a sampling objective if they</p>
 <ul>
-<li>Contribute data from 5 or more surveys (ideally) to the sampling objective; 3 at the very least. Please see our <a href="phase_2.html">Phase 2 page</a> for our current sampling objectives.</li>
+<li>Contribute data from 5 or more surveys (ideally) to the sampling
+objective; 3 at the very least. Please see our <a
+href="phase_2.html">Phase 2 page</a> for our current sampling
+objectives.</li>
 <li>Contribute intellectually to at least one of the following:
 <ul>
 <li>Development of questions and overall study design</li>
@@ -335,11 +361,21 @@ $(document).ready(function () {
 <li>Editing</li>
 </ul></li>
 </ul>
-<p>Future manuscripts will follow an opt-in authorship system with the opportunity to join and contribute to each manuscript. For more information on participation and how our network runs, please see the <a href="https://docs.google.com/document/d/1nBNIkY6ICaRr-zE3DRg357-FZoB2X-mM/edit?usp=sharing&amp;ouid=107899855781798259282&amp;rtpof=true&amp;sd=true">HerbVar Document of Collaboration</a>.</p>
+<p>Future manuscripts will follow an opt-in authorship system with the
+opportunity to join and contribute to each manuscript. For more
+information on participation and how our network runs, please see the <a
+href="https://docs.google.com/document/d/1nBNIkY6ICaRr-zE3DRg357-FZoB2X-mM/edit?usp=sharing&amp;ouid=107899855781798259282&amp;rtpof=true&amp;sd=true">HerbVar
+Document of Collaboration</a>.</p>
 <p><img src="photos/180.jpg" width="500px" style="display: block; margin: auto;" /></p>
 <div id="edu" class="section level2">
 <h2>Participating as an educator</h2>
-<p>Some of our collaborators use <strong>HerbVar as an experiential learning tool</strong>. They take students into the field; teach them about ecology, plant–animal interactions, scientific study-design, and other topics; train them in the relevant sampling methods; collect real data with the students; and contribute the data to the network. If you are an educator and are intersted in using HerbVar in your teaching and/or becoming a collaborator, please email herbvar (a) gmail.com.</p>
+<p>Some of our collaborators use <strong>HerbVar as an experiential
+learning tool</strong>. They take students into the field; teach them
+about ecology, plant–animal interactions, scientific study-design, and
+other topics; train them in the relevant sampling methods; collect real
+data with the students; and contribute the data to the network. If you
+are an educator and are intersted in using HerbVar in your teaching
+and/or becoming a collaborator, please email herbvar (a) gmail.com.</p>
 </div>
 
 

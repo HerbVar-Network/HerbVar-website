@@ -13,7 +13,7 @@
 
 <title>Sampling status</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -65,6 +65,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -85,6 +86,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -310,7 +314,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -326,7 +330,7 @@ div.tocify {
   <a href="about.html">About</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     People
      
     <span class="caret"></span>
@@ -353,7 +357,7 @@ div.tocify {
   <a href="submit_data.html">Submit data</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Sampling status
      
     <span class="caret"></span>
@@ -393,29 +397,46 @@ div.tocify {
 </div>
 
 
-<p>The Herbivory Variability Network has completed <strong>830 surveys on 524 plant species from 137 plant families</strong>, which is about 29% of all extant vascular plant families. These figures and tables update as new data are entered into our database.</p>
-<p>Our Phase 1 of data collection had a three-scaled sampling approach:</p>
+<p>The Herbivory Variability Network has completed <strong>843 surveys
+on 525 plant species from 137 plant families</strong>, which is about
+29% of all extant vascular plant families. These figures and tables
+update as new data are entered into our database.</p>
+<p>Our Phase 1 of data collection had a three-scaled sampling
+approach:</p>
 <ol style="list-style-type: decimal">
-<li>Sampling one plant species from as many plant families as possible</li>
-<li>Sampling as many species (and tribes and genera) as possible from five focal families (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae)</li>
-<li>Sampling as many sites as possible for three focal species (<em>Taraxacum officinale</em>, <em>Plantago lanceolata</em>, and <em>Plantago major</em>).</li>
+<li>Sampling one plant species from as many plant families as
+possible</li>
+<li>Sampling as many species (and tribes and genera) as possible from
+five focal families (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and
+Solanaceae)</li>
+<li>Sampling as many sites as possible for three focal species
+(<em>Taraxacum officinale</em>, <em>Plantago lanceolata</em>, and
+<em>Plantago major</em>).</li>
 </ol>
-<p>The goal of this stratified sampling plan was to avoid potential biases in geographic and/or taxonomic coverage, as well as to permit robust exploration of factors that shape patterns in herbivory.</p>
-<p>Below we show the current status of our sampling for each of the three scales of sampling, our overall geographic extent, and finally our current plant species list.</p>
+<p>The goal of this stratified sampling plan was to avoid potential
+biases in geographic and/or taxonomic coverage, as well as to permit
+robust exploration of factors that shape patterns in herbivory.</p>
+<p>Below we show the current status of our sampling for each of the
+three scales of sampling, our overall geographic extent, and finally our
+current plant species list.</p>
 <p><br></p>
 <div id="sampling-across-plant-families" class="section level2">
 <h2>Sampling across plant families</h2>
 <div class="figure" style="text-align: center">
-<img src="status_files/figure-html/unnamed-chunk-1-1.png" alt="The distribution of currently sampled plant families (purple) across the phylogeny of all extant vascular plant families. Figure made by HerbVar collaborator [Marjorie Weber](http://www.theweberlab.com) with mega-tree from Jin et al. 2019." width="800px" />
+<img src="status_files/figure-html/unnamed-chunk-1-1.png" alt="The distribution of currently sampled plant families (purple) across the phylogeny of all extant vascular plant families. Tree made by HerbVar collaborator [Marjorie Weber](http://www.theweberlab.com) with mega-tree from Jin et al. 2019." width="800px" />
 <p class="caption">
-The distribution of currently sampled plant families (purple) across the phylogeny of all extant vascular plant families. Figure made by HerbVar collaborator <a href="http://www.theweberlab.com">Marjorie Weber</a> with mega-tree from Jin et al. 2019.
+The distribution of currently sampled plant families (purple) across the
+phylogeny of all extant vascular plant families. Tree made by HerbVar
+collaborator <a href="http://www.theweberlab.com">Marjorie Weber</a>
+with mega-tree from Jin et al. 2019.
 </p>
 </div>
 <p><br></p>
 <div class="figure" style="text-align: center">
 <img src="status_files/figure-html/unnamed-chunk-2-1.png" alt="The geographic distribution of our completed surveys. Each hexagon shows the number of herbivory surveys that we have completed in that area." width="800px" />
 <p class="caption">
-The geographic distribution of our completed surveys. Each hexagon shows the number of herbivory surveys that we have completed in that area.
+The geographic distribution of our completed surveys. Each hexagon shows
+the number of herbivory surveys that we have completed in that area.
 </p>
 </div>
 <p><br></p>
@@ -425,14 +446,22 @@ The geographic distribution of our completed surveys. Each hexagon shows the num
 <div class="figure" style="text-align: center">
 <img src="status_files/figure-html/unnamed-chunk-3-1.png" alt="Number of completed surveys per plant family. Our five focal families are in yellow (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae)." width="480" />
 <p class="caption">
-Number of completed surveys per plant family. Our five focal families are in yellow (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae).
+Number of completed surveys per plant family. Our five focal families
+are in yellow (Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and
+Solanaceae).
 </p>
 </div>
 <p><br></p>
 </div>
 <div id="sampling-within-focal-species" class="section level2">
 <h2>Sampling within focal species</h2>
-<p>We have three focal species that we are aiming to sampling across the broadest possible geographic extent and across broad environmental gradients. These are <em>Taraxacum officinale</em>, <em>Plantago major</em>, and <em>Plantago lanceolata</em>. This is the newest part of our sampling effort and a major component of our <a href="phase_2.html">Phase 2 of data collection</a>, so we are just starting to collect these data.</p>
+<p>We have three focal species that we are aiming to sampling across the
+broadest possible geographic extent and across broad environmental
+gradients. These are <em>Taraxacum officinale</em>, <em>Plantago
+major</em>, and <em>Plantago lanceolata</em>. This is the newest part of
+our sampling effort and a major component of our <a
+href="phase_2.html">Phase 2 of data collection</a>, so we are just
+starting to collect these data.</p>
 <p><img src="status_files/figure-html/unnamed-chunk-5-1.png" width="600px" style="display: block; margin: auto;" /></p>
 <p><img src="status_files/figure-html/unnamed-chunk-6-1.png" width="600px" style="display: block; margin: auto;" /></p>
 <p><img src="status_files/figure-html/unnamed-chunk-7-1.png" width="600px" style="display: block; margin: auto;" /></p>
@@ -440,7 +469,8 @@ Number of completed surveys per plant family. Our five focal families are in yel
 </div>
 <div id="species-list" class="section level2">
 <h2>Species list</h2>
-<p>Our current species list with the number of surveys completed for each species.</p>
+<p>Our current species list with the number of surveys completed for
+each species.</p>
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -681,7 +711,7 @@ Annonaceae
 Apiaceae
 </td>
 <td style="text-align:left;">
-<em>Heracleum Heracleum_sphondylium</em>
+<em>Heracleum maximum</em>
 </td>
 <td style="text-align:left;">
 1
@@ -692,7 +722,7 @@ Apiaceae
 Apiaceae
 </td>
 <td style="text-align:left;">
-<em>Heracleum maximum</em>
+<em>Heracleum sphondylium</em>
 </td>
 <td style="text-align:left;">
 1
@@ -769,7 +799,7 @@ Apocynaceae
 Apocynaceae
 </td>
 <td style="text-align:left;">
-<em>Asclepias Asclepias_asperula</em>
+<em>Asclepias asperula</em>
 </td>
 <td style="text-align:left;">
 1
@@ -839,6 +869,17 @@ Apocynaceae
 </td>
 <td style="text-align:left;">
 1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Apocynaceae
+</td>
+<td style="text-align:left;">
+<em>Asclepias verticillata</em>
+</td>
+<td style="text-align:left;">
+2
 </td>
 </tr>
 <tr>
@@ -1198,21 +1239,10 @@ Asteraceae
 Asteraceae
 </td>
 <td style="text-align:left;">
-<em>Arnica Arnica_cordifolia</em>
-</td>
-<td style="text-align:left;">
-1
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Asteraceae
-</td>
-<td style="text-align:left;">
 <em>Arnica cordifolia</em>
 </td>
 <td style="text-align:left;">
-2
+3
 </td>
 </tr>
 <tr>
@@ -1242,7 +1272,7 @@ Asteraceae
 Asteraceae
 </td>
 <td style="text-align:left;">
-<em>Aster Aster_oblongifolius</em>
+<em>Aster oblongifolius</em>
 </td>
 <td style="text-align:left;">
 1
@@ -1341,7 +1371,7 @@ Asteraceae
 Asteraceae
 </td>
 <td style="text-align:left;">
-<em>Chaptalia Chaptalia_integerrima</em>
+<em>Chaptalia integerrima</em>
 </td>
 <td style="text-align:left;">
 1
@@ -1385,7 +1415,7 @@ Asteraceae
 Asteraceae
 </td>
 <td style="text-align:left;">
-*Echinacea Echinacea _angustifolia*
+<em>Echinacea angustifolia</em>
 </td>
 <td style="text-align:left;">
 1
@@ -1429,7 +1459,7 @@ Asteraceae
 Asteraceae
 </td>
 <td style="text-align:left;">
-<em>Erigeron Erigeron_canadensis</em>
+<em>Erigeron canadensis</em>
 </td>
 <td style="text-align:left;">
 1
@@ -1553,7 +1583,7 @@ Asteraceae
 <em>Hulteniella integrifolia</em>
 </td>
 <td style="text-align:left;">
-1
+2
 </td>
 </tr>
 <tr>
@@ -1638,7 +1668,7 @@ Asteraceae
 Asteraceae
 </td>
 <td style="text-align:left;">
-<em>Kuhnia Kuhnia_eupatorioides</em>
+<em>Kuhnia eupatorioides</em>
 </td>
 <td style="text-align:left;">
 1
@@ -1847,7 +1877,7 @@ Asteraceae
 Asteraceae
 </td>
 <td style="text-align:left;">
-<em>Senecio Senecio_viscosus</em>
+<em>Senecio viscosus</em>
 </td>
 <td style="text-align:left;">
 1
@@ -1982,7 +2012,7 @@ Asteraceae
 <em>Taraxacum ceratophorum</em>
 </td>
 <td style="text-align:left;">
-1
+2
 </td>
 </tr>
 <tr>
@@ -2023,7 +2053,7 @@ Asteraceae
 Asteraceae
 </td>
 <td style="text-align:left;">
-<em>Tridax Tridax_procumbens</em>
+<em>Tridax procumbens</em>
 </td>
 <td style="text-align:left;">
 1
@@ -2430,7 +2460,7 @@ Brassicaceae
 Brassicaceae
 </td>
 <td style="text-align:left;">
-<em>Thlaspi Thlaspi_arvense</em>
+<em>Thlaspi arvense</em>
 </td>
 <td style="text-align:left;">
 1
@@ -3046,7 +3076,7 @@ Fabaceae
 Fabaceae
 </td>
 <td style="text-align:left;">
-<em>Amorpha Amorpha_canescens</em>
+<em>Amorpha canescens</em>
 </td>
 <td style="text-align:left;">
 1
@@ -3082,7 +3112,7 @@ Fabaceae
 <em>Astragalus australis</em>
 </td>
 <td style="text-align:left;">
-1
+2
 </td>
 </tr>
 <tr>
@@ -3156,7 +3186,7 @@ Fabaceae
 Fabaceae
 </td>
 <td style="text-align:left;">
-<em>Cullen Cullen_corylifolium</em>
+<em>Cullen corylifolium</em>
 </td>
 <td style="text-align:left;">
 1
@@ -3233,10 +3263,10 @@ Fabaceae
 Fabaceae
 </td>
 <td style="text-align:left;">
-*Gleditsia Gleditsia _triacanthos*
+<em>Gleditsia triacanthos</em>
 </td>
 <td style="text-align:left;">
-1
+2
 </td>
 </tr>
 <tr>
@@ -3258,7 +3288,7 @@ Fabaceae
 <em>Hedysarum boreale</em>
 </td>
 <td style="text-align:left;">
-1
+2
 </td>
 </tr>
 <tr>
@@ -3289,6 +3319,17 @@ Fabaceae
 </td>
 <td style="text-align:left;">
 <em>Latrobea pinnaculum</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
+<em>Lespedeza hirta</em>
 </td>
 <td style="text-align:left;">
 1
@@ -3332,17 +3373,6 @@ Fabaceae
 Fabaceae
 </td>
 <td style="text-align:left;">
-<em>Lupinus Lupinus_texensis</em>
-</td>
-<td style="text-align:left;">
-1
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Fabaceae
-</td>
-<td style="text-align:left;">
 <em>Lupinus perennis</em>
 </td>
 <td style="text-align:left;">
@@ -3377,6 +3407,17 @@ Fabaceae
 </td>
 <td style="text-align:left;">
 <em>Lupinus sericeus</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
+<em>Lupinus texensis</em>
 </td>
 <td style="text-align:left;">
 1
@@ -3486,6 +3527,17 @@ Fabaceae
 Fabaceae
 </td>
 <td style="text-align:left;">
+<em>Psoralea corylifolium</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
 <em>Senna cumingii</em>
 </td>
 <td style="text-align:left;">
@@ -3552,10 +3604,10 @@ Fabaceae
 Fabaceae
 </td>
 <td style="text-align:left;">
-<em>Vachellia Vachellia_astringens</em>
+<em>Vachellia astringens</em>
 </td>
 <td style="text-align:left;">
-1
+2
 </td>
 </tr>
 <tr>
@@ -4556,7 +4608,7 @@ Onagraceae
 <em>Chamerion latifolium</em>
 </td>
 <td style="text-align:left;">
-1
+2
 </td>
 </tr>
 <tr>
@@ -4985,7 +5037,7 @@ Plantaginaceae
 <em>Plantago lanceolata</em>
 </td>
 <td style="text-align:left;">
-47
+60
 </td>
 </tr>
 <tr>
@@ -5004,18 +5056,7 @@ Plantaginaceae
 Plantaginaceae
 </td>
 <td style="text-align:left;">
-<em>Plantago Plantago_lanceolata</em>
-</td>
-<td style="text-align:left;">
-13
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Plantaginaceae
-</td>
-<td style="text-align:left;">
-<em>Plantago Plantago_rugelii</em>
+<em>Plantago rugelii</em>
 </td>
 <td style="text-align:left;">
 9
@@ -5499,7 +5540,7 @@ Rosaceae
 Rosaceae
 </td>
 <td style="text-align:left;">
-<em>Sorbus Sorbus_aucuparia</em>
+<em>Sorbus aucuparia</em>
 </td>
 <td style="text-align:left;">
 1
@@ -5711,7 +5752,7 @@ Salicaceae
 <em>Salix arctica</em>
 </td>
 <td style="text-align:left;">
-1
+2
 </td>
 </tr>
 <tr>
@@ -5733,7 +5774,7 @@ Salicaceae
 <em>Salix reticulata</em>
 </td>
 <td style="text-align:left;">
-1
+2
 </td>
 </tr>
 <tr>
@@ -6222,7 +6263,8 @@ Zygophyllaceae
 </tr>
 </tbody>
 </table>
-<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;">
+<div class="tocify-extend-page" data-unique="tocify-extend-page"
+style="height: 0;">
 
 </div>
 </div>

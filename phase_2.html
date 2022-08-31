@@ -13,7 +13,7 @@
 
 <title>Phase 2</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -60,6 +60,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -80,6 +81,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -232,7 +236,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -248,7 +252,7 @@ $(document).ready(function () {
   <a href="about.html">About</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     People
      
     <span class="caret"></span>
@@ -275,7 +279,7 @@ $(document).ready(function () {
   <a href="submit_data.html">Submit data</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Sampling status
      
     <span class="caret"></span>
@@ -315,31 +319,75 @@ $(document).ready(function () {
 </div>
 
 
-<div id="phase-2-of-global-data-collection-is-open" class="section level2">
+<div id="phase-2-of-global-data-collection-is-open"
+class="section level2">
 <h2>Phase 2 of Global Data Collection is Open!</h2>
-<p>We are excited to announce that our second phase of data collection is open! Phase 1 of data collection for the Herbivory Variability Network was a major success with <strong>768 surveys on 492 plant species from 136 plant families</strong>. This has shown us that there is strong interest in variability and large-scale collaborations within the plant-herbivore research community and inspired us to keep on. Please email <strong>herbvar (a) gmail.com</strong> or one of the <a href="leadership.html">Steering Committee members</a> if you are interested in joining us and/or have any questions.</p>
-<p>We have revised our <a href="https://drive.google.com/drive/folders/1PWeoPEC1u6ErQWRCik8cHyTJNqOVE-DV?usp=sharing">primary and alternate protocols</a> following feedback from collaborators on Phase 1 so <strong>feel free to download and explore any relevant protocol</strong>. The changes are minor tweaks and clarifications, and the Phase 2 protocols are mostly the same as the Phase 1 protocols.</p>
+<p>We are excited to announce that our second phase of data collection
+is open! Phase 1 of data collection for the Herbivory Variability
+Network was a major success with <strong>777 surveys on 501 plant
+species from 136 plant families</strong>. This has shown us that there
+is strong interest in variability and large-scale collaborations within
+the plant-herbivore research community and inspired us to keep on.
+Please email <strong>herbvar (a) gmail.com</strong> or one of the <a
+href="leadership.html">Steering Committee members</a> if you are
+interested in joining us and/or have any questions.</p>
+<p>We have revised our <a
+href="https://drive.google.com/drive/folders/1PWeoPEC1u6ErQWRCik8cHyTJNqOVE-DV?usp=sharing">primary
+and alternate protocols</a> following feedback from collaborators on
+Phase 1 so <strong>feel free to download and explore any relevant
+protocol</strong>. The changes are minor tweaks and clarifications, and
+the Phase 2 protocols are mostly the same as the Phase 1 protocols.</p>
 <p><br></p>
 </div>
 <div id="phase-2-objectives" class="section level2">
 <h2>Phase 2 Objectives</h2>
-<p>Based on phase 1 of data collection, we have developed the following sampling objectives (described more fully <a href="https://docs.google.com/document/d/1-p8oQkrgqM_E3uzMf2Ihqs_c5PE54PVVhHHjRru8_qA/edit?usp=sharing">here</a>. We ask that you prioritize these in your species and site selections:</p>
+<p>Based on phase 1 of data collection, we have developed the following
+sampling objectives (described more fully <a
+href="https://docs.google.com/document/d/1-p8oQkrgqM_E3uzMf2Ihqs_c5PE54PVVhHHjRru8_qA/edit?usp=sharing">here</a>.
+We ask that you prioritize these in your species and site
+selections:</p>
 <ul>
-<li><p>Surveys of the three focal species (<em>Taraxacum officinale</em>, <em>Plantago lanceolata</em>, and <em>Plantago major</em>), especially across broad environmental and/or geographic ranges</p></li>
-<li><p>Surveys of species in the five focal families (<strong>Apocynaceae</strong>, <strong>Asteraceae</strong>, <strong>Fabaceae</strong>, <strong>Rubiaceae</strong>, and <strong>Solanaceae</strong>). We want surveys of new species within these families, especially species from new clades or with unusual growth forms. For repeat surveys of species within these families, we are prioritizing surveys from new regions, habitats, elevations, etc.</p></li>
-<li><p>Surveys of damage to any species’ reproductive tissues (e.g., flowers, fruits, etc.)</p></li>
+<li><p>Surveys of the three focal species (<em>Taraxacum
+officinale</em>, <em>Plantago lanceolata</em>, and <em>Plantago
+major</em>), especially across broad environmental and/or geographic
+ranges</p></li>
+<li><p>Surveys of species in the five focal families
+(<strong>Apocynaceae</strong>, <strong>Asteraceae</strong>,
+<strong>Fabaceae</strong>, <strong>Rubiaceae</strong>, and
+<strong>Solanaceae</strong>). We want surveys of new species within
+these families, especially species from new clades or with unusual
+growth forms. For repeat surveys of species within these families, we
+are prioritizing surveys from new regions, habitats, elevations,
+etc.</p></li>
+<li><p>Surveys of damage to any species’ reproductive tissues (e.g.,
+flowers, fruits, etc.)</p></li>
 </ul>
-<p>We envision at least one publication per sampling objective. Collecting at least three surveys for an objective will earn you authorship on the primary paper for that objective (and please see our <a href="participation.html">Participation page</a> for other authorship requirements).</p>
+<p>We envision at least one publication per sampling objective.
+Collecting at least three surveys for an objective will earn you
+authorship on the primary paper for that objective (and please see our
+<a href="participation.html">Participation page</a> for other authorship
+requirements).</p>
 </div>
 <div id="new-data-submission-portal" class="section level2">
 <h2>New Data Submission Portal</h2>
-<p>For this phase of data collection we have created a <a href="https://herbvar.shinyapps.io/data_portal_actual/">data submission portal</a> with R Shiny! All data submission for this phase will go through it but it does require you use the updated <a href="protocols/HerbVar%20Datasheet%20Template.xlsx">template Excel file</a>.</p>
+<p>For this phase of data collection we have created a <a
+href="https://herbvar.shinyapps.io/data_portal_actual/">data submission
+portal</a> with R Shiny! All data submission for this phase will go
+through it but it does require you use the updated <a
+href="protocols/HerbVar%20Datasheet%20Template.xlsx">template Excel
+file</a>.</p>
 </div>
 <div id="spread-the-word" class="section level2">
 <h2>Spread the Word!</h2>
-<p>Please feel free to share our announcement flyer with colleagues you think might be interested in joining the Network or on social media! We are also now on <a href="https://twitter.com/herbvar_network">Twitter</a> so please feel free to tweet at us or use the hashtag “#HerbVar” for your Network-related posts.</p>
+<p>Please feel free to share our announcement flyer with colleagues you
+think might be interested in joining the Network or on social media! We
+are also now on <a
+href="https://twitter.com/herbvar_network">Twitter</a> so please feel
+free to tweet at us or use the hashtag “#HerbVar” for your
+Network-related posts.</p>
 <p><img src="photos/HV-phase2-announcement-flyer.png" width="700px" style="display: block; margin: auto;" /></p>
-<p>If you have questions please also feel free to email herbvar (a) gmail.com and we will do our best to respond promptly.</p>
+<p>If you have questions please also feel free to email herbvar (a)
+gmail.com and we will do our best to respond promptly.</p>
 </div>
 
 

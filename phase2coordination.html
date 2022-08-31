@@ -13,7 +13,7 @@
 
 <title>Sampling coordination</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -65,6 +65,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -85,6 +86,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -310,7 +314,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -326,7 +330,7 @@ div.tocify {
   <a href="about.html">About</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     People
      
     <span class="caret"></span>
@@ -353,7 +357,7 @@ div.tocify {
   <a href="submit_data.html">Submit data</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Sampling status
      
     <span class="caret"></span>
@@ -393,11 +397,24 @@ div.tocify {
 </div>
 
 
-<p>We are coordinating a global effort to survey herbivory on three focal plant species and on a diversity of species in five focal plant families: Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae. This page summarizes the surveys we have completed as well as surveys our members have plans to survey. This page represents a work in progress, and this information is primarily to help network members pick species and sites to survey.</p>
+<p>We are coordinating a global effort to survey herbivory on three
+focal plant species and on a diversity of species in five focal plant
+families: Apocynaceae, Asteraceae, Fabaceae, Rubiaceae, and Solanaceae.
+This page summarizes the surveys we have completed as well as surveys
+our members have plans to survey. This page represents a work in
+progress, and this information is primarily to help network members pick
+species and sites to survey.</p>
 <p><br></p>
 <div id="focal-species" class="section level2">
 <h2>Focal species</h2>
-<p>We have three focal species that we are aiming to sampling across the broadest possible geographic extent and across broad environmental gradients. These are <em>Taraxacum officinale</em>, <em>Plantago major</em>, and <em>Plantago lanceolata</em>. Below are maps of the locations of completed and planned surveys for each focal species. Any survey of one of these focal species will be useful to the project, but surveys in new locations, ecosystems, elevations, etc. will be especially useful.</p>
+<p>We have three focal species that we are aiming to sampling across the
+broadest possible geographic extent and across broad environmental
+gradients. These are <em>Taraxacum officinale</em>, <em>Plantago
+major</em>, and <em>Plantago lanceolata</em>. Below are maps of the
+locations of completed and planned surveys for each focal species. Any
+survey of one of these focal species will be useful to the project, but
+surveys in new locations, ecosystems, elevations, etc. will be
+especially useful.</p>
 <p><img src="phase2coordination_files/figure-html/unnamed-chunk-2-1.png" width="600px" style="display: block; margin: auto;" /></p>
 <p><img src="phase2coordination_files/figure-html/unnamed-chunk-3-1.png" width="600px" style="display: block; margin: auto;" /></p>
 <p><img src="phase2coordination_files/figure-html/unnamed-chunk-4-1.png" width="600px" style="display: block; margin: auto;" /></p>
@@ -405,7 +422,9 @@ div.tocify {
 </div>
 <div id="focal-families" class="section level2">
 <h2>Focal families</h2>
-<p>Below you will find maps, figures, and tables summarizing completed and planned surveys of species within each of our five focal families.</p>
+<p>Below you will find maps, figures, and tables summarizing completed
+and planned surveys of species within each of our five focal
+families.</p>
 <p><br></p>
 <div id="apocynaceae" class="section level3">
 <h3>Apocynaceae</h3>
@@ -418,7 +437,8 @@ Sites with completed and planned surveys of species in the Apocynaceae
 <div class="figure" style="text-align: center">
 <img src="phase2coordination_files/figure-html/unnamed-chunk-6-1.png" alt="Number of species with completed or planned surveys in this focal family by growth form" width="600px" />
 <p class="caption">
-Number of species with completed or planned surveys in this focal family by growth form
+Number of species with completed or planned surveys in this focal family
+by growth form
 </p>
 </div>
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -594,7 +614,8 @@ Sites with completed and planned surveys of species in the Asteraceae
 <div class="figure" style="text-align: center">
 <img src="phase2coordination_files/figure-html/unnamed-chunk-9-1.png" alt="Number of species with completed or planned surveys in this focal family by growth form" width="600px" />
 <p class="caption">
-Number of species with completed or planned surveys in this focal family by growth form
+Number of species with completed or planned surveys in this focal family
+by growth form
 </p>
 </div>
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -1068,6 +1089,17 @@ Asteraceae
 Asteraceae
 </td>
 <td style="text-align:left;">
+<em>Hulteniella integrifolia</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asteraceae
+</td>
+<td style="text-align:left;">
 <em>Hypochaeris chillensis</em>
 </td>
 <td style="text-align:left;">
@@ -1519,6 +1551,17 @@ Asteraceae
 Asteraceae
 </td>
 <td style="text-align:left;">
+<em>Taraxacum ceratophorum</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asteraceae
+</td>
+<td style="text-align:left;">
 <em>Taraxacum mongolicum</em>
 </td>
 <td style="text-align:left;">
@@ -1650,7 +1693,8 @@ Sites with completed and planned surveys of species in the Fabaceae
 <div class="figure" style="text-align: center">
 <img src="phase2coordination_files/figure-html/unnamed-chunk-12-1.png" alt="Number of species with completed or planned surveys in this focal family by growth form" width="600px" />
 <p class="caption">
-Number of species with completed or planned surveys in this focal family by growth form
+Number of species with completed or planned surveys in this focal family
+by growth form
 </p>
 </div>
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -1765,6 +1809,17 @@ Fabaceae
 </td>
 <td style="text-align:left;">
 2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
+<em>Astragalus australis</em>
+</td>
+<td style="text-align:left;">
+1
 </td>
 </tr>
 <tr>
@@ -1916,6 +1971,17 @@ Fabaceae
 </td>
 <td style="text-align:left;">
 <em>Glycine max</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
+<em>Hedysarum boreale</em>
 </td>
 <td style="text-align:left;">
 1
@@ -2157,6 +2223,17 @@ Fabaceae
 Fabaceae
 </td>
 <td style="text-align:left;">
+<em>Psoralea corylifolium</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
 <em>Senna cumingii</em>
 </td>
 <td style="text-align:left;">
@@ -2256,6 +2333,17 @@ Fabaceae
 Fabaceae
 </td>
 <td style="text-align:left;">
+<em>Vachellia astringens</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
 <em>Vachellia caven</em>
 </td>
 <td style="text-align:left;">
@@ -2321,7 +2409,8 @@ Sites with completed and planned surveys of species in the Rubiaceae
 <div class="figure" style="text-align: center">
 <img src="phase2coordination_files/figure-html/unnamed-chunk-15-1.png" alt="Number of species with completed or planned surveys in this focal family by growth form" width="600px" />
 <p class="caption">
-Number of species with completed or planned surveys in this focal family by growth form
+Number of species with completed or planned surveys in this focal family
+by growth form
 </p>
 </div>
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -2530,7 +2619,8 @@ Sites with completed and planned surveys of species in the Solanaceae
 <div class="figure" style="text-align: center">
 <img src="phase2coordination_files/figure-html/unnamed-chunk-18-1.png" alt="Number of species with completed or planned surveys in this focal family by growth form" width="600px" />
 <p class="caption">
-Number of species with completed or planned surveys in this focal family by growth form
+Number of species with completed or planned surveys in this focal family
+by growth form
 </p>
 </div>
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -2753,7 +2843,9 @@ Solanaceae
 </div>
 <div id="surveys-of-reproductive-damage" class="section level2">
 <h2>Surveys of reproductive damage</h2>
-<p>This table lists species for which we currently have a completed or planned survey of reproductive damage (damage to flowers, fruits, or seeds).</p>
+<p>This table lists species for which we currently have a completed or
+planned survey of reproductive damage (damage to flowers, fruits, or
+seeds).</p>
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -2918,6 +3010,17 @@ Fabaceae
 </td>
 <td style="text-align:left;">
 <em>Senna occidentalis</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
+<em>Vachellia astringens</em>
 </td>
 <td style="text-align:left;">
 1
@@ -3112,7 +3215,8 @@ Solanaceae
 </tr>
 </tbody>
 </table>
-<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;">
+<div class="tocify-extend-page" data-unique="tocify-extend-page"
+style="height: 0;">
 
 </div>
 </div>

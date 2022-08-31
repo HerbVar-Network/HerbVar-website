@@ -13,7 +13,7 @@
 
 <title>Meet the HerbVar team</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -60,6 +60,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -80,6 +81,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -232,7 +236,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -248,7 +252,7 @@ $(document).ready(function () {
   <a href="about.html">About</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     People
      
     <span class="caret"></span>
@@ -275,7 +279,7 @@ $(document).ready(function () {
   <a href="submit_data.html">Submit data</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Sampling status
      
     <span class="caret"></span>
@@ -315,121 +319,177 @@ $(document).ready(function () {
 </div>
 
 
-<p>We are a global team of scientists working together to understand how plant-herbivore interactions vary around the world. Below is a selection of photos of us and the plants and herbivores we study. You can find <a href="CollaboratorDirectory.html">a list of all our collaborators and their institutions in our directory here</a>. Our <a href="leadership.html">leadership team is here</a>.</p>
+<p>We are a global team of scientists working together to understand how
+plant-herbivore interactions vary around the world. Below is a selection
+of photos of us and the plants and herbivores we study. You can find <a
+href="CollaboratorDirectory.html">a list of all our collaborators and
+their institutions in our directory here</a>. Our <a
+href="leadership.html">leadership team is here</a>.</p>
 <center>
 <div class="figure">
-<img src="photos/collaborator_photos/1Phartyal.jpg" style="width:70.0%" alt="" />
-<p class="caption">Shyam Phartyal and colleagues surveying <em>Calotropis procera</em>, <em>Ruellia tuberosa</em>, and <em>Argemone maxicana</em> in Bihar, India</p>
+<img src="photos/collaborator_photos/1Phartyal.jpg" style="width:70.0%"
+alt="" />
+<p class="caption">Shyam Phartyal and colleagues surveying
+<em>Calotropis procera</em>, <em>Ruellia tuberosa</em>, and <em>Argemone
+maxicana</em> in Bihar, India</p>
 </div>
 <p> </p>
 <div class="figure">
-<img src="photos/collaborator_photos/2Cinto%20Mejia.jpg" style="width:70.0%" alt="" />
-<p class="caption">Elizeth Cinto Mejia and Jose Cinto Perez surveying <em>Thymus vulgaris</em> and <em>Viscum album</em> in north central Spain</p>
+<img src="photos/collaborator_photos/2Cinto%20Mejia.jpg"
+style="width:70.0%" alt="" />
+<p class="caption">Elizeth Cinto Mejia and Jose Cinto Perez surveying
+<em>Thymus vulgaris</em> and <em>Viscum album</em> in north central
+Spain</p>
 </div>
 <p> </p>
 <div class="figure">
-<img src="photos/collaborator_photos/3Segre_Sadeh.jpg" style="width:70.0%" alt="" />
-<p class="caption">Hila Segre and Asaf Sadeh surveying <em>Raphanus raphanistrum</em> and other species in Israel</p>
+<img src="photos/collaborator_photos/3Segre_Sadeh.jpg"
+style="width:70.0%" alt="" />
+<p class="caption">Hila Segre and Asaf Sadeh surveying <em>Raphanus
+raphanistrum</em> and other species in Israel</p>
 </div>
 <p> </p>
 <div class="figure">
-<img src="photos/collaborator_photos/4Egbon.jpg" style="width:70.0%" alt="" />
-<p class="caption">Ikponmwosa Egbon, Festus Omono, Cynthia Udeogwu, Eghosa Joseph Omoragbon, Afure Joan Ejomah, Charles Ogbebor, Osatae Egbon, Orhue Osasumwen Omoigui, Kelvin Ogbiede, and colleagues surveying <em>Landolphia dulcis</em>, <em>gilletii Triclisia</em>, and other species outside of Benin City, Nigeria</p>
+<img src="photos/collaborator_photos/4Egbon.jpg" style="width:70.0%"
+alt="" />
+<p class="caption">Ikponmwosa Egbon, Festus Omono, Cynthia Udeogwu,
+Eghosa Joseph Omoragbon, Afure Joan Ejomah, Charles Ogbebor, Osatae
+Egbon, Orhue Osasumwen Omoigui, Kelvin Ogbiede, and colleagues surveying
+<em>Landolphia dulcis</em>, <em>gilletii Triclisia</em>, and other
+species outside of Benin City, Nigeria</p>
 </div>
 <p> </p>
 <div class="figure">
-<img src="photos/collaborator_photos/4Bronstein.jpg" style="width:70.0%" alt="" />
-<p class="caption">Judie Bronstein and Victoria Luizzi surveying <em>Opuntia engelmanii</em> in Arizona, USA</p>
+<img src="photos/collaborator_photos/4Bronstein.jpg" style="width:70.0%"
+alt="" />
+<p class="caption">Judie Bronstein and Victoria Luizzi surveying
+<em>Opuntia engelmanii</em> in Arizona, USA</p>
 </div>
 <p> </p>
 <div class="figure">
-<img src="photos/collaborator_photos/5Helms%20and%20Eubanks.jpg" style="width:70.0%" alt="" />
-<p class="caption">Anjel Helms, Micky Eubanks, and colleagues doing surveys in Texas, USA</p>
+<img src="photos/collaborator_photos/5Helms%20and%20Eubanks.jpg"
+style="width:70.0%" alt="" />
+<p class="caption">Anjel Helms, Micky Eubanks, and colleagues doing
+surveys in Texas, USA</p>
 </div>
 <p> </p>
 <div class="figure">
-<img src="photos/collaborator_photos/6Wetzel.jpg" style="width:70.0%" alt="" />
-<p class="caption">Will Wetzel and Mariah Meek surveying <em>Apocynum androsaemifolium</em> in a scree field in Wyoming, USA</p>
+<img src="photos/collaborator_photos/6Wetzel.jpg" style="width:70.0%"
+alt="" />
+<p class="caption">Will Wetzel and Mariah Meek surveying <em>Apocynum
+androsaemifolium</em> in a scree field in Wyoming, USA</p>
 </div>
 <p> </p>
 <div class="figure">
-<img src="photos/collaborator_photos/7Piper.jpg" style="width:70.0%" alt="" />
-<p class="caption">Frida Piper Busico and Caroline Dallstream surveying <em>Gunnera tinctoria</em> in Queulat National Park, Chile</p>
+<img src="photos/collaborator_photos/7Piper.jpg" style="width:70.0%"
+alt="" />
+<p class="caption">Frida Piper Busico and Caroline Dallstream surveying
+<em>Gunnera tinctoria</em> in Queulat National Park, Chile</p>
 </div>
 <p> </p>
 <div class="figure">
-<img src="photos/collaborator_photos/8Ferrante_Haack_Lamelas-Lopez.jpg" style="width:70.0%" alt="" />
-<p class="caption">Marco Ferrante, Nora Haack, and Lucas Lamelas-Lopez surveying multiple species in Azores</p>
+<img src="photos/collaborator_photos/8Ferrante_Haack_Lamelas-Lopez.jpg"
+style="width:70.0%" alt="" />
+<p class="caption">Marco Ferrante, Nora Haack, and Lucas Lamelas-Lopez
+surveying multiple species in Azores</p>
 </div>
 <p> </p>
 <div class="figure">
-<img src="photos/collaborator_photos/9Baskett.jpg" style="width:70.0%" alt="" />
-<p class="caption">Carina Baskett and colleagues surveying in the Pyrenees in northeast Spain</p>
+<img src="photos/collaborator_photos/9Baskett.jpg" style="width:70.0%"
+alt="" />
+<p class="caption">Carina Baskett and colleagues surveying in the
+Pyrenees in northeast Spain</p>
 </div>
 <p> </p>
 <div class="figure">
-<img src="photos/collaborator_photos/10Abdala%20Roberts.jpg" style="width:70.0%" alt="" />
-<p class="caption">Luis Abdala-Roberts and colleagues surveying in Yucatan, Mexico</p>
+<img src="photos/collaborator_photos/10Abdala%20Roberts.jpg"
+style="width:70.0%" alt="" />
+<p class="caption">Luis Abdala-Roberts and colleagues surveying in
+Yucatan, Mexico</p>
 </div>
 <p> </p>
 <div class="figure">
-<img src="photos/collaborator_photos/11Barrett.JPG" style="width:70.0%" alt="" />
-<p class="caption">Sarah Barret, Susie Cramp, and Darcy Martin surveying in Western Australia</p>
+<img src="photos/collaborator_photos/11Barrett.JPG" style="width:70.0%"
+alt="" />
+<p class="caption">Sarah Barret, Susie Cramp, and Darcy Martin surveying
+in Western Australia</p>
 </div>
 <p> </p>
 <div class="figure">
-<img src="photos/collaborator_photos/12Allen.jpg" style="width:70.0%" alt="" />
-<p class="caption">Warwick Allen surveying <em>Taraxacum officinale</em> in Christchurch, New Zealand with a feline friend</p>
+<img src="photos/collaborator_photos/12Allen.jpg" style="width:70.0%"
+alt="" />
+<p class="caption">Warwick Allen surveying <em>Taraxacum officinale</em>
+in Christchurch, New Zealand with a feline friend</p>
 </div>
 <p> </p>
 <div class="figure">
-<img src="photos/collaborator_photos/13Sapir.jpg" style="width:70.0%" alt="" />
-<p class="caption">Yuval Sapir, Bella Sapir, and Tamar Keasar surveying irises in Israel</p>
+<img src="photos/collaborator_photos/13Sapir.jpg" style="width:70.0%"
+alt="" />
+<p class="caption">Yuval Sapir, Bella Sapir, and Tamar Keasar surveying
+irises in Israel</p>
 </div>
 <p> </p>
 <div class="figure">
-<img src="photos/collaborator_photos/14Moles_Everingham.jpg" style="width:70.0%" alt="" />
-<p class="caption">Angela Moles and Suz Everingham surveying an <em>Acacia</em> in Sydney, Australia</p>
+<img src="photos/collaborator_photos/14Moles_Everingham.jpg"
+style="width:70.0%" alt="" />
+<p class="caption">Angela Moles and Suz Everingham surveying an
+<em>Acacia</em> in Sydney, Australia</p>
 </div>
 <p> </p>
 <div class="figure">
-<img src="photos/collaborator_photos/15Poveda_Lorena%20Vaca.jpg" style="width:70.0%" alt="" />
-<p class="caption">Jessica Lorena Vaca-Uribe and Katja Poveda surveying in Bogota, Colombia</p>
+<img src="photos/collaborator_photos/15Poveda_Lorena%20Vaca.jpg"
+style="width:70.0%" alt="" />
+<p class="caption">Jessica Lorena Vaca-Uribe and Katja Poveda surveying
+in Bogota, Colombia</p>
 </div>
 <p> </p>
 <div class="figure">
-<img src="photos/collaborator_photos/16Zehr_Dole_Jawad.jpg" style="width:70.0%" alt="" />
-<p class="caption">Haley Dole, Wissam Jawad, and Luke Zehr surveying <em>Solidago canadensis</em> in Michigan, USA</p>
+<img src="photos/collaborator_photos/16Zehr_Dole_Jawad.jpg"
+style="width:70.0%" alt="" />
+<p class="caption">Haley Dole, Wissam Jawad, and Luke Zehr surveying
+<em>Solidago canadensis</em> in Michigan, USA</p>
 </div>
 <p> </p>
 <div class="figure">
-<img src="photos/collaborator_photos/17Quintero.jpg" style="width:70.0%" alt="" />
-<p class="caption">Carolina Quintero surveying in Northern Patagonia, Argentina</p>
+<img src="photos/collaborator_photos/17Quintero.jpg" style="width:70.0%"
+alt="" />
+<p class="caption">Carolina Quintero surveying in Northern Patagonia,
+Argentina</p>
 </div>
 <p> </p>
 <div class="figure">
-<img src="photos/collaborator_photos/18Moore.jpg" style="width:70.0%" alt="" />
-<p class="caption">Chris Moore surveying <em>Sanguinaria canadensis</em> in Maine, USA</p>
+<img src="photos/collaborator_photos/18Moore.jpg" style="width:70.0%"
+alt="" />
+<p class="caption">Chris Moore surveying <em>Sanguinaria canadensis</em>
+in Maine, USA</p>
 </div>
 <p> </p>
 <div class="figure">
-<img src="photos/collaborator_photos/19Singh.jpg" style="width:70.0%" alt="" />
-<p class="caption">Rachit Singh surveying <em>Geranium pratense</em> in Jena, Germany</p>
+<img src="photos/collaborator_photos/19Singh.jpg" style="width:70.0%"
+alt="" />
+<p class="caption">Rachit Singh surveying <em>Geranium pratense</em> in
+Jena, Germany</p>
 </div>
 <p> </p>
 <div class="figure">
-<img src="photos/collaborator_photos/20Hahn_Chiuffo.jpg" style="width:70.0%" alt="" />
-<p class="caption">Mariana Chiuffo, Phil Hahn, and colleagues surveying in Montana, USA</p>
+<img src="photos/collaborator_photos/20Hahn_Chiuffo.jpg"
+style="width:70.0%" alt="" />
+<p class="caption">Mariana Chiuffo, Phil Hahn, and colleagues surveying
+in Montana, USA</p>
 </div>
 <p> </p>
 <div class="figure">
-<img src="photos/collaborator_photos/21Zehr.jpg" style="width:70.0%" alt="" />
-<p class="caption">Luke Zehr surveying <em>Fagus grandifolia</em> in Michigan, USA</p>
+<img src="photos/collaborator_photos/21Zehr.jpg" style="width:70.0%"
+alt="" />
+<p class="caption">Luke Zehr surveying <em>Fagus grandifolia</em> in
+Michigan, USA</p>
 </div>
 <p> </p>
 <div class="figure">
-<img src="photos/collaborator_photos/22Gooden.jpg" style="width:70.0%" alt="" />
-<p class="caption">Ben Gooden found herbivore damage on the fruits of <em>Solanum cinereum</em> in Australia</p>
+<img src="photos/collaborator_photos/22Gooden.jpg" style="width:70.0%"
+alt="" />
+<p class="caption">Ben Gooden found herbivore damage on the fruits of
+<em>Solanum cinereum</em> in Australia</p>
 </div>
 <p> </p>
 </center>
