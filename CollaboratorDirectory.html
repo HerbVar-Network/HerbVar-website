@@ -13,7 +13,7 @@
 
 <title>Collaborator directory</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -141,11 +141,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -174,8 +178,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -183,16 +187,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -508,221 +505,231 @@ Manuel Gorospe</td>
 <td align="left">Yasmine Kadiri</td>
 </tr>
 <tr class="odd">
+<td align="left">Wenda Cheng</td>
+<td align="left">Sun Yat-Sen University</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
 <td align="left">Ana Laura Chiapero</td>
 <td align="left">CONICET</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Mariana Chiuffo</td>
 <td align="left">INIBIOMA, CONICET-Universidad Nacional del Comahue</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Damla Cinoglu</td>
 <td align="left">Univ of Texas, Austin</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Elizeth Cinto Mejia</td>
 <td align="left">Michigan State Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Marina Cock</td>
 <td align="left">INCITAP</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Rodrigo Cogni</td>
 <td align="left">Univ de São Paulo</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Tatiana Cornelissen</td>
 <td align="left">UFMG; UFSJ, Brasil</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Fernanda Costa</td>
 <td align="left">Universidade Federal de Ouro Preto, Brazil</td>
 <td align="left">Victor Diniz Pinto</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Tyler Coverdale</td>
 <td align="left">Cornell Univ</td>
 <td align="left">Juanita Yim</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">David Crowder</td>
 <td align="left">Washington State Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Pablo Cuevas Reyes</td>
 <td align="left">Universidad Michoacana de San Nicolás de Hidalgo</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Wesley Dáttilo</td>
 <td align="left">Red de Ecoetología, Instituto de Ecología AC, Xalapa,
 Veracuz, Mexico</td>
 <td align="left">Pedro Luna</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Crowder David</td>
 <td align="left">Washington State Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
-<td align="left">Julie Davis</td>
+<tr class="odd">
+<td align="left">Jules Davis</td>
 <td align="left">Cornell Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Kleber Del-Claro</td>
 <td align="left">Universidade Federal de Uberlandia</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Romina Dimarco</td>
 <td align="left">IFAB (INTA - CONICET)</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Rodolfo Dirzo</td>
 <td align="left">Stanford University</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Haley Dole</td>
 <td align="left">Michigan State Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Nontembeko (Ntemsie) Dube</td>
 <td align="left">University of the Free State Entomology and Zoology
 department</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Virginia Duboscq</td>
 <td align="left">Centro Científico Tecnológico Conicet Comahue</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Lee Dyer</td>
 <td align="left">Univ of Nevada, Reno</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Will Edwards</td>
 <td align="left">James Cook Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Ikponmwosa Egbon</td>
 <td align="left">Univ of Benin</td>
 <td align="left">Osatae EGBON, Eghosa J. OMORAGBON, Kelvin OGBIEDE,
 Orhue Osasumwen OMOIGUI</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Johan Ehrlén</td>
 <td align="left">Stockholm Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Michael Eisenring</td>
 <td align="left">Univ of Wisconsin</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Afure J. Ejomah</td>
 <td align="left">Nigerian Institute of Oil Palm Research (NIFOR)</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Bret Elderd</td>
 <td align="left">Louisiana State Univ</td>
 <td align="left">Jennifer Kluse, Blythe Elderd</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Allan Ellis</td>
 <td align="left">Stellenbosch Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">María-José Endara</td>
 <td align="left">Univ Indoamérica</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Micky Eubanks</td>
 <td align="left">Texas A&amp;M</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Suz Everingham</td>
 <td align="left">Univ New South Wales</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Rafael Farias</td>
 <td align="left">Universidade Federal do Acre</td>
 <td align="left">None</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Tom Fayle</td>
 <td align="left">Czech Academy of Sciences; Univ Malaysia Sabah</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Akshatra Pracy Fernandes</td>
 <td align="left">Goa Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Geraldo Wilson Fernandes</td>
 <td align="left">Federal University of Minas Gerais</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Marco Ferrante</td>
 <td align="left">Univ of the Azores</td>
 <td align="left">Lucas Lamelas-Lopez; Nora Haack</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Grace Florjancic</td>
 <td align="left">Virginia Tech Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Michael Foisy</td>
 <td align="left">Michigan State Univ</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Matt Forister</td>
 <td align="left">Univ of Nevada, Reno</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Dale Forrister</td>
 <td align="left">Univ of Utah</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Enric Frago</td>
 <td align="left">CIRAD</td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Filipe França</td>
 <td align="left">Lancaster Univ (LEC)</td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Benjamin Fuchs</td>
 <td align="left">Univ of Turku</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Andrea Galmán</td>
+<td align="left">NA</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
@@ -1009,7 +1016,7 @@ National Herbarium</td>
 </tr>
 <tr class="even">
 <td align="left">Eric LoPresti</td>
-<td align="left">Michigan State Univ</td>
+<td align="left">University of South Carolina</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
@@ -1587,7 +1594,7 @@ Comahue)</td>
 </tr>
 <tr class="odd">
 <td align="left">Anu Valtonen</td>
-<td align="left">Univ Eastern Finland</td>
+<td align="left">Umeå University</td>
 <td align="left">Sille Holm (post-doc), Minttu Janatuinen, Veera Karhu,
 Pinja Pennanen, Amanda Laatikainen, Patrik Vento, Satu Göös, Hilja
 Kohonen (undergraduate students at University of Eastern Finland)</td>

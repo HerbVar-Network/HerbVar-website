@@ -13,7 +13,7 @@
 
 <title>Sampling status</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -29,7 +29,7 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
@@ -146,11 +146,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -179,8 +183,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -188,16 +192,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -397,9 +394,9 @@ div.tocify {
 </div>
 
 
-<p>The Herbivory Variability Network has completed <strong>889 surveys
-on 527 plant species from 137 plant families</strong>, which is about
-29% of all extant vascular plant families. These figures and tables
+<p>The Herbivory Variability Network has completed <strong>938 surveys
+on 562 plant species from 141 plant families</strong>, which is about
+30% of all extant vascular plant families. These figures and tables
 update as new data are entered into our database.</p>
 <p>Our Phase 1 of data collection had a three-scaled sampling
 approach:</p>
@@ -422,6 +419,9 @@ current plant species list.</p>
 <p><br></p>
 <div id="sampling-across-plant-families" class="section level2">
 <h2>Sampling across plant families</h2>
+<pre><code>## Loading required package: V.PhyloMaker2</code></pre>
+<pre><code>## Warning in library(package, lib.loc = lib.loc, character.only = TRUE,
+## logical.return = TRUE, : there is no package called &#39;V.PhyloMaker2&#39;</code></pre>
 <div class="figure" style="text-align: center">
 <img src="status_files/figure-html/unnamed-chunk-1-1.png" alt="The distribution of currently sampled plant families (purple) across the phylogeny of all extant vascular plant families. Tree made by HerbVar collaborator [Marjorie Weber](http://www.theweberlab.com) with mega-tree from Jin et al. 2019." width="800px" />
 <p class="caption">
@@ -777,7 +777,7 @@ Apiaceae
 Apocynaceae
 </td>
 <td style="text-align:left;">
-<em>Apocynum androsaemifolium</em>
+<em>Apocynum Apocynum_androsaemifolium</em>
 </td>
 <td style="text-align:left;">
 2
@@ -792,6 +792,17 @@ Apocynaceae
 </td>
 <td style="text-align:left;">
 2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Apocynaceae
+</td>
+<td style="text-align:left;">
+<em>Asclepias Asclepias_asperula</em>
+</td>
+<td style="text-align:left;">
+1
 </td>
 </tr>
 <tr>
@@ -921,6 +932,17 @@ Apocynaceae
 </td>
 <td style="text-align:left;">
 <em>Vincetoxicum hirundinaria</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Apocynaceae
+</td>
+<td style="text-align:left;">
+<em>Voacanga Voacanga_africana</em>
 </td>
 <td style="text-align:left;">
 1
@@ -1239,10 +1261,21 @@ Asteraceae
 Asteraceae
 </td>
 <td style="text-align:left;">
+<em>Arnica Arnica_cordifolia</em>
+</td>
+<td style="text-align:left;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asteraceae
+</td>
+<td style="text-align:left;">
 <em>Arnica cordifolia</em>
 </td>
 <td style="text-align:left;">
-4
+2
 </td>
 </tr>
 <tr>
@@ -1305,10 +1338,21 @@ Asteraceae
 Asteraceae
 </td>
 <td style="text-align:left;">
+<em>Balsamorhiza Balsamorhiza_sagittata</em>
+</td>
+<td style="text-align:left;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asteraceae
+</td>
+<td style="text-align:left;">
 <em>Balsamorhiza sagittata</em>
 </td>
 <td style="text-align:left;">
-6
+3
 </td>
 </tr>
 <tr>
@@ -1328,6 +1372,17 @@ Asteraceae
 </td>
 <td style="text-align:left;">
 <em>Bidens reptans</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asteraceae
+</td>
+<td style="text-align:left;">
+<em>Calyptocarpus Calyptocarpus_vialis</em>
 </td>
 <td style="text-align:left;">
 1
@@ -1449,6 +1504,39 @@ Asteraceae
 </td>
 <td style="text-align:left;">
 <em>Encelia canescens</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asteraceae
+</td>
+<td style="text-align:left;">
+<em>Eremanthus Eremanthus_Erythropappus</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asteraceae
+</td>
+<td style="text-align:left;">
+<em>Eremanthus Eremanthus_glomerulatus</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asteraceae
+</td>
+<td style="text-align:left;">
+<em>Eremanthus Eremanthus_incanus</em>
 </td>
 <td style="text-align:left;">
 1
@@ -2034,7 +2122,7 @@ Asteraceae
 <em>Taraxacum officinale</em>
 </td>
 <td style="text-align:left;">
-39
+37
 </td>
 </tr>
 <tr>
@@ -2043,6 +2131,17 @@ Asteraceae
 </td>
 <td style="text-align:left;">
 <em>Taraxacum Taraxacum_officinale</em>
+</td>
+<td style="text-align:left;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asteraceae
+</td>
+<td style="text-align:left;">
+<em>Taraxicum Taraxicum_officinalis</em>
 </td>
 <td style="text-align:left;">
 1
@@ -2119,10 +2218,32 @@ Asteraceae
 Asteraceae
 </td>
 <td style="text-align:left;">
+<em>Wedelia Wedelia_hispida</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asteraceae
+</td>
+<td style="text-align:left;">
 <em>Wyethia mollis</em>
 </td>
 <td style="text-align:left;">
 2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asteracear
+</td>
+<td style="text-align:left;">
+<em>Gaillardia Gaillardia_pulchella</em>
+</td>
+<td style="text-align:left;">
+1
 </td>
 </tr>
 <tr>
@@ -2372,10 +2493,10 @@ Boraginaceae
 Boraginaceae
 </td>
 <td style="text-align:left;">
-<em>Phacelia sericea</em>
+<em>Phacelia Phacelia_sericea</em>
 </td>
 <td style="text-align:left;">
-1
+2
 </td>
 </tr>
 <tr>
@@ -2746,6 +2867,17 @@ Convolvulaceae
 Convolvulaceae
 </td>
 <td style="text-align:left;">
+<em>Ipomoea Ipomoea_cairica</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Convolvulaceae
+</td>
+<td style="text-align:left;">
 <em>Ipomoea nil</em>
 </td>
 <td style="text-align:left;">
@@ -2794,6 +2926,28 @@ Crassulaceae
 </td>
 <td style="text-align:left;">
 1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Crassulaceae
+</td>
+<td style="text-align:left;">
+<em>Sedum Sedum_debile</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Crassulaceae
+</td>
+<td style="text-align:left;">
+<em>Sedum Sedum_lanceolatum</em>
+</td>
+<td style="text-align:left;">
+3
 </td>
 </tr>
 <tr>
@@ -2963,6 +3117,17 @@ Ericaceae
 </tr>
 <tr>
 <td style="text-align:left;">
+Ericaceae
+</td>
+<td style="text-align:left;">
+<em>Pyrola Pyrola_grandiflora</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 Euphorbiaceae
 </td>
 <td style="text-align:left;">
@@ -3025,6 +3190,28 @@ Euphorbiaceae
 </td>
 <td style="text-align:left;">
 2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
+<em>Acacia Acacia_pachyceras</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
+<em>Acacia Acacia_raddiana</em>
+</td>
+<td style="text-align:left;">
+1
 </td>
 </tr>
 <tr>
@@ -3164,6 +3351,17 @@ Fabaceae
 Fabaceae
 </td>
 <td style="text-align:left;">
+<em>Cercis Cercis_siliquastrum</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
 <em>Chamaecrista fasciculata</em>
 </td>
 <td style="text-align:left;">
@@ -3285,6 +3483,17 @@ Fabaceae
 Fabaceae
 </td>
 <td style="text-align:left;">
+<em>Eysenhardtia Eysenhardtia_texana</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
 <em>Gleditsia triacanthos</em>
 </td>
 <td style="text-align:left;">
@@ -3308,6 +3517,17 @@ Fabaceae
 </td>
 <td style="text-align:left;">
 <em>Hedysarum boreale</em>
+</td>
+<td style="text-align:left;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
+<em>Hedysarum Hedysarum_occidentale</em>
 </td>
 <td style="text-align:left;">
 2
@@ -3385,6 +3605,17 @@ Fabaceae
 </td>
 <td style="text-align:left;">
 <em>Lupinus argenteus</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
+<em>Lupinus Lupinus_argenteus</em>
 </td>
 <td style="text-align:left;">
 2
@@ -3593,6 +3824,39 @@ Fabaceae
 Fabaceae
 </td>
 <td style="text-align:left;">
+<em>Senna Senna_lindheimeriana</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
+<em>Senna Senna_roemeriana</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
+<em>Spatholobus Spatholobus_unknown</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
 <em>Trifolium pratense</em>
 </td>
 <td style="text-align:left;">
@@ -3630,6 +3894,17 @@ Fabaceae
 </td>
 <td style="text-align:left;">
 2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fabaceae
+</td>
+<td style="text-align:left;">
+<em>Vachellia Vachellia_caven</em>
+</td>
+<td style="text-align:left;">
+1
 </td>
 </tr>
 <tr>
@@ -3747,6 +4022,17 @@ Fagaceae
 Fagaceae
 </td>
 <td style="text-align:left;">
+<em>Quercus Quercus_fusiformis</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fagaceae
+</td>
+<td style="text-align:left;">
 <em>Quercus robur</em>
 </td>
 <td style="text-align:left;">
@@ -3759,6 +4045,17 @@ Fouquieriaceae
 </td>
 <td style="text-align:left;">
 <em>Fouquieria splendens</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Gentianaceae
+</td>
+<td style="text-align:left;">
+<em>Frasera Frasera_speciosa</em>
 </td>
 <td style="text-align:left;">
 1
@@ -3869,6 +4166,17 @@ Heliconiaceae
 </td>
 <td style="text-align:left;">
 <em>Heliconia schiedeana</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hydrophyllaceae
+</td>
+<td style="text-align:left;">
+<em>Phacelia Phacelia_sericea</em>
 </td>
 <td style="text-align:left;">
 1
@@ -4668,6 +4976,28 @@ Onagraceae
 </tr>
 <tr>
 <td style="text-align:left;">
+Onagraceae
+</td>
+<td style="text-align:left;">
+<em>Oenothera Oenothera_beinnis</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Onagraceae
+</td>
+<td style="text-align:left;">
+<em>Oenothera Oenothera_biennis</em>
+</td>
+<td style="text-align:left;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 Onocleaceae
 </td>
 <td style="text-align:left;">
@@ -4749,6 +5079,17 @@ Orobanchaceae
 </td>
 <td style="text-align:left;">
 <em>Rhinanthus minor</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Orobranchaceae
+</td>
+<td style="text-align:left;">
+<em>Pedicularis Pedicularis_lapponica</em>
 </td>
 <td style="text-align:left;">
 1
@@ -5089,6 +5430,17 @@ Plantaginaceae
 Plantaginaceae
 </td>
 <td style="text-align:left;">
+<em>Plantego Plantego_major</em>
+</td>
+<td style="text-align:left;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Plantaginaceae
+</td>
+<td style="text-align:left;">
 <em>Veronica officinalis</em>
 </td>
 <td style="text-align:left;">
@@ -5199,10 +5551,21 @@ Poaceae
 Polemoniaceae
 </td>
 <td style="text-align:left;">
-<em>Collomia linearis</em>
+<em>Collomia Collomia_linearis</em>
 </td>
 <td style="text-align:left;">
-2
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Polygonaceae
+</td>
+<td style="text-align:left;">
+<em>Bistorta Bistorta_vivipara</em>
+</td>
+<td style="text-align:left;">
+1
 </td>
 </tr>
 <tr>
@@ -5628,7 +5991,7 @@ Rubiaceae
 Rubiaceae
 </td>
 <td style="text-align:left;">
-<em>Galium boreale</em>
+<em>Galium circaezans</em>
 </td>
 <td style="text-align:left;">
 1
@@ -5639,10 +6002,10 @@ Rubiaceae
 Rubiaceae
 </td>
 <td style="text-align:left;">
-<em>Galium circaezans</em>
+<em>Galium Galium_boreale</em>
 </td>
 <td style="text-align:left;">
-1
+3
 </td>
 </tr>
 <tr>
@@ -5717,6 +6080,17 @@ Rubiaceae
 </td>
 <td style="text-align:left;">
 <em>Psychotria aubletiana</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Rubiaceae
+</td>
+<td style="text-align:left;">
+<em>Sherardia Sherardia_arvensis</em>
 </td>
 <td style="text-align:left;">
 1
@@ -5882,6 +6256,17 @@ Saxifragaceae
 </td>
 <td style="text-align:left;">
 <em>Mitella diphylla</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Schrophulariaceae
+</td>
+<td style="text-align:left;">
+<em>Castilleja Castilleja_sulphurea</em>
 </td>
 <td style="text-align:left;">
 1
@@ -6091,6 +6476,17 @@ Solanaceae
 </td>
 <td style="text-align:left;">
 <em>Solanum ptychanthum</em>
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Solanaceae
+</td>
+<td style="text-align:left;">
+<em>Solanum Solanum_goetzei</em>
 </td>
 <td style="text-align:left;">
 1
