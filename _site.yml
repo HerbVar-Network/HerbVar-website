@@ -31,8 +31,6 @@ navbar:
       href: participation.html
     - text: "Products"
       href: products.html
-    - text: "Hiring"
-      href: hiring.html
   position: sticky
 
 
