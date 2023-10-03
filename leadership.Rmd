@@ -113,7 +113,7 @@ swhitehead (a) vt.edu • [website](http://www.speciesinteractions.com/)
 ## HerbVar NSF Postdoctoral Scholar
 
 ```{r, echo=FALSE, out.width = "100px"}
-knitr::include_graphics("photos/people/galmán.jpg")
+knitr::include_graphics("photos/people/galman.jpg")
 ```
 
 **Dr. Andrea Galmán **  
