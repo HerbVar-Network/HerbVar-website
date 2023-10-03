@@ -55,11 +55,11 @@ ggplot() +
 
 <br>
 
-The Herbivory Variability Network is funded for 2022-2026 by the US National Science Foundation as a Research Coordination Network. Seed funding was provided by [MSU AgBioResearch](https://www.canr.msu.edu/research/), [MSU Department of Entomology](https://www.canr.msu.edu/ent/), [MSU CANR International Programs](https://www.canr.msu.edu/global/), and the [MSU Ecology, Evolution, and Behavior Program](https://eeb.msu.edu/).
+The Herbivory Variability Network is funded for 2022-2026 by the US National Science Foundation as a Research Coordination Network.
 
 <center>
 
-![](photos/NSF_4-Color_bitmap_Logo.png){width=150px} ![](photos/wordmark_green_RGB.png){width=250px}
+![](photos/NSF_4-Color_bitmap_Logo.png){width=150px}
 
 </center>
 

@@ -7,7 +7,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-We are a collaborative and inclusive group of scientists and educators who are working together to advance our understanding of plant--herbivore interactions. Please contact us if you are interested in joining. You can email Will Wetzel (wcwetzel@msu.edu) or any other member of the [Steering Committee](leadership.html).
+We are a collaborative and inclusive group of scientists and educators who are working together to advance our understanding of plant--herbivore interactions. Please contact us if you are interested in joining. You can email Will Wetzel (william.wetzel@montana.edu) or any other member of the [Steering Committee](leadership.html).
 
 Herbvar is open to professional biologists [or educators](#edu) who are collaborative, collegial, and willing to collect and contribute standardized data on the distribution of herbivory. We are especially interested in gaining data for our focal species, our focal families, and surveys of reproductive damage for any species (see our [Phase 2 page](phase_2.html) for more details). Collaborators can participate by using our protocols to survey herbivory. Collaborators are also welcome to join leadership Subgroups if they are motivated and willing to invest significant time into the development of HerbVar.
 

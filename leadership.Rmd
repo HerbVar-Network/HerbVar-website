@@ -3,7 +3,7 @@ title: "Leadership"
 output: html_document
 ---
 
-HerbVar was founded by the [Wetzel Lab at Michigan State University](https://WetzelLab.com). It is led by a Steering Committee and multiple Subgroups that focus on specific topics. Please feel free to email **herbvar(a)gmail.com** or members of the Planning Group or Coordination Staff if you are interested in the project. For information on how our network runs, please see the [HerbVar Document of Collaboration](https://docs.google.com/document/d/1nBNIkY6ICaRr-zE3DRg357-FZoB2X-mM/edit?usp=sharing&ouid=107899855781798259282&rtpof=true&sd=true).
+HerbVar is led by a Steering Committee and multiple Subgroups that focus on specific topics. Please feel free to email **herbvar(a)gmail.com** or members of the Planning Group or Coordination Staff if you are interested in the project. For information on how our network runs, please see the [HerbVar Document of Collaboration](https://docs.google.com/document/d/1nBNIkY6ICaRr-zE3DRg357-FZoB2X-mM/edit?usp=sharing&ouid=107899855781798259282&rtpof=true&sd=true).
 
 HerbVar is funded for 2022-2026 as a US National Science Foundation Research Coordination Network. As part of this, we are currently recruiting new members and organizing new committees and working groups.
 
@@ -17,10 +17,9 @@ knitr::include_graphics("photos/people/wetzel.jpg")
 ``` 
 
 **Dr. Will Wetzel**  
-Department of Entomology; Department of Integrative Biology  
-Ecology, Evolution, and Behavior Program  
-Michigan State University  
-wcwetzel (a) msu.edu • [website](https://WetzelLab.com)  
+Land Resources & Environmental Sciences  
+Montana State University  
+william.wetzel (a) montana.edu • [website](https://WetzelLab.com)  
 *(Lead PI, Asteraceae Coordinator)*  
 <br>
 
@@ -111,6 +110,22 @@ swhitehead (a) vt.edu • [website](http://www.speciesinteractions.com/)
 
 <br>
 
+## HerbVar NSF Postdoctoral Scholar
+
+```{r, echo=FALSE, out.width = "100px"}
+knitr::include_graphics("photos/people/galmán.jpg")
+```
+
+**Dr. Andrea Galmán **  
+Land Resources & Environmental Sciences  
+Montana State University  
+andrea.cortegoso.g (a) gmail.com •  [website](https://www.researchgate.net/profile/Andrea_Galman)
+
+
+<br>
+
+<br>
+
 ## Damage Estimation Subgroup
 
 **Dr. Bastien Castagneyrol**  
@@ -130,9 +145,8 @@ Fort Collins Science Center
 US Geological Survey  
 
 **Dr. Will Wetzel**  
-Department of Entomology  
-Ecology, Evolutionary Biology, & Behavior Program  
-Michigan State University  
+Land Resources & Environmental Sciences
+Montana State University  
 <br>
 
 ## Reproductive Damage Subgroup
