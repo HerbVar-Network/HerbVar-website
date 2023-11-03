@@ -126,6 +126,29 @@ andrea.cortegoso.g (a) gmail.com •  [website](https://www.researchgate.net/pro
 
 <br>
 
+## Working Group Leaders
+
+```{r, echo=FALSE, out.width = "100px"}
+knitr::include_graphics("photos/people/sobral.jpg")
+```
+
+**Dr. Mar Sobral**  
+University of Santiago de Compostela  
+*Plant Epigenetics Working Group*  
+<br>
+
+```{r, echo=FALSE, out.width = "100px"}
+knitr::include_graphics("photos/people/hahn.jpg")
+```
+
+**Dr. Phil Hahn**  
+University of Florida  
+*Climate Working Group*  
+
+<br>
+
+<br>
+
 ## Damage Estimation Subgroup
 
 **Dr. Bastien Castagneyrol**  
