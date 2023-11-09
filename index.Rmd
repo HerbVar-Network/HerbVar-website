@@ -14,6 +14,12 @@ library(tidyverse)
 
 Welcome to the Herbivory Variability Network ("HerbVar"). We are a global research network that aims to describe and understand how and why patterns in plant--herbivore interactions vary across the tree of life and around the world.
 
+
+<center>
+## **[Check out our new paper in Science!](https://doi.org/10.1126/science.adh8830)**
+</center>
+
+
 ```{r, echo=FALSE, out.width = "600px", fig.align='center', dpi=72}
 knitr::include_graphics("photos/herb_collage.png")
 ```
