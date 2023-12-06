@@ -19,15 +19,23 @@ Wetzel, W.C., B.D. Inouye, P.G. Hahn, S.R. Whitehead, and N. Underwood. 2023. Va
 
 ## Presentations
 
+```{r, echo=FALSE, out.width = "300px", out.extra='style="float:right; padding:10px"', dpi=72}
+knitr::include_graphics("products/Latin American Society for Chemical Ecology 2023.jpg")
+```
 Whitehead, S.R., C. Quintero, Y. Sasal, A. Galmán, P.G. Hahn, N. Underwood, B. Inouye, W.C. Wetzel, and **members of The Herbivory Variability Network**. 2023. Variability in plant-herbivore interactions aross the globe and the plant kingdon: data from the HerbVar Network. Latin American Society for Chemical Ecology, Buenos Aires, Argentina.
 
 Wetzel, W.C. 2023. Macroecological and macroevolutionary patterns of variability in plant–herbivore interactions. Advances in Mathematical Ecology, University of Pittsburgh, Pittsburgh, PA, USA.
 
 Hahn, P.G., N.I. Cacho, B.D. Inouye, N. Underwood, A. Whitehead, W.C. Wetzel and **the members of The Herbivory Variability Network**. 2023. Viva Variability!: Herbivory across the plant kingdom. Plant-Herbivore Interactions Gordon Research Conference. Ventura, CA, USA.
 
+```{r, echo=FALSE, out.width = "300px", out.extra='style="float:left; padding:10px"', dpi=72}
+knitr::include_graphics("products/Vincent at Gordon 2022 - 2.jpeg")
+```
+Pan, V.S., and W.C. Wetzel 2022. A neutral model of herbivory: fundamental constraints on patterns and variation. Plant-Herbivore Interactions Gordon Research Conference. Ventura, CA, USA.
+
 Wetzel, W.C., P.G. Hahn, B.D. Inouye, N. Underwood, S.R. Whitehead, and **the members of The Herbivory Variability Network**. 2023. Plant apparency is the law of large numbers: data from The Herbivory Variability Network. Plant-Herbivore Interactions Gordon Research Conference. Ventura, CA, USA.
 
-Pan, V., and W.C. Wetzel. 2022. A neutral model of herbivory: fundamental constraints on patterns and variation. Annual Meeting of the Ecological Society of America, Montreal, Canada.
+Pan, V.S., and W.C. Wetzel. 2022. A neutral model of herbivory: fundamental constraints on patterns and variation. Annual Meeting of the Ecological Society of America, Montreal, Canada.
 
 Wetzel, W.C., Moria L. Robinson, Lee A. Dyer, Philip G. Hahn, Brian D. Inouye, Nora Underwood, Susan R. Whitehead, Luke Zehr, and **the members of The Herbivory Variability Network**. 2021. Macroevolutionary and Global Patterns of Intraspecific Variability in Herbivory: Data from the Herbivory Variability Network. Annual Meeting of the American Society of Naturalists, digital meeting.
 
