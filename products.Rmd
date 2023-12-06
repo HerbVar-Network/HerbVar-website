@@ -28,10 +28,10 @@ Wetzel, W.C. 2023. Macroecological and macroevolutionary patterns of variability
 
 Hahn, P.G., N.I. Cacho, B.D. Inouye, N. Underwood, A. Whitehead, W.C. Wetzel and **the members of The Herbivory Variability Network**. 2023. Viva Variability!: Herbivory across the plant kingdom. Plant-Herbivore Interactions Gordon Research Conference. Ventura, CA, USA.
 
+Pan, V.S., and W.C. Wetzel 2023. A neutral model of herbivory: fundamental constraints on patterns and variation. Plant-Herbivore Interactions Gordon Research Conference. Ventura, CA, USA.
 ```{r, echo=FALSE, out.width = "300px", out.extra='style="float:left; padding:10px"', dpi=72}
-knitr::include_graphics("products/Vincent at Gordon 2022 - 2.jpeg")
+knitr::include_graphics("products/Vincent at Gordon 2023 - 2.jpeg")
 ```
-Pan, V.S., and W.C. Wetzel 2022. A neutral model of herbivory: fundamental constraints on patterns and variation. Plant-Herbivore Interactions Gordon Research Conference. Ventura, CA, USA.
 
 Wetzel, W.C., P.G. Hahn, B.D. Inouye, N. Underwood, S.R. Whitehead, and **the members of The Herbivory Variability Network**. 2023. Plant apparency is the law of large numbers: data from The Herbivory Variability Network. Plant-Herbivore Interactions Gordon Research Conference. Ventura, CA, USA.
 
