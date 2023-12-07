@@ -27,7 +27,7 @@ knitr::include_graphics("photos/herb_collage.png")
 Since our founding in 2019, we have grown to more than 200 collaborators from more than 100 institutions across 30+ countries. Please email [Will Wetzel or a member of the Steering Committee](leadership.html) if you are interested in joining us. We are always looking for additional collaborators, especially those who can contribute data from under-sampled regions or new species in our focal families. We are in our second phase of data collection; please see our [Phase 2 page](phase_2.html) for more information on our current sampling objectives.
 
 
-Our growing dataset currently has **>800 surveys of >500 plant species from 137 plant families**. These are spread across North America, Central America, South America, Europe, Africa, Asia, and Australia.
+Our growing dataset currently has **>900 surveys of >550 plant species from 141 plant families**. These are spread across North America, Central America, South America, Europe, Africa, Asia, and Australia.
 
 ```{r, include=FALSE}
 
