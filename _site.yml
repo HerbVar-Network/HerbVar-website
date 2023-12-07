@@ -15,22 +15,22 @@ navbar:
           href: CollaboratorDirectory.html
         - text: "Collaborator photos"
           href: CollaboratorPhotos.html
-    - text: "Phase 2"
-      href: phase_2.html
-    - text: "Protocols"
-      href: protocols.html
-    - text: "Submit data"
-      href: submit_data.html
-    - text: "Sampling status"
-      menu:
-        - text: "Completed surveys"
-          href: status.html
-        - text: "Sampling coordination"
-          href: phase2coordination.html
-    - text: "Participation"
-      href: participation.html
     - text: "Products"
       href: products.html
+    - text: "Protocols"
+      href: protocols.html
+    - text: "Sampling"
+      menu:
+        - text: "Phase 2"
+          href: phase_2.html
+        - text: "Sampling coordination"
+          href: phase2coordination.html
+        - text: "Completed surveys"
+          href: status.html
+    - text: "Participation"
+      href: participation.html
+    - text: "Submit data"
+      href: submit_data.html
   position: sticky
 
 
