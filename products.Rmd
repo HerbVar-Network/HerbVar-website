@@ -9,6 +9,8 @@ knitr::include_graphics("photos/Pic band.png")
 
 ## Publications
 
+Pan, V.S., and W.C. Wetzel. *In press*. Neutrality in plant-herbivore interactions. Proceedings of the Royal Society B: Biological Sciences.
+
 ```{r, echo=FALSE, out.width = "300px", out.extra='style="float:right; padding:10px"', dpi=72}
 knitr::include_graphics("products/Science research highlight 2023-11-10.png")
 ```
