@@ -1,0 +1,10 @@
+---
+title: "Educational materials"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+We are forming a team to advance how the concept of variability is taught in biology. If you're interested, please get in touch with Nora Underwood (nunderwood@bio.fsu.edu), the team leader. One part of this effort is to collect and share educational materials on variability. They are available to our [Eduational-Materials repository on GitHub](https://github.com/HerbVar-Network/Educational-Materials), a public repository. But please note that this is still a work in progres.

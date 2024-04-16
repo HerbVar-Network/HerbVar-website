@@ -31,6 +31,8 @@ navbar:
       href: participation.html
     - text: "Submit data"
       href: submit_data.html
+    - text: "Education"
+      href: education.html
   position: sticky
 
 
