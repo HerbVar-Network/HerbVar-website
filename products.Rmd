@@ -9,7 +9,7 @@ knitr::include_graphics("photos/Pic band.png")
 
 ## Publications
 
-Pan, V.S., and W.C. Wetzel. *In press*. Neutrality in plant-herbivore interactions. Proceedings of the Royal Society B: Biological Sciences.
+Pan, V.S., and W.C. Wetzel. 2024. Neutrality in plant-herbivore interactions. Proceedings of the Royal Society B: Biological Sciences 291: 20232687. ([link](https://doi.org/10.1098/rspb.2023.2687)) ([pdf](products/pan-and-wetzel-2024-proc-b.pdf))
 
 ```{r, echo=FALSE, out.width = "300px", out.extra='style="float:right; padding:10px"', dpi=72}
 knitr::include_graphics("products/Science research highlight 2023-11-10.png")
