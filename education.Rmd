@@ -7,9 +7,20 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-We are forming a team to advance how the concept of variability is taught in biology. If you're interested, please get in touch with Nora Underwood (nunderwood@bio.fsu.edu), the team leader. One part of this effort is to collect and share educational materials on variability. They are available to our [Eduational-Materials repository on GitHub](https://github.com/HerbVar-Network/Educational-Materials), a public repository. But please note that this is still a work in progress.
+We are forming a team to advance how the concept of variability is taught in biology. If you're interested, please get in touch with Nora Underwood (nunderwood@bio.fsu.edu), the team leader. One part of this effort is to collect and share educational materials on variability. They are available to our [Eduational-Materials repository on GitHub](https://github.com/HerbVar-Network/Educational-Materials), a public repository.
 
 
 ```{r, echo=FALSE, out.width = "650px", fig.align='center', dpi=72}
 knitr::include_graphics("photos/Pic band.png")
 ```
+
+With our work, we hope to foster a new generation of researchers that appreciates the concept of variability and its role in ecology and society, and to improve public understanding of the importance of variability, by working toward two educational aims:
+
+* Develop & disseminate undergraduate curricula on variability in ecology & society
+* Develop and run a graduate workshop on studying variability in ecology
+
+Future researchers need to understand distributions and tools for working with them to advance ecological thinking and establish variability as an active research focus. Because the concept of variability is central to understanding and addressing key issues of social and environmental importance, students going into a variety of careers also need to understand distributional thinking.
+
+For example, multiple environmental problems involve changing levels of variability, e.g., climate change is increasing temperature and precipitation variability, and land conversion and bioinvasions are decreasing biotic variability and homogenizing landscapes. Similarly, many sustainable management strategies that benefit humans involve harnessing variability for societal benefit, e.g., using diversification approaches to manage agricultural pests and slow the evolution of pesticide and antibiotic resistance. Variability is also central to conceptions of race, gender, and sexuality and their roles in human society, institutions, and communities. Equipping teachers to help students understand variability and distributional thinking would help make biology classrooms more inclusive by countering ubiquitous implicit biases based on oversimplified categories.
+
+We plan to bring researchers with advanced quantitative skills together with educators experienced with curriculum development to create learning materials for undergraduates and graduate students that connect variability as a unifying concept with ecological examples and quantitative tools.
