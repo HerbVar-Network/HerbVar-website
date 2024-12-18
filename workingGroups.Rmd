@@ -1,0 +1,96 @@
+---
+title: "Working Groups"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Below is a list of our current and proposed Working Groups, organized by authorship model. Each includes a brief description with a link to a PDF document with more information. Please see the [HerbVar Manual](https://herbvar-network.github.io/herbvar_manual/) for details on how to propose new Working Groups.
+
+```{r, echo=FALSE, out.width = "650px", fig.align='center', dpi=72}
+knitr::include_graphics("photos/Pic band.png")
+```
+
+# Open Working Groups
+
+These Working Groups include all Site PIs who contributed relevant data, or they are open to any member who wants to join. Leads will reach out to involve co-authors.
+
+
+### Spatial Pattern in Herbivory Working Group
+
+- Is herbivory contagious? The spatial pattern of herbivore damage within plant populations across the globe
+- Lead: William Wetzel, Montana State University
+- Co-authors: All relevant HV Site PIs will be included. This includes all members who contributed data to our 2023 Science paper.
+- [Working Group abstract](workingGroups/Wetzel et al - HV spatial abstract.pdf)
+
+
+### Focal Family Working Group
+
+- Examining patterns of herbivory within our focal families
+- Lead: N. Ivalu Cacho, Institute of Biology, UNAM
+- Co-authors: All relevant HV Site PIs who contributed focal family data will be included as co-authors.
+- [Working Group abstract](workingGroups/HerbVar_Abstract_FocalFams_NIC_2014_1114.pdf)
+
+
+### Education Working Group
+
+- The HerbVar Education Working Group aims to help faculty teach undergraduates about variability-based issues of scientific and social importance, and to provide research training for graduate students and postdocs that will support future variability-based research
+- Lead: Nora Underwood, Florida State University
+- Co-leads: TBD
+- Other members: Open to new members, please get in touch with Nora Underwood (nunderwood@bio.fsu.edu)
+- [Working Group abstract](workingGroups/HV Education abstract.pdf)
+
+
+# Working Groups with a traditional authorship model
+
+These ongoing Working Groups are using a traditional invitation authorship model that involves people with specific skills or expertise necessary for the project.
+
+
+### Plant Traits Working Group
+
+- Examining the relationships between plant traits and herbivory patterns with a review paper and a data paper
+- Lead: Andrea Galmán, Montana State University
+- Co-authors: Karen Abbott, Betty Benrey, Emilio Bruna, Carlos Bustos, Ivalu Cacho, Emmanuel Defossez, Lee Dyer, Michael Eisenring, Susan E Everingham, Martin M. Gossner, Patrick Grof-Tisza, Phil G Hahn, Brian D. Inouye, Sergio Rasmann, Mar Sobral, Nora Underwood, Susan R. Whitehead, William C. Wetzel
+- [Working Group abstract](workingGroups/Galmán et al_Traits & Variability abstract.pdf)
+
+
+### Gradients Working Group
+
+- Variation in herbivory across global environmental gradients
+- Lead: Phil Hahn, University of Florida
+- Co-authors: Jake Herschberger, Ivalu Cacho, William Wetzel, Susan Whitehead, Karen Abbott, Andrea Galman, Nora Underwood, Brian Inouye, Lee Dyer, Emilio Bruna, Robi Bagchi, Daniel Anstett, Rupesh Kariyat, Carina Baskett
+- [Working Group abstract](workingGroups/Hahn et al HV gradient abstract.pdf)
+
+
+### Scales Working Group
+
+- From leaf to biome: multi-scale variability in plant-herbivore interactions
+- Lead: Susan Whitehead, Virginia Tech
+- Co-authors: Carolina Quintero, Yamila Sasal, Andrea Galmán, Mar Sobral, Phil Hahn, Nora Underwood, Brian Inouye, Karen Abbott, Lee Dyer, Ivalu Cacho, Emilio Bruna, William Wetzel
+- [Working Group abstract](workingGroups/Whitehead et al_HerbVar multiscale abstract.pdf)
+
+
+### Distributions Working Group
+
+- Herbivory distribution parameters across space and time
+- Lead: Lee Dyer, University of Nevada, Reno
+- Co-authors: HerbVar Steering Committee 
+- [Working Group abstract](workingGroups/HerbivoryDistrubtions2024.pdf)
+
+
+### Null Model Working Group
+
+- Null Models of Herbivory: what shapes distributions of damage?
+- Leads:Karen Abbott (Case Western), Brian Inouye (Florida State University)
+- Co-authors: The HerbVar steering committee, Bret Eldred
+- [Working Group abstract](workingGroups/Null Models abstract for HerVar.pdf)
+
+
+
+# Newly proposed Working Groups
+
+None currently.
+
+If you are interested in proposing a Working Group, please review the [HerbVar Manual](https://herbvar-network.github.io/herbvar_manual/). Working Groups can use existing data or design and implement new data collection protocols. Feel free to reach out to the Steering Committee if you have questions.
