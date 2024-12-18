@@ -7,6 +7,11 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+Our protocols have been moved to the [HerbVar Manual](https://herbvar-network.github.io/herbvar_manual/), chapters 13-21. Any updates we make to protocols will be made there. The links below are being maintained for now but will eventually go away as they become out of date.
+
+
+
+________________________________________________________
 
 Below are links to our main sampling protocols. Collaborators should have access to our shared Drive folder which has the most up-to-date versions and additional information. Please get in touch if you need access to our shared Drive folder.  
 

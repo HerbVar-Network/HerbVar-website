@@ -7,7 +7,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-We are a collaborative and inclusive group of scientists and educators who are working together to advance our understanding of plant--herbivore interactions. Please contact us if you are interested in joining. You can email Will Wetzel (william.wetzel@montana.edu) or any other member of the [Steering Committee](leadership.html).
+We are a collaborative and inclusive group of scientists and educators who are working together to advance our understanding of plant--herbivore interactions. Please review the [HerbVar Manual](https://herbvar-network.github.io/herbvar_manual/) and contact us if you are interested in joining. You can email Will Wetzel (william.wetzel@montana.edu) or any other member of the [Steering Committee](leadership.html).
 
 Herbvar is open to professional biologists [or educators](#edu) who are collaborative, collegial, and willing to collect and contribute standardized data on the distribution of herbivory. We are especially interested in gaining data for our focal species, our focal families, and surveys of reproductive damage for any species (see our [Phase 2 page](phase_2.html) for more details). Collaborators can participate by using our protocols to survey herbivory. Collaborators are also welcome to join leadership Subgroups if they are motivated and willing to invest significant time into the development of HerbVar.
 
@@ -27,7 +27,7 @@ Collaborators will be included as co-authors on the primary HerbVar manuscript a
   + Writing
   + Editing
 
-Future manuscripts will follow an opt-in authorship system with the opportunity to join and contribute to each manuscript. For more information on participation and how our network runs, please see the [HerbVar Document of Collaboration](https://docs.google.com/document/d/1nBNIkY6ICaRr-zE3DRg357-FZoB2X-mM/edit?usp=sharing&ouid=107899855781798259282&rtpof=true&sd=true).
+Future manuscripts will follow an opt-in authorship system with the opportunity to join and contribute to each manuscript. For more information on participation and how our network runs, please see the [HerbVar Manual](https://herbvar-network.github.io/herbvar_manual/).
 
 ```{r, echo=FALSE, out.width = "500px", fig.align='center'}
 knitr::include_graphics("photos/180.jpg")
@@ -35,7 +35,7 @@ knitr::include_graphics("photos/180.jpg")
 
 
 ## Participating as an educator {#edu}
-Some of our collaborators use **HerbVar as an experiential learning tool**. They take students into the field; teach them about ecology, plant--animal interactions, scientific study-design, and other topics; train them in the relevant sampling methods; collect real data with the students; and contribute the data to the network. If you are an educator and are intersted in using HerbVar in your teaching and/or becoming a collaborator, please email Will Wetzel (william.wetzel@montana.edu) or any other member of the [Steering Committee](leadership.html).
+Some of our collaborators use **HerbVar as an experiential learning tool**. They take students into the field; teach them about ecology, plant--animal interactions, scientific study-design, and other topics; train them in the relevant sampling methods; collect real data with the students; and contribute the data to the network. If you are an educator and are interested in using HerbVar in your teaching and/or becoming a collaborator, please email Nora Underwood (nunderwood@bio.fsu.edu) or any other member of the [Steering Committee](leadership.html). You can also find a repository of HerbVar educational materials at our [Eduational-Materials repository](https://github.com/HerbVar-Network/Educational-Materials) on GitHub
 
 
 
