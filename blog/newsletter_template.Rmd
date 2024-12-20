@@ -1,0 +1,103 @@
+---
+title: "HerbVar Newsletter, Month Year"
+author: "The HerbVar Steeting Committee" 
+date: '2024-12-19'
+geometry: margin=0.75in
+fontsize: 12pt
+linkcolor: blue
+urlcolor: blue
+# output: rmdformats::downcute
+output: pdf_document
+header-includes:
+  - \usepackage{fancyhdr}
+  - \pagestyle{fancy}
+  - \fancyfoot{}
+  - \usepackage[default]{sourcesanspro}
+  - \usepackage{parskip}
+  - \usepackage{geometry}
+  - \usepackage{caption}
+  - \usepackage{xcolor}
+  - \definecolor{green}{RGB}{0,102,0}
+  - \definecolor{blue}{RGB}{0, 0, 139}
+  - \definecolor{darkcerulean}{rgb}{0.03, 0.27, 0.49}
+  - \definecolor{darkmidnightblue}{rgb}{0.0, 0.2, 0.4}
+  - \AtBeginDocument{\let\maketitle\relax}
+  - \usepackage[none]{hyphenat}
+  - \usepackage[document]{ragged2e}
+  - \usepackage{graphicx}
+  - \usepackage{geometry}
+  - \usepackage{sectsty}\allsectionsfont{\raggedright}
+  - \usepackage{sectsty}\sectionfont{\centering\color{darkmidnightblue}}
+  - \usepackage{sectsty}\subsectionfont{\centering\color{darkmidnightblue}}
+  - \usepackage{titlesec}
+  - \usepackage{longtable}
+  - \usepackage{tabu}
+  - \usepackage{wrapfig}
+  - \usepackage[export]{adjustbox}
+  - \titlespacing{\section}{0pt}{24pt plus 2pt minus 1pt}{0pt plus 1pt minus 1pt}
+  - \titlespacing{\subsection}{0pt}{12pt plus 2pt minus 1pt}{0pt plus 1pt minus 1pt}
+  - \titlespacing{\subsubsection}{0pt}{12pt plus 2pt minus 1pt}{0pt plus 1pt minus 1pt}
+  - \usepackage{pdflscape}
+  - \newcommand{\blandscape}{\begin{landscape}}
+  - \newcommand{\elandscape}{\end{landscape}}
+  - \usepackage{floatrow}
+  - \DeclareFloatSeparators{mysep}{\hskip-94em}
+  # - \floatsetup[figure]{capposition=beside,capbesideposition={left,top}}
+  - \floatsetup[figure]{capposition=beside,capbesidesep=mysep,capbesideposition={right, center}}
+---
+
+
+\thispagestyle{empty}
+
+<!-- ```{r setup_syllabus, include=FALSE} -->
+<!-- knitr::opts_chunk$set(echo = TRUE) -->
+<!-- library(RColorBrewer) -->
+<!-- library(viridis)    -->
+<!-- ``` -->
+
+<!-- ```{r banner, echo=FALSE, include=TRUE, out.width = '100%', fig.align="center"} -->
+<!-- knitr::include_graphics("./icons/banner.png") -->
+<!-- # knitr::include_graphics("./icons/hummingbird.png") -->
+<!-- ``` -->
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Dear HerbVar members,
+
+Intro text!
+
+1. **[bullet point 1](#anchor1)**  
+2. **[bullet point 2](#anchor2)**  
+
+##  Title Bullet Point One {#anchor1}
+
+text text text 
+
+##  Title Bullet Point Two {#anchor2}
+text text text 
+
+
+Thank you so much for being part of HerbVar!
+
+Warm regards,  
+The HV Steering Committee
+
+Karen Abbott  
+Emilio Bruna  
+Ivalú Cacho  
+Lee Dyer  
+Phil Hahn  
+Brian Inouye  
+Nora Underwood  
+Will Wetzel  
+Susan Whitehead
+
+---
+## Stay in touch
+
+You can read this and all prior newsletters on our [website](https://herbvar.org/), where you can also get updates on ongoing projects and download the most recent HerbVar [publications](https://herbvar.org/products.html).
+
+
+
