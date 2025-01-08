@@ -7,7 +7,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Below is a list of our current and proposed Working Groups, organized by authorship model. Each includes a brief description with a link to a PDF document with more information. Please see the [HerbVar Manual](https://herbvar-network.github.io/herbvar_manual/) for details on how to propose new Working Groups.
+Below is a list of our current and proposed Working Groups, organized by authorship model. Each includes a brief description with a link to a PDF document with more information. Please see the [HerbVar Manual chapter on paper working group proposals](https://herbvar-network.github.io/herbvar_manual/collaboration/working-group-pubs.html) for details on how to propose new Working Groups. Or if you are interesting in proposing a new, add-on data collection effort, please see the [HerbVar Manual chapter on proposing new data collection](https://herbvar-network.github.io/herbvar_manual/collaboration/new_data_collection.html).
 
 ```{r, echo=FALSE, out.width = "650px", fig.align='center', dpi=72}
 knitr::include_graphics("photos/Pic band.png")
@@ -42,6 +42,12 @@ These Working Groups include all Site PIs who contributed relevant data, or they
 - Other members: Open to new members, please get in touch with Nora Underwood (nunderwood@bio.fsu.edu)
 - [Working Group abstract](workingGroups/HV Education abstract.pdf)
 
+### Reproductive Damage Working Group
+
+- Patterns of damage to reproductive structures
+- Lead: Susan Whitehead
+- Co-leads: Steering Committee
+- Co-authors: Contributors of surveys of reproductive damage
 
 # Working Groups with a traditional authorship model
 
@@ -83,7 +89,7 @@ These ongoing Working Groups are using a traditional invitation authorship model
 ### Null Model Working Group
 
 - Null Models of Herbivory: what shapes distributions of damage?
-- Leads:Karen Abbott (Case Western), Brian Inouye (Florida State University)
+- Leads: Karen Abbott (Case Western), Brian Inouye (Florida State University)
 - Co-authors: The HerbVar steering committee, Bret Eldred
 - [Working Group abstract](workingGroups/Null Models abstract for HerVar.pdf)
 
@@ -91,6 +97,9 @@ These ongoing Working Groups are using a traditional invitation authorship model
 
 # Newly proposed Working Groups
 
-None currently.
-
 If you are interested in proposing a Working Group, please review the [HerbVar Manual](https://herbvar-network.github.io/herbvar_manual/). Working Groups can use existing data or design and implement new data collection protocols. Feel free to reach out to the Steering Committee if you have questions.
+
+### Phytochemistry Working Group
+- Relationship between plant chemistry and damage patterns
+- Lead: Lee Dyer
+- Co-leads: TBD
