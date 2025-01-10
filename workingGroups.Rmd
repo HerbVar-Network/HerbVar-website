@@ -44,10 +44,11 @@ These Working Groups include all Site PIs who contributed relevant data, or they
 
 ### Reproductive Damage Working Group
 
-- Patterns of damage to reproductive structures
+- Variability in herbivore damage to reproductive structures
 - Lead: Susan Whitehead
 - Co-leads: Steering Committee
 - Co-authors: Contributors of surveys of reproductive damage
+- [Working Group abstract](workingGroups/Whitehead et al_HerbVar repro abstract.pdf)
 
 # Working Groups with a traditional authorship model
 
