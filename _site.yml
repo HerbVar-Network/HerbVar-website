@@ -33,10 +33,10 @@ navbar:
       href: submit_data.html
     - text: "Working Groups"
       href: workingGroups.html
-    - text: "Newsletters"
-      menu:
-        - text: "December 2024"
-          href: blog/newsletter_202412.html
+    # - text: "Newsletters"
+    #   menu:
+    #     - text: "December 2024"
+    #       href: blog/newsletter_202412.html
   position: sticky
 
 
