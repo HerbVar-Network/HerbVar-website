@@ -6,8 +6,8 @@ geometry: margin=0.75in
 fontsize: 12pt
 linkcolor: blue
 urlcolor: blue
-# output: rmdformats::downcute
-output: pdf_document
+output: rmdformats::downcute
+# output: pdf_document
 header-includes:
   - \usepackage{fancyhdr}
   - \pagestyle{fancy}
