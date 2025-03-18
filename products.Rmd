@@ -27,7 +27,7 @@ Wetzel, W.C., B.D. Inouye, P.G. Hahn, S.R. Whitehead, and N. Underwood. 2023. Va
 knitr::include_graphics("products/Latin American Society for Chemical Ecology 2023.jpg")
 ```
 
-Wetzel, W.C.... and the members of The Herbivory Variability Network. 2025. Global patterns of spatial autocorrelation in herbivory. Plant-Herbivore Interactions Gordon Research Conference. Pomona, CA, USA.
+Wetzel, W.C.... and **the members of The Herbivory Variability Network**. 2025. Global patterns of spatial autocorrelation in herbivory. Plant-Herbivore Interactions Gordon Research Conference. Pomona, CA, USA.
 
 Galmán, A.G., ... 2025. Beyond the mean, how plant growth-defense strategies influence intrapopulation variation of herbivory. Plant-Herbivore Interactions Gordon Research Conference. Pomona, CA, USA.
 
