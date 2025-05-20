@@ -9,7 +9,7 @@ knitr::include_graphics("photos/Pic band.png")
 
 ## Publications
 
-Galmán, A.C., P.G. Hahn, B.D. Inouye, N. Underwood, Y. Liu, S.R. Whitehead, and W.C. Wetzel. *In revision*. Global test of the enemy release hypothesis reveals similar patterns of herbivory across native and non-native plants.
+Galmán, A.C., P.G. Hahn, B.D. Inouye, N. Underwood, Y. Liu, S.R. Whitehead, and W.C. Wetzel. *Accepted*. Global test of the enemy release hypothesis reveals similar patterns of herbivory across native and non-native plants. Ecology Letters.
 
 Pan, V.S., and W.C. Wetzel. 2024. Neutrality in plant-herbivore interactions. Proceedings of the Royal Society B: Biological Sciences 291: 20232687. ([link](https://doi.org/10.1098/rspb.2023.2687)) ([pdf](products/pan-and-wetzel-2024-proc-b.pdf))
 
