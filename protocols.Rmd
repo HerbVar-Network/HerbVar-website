@@ -7,6 +7,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
 The Herbivory Variability Network has [standardized protocols for surveying herbivore damage](https://herbvar-network.github.io/herbvar_manual/) on plants around the world and across the tree of life. Members contributing data to the HV database need to use these standardized protocols to ensure their data conform to our methods. We encourage all plant-herbivore researchers to use the protocols as well to help make data comparable across studies. 
 
 _**Before you start collecting data, we strongly recommend you review the manual to develop an understanding of the motivations and structure of the project**_. For example, an overview of the project can be found in [Chapter 1](https://herbvar-network.github.io/herbvar_manual/01_intro/intro.html), and our network structure is described in [Chapter 2](https://herbvar-network.github.io/herbvar_manual/01_intro/Network_Structure.html).  
