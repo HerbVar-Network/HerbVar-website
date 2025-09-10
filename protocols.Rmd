@@ -7,28 +7,26 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-The Herbivory Variability Network has standardized protocols for surveying herbivore damage on plants around the world and across the tree of life. Members contributing data to the HV database need to use these standardized protocols to ensure their data conform to our methods. And we encourage all plant-herbivore researchers to use the protocols as well to help make data comparable across studies.
+The Herbivory Variability Network has [standardized protocols for surveying herbivore damage](https://herbvar-network.github.io/herbvar_manual/) on plants around the world and across the tree of life. Members contributing data to the HV database need to use these standardized protocols to ensure their data conform to our methods. We encourage all plant-herbivore researchers to use the protocols as well to help make data comparable across studies. 
 
-Please see [the Protocols Overview chapter of the HV Manual](https://herbvar-network.github.io/herbvar_manual/protocols/protocols_overview.html) for an overview of all of our protocols and when they should be used.
-
-Before you start collecting data, we strongly recommend you review the manual to develop an understanding of the motivations and structure of the project. For example, an overview of the project can be found in [Chapter 1](https://herbvar-network.github.io/herbvar_manual/introduction/intro.html), and our network structure is described in [Chapter 2](https://herbvar-network.github.io/herbvar_manual/introduction/Network_Structure.html).
+_**Before you start collecting data, we strongly recommend you review the manual to develop an understanding of the motivations and structure of the project**_. For example, an overview of the project can be found in [Chapter 1](https://herbvar-network.github.io/herbvar_manual/01_intro/intro.html), and our network structure is described in [Chapter 2](https://herbvar-network.github.io/herbvar_manual/01_intro/Network_Structure.html).  
 
 
-For convenience, here is a list of links to all of our protocols:
+An overview of the Protocols is available [here](https://herbvar-network.github.io/herbvar_manual/04_protocols/protocols_overview.html). There you can find links to the following protocols:  
 
-1. [Primary Protocol for selecting plants and surveying leaf damage](https://herbvar-network.github.io/herbvar_manual/protocols/primary.html)
-    i) See our [Guide to Estimating Damage](https://herbvar-network.github.io/herbvar_manual/protocols/damage.html) for detailed methods and tips for quantifying damage
-2. [Reproductive Damage Protocol](https://herbvar-network.github.io/herbvar_manual/protocols/repro_damage.html)
-3. Alternate Protocols for use in special circumstances
-    i) [Low Density/Low Abundance Plants Protocol](https://herbvar-network.github.io/herbvar_manual/protocols/low_density.html)
-    ii) [Cacti & Succulent Protocol](https://herbvar-network.github.io/herbvar_manual/protocols/succulents.html)
-    iii) [Large Tree Protocol](https://herbvar-network.github.io/herbvar_manual/protocols/tree.html)
-    iv) [Rhizomatous Geophyte Protocol](https://herbvar-network.github.io/herbvar_manual/protocols/rhizo_geo.html)
-    v) [Herbivore Protocol](https://herbvar-network.github.io/herbvar_manual/protocols/herbivore.html)
+1. The _Primary Protocol_ for selecting plants and surveying leaf damage. See also our _Guide to Estimating Damage_ for detailed methods and tips for quantifying damage
+2. _Reproductive Damage_ Protocol
 
+3. _Alternate Protocols_ for:  
+    i) Low Density/Low Abundance Plants  
+    ii) Cacti & Succulents  
+    iii) Large Trees   
+    iv) Rhizomatous Geophytes  
+    v) Quantifying Herbivores   
 
-[Datasheets and field guides can be found here](https://herbvar-network.github.io/herbvar_manual/forms/forms_list.html).
+There are also chapters with [_datasheets_](https://herbvar-network.github.io/herbvar_manual/05_forms/forms_list.html) and [field guides](https://herbvar-network.github.io/herbvar_manual/05_forms/forms_list.html).
 
+The entire manual -- including data sheets, protocols, and field guides -- is [available for download as a PDF](https://herbvar-network.github.io/herbvar_manual/herbvar-manual.pdf).  
 
 <br>
 
