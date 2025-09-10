@@ -26,6 +26,8 @@ An overview of the Protocols is available [here](https://herbvar-network.github.
 
 There are also chapters with [_datasheets_](https://herbvar-network.github.io/herbvar_manual/05_forms/forms_list.html) and [field guides](https://herbvar-network.github.io/herbvar_manual/05_forms/forms_list.html).
 
+
+
 The entire manual -- including data sheets, protocols, and field guides -- is [available for download as a PDF](https://herbvar-network.github.io/herbvar_manual/herbvar-manual.pdf).  
 
 <br>
