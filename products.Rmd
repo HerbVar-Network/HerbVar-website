@@ -9,7 +9,7 @@ knitr::include_graphics("photos/Pic band.png")
 
 ## Publications
 
-Galmán, A.C., P.G. Hahn, B.D. Inouye, N. Underwood, Y. Liu, S.R. Whitehead, and W.C. Wetzel. *Submitted*. Global test of the enemy release hypothesis reveals similar patterns of herbivory across native and non-native plants.
+Galmán, A.C., P.G. Hahn, B.D. Inouye, N. Underwood, Y. Liu, S.R. Whitehead, and W.C. Wetzel. *Accepted*. Global test of the enemy release hypothesis reveals similar patterns of herbivory across native and non-native plants. Ecology Letters.
 
 Pan, V.S., and W.C. Wetzel. 2024. Neutrality in plant-herbivore interactions. Proceedings of the Royal Society B: Biological Sciences 291: 20232687. ([link](https://doi.org/10.1098/rspb.2023.2687)) ([pdf](products/pan-and-wetzel-2024-proc-b.pdf))
 
@@ -26,7 +26,22 @@ Wetzel, W.C., B.D. Inouye, P.G. Hahn, S.R. Whitehead, and N. Underwood. 2023. Va
 ```{r, echo=FALSE, out.width = "300px", out.extra='style="float:right; padding:10px"', dpi=72}
 knitr::include_graphics("products/Latin American Society for Chemical Ecology 2023.jpg")
 ```
+
+Wetzel, W.C., K. Abbott, E.M. Bruna, N.I. Cacho, L. Dyer, A.G. Galmán, P.G. Hahn, B. Inouye, N. Underwood, S.R. Whitehead, and **the members of The Herbivory Variability Network**. 2025. Global patterns of spatial autocorrelation in herbivory. Plant-Herbivore Interactions Gordon Research Conference. Pomona, CA, USA.
+
+Galmán, A.G., K.C. Abbott, B. Benrey, E.M. Bruna, C. Bustos, N.I. Cacho, E. Defossez, L. Dyer, M. Eisenring, S.E. Everingham, M.M. Gossner, P. Grof-Tisza, P.G. Hahn, B.D. Inouye, S. Rasmann, M. Sobral, N. Underwood, S.R. Whitehead, and W.C. Wetzel. 2025. Beyond the mean, how plant growth-defense strategies influence intrapopulation variation of herbivory. Plant-Herbivore Interactions Gordon Research Conference. Pomona, CA, USA.
+
+Hahn, P.G., E. Hair, J. Herschberger, N.I. Cacho, R. Bagchi, D. Anstett, K. Abbott, E.M. Bruna, L. Dyer, A.G. Galmán, B. Inouye, N. Underwood, W.C. Wetzel, and S.R Whitehead. 2025. Variation in herbivory across global environmental gradients. Plant-Herbivore Interactions Gordon Research Conference. Pomona, CA, USA.
+
+Galmán, A., W.C. Wetzel, N. Underwood, B. D. Inouye, P. G. Hahn, and S. R. Whitehead. 2024. Global analyses of enemy release hypothesis and the effects of environment and plant growth form. International Congress of Entomology, Kyoto, Japan.
+
+Whitehead, S.R., C. Quintero, Y. Sasal, A. Galmán, P.G. Hahn, N. Underwood, B.D. Inouye, and W.C. Wetzel. From leaf to biome: multi-scale variability in plant-herbivore interactions. 2024. Annual Meeting of the Ecological Society of America, Long Beach, California.
+
+Galmán, A., P. G. Hahn, B. D. Inouye, N. Underwood, Y. Liu, S. R. Whitehead, and W.C. Wetzel. 2024. Global analyses of enemy release indicate similar herbivory mean and variability across native and non-native plants regardless of environment and plant characteristics. Annual Meeting of the Ecological Society of America, Long Beach, California.
+
 Whitehead, S.R., C. Quintero, Y. Sasal, A. Galmán, P.G. Hahn, N. Underwood, B. Inouye, W.C. Wetzel, and **members of The Herbivory Variability Network**. 2023. Variability in plant-herbivore interactions aross the globe and the plant kingdon: data from the HerbVar Network. Latin American Society for Chemical Ecology, Buenos Aires, Argentina.
+
+Galmán, A., P.G. Hahn, B.D. Inouye, N. Underwood, S.R. Whitehead, the members of The Herbivory Variability Network, and W.C. Wetzel. 2023. Plant diversity determines differences in plant-herbivory interactions in native and exotic plants. Annual Meeting of the Ecological Society of America, Portland, OR.
 
 Wetzel, W.C. 2023. Macroecological and macroevolutionary patterns of variability in plant–herbivore interactions. Advances in Mathematical Ecology, University of Pittsburgh, Pittsburgh, PA, USA.
 
