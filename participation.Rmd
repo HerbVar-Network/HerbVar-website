@@ -35,7 +35,7 @@ knitr::include_graphics("photos/180.jpg")
 
 
 ## Participating as an educator {#edu}
-Some of our collaborators use **HerbVar as an experiential learning tool**. They take students into the field; teach them about ecology, plant--animal interactions, scientific study-design, and other topics; train them in the relevant sampling methods; collect real data with the students; and contribute the data to the network. If you are an educator and are interested in using HerbVar in your teaching and/or becoming a collaborator, please email Nora Underwood (nunderwood@bio.fsu.edu) or any other member of the [Steering Committee](leadership.html). You can also find a repository of HerbVar educational materials at our [Eduational-Materials repository](https://github.com/HerbVar-Network/Educational-Materials) on GitHub
+Some of our collaborators use **HerbVar as an experiential learning tool**. They take students into the field; teach them about ecology, plant--animal interactions, scientific study-design, and other topics; train them in the relevant sampling methods; collect real data with the students; and contribute the data to the network. If you are an educator and are interested in using HerbVar in your teaching and/or becoming a collaborator, please email Nora Underwood (nunderwood@bio.fsu.edu) or any other member of the [Steering Committee](leadership.html). You can read more about their efforts [here](https://herbvar.org/education.html) and on the [Eduational Materials Github Repository](https://github.com/HerbVar-Network/Educational-Materials).
 
 
 

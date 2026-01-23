@@ -28,7 +28,7 @@ d = subset(d, !is.na(d$Genus_sp))
 
 We have created a new [data submission portal](https://herbvar.shinyapps.io/data_portal_actual/) to handle all data uploads for this phase of data collection! This app was built in R Shiny and performs some initial error checking as well as harvesting some metadata at upload.
 
-The app is (hopefully) user-friendly, and in service of that goal each step is numbered. To upload your data, (1) enter your field-collected data into the [template Excel file](protocols/HerbVar Datasheet Template.xlsx) and (2) follow the numbered steps in the Shiny app.
+The app is (hopefully) user-friendly, and in service of that goal each step is numbered. To upload your data, (1) enter your field-collected data into the [template Excel file](https://herbvar-network.github.io/herbvar_manual/05_forms/forms_list.html) and (2) follow the numbered steps in the Shiny app.
 
 This method of data submission is new to us and we would welcome feedback on how to improve for subsequent versions of the app. We will ask about this in our general feedback questionnaire at the end of phase 2 but comments sent to herbvar(a)gmail.com are also welcome!
 

@@ -7,7 +7,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Below is a list of our current and proposed Working Groups, organized by authorship model. Each includes a brief description with a link to a PDF document with more information. Please see the [HerbVar Manual chapter on paper working group proposals](https://herbvar-network.github.io/herbvar_manual/collaboration/working-group-pubs.html) for details on how to propose new Working Groups. Or if you are interesting in proposing a new, add-on data collection effort, please see the [HerbVar Manual chapter on proposing new data collection](https://herbvar-network.github.io/herbvar_manual/collaboration/new_data_collection.html).
+Below is a list of our current and proposed Working Groups, organized by authorship model. Each includes a brief description with a link to a PDF document with more information. Please see the [HerbVar Manual chapter on paper working group proposals](https://herbvar-network.github.io/herbvar_manual/02_collab/working-group-pubs.html) for details on how to propose new Working Groups. Or if you are interesting in proposing a new, add-on data collection effort, please see the [HerbVar Manual chapter on proposing new data collection](https://herbvar-network.github.io/herbvar_manual/02_collab/new_data_collection.html).
 
 ```{r, echo=FALSE, out.width = "650px", fig.align='center', dpi=72}
 knitr::include_graphics("photos/Pic band.png")
@@ -36,7 +36,7 @@ These Working Groups include all Site PIs who contributed relevant data, or they
 
 ### Education Working Group
 
-- The HerbVar Education Working Group aims to help faculty teach undergraduates about variability-based issues of scientific and social importance, and to provide research training for graduate students and postdocs that will support future variability-based research
+- The HerbVar Education Working Group aims to help faculty teach undergraduates about variability-based issues of scientific and social importance, and to provide research training for graduate students and postdocs that will support future variability-based research. You can read more about their efforts [here](https://herbvar.org/education.html).
 - Lead: Nora Underwood, Florida State University
 - Co-leads: TBD
 - Other members: Open to new members, please get in touch with Nora Underwood (nunderwood@bio.fsu.edu)

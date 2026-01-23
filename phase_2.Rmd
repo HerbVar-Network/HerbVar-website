@@ -28,7 +28,7 @@ d = subset(d, !is.na(d$Genus_sp))
 
 We are excited to announce that our second phase of data collection is open! Phase 1 of data collection for the Herbivory Variability Network was a major success with **`r nrow(d)` surveys on `r length(unique(d$Genus_sp))` plant species from `r length(unique(d$plantFamily))` plant families**. This has shown us that there is strong interest in variability and large-scale collaborations within the plant-herbivore research community and inspired us to keep on. Please email **herbvar (a) gmail.com** or one of the [Steering Committee members](leadership.html) if you are interested in joining us and/or have any questions.
 
-We have revised our [primary and alternate protocols](https://drive.google.com/drive/folders/1PWeoPEC1u6ErQWRCik8cHyTJNqOVE-DV?usp=sharing) following feedback from collaborators on Phase 1 so **feel free to download and explore any relevant protocol**. The changes are minor tweaks and clarifications, and the Phase 2 protocols are mostly the same as the Phase 1 protocols.
+We have revised our [primary and alternate protocols](https://herbvar-network.github.io/herbvar_manual/04_protocols/protocols_overview.html) following feedback from collaborators on Phase 1 so **feel free to download and explore any relevant protocol**. The changes are minor tweaks and clarifications, and the Phase 2 protocols are mostly the same as the Phase 1 protocols.
 
 <br>
 
@@ -46,7 +46,7 @@ We envision at least one publication per sampling objective. Collecting at least
 
 ## New Data Submission Portal
 
-For this phase of data collection we have created a [data submission portal](https://herbvar.shinyapps.io/data_portal_actual/) with R Shiny! All data submission for this phase will go through it but it does require you use the updated [template Excel file](protocols/HerbVar Datasheet Template.xlsx).
+For this phase of data collection we have created a [data submission portal](https://herbvar.shinyapps.io/data_portal_actual/) with R Shiny! All data submission for this phase will go through it but it does require you use the updated [template Excel file](https://herbvar-network.github.io/herbvar_manual/05_forms/forms_list.html).
 
 ## Spread the Word!
 
