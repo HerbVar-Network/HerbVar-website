@@ -13,7 +13,7 @@ The Herbivory Variability Network has [standardized protocols for surveying herb
 _**Before you start collecting data, we strongly recommend you review the manual to develop an understanding of the motivations and structure of the project**_. For example, an overview of the project can be found in [Chapter 1](https://herbvar-network.github.io/herbvar_manual/01_intro/intro.html), and our network structure is described in [Chapter 2](https://herbvar-network.github.io/herbvar_manual/01_intro/Network_Structure.html).  
 
 
-An overview of the Protocols is available [here](https://herbvar-network.github.io/herbvar_manual/04_protocols/protocols_overview.html). There you can find links to the following protocols:  
+An [overview of the Protocols is available here](https://herbvar-network.github.io/herbvar_manual/04_protocols/protocols_overview.html). There you can find links to the following protocols:  
 
 1. The _Primary Protocol_ for selecting plants and surveying leaf damage. See also our _Guide to Estimating Damage_ for detailed methods and tips for quantifying damage
 2. _Reproductive Damage_ Protocol
