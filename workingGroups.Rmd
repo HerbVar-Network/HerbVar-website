@@ -95,6 +95,13 @@ These ongoing Working Groups are using a traditional invitation authorship model
 - [Working Group abstract](workingGroups/Null Models abstract for HerVar.pdf)
 
 
+### Common Garden Data Working Group
+
+- Common Gardens: The influence of plant genetics and environment on variability in herbivory
+- Lead: Michael Eisenring (Swiss Federal Research Institute WSL)
+- Co-authors: Jill Anderson (U. Georgia), Rebecca Best (Northern Arizona U.), Andrea Galmán (Montana State U./Misión Biolóxica de Galicia, CSIC), Martin Gossner (Swiss Federal Research Institute WSL), Phil Hahn (U. Florida), Jessie Mutz (Dartmouth), Sergio Rasmann (U. Neuchâtel), Nora Underwood (Florida State U.), Will Wetzel (Montana State U.)
+- [Working Group abstract](workingGroups/Eisenring et al - HerbVar - Common Garden Abstract.pdf)
+
 
 # Newly proposed Working Groups
 
